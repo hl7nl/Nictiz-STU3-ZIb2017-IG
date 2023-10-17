@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="zib-snaq65plusscore-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-SNAQ65+Score"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="zib-snaq65plusscore-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;zib-snaq65plusscore-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-SNAQ65plusScore.html">HCIM SNAQ65+Score</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: The Short Nutritional Assessment Questionnaire 65+ <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#108321000146101)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-03.html">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2018-02-08 10:00:00+0200</p><p><b>value</b>: 0</p><blockquote><p><b>component</b></p><p><b>code</b>: WeightLoss Score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.30.3)</span></p><p><b>value</b>: Minder dan 4kg in de laatste maand <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#G0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Appetite Score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.30.4)</span></p><p><b>value</b>: Normale eetlust <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#B0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Exercise Score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.30.5)</span></p><p><b>value</b>: In staat tot fysieke inspanning <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#In0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Upperarm Circumference <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.30.8)</span></p><p><b>value</b>: Omtrek &gt;= 25cm <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#A0)</span></p></blockquote></div>
+  </text>
+  <status value="preliminary"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108321000146101"/>
+      <display value="The Short Nutritional Assessment Questionnaire 65+"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-03"/>
+    <display value="I. Jongeneel-de Haas"/>
+  </subject>
+  <effectiveDateTime value="2018-02-08T10:00:00+02:00"/>
+  <valueQuantity>
+    <value value="0"/>
+  </valueQuantity>
+  <component>
+    <!-- WeightLossScore -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.30.3"/>
+        <display value="WeightLoss Score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.1"/>
+        <code value="G0"/>
+        <display value="Minder dan 4kg in de laatste maand"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- AppetiteScore -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.30.4"/>
+        <display value="Appetite Score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.2"/>
+        <code value="B0"/>
+        <display value="Normale eetlust"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- ExerciseScore -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.30.5"/>
+        <display value="Exercise Score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.3"/>
+        <code value="In0"/>
+        <display value="In staat tot fysieke inspanning"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- UpperarmCircumference -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.30.8"/>
+        <display value="Upperarm Circumference"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.4"/>
+        <code value="A0"/>
+        <display value="Omtrek &gt;= 25cm"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

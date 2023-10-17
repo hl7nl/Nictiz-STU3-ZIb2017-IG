@@ -1,0 +1,59 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "zib-medicaldevice-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Beschrijving apparaatgebruik. Subject: <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>. Status: actief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Apparaat/Systeem</th>\n                        <td>\n                            <a href=\"Device/zib-MedicalDeviceProduct-03\">Gehoorapparaat</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Deel van lichaam</th>\n                        <td>\n                            <span title=\"Ear Structure (117590005 - SNOMED CT)\">Ear Structure</span>\n                            <span title=\"Right (24028007 - SNOMED CT)\">Right</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Gebruiksperiode</th>\n                        <td>Vanaf 2007</td>\n                    </tr>\n                    <tr>\n                        <th>Indicatie</th>\n                        <td>\n                            <div>\n                                <a href=\"Condition/zib-problem-04\">Presbyacusis</a>\n                            </div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization",
+    "valueReference" : {
+      "reference" : "Organization/nl-core-organization-03",
+      "display" : "Test Medisch Centrum"
+    }
+  }],
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "whenUsed" : {
+    "start" : "2007"
+  },
+  "device" : {
+    "reference" : "Device/zib-MedicalDeviceProduct-03",
+    "display" : "Gehoorapparaat"
+  },
+  "indication" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem",
+      "valueReference" : {
+        "reference" : "Condition/zib-problem-04",
+        "display" : "Presbyacusis"
+      }
+    }]
+  }],
+  "bodySite" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24028007",
+          "display" : "Right"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "117590005",
+      "display" : "Ear Structure"
+    }]
+  },
+  "note" : [{
+    "text" : "Apparaat niet zichtbaar (diep in de gehooringang)"
+  }]
+}

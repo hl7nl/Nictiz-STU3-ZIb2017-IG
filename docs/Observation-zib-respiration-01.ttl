@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-respiration-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-respiration-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-respiration-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-respiration-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Respiration.html\">HCIM Respiration</a></p></div><blockquote><p><b>HCIM Respiration AdministeredOxygen</b></p><p><b>url</b>: <code>extraOxygenAdministration</code></p><p><b>value</b>: true</p><p><b>url</b>: <code>flowRate</code></p><p><b>value</b>: 2 2/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 2/min = '2/min')</span></p><p><b>url</b>: <code>fiO2</code></p><p><b>value</b>: 0.29 fractionele inspiratoire zuurstofconcentratie</p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Respiratory assessment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#422834003)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2015-03-11 14:47:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: Ritme <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#48064009)</span></p><p><b>value</b>: Normaal ademhalingsritme <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5467003)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diepte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#271626009)</span></p><p><b>value</b>: Normale ademhalingsdiepte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#301284009)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Ademfrequentie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9279-1)</span></p><p><b>value</b>: 15 breaths per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {breaths}/min = '{breaths}/min')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen"^^xsd:anyURI ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "extraOxygenAdministration"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "flowRate"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "2/min" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2/min" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "fiO2"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "0.29"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "fractionele inspiratoire zuurstofconcentratie" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:422834003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "422834003" ] ;
+       fhir:display [ fhir:v "Respiratory assessment" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2015-03-11T14:47:00Z"^^xsd:dateTime] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:48064009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48064009" ] ;
+         fhir:display [ fhir:v "Ritme" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:5467003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5467003" ] ;
+         fhir:display [ fhir:v "Normaal ademhalingsritme" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:271626009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271626009" ] ;
+         fhir:display [ fhir:v "Diepte" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:301284009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "301284009" ] ;
+         fhir:display [ fhir:v "Normale ademhalingsdiepte" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:9279-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "9279-1" ] ;
+         fhir:display [ fhir:v "Ademfrequentie" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "breaths per minute" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{breaths}/min" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

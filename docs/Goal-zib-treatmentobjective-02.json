@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Goal",
+  "id" : "zib-treatmentobjective-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Doel. Subject: <a href=\"Patient/nl-core-patient-03\">I. Jongeneel-de\n                        Haas</a>. Status: geaccepteerd</caption>\n                <tbody>\n                    <tr>\n                        <th>Omschrijving</th>\n                        <td>Volledig genezing van de wond.</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "accepted",
+  "description" : {
+    "text" : "Volledig genezing van de wond."
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  }
+}

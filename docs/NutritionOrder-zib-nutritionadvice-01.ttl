@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/NutritionOrder/zib-nutritionadvice-01> a fhir:NutritionOrder ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-nutritionadvice-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Voedingsadvies. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief</caption>\n                <tbody>\n                    <tr>\n                        <th>Aanvraagdatum</th>\n                        <td>2018-01-01</td>\n                    </tr>\n                    <tr>\n                        <td colspan=\"2\">\n                            <table>\n                                <caption>Orale voeding</caption>\n                                <thead>\n                                    <tr>\n                                        <th>Type</th>\n                                        <th>Vloeistofconsistentie</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>Energie verrijkt</td>\n                                        <td>Dikvloeibaar</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2018-01-01"^^xsd:date] ; # 
+  fhir:oralDiet [
+     fhir:type ( [
+       fhir:text [ fhir:v "Energie verrijkt" ]
+     ] ) ;
+     fhir:fluidConsistencyType ( [
+       fhir:text [ fhir:v "Dikvloeibaar" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

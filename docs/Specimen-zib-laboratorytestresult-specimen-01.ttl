@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Specimen/zib-laboratorytestresult-specimen-01> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-laboratorytestresult-specimen-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Specimen. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. </caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Blood (substance) (87612001 - SNOMED CT)\">Blood\n                                (substance)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Inzameling</th>\n                        <td>2012-05-23T08:08:00+01:00</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:87612001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "87612001" ] ;
+       fhir:display [ fhir:v "Blood (substance)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:collection [
+     fhir:collected [ fhir:v "2012-05-23T08:08:00+01:00"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

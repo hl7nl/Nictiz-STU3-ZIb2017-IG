@@ -1,0 +1,86 @@
+{
+  "resourceType" : "AllergyIntolerance",
+  "id" : "zib-allergyintolerance-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Allergie/intolerantie. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Allergy to substance (419199007 - SNOMED CT)\">Allergy to\n                        substance</span>, Status: actief / bevestigd</caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Bee venom (288328004 - SNOMED CT)\">Bee venom</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Eerste symptomen</th>\n                        <td>2008-11-08</td>\n                    </tr>\n                    <tr>\n                        <th>Meest recente voorkomen</th>\n                        <td>2009-11-15</td>\n                    </tr>\n                    <tr>\n                        <th>Reactie</th>\n                        <td>\n                            <ul>\n                                <li>\n                                    <div>\n                                        <span title=\"Severe (24484000 - SNOMED CT)\">Severe</span>\n                                    </div>\n                                    <div>\n                                        <span title=\"Nausea and vomiting (16932000 - SNOMED CT)\">Nausea and vomiting</span>\n                                    </div>\n                                </li>\n                            </ul>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "clinicalStatus" : "active",
+  "_clinicalStatus" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/v3/ActStatus",
+          "code" : "active",
+          "display" : "Active"
+        }]
+      }
+    }]
+  },
+  "verificationStatus" : "confirmed",
+  "category" : ["environment"],
+  "_category" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419199007",
+          "display" : "Allergy to substance"
+        }]
+      }
+    }]
+  }],
+  "criticality" : "high",
+  "_criticality" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24484000",
+          "display" : "Severe"
+        }]
+      }
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "288328004",
+      "display" : "Bee venom"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "onsetDateTime" : "2008-11-08",
+  "lastOccurrence" : "2009-11-15",
+  "reaction" : [{
+    "manifestation" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "16932000",
+        "display" : "Nausea and vomiting"
+      }]
+    }],
+    "severity" : "severe",
+    "_severity" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "24484000",
+            "display" : "Severe"
+          }]
+        }
+      }]
+    }
+  }]
+}

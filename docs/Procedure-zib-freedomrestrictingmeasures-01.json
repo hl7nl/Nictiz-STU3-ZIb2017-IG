@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "zib-freedomrestrictingmeasures-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-03\">Irma\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Procedures relating to control, restraint, seclusion and segregation (procedure) (225214000 - SNOMED CT)\">Procedures relating to control, restraint, seclusion and segregation\n                        (procedure)</span>, Status: voltooid</caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Restriction of movement (225317005 - SNOMED CT)\">Restriction of movement</span>\n                        </td>\n                        <td>\n                            <div>Uitgevoerd: 1 mei 2014 - 5 mei 2014</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Wilsbekwaam</th>\n                        <td>nee<div>Wilsonbekwaam t.a.v. geldzaken.</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Toestemming</th>\n                        <td>\n                            <span title=\"Instemming wettelijke vertegenwoordiger (4 - 2.16.840.1.113883.2.4.3.11.60.40.4.6.1)\">Instemming wettelijke vertegenwoordiger</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-LegallyCapable",
+    "extension" : [{
+      "url" : "LegallyCapableIndicator",
+      "valueBoolean" : false
+    },
+    {
+      "url" : "legallyCapableComment",
+      "valueString" : "Wilsonbekwaam t.a.v. geldzaken."
+    }]
+  },
+  {
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-Permission",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.6.1",
+        "code" : "4",
+        "display" : "Instemming wettelijke vertegenwoordiger"
+      }]
+    }
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225214000",
+      "display" : "Procedures relating to control, restraint, seclusion and segregation (procedure)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225317005",
+      "display" : "Restriction of movement"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "Irma Jongeneel-de Haas"
+  },
+  "performedPeriod" : {
+    "start" : "2014-05-01",
+    "end" : "2014-05-05"
+  }
+}

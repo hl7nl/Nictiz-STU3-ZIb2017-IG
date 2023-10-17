@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="InterpretatieVlaggenCodelijst-to-observation-interpretation"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000.html">InterpretatieVlaggenCodelijst</a> to <a href="http://hl7.org/fhir/STU3/valueset-observation-interpretation.html">Observation Interpretation Codes</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href="mailto:info@nictiz.nl">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM LaboratoryTestResult release 2017 terminology for ResultFlags to the FHIR STU3 terminology.</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>http://hl7.org/fhir/v2/0078|http://hl7.org/fhir/v2/0078 version 2.8.2</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>281302008 (Above reference range)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>H (High)</td></tr><tr><td>281300000 (Below reference range)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>L (Low)</td></tr><tr><td>11896004 (Intermediate)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>I (Intermediate)</td></tr><tr><td>30714006 (Resistant)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>R (Resistant)</td></tr><tr><td>131196009 (Susceptible)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>S (Susceptible)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/concept-bidirectional">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://nictiz.nl/fhir/ConceptMap/InterpretatieVlaggenCodelijst-to-observation-interpretation"/>
+  <version value="1.3.15"/>
+  <name value="InterpretatieVlaggenCodelijst-to-observation-interpretation"/>
+  <title value="HCIM InterpretatieVlaggenCodelijst to Observation Interpretation Codes"/>
+  <status value="active"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Maps the HCIM LaboratoryTestResult release 2017 terminology for ResultFlags to the FHIR STU3 terminology."/>
+  <purpose value="To aid in mapping from HCIM LaboratoryTestResult valueset ResultFlags to FHIR STU3 Observation interpertation element."/>
+  <copyright value="CC0"/>
+  <sourceUri value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000"/>
+  <targetUri value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
+  <group>
+    <source value="http://hl7.org/fhir/v2/0078"/>
+    <sourceVersion value="http://hl7.org/fhir/v2/0078 version 2.8.2"/>
+    <element>
+      <code value="281302008"/>
+      <display value="Above reference range"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="H"/>
+        <display value="High"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="281300000"/>
+      <display value="Below reference range"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="L"/>
+        <display value="Low"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="11896004"/>
+      <display value="Intermediate"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="I"/>
+        <display value="Intermediate"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="30714006"/>
+      <display value="Resistant"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="R"/>
+        <display value="Resistant"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="131196009"/>
+      <display value="Susceptible"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="S"/>
+        <display value="Susceptible"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

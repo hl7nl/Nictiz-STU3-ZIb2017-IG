@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Consent/zib-advancedirective-02> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-advancedirective-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Toestemming. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Living will and advance directive record (record artifact) (11341000146107 - SNOMED CT)\">Living will and advance directive record (record artifact)</span>, <span title=\"Niet reanimeren verklaring (NR - 2.16.840.1.113883.2.4.3.11.60.40.4.14.1)\">Niet reanimeren verklaring</span>, Status: actief<div>Toestemminggevende\n                        partij: <a href=\"RelatedPerson/nl-core-relatedperson-01\">J.P.M. van\n                            Putten-van der Giessen</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Gemaakt</th>\n                        <td>2011-08-15</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective-Disorder"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-01> ;
+       fhir:reference [ fhir:v "Condition/zib-problem-01" ] ;
+       fhir:display [ fhir:v "ALS" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/Comment"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Niet-reanimerenpenning" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:11341000146107 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11341000146107" ] ;
+       fhir:display [ fhir:v "Living will and advance directive record (record artifact)" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NR" ] ;
+       fhir:display [ fhir:v "Niet reanimeren verklaring" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:dateTime [ fhir:v "2011-08-15"^^xsd:date] ; # 
+  fhir:consentingParty ( [
+     fhir:link <http://nictiz.nl/fhir/RelatedPerson/nl-core-relatedperson-01> ;
+     fhir:reference [ fhir:v "RelatedPerson/nl-core-relatedperson-01" ] ;
+     fhir:display [ fhir:v "J.P.M. van Putten-van der Giessen" ]
+  ] ) ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "http://wetten.overheid.nl/"^^xsd:anyURI ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Condition",
+  "id" : "zib-problem-06",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Conditie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: opgelost</caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality) (21119008 - SNOMED CT)\">Pigmented nevus, no International Classification of Diseases for\n                                Oncology subtype (morphologic abnormality)</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "clinicalStatus" : "resolved",
+  "_clinicalStatus" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "73425007",
+          "display" : "Niet Actueel"
+        }]
+      }
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "21119008",
+      "display" : "Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality)"
+    }]
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "60819002",
+      "display" : "Cheek structure (body structure)"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  }
+}

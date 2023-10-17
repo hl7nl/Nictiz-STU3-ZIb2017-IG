@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-laboratorytestresult-observation-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-laboratorytestresult-observation-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, <span title=\"Chemistry (275711006 - SNOMED CT)\">Chemistry</span>, Status:\n                    definitief</caption>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td colspan=\"3\">2012-05-23T12:00:00+02:00</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                        <th>Interpretatie</th>\n                        <th>Referentiewaarden</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Chloride [Moles/volume] in Blood (2069-3 - LOINC)\">Chloride\n                                [Moles/volume] in Blood</span>\n                        </td>\n                        <td>109 mmol/l</td>\n                        <td>\n                            <span title=\"Above reference range (281302008 - SNOMED CT)\">Above\n                                reference range</span>\n                        </td>\n                        <td>\n                            <div>99 mmol/l - 108 mmol/l</div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:49581000146104 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "49581000146104" ] ;
+       fhir:display [ fhir:v "Laboratory test finding (finding)" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a sct:275711006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "275711006" ] ;
+       fhir:display [ fhir:v "Chemistry" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:2069-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2069-3" ] ;
+       fhir:display [ fhir:v "Chloride [Moles/volume] in Blood" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2012-05-23T12:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "109"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mmol/l" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mmol/L" ]
+  ] ; # 
+  fhir:interpretation [
+     fhir:coding ( [
+       a sct:281302008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "281302008" ] ;
+       fhir:display [ fhir:v "Above reference range" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:link <http://nictiz.nl/fhir/Specimen/zib-laboratorytestresult-specimen-01> ;
+     fhir:reference [ fhir:v "Specimen/zib-laboratorytestresult-specimen-01" ] ;
+     fhir:display [ fhir:v "Blood (substance)" ]
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "99"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmol/l" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mmol/L" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "108"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmol/l" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mmol/L" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "zib-wound-medicaldevice-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Wound-MedicalDevice"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DeviceUseStatement</b><a name=\"zib-wound-medicaldevice-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DeviceUseStatement &quot;zib-wound-medicaldevice-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Wound-MedicalDevice.html\">HCIM Wound MedicalDevice</a></p></div><p><b>Backported DeviceUseStatement.reasonReference for STU3</b>: <a href=\"Condition-zib-wound-01.html\">Condition/zib-wound-01: Chirurgische wond</a></p><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>device</b>: <a href=\"Device-zib-wound-medicaldeviceproduct-01.html\">Device/zib-wound-medicaldeviceproduct-01: Wonddrain (fysiek object)</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3",
+    "valueReference" : {
+      "reference" : "Condition/zib-wound-01",
+      "display" : "Chirurgische wond"
+    }
+  }],
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "device" : {
+    "reference" : "Device/zib-wound-medicaldeviceproduct-01",
+    "display" : "Wonddrain (fysiek object)"
+  }
+}

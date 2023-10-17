@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "zib-vaccination-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Vaccinatie. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: voltooid</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Bezoek aan Guatemala</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>\n                            <span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span>\n                        </th>\n                        <td>\n                            <div>Toegediend: ja (1999-03-09)</div>\n                            <div>Gemeld door uitvoerende: nee</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Zorgverlener</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-01\">Huisarts H. de Vries</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "completed",
+  "notGiven" : false,
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J06BB11",
+      "display" : "hepatitis A immunoglobulin"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "date" : "1999-03-09",
+  "primarySource" : false,
+  "practitioner" : [{
+    "actor" : {
+      "reference" : "Practitioner/nl-core-practitioner-01",
+      "display" : "Huisarts H. de Vries"
+    }
+  }],
+  "note" : [{
+    "text" : "Bezoek aan Guatemala"
+  }]
+}

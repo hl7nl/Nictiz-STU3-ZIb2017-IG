@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Organization",
+  "id" : "nl-core-organization-04",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>OrganisatieId: 3332 (UZOVI)</caption>\n                <tbody>\n                    <tr>\n                        <th>Naam</th>\n                        <td>Menzis Zorgverzekeraar N.V.</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.nl/fhir/NamingSystem/uzovi",
+    "value" : "3332"
+  }],
+  "name" : "Menzis Zorgverzekeraar N.V."
+}

@@ -1,0 +1,143 @@
+{
+  "resourceType" : "Person",
+  "id" : "nl-core-person-01",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2018-06-06T14:07:59.978+00:00",
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div>Henk de Haas, Man</div>\n            <div>\n                <a href=\"tel:0612345990\">0612345990</a> (Tel Werk), <a href=\"mailto:dehaas@work.com\">dehaas@work.com</a> (E-mail Werk)</div>\n            <div>Straatweg 12bII, 1012AB Weesp Amsterdam, NLD (officieel Privé Post/Bezoek)</div>\n            <div>Gekoppeld aan: <a href=\"Patient/nl-core-patient-03\">Irma Jongeneel-de Haas</a>\n            </div>\n        </div>"
+  },
+  "name" : [{
+    "family" : "de Haas",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+        "valueString" : "de "
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Haas"
+      }]
+    },
+    "given" : ["Henk"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "_system" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/AddressUse",
+            "code" : "MC",
+            "display" : "Mobiel telefoonnummer"
+          }]
+        }
+      }]
+    },
+    "value" : "0612345990",
+    "use" : "work",
+    "_use" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/AddressUse",
+            "code" : "MC",
+            "display" : "Mobiel telefoonnummer"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "system" : "email",
+    "_system" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/AddressUse",
+            "code" : "WP",
+            "display" : "Zakelijk e-mailadres"
+          }]
+        }
+      }]
+    },
+    "value" : "dehaas@work.com",
+    "use" : "work",
+    "_use" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/AddressUse",
+            "code" : "WP",
+            "display" : "Zakelijk e-mailadres"
+          }]
+        }
+      }]
+    }
+  }],
+  "gender" : "male",
+  "_gender" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/v3/AdministrativeGender",
+          "code" : "M",
+          "display" : "Man"
+        }]
+      }
+    }]
+  },
+  "address" : [{
+    "extension" : [{
+      "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+      "valueBoolean" : true
+    }],
+    "use" : "home",
+    "type" : "both",
+    "line" : ["Straatweg 12bII"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Straatweg"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "12"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+        "valueString" : "bII"
+      }]
+    }],
+    "city" : "Weesp",
+    "district" : "Amsterdam",
+    "postalCode" : "1012AB",
+    "country" : "NLD",
+    "_country" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+            "code" : "6030",
+            "display" : "Nederland"
+          }]
+        }
+      }]
+    }
+  }],
+  "link" : [{
+    "target" : {
+      "reference" : "Patient/nl-core-patient-03",
+      "display" : "Irma Jongeneel-de Haas"
+    }
+  }]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Condition",
+  "id" : "zib-wound-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Wound"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"zib-wound-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;zib-wound-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Wound.html\">HCIM Wound</a></p></div><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>code</b>: Chirurgische wond <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#112633009)</span></p><p><b>bodySite</b>: Heup <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#29836001)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-01.html\">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>onset</b>: 2019-07-14 11:00:00+0100</p><p><b>note</b>: Wond lekt steeds meer. ( @Jul 14, 2019, 12:00:00\u202fPM)</p></div>"
+  },
+  "clinicalStatus" : "active",
+  "verificationStatus" : "confirmed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "112633009",
+      "display" : "Chirurgische wond"
+    }]
+  },
+  "bodySite" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "29836001",
+      "display" : "Heup"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "onsetDateTime" : "2019-07-14T11:00:00.000+01:00",
+  "note" : [{
+    "time" : "2019-07-14T11:00:00.000+01:00",
+    "text" : "Wond lekt steeds meer."
+  }]
+}

@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Condition/zib-problem-02> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-problem-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Conditie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief / bevestigd</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Beperking bij het bewegen van het gewricht, drukpijn door\n                            slijtage van twee compartimenten van de linker knie.</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Arthropathy (disorder) (399269003 - SNOMED CT)\">Arthropathy\n                                (disorder)</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:v "active" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:55561003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "55561003" ] ;
+           fhir:display [ fhir:v "Active" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:v "confirmed" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:410605003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "410605003" ] ;
+           fhir:display [ fhir:v "Confimed present" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:399269003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "399269003" ] ;
+       fhir:display [ fhir:v "Arthropathy (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

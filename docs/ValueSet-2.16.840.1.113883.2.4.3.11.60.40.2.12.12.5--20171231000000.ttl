@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5--20171231000000> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5--20171231000000"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.5</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>Mov1</td><td>No movement</td><td>Geen beweging</td><td>Geen beweging</td></tr><tr><td>Mov2</td><td>Occasional, slight movements</td><td>Incidentele (3 of minder) kleine bewegingen</td><td>Incidentele (3 of minder) kleine bewegingen</td></tr><tr><td>Mov3</td><td>Frequent, slight movements</td><td>Frequente (3 of meer) kleine bewegingen</td><td>Frequente (3 of meer) kleine bewegingen</td></tr><tr><td>Mov4</td><td>Vigorous movements limited to extremities</td><td>Heftige bewegingen met armen en benen</td><td>Heftige bewegingen met armen en benen</td></tr><tr><td>Mov5</td><td>Vigorous movements including torso and head</td><td>Heftige bewegingen ook met romp en hoofd</td><td>Heftige bewegingen ook met romp en hoofd</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2017-12-31T00:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5--20171231000000"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://art-decor.org/ns/oids/vs"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "LichaamsbewegingCodelijst"] ; # 
+  fhir:title [ fhir:v "LichaamsbewegingCodelijst"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Registratie aan de bron" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.registratieaandebron.nl" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://zibs.nl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "LichaamsbewegingCodelijst"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.5"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "1"^^xsd:decimal ]
+         ] ) ;
+         fhir:code [ fhir:v "Mov1" ] ;
+         fhir:display [ fhir:v "No movement" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Geen beweging" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "2"^^xsd:decimal ]
+         ] ) ;
+         fhir:code [ fhir:v "Mov2" ] ;
+         fhir:display [ fhir:v "Occasional, slight movements" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Incidentele (3 of minder) kleine bewegingen" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "3"^^xsd:decimal ]
+         ] ) ;
+         fhir:code [ fhir:v "Mov3" ] ;
+         fhir:display [ fhir:v "Frequent, slight movements" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Frequente (3 of meer) kleine bewegingen" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "4"^^xsd:decimal ]
+         ] ) ;
+         fhir:code [ fhir:v "Mov4" ] ;
+         fhir:display [ fhir:v "Vigorous movements limited to extremities" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Heftige bewegingen met armen en benen" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "5"^^xsd:decimal ]
+         ] ) ;
+         fhir:code [ fhir:v "Mov5" ] ;
+         fhir:display [ fhir:v "Vigorous movements including torso and head" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Heftige bewegingen ook met romp en hoofd" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

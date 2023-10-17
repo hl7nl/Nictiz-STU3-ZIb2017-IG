@@ -1,0 +1,59 @@
+{
+  "resourceType" : "Condition",
+  "id" : "zib-pressureulcer-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-PressureUlcer"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"zib-pressureulcer-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;zib-pressureulcer-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-PressureUlcer.html\">HCIM PressureUlcer</a></p></div><p><b>Date of last dressing change</b>: 2019-07-10</p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>code</b>: Doorligplek <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#399912005)</span></p><p><b>bodySite</b>: Hiel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76853006)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-01.html\">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>onset</b>: 2019-07-02</p><h3>Stages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Summary</b></td></tr><tr><td style=\"display: none\">*</td><td>Decubitus categorie 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#420324007)</span></td></tr></table><p><b>note</b>: Blaar met vocht op hiel. ( @Jul 14, 2019, 12:00:00\u202fPM)</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/condition-dateOfLastDressingChange",
+    "valueDate" : "2019-07-10"
+  }],
+  "clinicalStatus" : "active",
+  "verificationStatus" : "confirmed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "399912005",
+      "display" : "Doorligplek"
+    }]
+  },
+  "bodySite" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76853006",
+      "display" : "Hiel"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "onsetDateTime" : "2019-07-02",
+  "stage" : {
+    "summary" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "420324007",
+        "display" : "Decubitus categorie 2"
+      }]
+    }
+  },
+  "note" : [{
+    "time" : "2019-07-14T11:00:00.000+01:00",
+    "text" : "Blaar met vocht op hiel."
+  }]
+}

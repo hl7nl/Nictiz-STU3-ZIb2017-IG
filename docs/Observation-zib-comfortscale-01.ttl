@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-comfortscale-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-comfortscale-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-ComfortScale"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-comfortscale-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-comfortscale-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-ComfortScale.html\">HCIM ComfortScale</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: ComfortScale <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108301000146109)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2019-09-03 11:01:07+0000</p><p><b>value</b>: 18</p><p><b>comment</b>: Controle na verhogen pijnmedicatie.</p><blockquote><p><b>component</b></p><p><b>code</b>: 12.12.3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.3)</span></p><p><b>value</b>: Licht in slaap (ogen grotendeels gesloten, af en toe reactie) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Alert2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Respiratory Response <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.5)</span></p><p><b>value</b>: Onrust of verzet tegen de beademing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Vent3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Calmness Agitation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.4)</span></p><p><b>value</b>: Calmness Agitation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Calm2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Crying <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.6)</span></p><p><b>value</b>: Jengelen of dreinen (monotoon geluid) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Cry3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Muscle Tone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.10)</span></p><p><b>value</b>: Verminderde spierspanning; minder weerstand dan normaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Musc2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Body movement <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.8)</span></p><p><b>value</b>: Frequente (3 of meer) kleine bewegingen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Mov3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Facial Tone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.9)</span></p><p><b>value</b>: Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Face3)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "registered"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:108301000146109 ;
+       fhir:code [ fhir:v "108301000146109" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "ComfortScale" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-09-03T11:01:07.9477128+00:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "18"^^xsd:decimal ]
+  ] ; # 
+  fhir:comment [ fhir:v "Controle na verhogen pijnmedicatie."] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.3" ]
+       ] )
+     ] ; # Alertness
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Alert2" ] ;
+         fhir:display [ fhir:v "Licht in slaap (ogen grotendeels gesloten, af en toe reactie)" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.5" ] ;
+         fhir:display [ fhir:v "Respiratory Response" ]
+       ] )
+     ] ; # RespiratoryResponse
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Vent3" ] ;
+         fhir:display [ fhir:v "Onrust of verzet tegen de beademing" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.4" ] ;
+         fhir:display [ fhir:v "Calmness Agitation" ]
+       ] )
+     ] ; # CalmnessAgitation
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Calm2" ] ;
+         fhir:display [ fhir:v "Calmness Agitation" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.6" ] ;
+         fhir:display [ fhir:v "Crying" ]
+       ] )
+     ] ; # Crying
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.4"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Cry3" ] ;
+         fhir:display [ fhir:v "Jengelen of dreinen (monotoon geluid)" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.10" ] ;
+         fhir:display [ fhir:v "Muscle Tone" ]
+       ] )
+     ] ; # MuscleTone
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.7"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Musc2" ] ;
+         fhir:display [ fhir:v "Verminderde spierspanning; minder weerstand dan normaal" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.8" ] ;
+         fhir:display [ fhir:v "Body movement" ]
+       ] )
+     ] ; # BodyMovement
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.5"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Mov3" ] ;
+         fhir:display [ fhir:v "Frequente (3 of meer) kleine bewegingen" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "12.12.9" ] ;
+         fhir:display [ fhir:v "Facial Tone" ]
+       ] )
+     ] ; # FacialTone
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.6"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Face3" ] ;
+         fhir:display [ fhir:v "Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend)" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

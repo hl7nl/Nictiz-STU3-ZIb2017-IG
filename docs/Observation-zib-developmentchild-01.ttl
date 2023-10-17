@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-developmentchild-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-developmentchild-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-DevelopmentChild"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-developmentchild-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-developmentchild-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-DevelopmentChild.html\">HCIM DevelopmentChild</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Child developmental finding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#251803000)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2015-02-07 10:00:00+0200</p><blockquote><p><b>component</b></p><p><b>code</b>: Bladder control - child (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#275819003)</span></p><p><b>value</b>: Occassional bladder accident - child <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26431000146108)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Bowel control - child (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#275818006)</span></p><p><b>value</b>: Full control of bowel - child <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26401000146103)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Age at menarche <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#42798-9)</span></p><p><b>value</b>: 2015-12-01 00:00:00+0100</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Gross motor functions (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#282716004)</span></p><p><b>value</b>: Independent walking <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#165245003)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Ability to interact with others (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225597007)</span></p><p><b>value</b>: Able to give and take <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26281000146106)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Language, function (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#61909002)</span></p><p><b>value</b>: Speech babble <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258116008)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Functional observable (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#364644000)</span></p><p><b>value</b>: Able to make considered choices <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#304687006)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:251803000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "251803000" ] ;
+       fhir:display [ fhir:v "Child developmental finding" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2015-02-07T10:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:275819003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "275819003" ] ;
+         fhir:display [ fhir:v "Bladder control - child (finding)" ]
+       ] )
+     ] ; # ToiletTrainednessUrine
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:26431000146108 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26431000146108" ] ;
+         fhir:display [ fhir:v "Occassional bladder accident - child" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:275818006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "275818006" ] ;
+         fhir:display [ fhir:v "Bowel control - child (finding)" ]
+       ] )
+     ] ; # ToiletTrainednessFeces
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:26401000146103 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26401000146103" ] ;
+         fhir:display [ fhir:v "Full control of bowel - child" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:42798-9 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "42798-9" ] ;
+         fhir:display [ fhir:v "Age at menarche" ]
+       ] )
+     ] ; # AgeFirstMenstruation
+     fhir:value [ fhir:v "2015-12-01T00:00:00+01:00"^^xsd:dateTime ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:282716004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "282716004" ] ;
+         fhir:display [ fhir:v "Gross motor functions (observable entity)" ]
+       ] )
+     ] ; # DevelopmentLocomotion
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:165245003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "165245003" ] ;
+         fhir:display [ fhir:v "Independent walking" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:225597007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "225597007" ] ;
+         fhir:display [ fhir:v "Ability to interact with others (observable entity)" ]
+       ] )
+     ] ; # DevelopmentSocial
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:26281000146106 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26281000146106" ] ;
+         fhir:display [ fhir:v "Able to give and take" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:61909002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "61909002" ] ;
+         fhir:display [ fhir:v "Language, function (observable entity)" ]
+       ] )
+     ] ; # DevelopmentLinguistics
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:258116008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "258116008" ] ;
+         fhir:display [ fhir:v "Speech babble" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:364644000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "364644000" ] ;
+         fhir:display [ fhir:v "Functional observable (observable entity)" ]
+       ] )
+     ] ; # DevelopmentCognition
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:304687006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "304687006" ] ;
+         fhir:display [ fhir:v "Able to make considered choices" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,142 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH\">OTH</a></td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>\n                        \n                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>\n                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Anders</td><td>Anders</td></tr></table></li><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html\"><code>http://hl7.org/fhir/v3/ParticipationType</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-RESP\">RESP</a></td><td>Responsible Party</td><td>The person or organization that has primary responsibility for the act.  The responsible party is not necessarily present in an action, but is accountable for the action through the power to delegate, and the duty to review actions with the performing actor after the fact.  This responsibility may be ethical, legal, contractual, fiscal, or fiduciary in nature.<br/>\n                        \n                           Example: A person who is the head of a biochemical laboratory; a sponsor for a policy or government program.</td><td>Hoofdbehandelaar</td><td>Hoofdbehandelaar</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-REF\">REF</a></td><td>Referrer</td><td>A person having referred the subject of the service to the performer (referring physician).  Typically, a referring physician will receive a report.</td><td>Verwijzer</td><td>Verwijzer</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-PRF\">PRF</a></td><td>Performer</td><td>Definition: A person, non-person living subject, organization or device that who actually and principally carries out the action. Device should only be assigned as a performer in circumstances where the device is performing independent of human intervention.  Need not be the principal responsible actor.<br/>\n                        \n                           Exampe: A surgery resident operating under supervision of attending surgeon, a search and rescue dog locating survivors, an electronic laboratory analyzer or the laboratory discipline requested to perform a laboratory test. The performer may also be the patient in self-care, e.g. fingerstick blood sugar. The traditional order filler is a performer. This information should accompany every service event.<br/>\n                        \n                           Note: that existing HL7 designs assign an organization as the playing entity of the Role that is the performer.  These designs should be revised in subsequent releases to make this the scooping entity for the role involved.</td><td>Uitvoerder</td><td>Uitvoerder</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-SPRF\">SPRF</a></td><td>Secondary Performer</td><td>A person assisting in an act through his substantial presence and involvement   This includes: assistants, technicians, associates, or whatever the job titles may be.</td><td>Tweede uitvoerder</td><td>Tweede uitvoerder</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-CON\">CON</a></td><td>Consultant</td><td>An advisor participating in the service by performing evaluations and making recommendations.</td><td>Consulent</td><td>Consulent</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html#v3-ParticipationType-ATND\">ATND</a></td><td>Attender</td><td>The practitioner that has responsibility for overseeing a patient's care during a patient encounter.</td><td>Behandelaar</td><td>Behandelaar</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5"
+  }],
+  "version" : "1.3.15",
+  "name" : "ZorgverlenerRolCodelijst",
+  "title" : "ZorgverlenerRolCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "ZorgverlenerRolCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/v3/NullFlavor",
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Anders"
+        }]
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/v3/ParticipationType",
+      "concept" : [{
+        "code" : "RESP",
+        "display" : "Responsible Party",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Hoofdbehandelaar"
+        }]
+      },
+      {
+        "code" : "REF",
+        "display" : "Referrer",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Verwijzer"
+        }]
+      },
+      {
+        "code" : "PRF",
+        "display" : "Performer",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Uitvoerder"
+        }]
+      },
+      {
+        "code" : "SPRF",
+        "display" : "Secondary Performer",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Tweede uitvoerder"
+        }]
+      },
+      {
+        "code" : "CON",
+        "display" : "Consultant",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Consulent"
+        }]
+      },
+      {
+        "code" : "ATND",
+        "display" : "Attender",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Behandelaar"
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,2912 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "nl-core-address",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address\" title=\"There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world and adds all relevant components to express Dutch addresses.\r\n\r\nA Dutch Address is a proper FHIR Address. Systems that do not understand any of the extensions, will be able to render and work with a Dutch address. Dutch addresses make certain address parts separately communicable. These parts are required for use in true Dutch systems when dealing with Dutch addresses, but may not have value for international systems when information gets sent abroad.\r\n\r\nTo have true compatibility an implementer SHOULD use the core Address parts as intended. To have addresses work for Dutch context, the implementer SHOULD in addition use the extension elements.\r\n\r\nThe HCIM defines certain address types in the AdresSoortCodelijst. These do not all have a one to one mapping in the FHIR Address datatype. The following explains how to deal with that. In addition, there are the ConceptMaps http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse and http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType to define this relationship\r\n\r\nHCIM Postal Address maps to Address.type 'postal'; \r\n\r\nHCIM Primary Home Address maps to Address.extension:official 'true' + Address.use 'home' + Address.use.extension 'HP'; \r\n\r\nHCIM Visit Address (Woon-/verblijfadres) maps to Address.use 'home' + Address.type 'physical' + Address.use.extension 'PHYS'; \r\n\r\nHCIM Temporary Address maps to Address.use 'temp'; \r\n\r\nHCIM Work Place Address maps to Address.use 'work';  \r\n\r\nHCIM Vacation Home Address maps to Address.use 'temp' + Address.use.extension 'HV'.\r\n\r\nIf Address.type is &quot;both&quot; then this is to be understood as a dual purpose address (postal and physical). Systems that support importing it like this are encouraged to do so, otherwise they may need to import this as two separate addresses.\">Address</a><a name=\"Address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/STU3/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (nl-streetname-if-official-and-other-line-parts, nl-streetname-if-official-and-other-line-parts)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Address information<br/><span style=\"font-weight:bold\">nl-streetname-if-official-and-other-line-parts: </span>Address.streetName in an official address SHALL have a value if one of houseNumber|buildingNumberSuffix|additionalLocator has a value<br/><span style=\"font-weight:bold\">Example Example of a vacation home address: </span><span style=\"color: darkgreen\">{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://fhir.nl/fhir/StructureDefinition/nl-core-address-official&quot;,&quot;valueBoolean&quot;:false}],&quot;use&quot;:&quot;temp&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/iso21090-AD-use&quot;,&quot;valueCode&quot;:&quot;HV&quot;}]},&quot;line&quot;:[&quot;Binnenkant 12A Hoog&quot;],&quot;city&quot;:&quot;Amsterdam&quot;,&quot;state&quot;:&quot;NH&quot;,&quot;postalCode&quot;:&quot;1000AA&quot;,&quot;country&quot;:&quot;NLD&quot;}</span><br/><span style=\"font-weight:bold\">Example Example of a primary home address: </span><span style=\"color: darkgreen\">{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://fhir.nl/fhir/StructureDefinition/nl-core-address-official&quot;,&quot;valueBoolean&quot;:true}],&quot;use&quot;:&quot;home&quot;,&quot;line&quot;:[&quot;Binnenkant to 10&quot;],&quot;city&quot;:&quot;Amsterdam&quot;,&quot;state&quot;:&quot;NH&quot;,&quot;postalCode&quot;:&quot;1001AA&quot;,&quot;country&quot;:&quot;NLD&quot;}</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.extension\">Slices for extension</a><a name=\"Address.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.extension:official\" title=\"Extension URL = http://fhir.nl/fhir/StructureDefinition/nl-core-address-official\">official</a><a name=\"Address.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Mark an address as an 'officially registered' address.<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-nl-core-address-official.html\">http://fhir.nl/fhir/StructureDefinition/nl-core-address-official</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.use\" title=\"Purpose of this address\">use</a><a name=\"Address.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">home | work | temp | old - purpose of this address</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck112.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.use.extension\">Slices for extension</a><a name=\"Address.use.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck105.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.use.extension:AD_use\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-AD-use\">AD_use</a><a name=\"Address.use.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Further define the address use with the exact HCIM code.<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-ad-use.html\">http://hl7.org/fhir/StructureDefinition/iso21090-AD-use</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/STU3/valueset-postal-address-use.html\">PostalAddressUse</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): Uses of an address not included in Address.use<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.use.extension:AD_use.valueCode:valueCode\" title=\"Slice valueCode\">valueCode:valueCode</a><a name=\"Address.use.extension.valueCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.type\">type</a><a name=\"Address.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">postal | physical | both</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line\">line</a><a name=\"Address.line\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck112.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension\">Slices for extension</a><a name=\"Address.line.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:streetName\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName\">streetName</a><a name=\"Address.line.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">streetName</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-adxp-streetname.html\">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:streetName.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"Address.line.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:houseNumber\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber\">houseNumber</a><a name=\"Address.line.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">houseNumber</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-adxp-housenumber.html\">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:houseNumber.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"Address.line.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:buildingNumbersuffix\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix\">buildingNumbersuffix</a><a name=\"Address.line.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">buildingNumberSuffix</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-adxp-buildingnumbersuffix.html\">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:buildingNumbersuffix.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"Address.line.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:unitID\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID\">unitID</a><a name=\"Address.line.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">unitID</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-adxp-unitid.html\">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:unitID.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"Address.line.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck105.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:additionalLocator\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator\">additionalLocator</a><a name=\"Address.line.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">additionalLocator</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-adxp-additionallocator.html\">http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.line.extension:additionalLocator.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"Address.line.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.city\">city</a><a name=\"Address.city\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of city, town etc.</span><br/><span style=\"font-weight:bold\">Example Example city: </span><span style=\"color: darkgreen\">Den Haag</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.district\">district</a><a name=\"Address.district\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">District name (aka county)</span><br/><span style=\"font-weight:bold\">Example Example district: </span><span style=\"color: darkgreen\">Wateringen</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.state\" title=\"Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). For Dutch addresses this element should contain the &quot;provincie&quot; code\">state</a><a name=\"Address.state\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Sub-unit of country (abbreviations ok).<br/><span style=\"font-weight:bold\">Example Example province: </span><span style=\"color: darkgreen\">ZH</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.postalCode\">postalCode</a><a name=\"Address.postalCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/STU3/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (nl-postal-code-pattern, nl-postal-code-pattern)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Postal code for area</span><br/><span style=\"font-weight:bold\">nl-postal-code-pattern: </span>Dutch postal code pattern 'nnnnAA'<br/><span style=\"font-weight:bold\">Example Example postcode: </span><span style=\"color: darkgreen\">9132AG</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.country\" title=\"A country (code) for the address.\">country</a><a name=\"Address.country\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Country (can be ISO 3166 3 letter code)<br/><span style=\"font-weight:bold\">Example Example country: </span><span style=\"color: darkgreen\">NLD</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck012.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.country.extension\">Slices for extension</a><a name=\"Address.country.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck005.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.country.extension:countryCode\" title=\"Extension URL = http://nictiz.nl/fhir/StructureDefinition/code-specification\">countryCode</a><a name=\"Address.country.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">CountryGBACode | CountryISOCode<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-code-specification.html\">http://nictiz.nl/fhir/StructureDefinition/code-specification</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0045.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"Address.country.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">CountryGBACode | CountryISOCode</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00443.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-nl-core-address-definitions.html#Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept.coding\">Slices for coding</a><a name=\"Address.country.extension.valueCodeableConcept.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:$this</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck004435.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept.coding:countryGBACodelist\" title=\"Slice countryGBACodelist\">coding:countryGBACodelist</a><a name=\"Address.country.extension.valueCodeableConcept.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000.html\">LandGBACodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): LandGBACodelijst<br/><br/><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0044340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/STU3/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">urn:oid:2.16.840.1.113883.2.4.4.16.34</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck004425.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-address-definitions.html#Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept.coding:countryISOCodelist\" title=\"Slice countryISOCodelist\">coding:countryISOCodelist</a><a name=\"Address.country.extension.valueCodeableConcept.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000.html\">LandISOCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): LandISOCodelijst<br/><br/><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0044240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/STU3/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">urn:iso:std:iso:3166</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address",
+  "version" : "1.3.15",
+  "name" : "nl-core-address",
+  "title" : "nl-core-address",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Base StructureDefinition for Address Type with additions for Dutch realm addresses. Dutch addresses break down Address.line in several parts and it is important to mark an address as being 'officially registered'.",
+  "purpose" : "Address information is used for visiting a person or organization and for addressing of mail.",
+  "copyright" : "CC0",
+  "fhirVersion" : "3.0.2",
+  "mapping" : [{
+    "identity" : "hcim-address-v2.0.1-2015EN",
+    "uri" : "https://zibs.nl/wiki/Patient-v2.0.1(2015EN)",
+    "name" : "AddressInformation as part of HCIM Patient-v2.0.1(2015EN)",
+    "comment" : "AddressInformation has become an independent information model as of release 2017 of the HCIMs"
+  },
+  {
+    "identity" : "hcim-addressinformation-v3.0-2016EN",
+    "uri" : "https://zibs.nl/wiki/Patient-v3.0(2016EN)",
+    "name" : "AddressInformation as part of HCIM Patient-v3.0(2016EN)",
+    "comment" : "AddressInformation has become an independent information model as of release 2017 of the HCIMs"
+  },
+  {
+    "identity" : "hcim-addressinformation-v1.0-2017EN",
+    "uri" : "https://zibs.nl/wiki/AddressInformation-v1.0(2017EN)",
+    "name" : "HCIM AddressInformation-v1.0.1(2017EN)"
+  },
+  {
+    "identity" : "BRP",
+    "uri" : "https://nl.wikipedia.org/wiki/Basisregistratie_Personen",
+    "name" : "Basisregistratie Personen",
+    "comment" : "Voorheen GBA - Gemeentelijke basisregistratie"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "vcard",
+    "uri" : "http://w3.org/vcard",
+    "name" : "vCard Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "type" : "Address",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Address",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "element" : [{
+      "id" : "Address",
+      "path" : "Address",
+      "short" : "Address information",
+      "definition" : "There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world and adds all relevant components to express Dutch addresses.\r\n\r\nA Dutch Address is a proper FHIR Address. Systems that do not understand any of the extensions, will be able to render and work with a Dutch address. Dutch addresses make certain address parts separately communicable. These parts are required for use in true Dutch systems when dealing with Dutch addresses, but may not have value for international systems when information gets sent abroad.\r\n\r\nTo have true compatibility an implementer SHOULD use the core Address parts as intended. To have addresses work for Dutch context, the implementer SHOULD in addition use the extension elements.\r\n\r\nThe HCIM defines certain address types in the AdresSoortCodelijst. These do not all have a one to one mapping in the FHIR Address datatype. The following explains how to deal with that. In addition, there are the ConceptMaps http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse and http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType to define this relationship\r\n\r\nHCIM Postal Address maps to Address.type 'postal'; \r\n\r\nHCIM Primary Home Address maps to Address.extension:official 'true' + Address.use 'home' + Address.use.extension 'HP'; \r\n\r\nHCIM Visit Address (Woon-/verblijfadres) maps to Address.use 'home' + Address.type 'physical' + Address.use.extension 'PHYS'; \r\n\r\nHCIM Temporary Address maps to Address.use 'temp'; \r\n\r\nHCIM Work Place Address maps to Address.use 'work';  \r\n\r\nHCIM Vacation Home Address maps to Address.use 'temp' + Address.use.extension 'HV'.\r\n\r\nIf Address.type is \"both\" then this is to be understood as a dual purpose address (postal and physical). Systems that support importing it like this are encouraged to do so, otherwise they may need to import this as two separate addresses.",
+      "comment" : "Note: address is for postal addresses, not physical locations.",
+      "alias" : ["AdresInformatie"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Address",
+        "min" : 0,
+        "max" : "*"
+      },
+      "example" : [{
+        "label" : "Example of a vacation home address",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+            "valueBoolean" : false
+          }],
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-AD-use",
+              "valueCode" : "HV"
+            }]
+          },
+          "line" : ["Binnenkant 12A Hoog"],
+          "city" : "Amsterdam",
+          "state" : "NH",
+          "postalCode" : "1000AA",
+          "country" : "NLD"
+        }
+      },
+      {
+        "label" : "Example of a primary home address",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+            "valueBoolean" : true
+          }],
+          "use" : "home",
+          "line" : ["Binnenkant to 10"],
+          "city" : "Amsterdam",
+          "state" : "NH",
+          "postalCode" : "1001AA",
+          "country" : "NLD"
+        }
+      }],
+      "condition" : ["ele-1",
+      "nl-streetname-if-official-and-other-line-parts"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "nl-streetname-if-official-and-other-line-parts",
+        "requirements" : "This constraint checks conformance against the Dutch BRP constraints on address parts. However: when you only send postalCode + houseNumber which is enough for certain cases this may still be a valid address",
+        "severity" : "error",
+        "human" : "Address.streetName in an official address SHALL have a value if one of houseNumber|buildingNumberSuffix|additionalLocator has a value",
+        "expression" : "(extension.where(url = 'http://fhir.nl/fhir/StructureDefinition/nl-core-address-official').where(value = true)).empty() or (line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty().not() and (line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty().not()))",
+        "xpath" : "not(.[f:extension[@url='http://fhir.nl/fhir/StructureDefinition/nl-core-address-official'][f:valueBoolean/@value='true']][f:line[empty(f:extension[@url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'])][f:extension[@url=('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator')]]])"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "v2",
+        "map" : "XAD"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD"
+      },
+      {
+        "identity" : "servd",
+        "map" : "Address"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.4",
+        "comment" : "AddressInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.4",
+        "comment" : "AddressInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.1",
+        "comment" : "AddressInformation"
+      }]
+    },
+    {
+      "id" : "Address.id",
+      "path" : "Address.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.extension",
+      "path" : "Address.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Address.extension:official",
+      "path" : "Address.extension",
+      "sliceName" : "official",
+      "short" : "Mark an address as an 'officially registered' address.",
+      "definition" : "Mark an address as an 'officially registered' address. In Dutch context that means it is registered in the Basisregistratie persoonsgegevens (BRP)",
+      "alias" : ["Markeer een adres als een 'officieel geregistreerd adres."],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.8",
+        "comment" : "AddressType"
+      }]
+    },
+    {
+      "id" : "Address.use",
+      "path" : "Address.use",
+      "short" : "home | work | temp | old - purpose of this address",
+      "definition" : "Purpose of this address",
+      "comment" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.",
+      "requirements" : "Allows an appropriate address to be chosen from a list of many.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueCode" : "home"
+      }],
+      "isModifier" : true,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AddressUse"
+        }],
+        "strength" : "required",
+        "description" : "The use of an address",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/address-use"
+        }
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.7"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./AddressPurpose"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse"
+      },
+      {
+        "identity" : "hcim-address-v3.0-2016EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.8",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse"
+      }]
+    },
+    {
+      "id" : "Address.use.id",
+      "path" : "Address.use.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Address.use.extension",
+      "path" : "Address.use.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Address.use.extension:AD_use",
+      "path" : "Address.use.extension",
+      "sliceName" : "AD_use",
+      "short" : "Further define the address use with the exact HCIM code.",
+      "definition" : "Further define the address use with the exact HCIM code. Mostly relevant to distinguish between different types of temporary addresses. TMP and WP are not included in the valueset address-use but can be included through this extension",
+      "comment" : "Known issue (MM-1090): this HL7 FHIR core extension is incorrectly placed on Address.use. Instead it should be used on the root of the Address datatype. The next breaking release will fix this issue. More information can be found here: https://bits.nictiz.nl/browse/MM-1090",
+      "alias" : ["Precieze definiëring van adressoort op basis van exacte zib-code"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-AD-use"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "AD.use"
+      }]
+    },
+    {
+      "id" : "Address.use.extension:AD_use.id",
+      "path" : "Address.use.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.use.extension:AD_use.extension",
+      "path" : "Address.use.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.use.extension:AD_use.url",
+      "path" : "Address.use.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-AD-use",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.use.extension:AD_use.valueCode:valueCode",
+      "path" : "Address.use.extension.valueCode",
+      "sliceName" : "valueCode",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "PostalAddressUse"
+        }],
+        "strength" : "required",
+        "description" : "Uses of an address not included in Address.use",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/postal-address-use"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.use.value",
+      "path" : "Address.use.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for code",
+      "definition" : "Primitive value for code",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "string.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-regex",
+          "valueString" : "[^\\s]+([\\s]?[^\\s]+)*"
+        }],
+        "_code" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type",
+            "valueString" : "string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type",
+            "valueString" : "xsd:token"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type",
+            "valueString" : "xsd:token"
+          }]
+        }
+      }]
+    },
+    {
+      "id" : "Address.type",
+      "path" : "Address.type",
+      "short" : "postal | physical | both",
+      "definition" : "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.type",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueCode" : "both"
+      }],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "AddressType"
+        }],
+        "strength" : "required",
+        "description" : "The type of an address (physical / postal)",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/address-type"
+        }
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.18"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "address type parameter"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"
+      },
+      {
+        "identity" : "hcim-address-v3.0-2016EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.8",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"
+      }]
+    },
+    {
+      "id" : "Address.text",
+      "path" : "Address.text",
+      "short" : "Text representation of the address",
+      "definition" : "A full text representation of the address.",
+      "comment" : "Can provide both a text representation and parts.",
+      "requirements" : "A renderable, unencoded form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "137 Nowhere Street, Erewhon 9132"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./formatted"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "address label parameter"
+      }]
+    },
+    {
+      "id" : "Address.line",
+      "path" : "Address.line",
+      "short" : "Street name, number, direction & P.O. Box etc.",
+      "definition" : "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.",
+      "requirements" : "home | work | temp | old - purpose of this address.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Address.line",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "The order in which lines should appear in an address label",
+      "example" : [{
+        "label" : "General",
+        "valueString" : "137 Nowhere Street"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = AL]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "street"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StreetAddress (newline delimitted)"
+      }]
+    },
+    {
+      "id" : "Address.line.id",
+      "path" : "Address.line.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Address.line.extension",
+      "path" : "Address.line.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:streetName",
+      "path" : "Address.line.extension",
+      "sliceName" : "streetName",
+      "short" : "streetName",
+      "definition" : "Street name. If the address is a P.O. Box then the Dutch word \"Postbus\" shall be communicated. If the address is an answer number (mailing address where the receiver pays postage) then the Dutch word \"Antwoordnummer\" shall be communicated.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.10 Straatnaam",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "ADXP[partType=STR]"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.12",
+        "comment" : "Street"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.12",
+        "comment" : "Street"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.2",
+        "comment" : "Street"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.10",
+        "comment" : "Straatnaam"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:streetName.id",
+      "path" : "Address.line.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:streetName.extension",
+      "path" : "Address.line.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:streetName.url",
+      "path" : "Address.line.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:streetName.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:houseNumber",
+      "path" : "Address.line.extension",
+      "sliceName" : "houseNumber",
+      "short" : "houseNumber",
+      "definition" : "The element houseNumber shall contain the house number. The house number may contains non-numeric parts that further determine the address, e.g. \"23a\", but only if the source system cannot discretely communicate those. House letter shall, if possible, be communicated through the element buildingNumberSuffix. Information such as \"to\" (house boats that do not have their own house number, but are across (tegenover) a house with a house number or \"3 hoog achter\" are not part of this attribute. This type of information is conveyed elsewhere in the Address datatype.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.20 Huisnummer",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "ADXP[partType=BNR]"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.13",
+        "comment" : "HouseNumber"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.13",
+        "comment" : "HouseNumber"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.12",
+        "comment" : "HouseNumber"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.20",
+        "comment" : "Huisnummer"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:houseNumber.id",
+      "path" : "Address.line.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:houseNumber.extension",
+      "path" : "Address.line.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:houseNumber.url",
+      "path" : "Address.line.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:houseNumber.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix",
+      "path" : "Address.line.extension",
+      "sliceName" : "buildingNumbersuffix",
+      "short" : "buildingNumberSuffix",
+      "definition" : "HouseNumberLetter\r\n- A letter following the house number as assigned by the municipal authorities.\r\n\r\nHouseNumberAddition\r\n- The letters or signs needed to locate the mailbox, in addition to the house number and letter.",
+      "comment" : "Export\r\n\r\n- If a house letter as well as a house number addition is known: house letter first, followed by a space and finally the house letter suffix.\r\n- If only a house letter is known send just that. No trailing space is required.\r\n- If only a house letter suffix is known, communicate that with a leading space.\r\n\r\nImport\r\n\r\n- If the value of buildingNumberSuffix contains no space, then the whole value is considered to be the house letter\r\n- If the value of buildingNumberSuffix contains a space, then everything before the first space is considered to be the house letter, and the everything trailing the first space is considered to be the house number suffix",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.30 Huisletter\r\n11.40 Huisnummertoevoeging\r\n12.10 Locatieomschrijving",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "ADXP[partType=BNS]"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.40",
+        "comment" : "HouseNumberLetter"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.41",
+        "comment" : "HouseNumberAddition"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.40",
+        "comment" : "HouseNumberLetter"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.41",
+        "comment" : "HouseNumberAddition"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.11",
+        "comment" : "HouseNumberLetter"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.10",
+        "comment" : "HouseNumberAddition"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.30",
+        "comment" : "Huisletter"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.40",
+        "comment" : "Huisnummertoevoeging"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix.id",
+      "path" : "Address.line.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix.extension",
+      "path" : "Address.line.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix.url",
+      "path" : "Address.line.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:unitID",
+      "path" : "Address.line.extension",
+      "sliceName" : "unitID",
+      "short" : "unitID",
+      "definition" : "Extra information such as the building name, building number, entrance, route number.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "ADXP[partType=UNID]"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.28",
+        "comment" : "AdditionalInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.28",
+        "comment" : "AdditionalInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.7",
+        "comment" : "AdditionalInformation"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:unitID.id",
+      "path" : "Address.line.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:unitID.extension",
+      "path" : "Address.line.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:unitID.url",
+      "path" : "Address.line.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:unitID.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator",
+      "path" : "Address.line.extension",
+      "sliceName" : "additionalLocator",
+      "short" : "additionalLocator",
+      "definition" : "HouseNumberIndication - The indication used for addresses that do not consist of the usual street name and house number.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.50 Aanduiding bij huisnummer",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "ADXP[partType=ADL]"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.42",
+        "comment" : "HouseNumberIndication"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.42",
+        "comment" : "HouseNumberIndication"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.9",
+        "comment" : "HouseNumberIndication"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.50",
+        "comment" : "Aanduiding bij huisnummer"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator.id",
+      "path" : "Address.line.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator.extension",
+      "path" : "Address.line.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator.url",
+      "path" : "Address.line.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.line.value",
+      "path" : "Address.line.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for string",
+      "definition" : "The actual value",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "string.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "_code" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type",
+            "valueString" : "string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type",
+            "valueString" : "xsd:string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type",
+            "valueString" : "xsd:string"
+          }]
+        }
+      }],
+      "maxLength" : 1048576
+    },
+    {
+      "id" : "Address.city",
+      "path" : "Address.city",
+      "short" : "Name of city, town etc.",
+      "definition" : "The name of the city, town, village or other community or delivery center.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.70 Woonplaatsnaam",
+      "alias" : ["Municpality",
+      "Municipality",
+      "woonplaats"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.city",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "Erewhon"
+      },
+      {
+        "label" : "Example city",
+        "valueString" : "Den Haag"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = CTY]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "locality"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Jurisdiction"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.14",
+        "comment" : "Place of residence"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.14",
+        "comment" : "Place of residence"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.3",
+        "comment" : "PlaceOfResidence"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.70",
+        "comment" : "Woonplaatsnaam"
+      }]
+    },
+    {
+      "id" : "Address.district",
+      "path" : "Address.district",
+      "short" : "District name (aka county)",
+      "definition" : "The name of the administrative area (county).",
+      "comment" : "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead. In a Dutch address this element is used for the population of a \"gemeente\"",
+      "requirements" : "Basisregistratie Persoonsgegevens 09.10 Gemeente van inschrijving",
+      "alias" : ["County",
+      "Gemeente"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.district",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "Madison"
+      },
+      {
+        "label" : "Example district",
+        "valueString" : "Wateringen"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.9"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = CNT | CPA]"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.16",
+        "comment" : "Municipality"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.16",
+        "comment" : "Municipality"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.4",
+        "comment" : "Municipality"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "09.10",
+        "comment" : "Gemeente van inschrijving"
+      }]
+    },
+    {
+      "id" : "Address.state",
+      "path" : "Address.state",
+      "short" : "Sub-unit of country (abbreviations ok).",
+      "definition" : "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). For Dutch addresses this element should contain the \"provincie\" code",
+      "requirements" : "Some (Dutch) cities have the same name in multiple provinces. Dutch examples include Bergen (Noord-Holland / Limburg) and  Geesteren (Gelderland / Overijssel).",
+      "alias" : ["Province",
+      "Territory",
+      "Provincie"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.state",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "Example province",
+        "valueString" : "ZH"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.4"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = STA]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "region"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Region"
+      }]
+    },
+    {
+      "id" : "Address.postalCode",
+      "path" : "Address.postalCode",
+      "short" : "Postal code for area",
+      "definition" : "A postal code designating a region defined by the postal service.",
+      "comment" : "Dutch postal codes have pattern '\\d{4}[A-Z]{2}' so they do not have spaces. Systems can easily render postal codes with a space if necessary.",
+      "alias" : ["Zip",
+      "Postcode"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.postalCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "9132"
+      },
+      {
+        "label" : "Example postcode",
+        "valueString" : "9132AG"
+      }],
+      "condition" : ["nl-postal-code-pattern"],
+      "constraint" : [{
+        "key" : "nl-postal-code-pattern",
+        "severity" : "error",
+        "human" : "Dutch postal code pattern 'nnnnAA'",
+        "expression" : "(country in 'nl' | 'nld' | 'nederland').not() or matches('^\\\\d{4}[A-Z]{2}$')",
+        "xpath" : "not(../f:country[lower-case(@value)=('nl','nld','nederland')]) or matches(@value,'^\\d{4}[A-Z]{2}$')"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.5"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = ZIP]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "code"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./PostalIdentificationCode"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.15",
+        "comment" : "Postcode"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.15",
+        "comment" : "Postcode"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.6",
+        "comment" : "Postcode"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.60",
+        "comment" : "Postcode"
+      }]
+    },
+    {
+      "id" : "Address.country",
+      "path" : "Address.country",
+      "short" : "Country (can be ISO 3166 3 letter code)",
+      "definition" : "A country (code) for the address.",
+      "comment" : "The FHIR datatype does not properly support coding the country using a CodeableConcept or Coding datatype. If the sender supports coded countries, it SHALL send the coded value using the code-specification extension under Address.country.",
+      "alias" : ["land"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.country",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "Example country",
+        "valueString" : "NLD"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.6"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = CNT]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "country"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Country"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.17",
+        "comment" : "Country"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.17",
+        "comment" : "Country"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.5",
+        "comment" : "Country"
+      }]
+    },
+    {
+      "id" : "Address.country.id",
+      "path" : "Address.country.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Address.country.extension",
+      "path" : "Address.country.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode",
+      "path" : "Address.country.extension",
+      "sliceName" : "countryCode",
+      "short" : "CountryGBACode | CountryISOCode",
+      "definition" : "Defines a more specific coded value for a code or string. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set.",
+      "alias" : ["Bevat de specifieke code conform de zib, bij een FHIR-element die een verplichte koppeling heeft met een bepaalde FHIR waardelijst of een FHIR element die niet gecodeerd is gedefinieerd, terwijl de zib dit wel doet."],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.id",
+      "path" : "Address.country.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.extension",
+      "path" : "Address.country.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.url",
+      "path" : "Address.country.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]",
+      "path" : "Address.country.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept",
+      "path" : "Address.country.extension.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "CountryGBACode | CountryISOCode",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "alias" : ["LandGBACodelijst",
+      "LandISOCodelijst"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept.id",
+      "path" : "Address.country.extension.value[x].id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept.extension",
+      "path" : "Address.country.extension.value[x].extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept.coding",
+      "path" : "Address.country.extension.value[x].coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Code defined by a terminology system",
+      "definition" : "A reference to a code defined by a terminology system.",
+      "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
+      "requirements" : "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "CodeableConcept.coding",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "C*E.1-8, C*E.10-22"
+      },
+      {
+        "identity" : "rim",
+        "map" : "union(., ./translation)"
+      },
+      {
+        "identity" : "orim",
+        "map" : "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept.coding:countryGBACodelist",
+      "path" : "Address.country.extension.value[x].coding",
+      "sliceName" : "countryGBACodelist",
+      "short" : "Code defined by a terminology system",
+      "definition" : "A reference to a code defined by a terminology system.",
+      "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
+      "requirements" : "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CodeableConcept.coding",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "patternCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.2.4.4.16.34"
+      },
+      "isSummary" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "LandGBACodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "C*E.1-8, C*E.10-22"
+      },
+      {
+        "identity" : "rim",
+        "map" : "union(., ./translation)"
+      },
+      {
+        "identity" : "orim",
+        "map" : "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept.coding:countryISOCodelist",
+      "path" : "Address.country.extension.value[x].coding",
+      "sliceName" : "countryISOCodelist",
+      "short" : "Code defined by a terminology system",
+      "definition" : "A reference to a code defined by a terminology system.",
+      "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
+      "requirements" : "Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "CodeableConcept.coding",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:3166"
+      },
+      "isSummary" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "LandISOCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "C*E.1-8, C*E.10-22"
+      },
+      {
+        "identity" : "rim",
+        "map" : "union(., ./translation)"
+      },
+      {
+        "identity" : "orim",
+        "map" : "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.value[x]:valueCodeableConcept.text",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      }],
+      "path" : "Address.country.extension.value[x].text",
+      "short" : "Plain text representation of the concept",
+      "definition" : "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
+      "comment" : "Very often the text is the same as a displayName of one of the codings.",
+      "requirements" : "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "CodeableConcept.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "C*E.9. But note many systems use C*E.2 for this"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./originalText[mediaType/code=\"text/plain\"]/data"
+      },
+      {
+        "identity" : "orim",
+        "map" : "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"
+      }]
+    },
+    {
+      "id" : "Address.country.value",
+      "path" : "Address.country.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for string",
+      "definition" : "The actual value",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "string.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "_code" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type",
+            "valueString" : "string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type",
+            "valueString" : "xsd:string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type",
+            "valueString" : "xsd:string"
+          }]
+        }
+      }],
+      "maxLength" : 1048576
+    },
+    {
+      "id" : "Address.period",
+      "path" : "Address.period",
+      "short" : "Time period when address was/is in use",
+      "definition" : "Time period when address was/is in use.",
+      "requirements" : "Allows addresses to be placed in historical context.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Address.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valuePeriod" : {
+          "start" : "2010-03-23",
+          "end" : "2010-07-01"
+        }
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.12 / XAD.13 + XAD.14"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./usablePeriod[type=\"IVL<TS>\"]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "Address",
+      "path" : "Address",
+      "short" : "Address information",
+      "definition" : "There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world and adds all relevant components to express Dutch addresses.\r\n\r\nA Dutch Address is a proper FHIR Address. Systems that do not understand any of the extensions, will be able to render and work with a Dutch address. Dutch addresses make certain address parts separately communicable. These parts are required for use in true Dutch systems when dealing with Dutch addresses, but may not have value for international systems when information gets sent abroad.\r\n\r\nTo have true compatibility an implementer SHOULD use the core Address parts as intended. To have addresses work for Dutch context, the implementer SHOULD in addition use the extension elements.\r\n\r\nThe HCIM defines certain address types in the AdresSoortCodelijst. These do not all have a one to one mapping in the FHIR Address datatype. The following explains how to deal with that. In addition, there are the ConceptMaps http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse and http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType to define this relationship\r\n\r\nHCIM Postal Address maps to Address.type 'postal'; \r\n\r\nHCIM Primary Home Address maps to Address.extension:official 'true' + Address.use 'home' + Address.use.extension 'HP'; \r\n\r\nHCIM Visit Address (Woon-/verblijfadres) maps to Address.use 'home' + Address.type 'physical' + Address.use.extension 'PHYS'; \r\n\r\nHCIM Temporary Address maps to Address.use 'temp'; \r\n\r\nHCIM Work Place Address maps to Address.use 'work';  \r\n\r\nHCIM Vacation Home Address maps to Address.use 'temp' + Address.use.extension 'HV'.\r\n\r\nIf Address.type is \"both\" then this is to be understood as a dual purpose address (postal and physical). Systems that support importing it like this are encouraged to do so, otherwise they may need to import this as two separate addresses.",
+      "alias" : ["AdresInformatie"],
+      "example" : [{
+        "label" : "Example of a vacation home address",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+            "valueBoolean" : false
+          }],
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-AD-use",
+              "valueCode" : "HV"
+            }]
+          },
+          "line" : ["Binnenkant 12A Hoog"],
+          "city" : "Amsterdam",
+          "state" : "NH",
+          "postalCode" : "1000AA",
+          "country" : "NLD"
+        }
+      },
+      {
+        "label" : "Example of a primary home address",
+        "valueAddress" : {
+          "extension" : [{
+            "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+            "valueBoolean" : true
+          }],
+          "use" : "home",
+          "line" : ["Binnenkant to 10"],
+          "city" : "Amsterdam",
+          "state" : "NH",
+          "postalCode" : "1001AA",
+          "country" : "NLD"
+        }
+      }],
+      "condition" : ["nl-streetname-if-official-and-other-line-parts"],
+      "constraint" : [{
+        "key" : "nl-streetname-if-official-and-other-line-parts",
+        "requirements" : "This constraint checks conformance against the Dutch BRP constraints on address parts. However: when you only send postalCode + houseNumber which is enough for certain cases this may still be a valid address",
+        "severity" : "error",
+        "human" : "Address.streetName in an official address SHALL have a value if one of houseNumber|buildingNumberSuffix|additionalLocator has a value",
+        "expression" : "(extension.where(url = 'http://fhir.nl/fhir/StructureDefinition/nl-core-address-official').where(value = true)).empty() or (line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty().not() and (line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty().not()))",
+        "xpath" : "not(.[f:extension[@url='http://fhir.nl/fhir/StructureDefinition/nl-core-address-official'][f:valueBoolean/@value='true']][f:line[empty(f:extension[@url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'])][f:extension[@url=('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator')]]])"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.4",
+        "comment" : "AddressInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.4",
+        "comment" : "AddressInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.1",
+        "comment" : "AddressInformation"
+      }]
+    },
+    {
+      "id" : "Address.extension",
+      "path" : "Address.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Address.extension:official",
+      "path" : "Address.extension",
+      "sliceName" : "official",
+      "short" : "Mark an address as an 'officially registered' address.",
+      "definition" : "Mark an address as an 'officially registered' address. In Dutch context that means it is registered in the Basisregistratie persoonsgegevens (BRP)",
+      "alias" : ["Markeer een adres als een 'officieel geregistreerd adres."],
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.8",
+        "comment" : "AddressType"
+      }]
+    },
+    {
+      "id" : "Address.use",
+      "path" : "Address.use",
+      "definition" : "Purpose of this address",
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse"
+      },
+      {
+        "identity" : "hcim-address-v3.0-2016EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.8",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse"
+      }]
+    },
+    {
+      "id" : "Address.use.extension",
+      "path" : "Address.use.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Address.use.extension:AD_use",
+      "path" : "Address.use.extension",
+      "sliceName" : "AD_use",
+      "short" : "Further define the address use with the exact HCIM code.",
+      "definition" : "Further define the address use with the exact HCIM code. Mostly relevant to distinguish between different types of temporary addresses. TMP and WP are not included in the valueset address-use but can be included through this extension",
+      "comment" : "Known issue (MM-1090): this HL7 FHIR core extension is incorrectly placed on Address.use. Instead it should be used on the root of the Address datatype. The next breaking release will fix this issue. More information can be found here: https://bits.nictiz.nl/browse/MM-1090",
+      "alias" : ["Precieze definiëring van adressoort op basis van exacte zib-code"],
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-AD-use"
+      }]
+    },
+    {
+      "id" : "Address.use.extension:AD_use.valueCode:valueCode",
+      "path" : "Address.use.extension.valueCode",
+      "sliceName" : "valueCode"
+    },
+    {
+      "id" : "Address.type",
+      "path" : "Address.type",
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"
+      },
+      {
+        "identity" : "hcim-address-v3.0-2016EN",
+        "map" : "NL-CM:0.1.11",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.8",
+        "comment" : "AddressType. See for details the ConceptMap http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"
+      }]
+    },
+    {
+      "id" : "Address.line.extension",
+      "path" : "Address.line.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Address.line.extension:streetName",
+      "path" : "Address.line.extension",
+      "sliceName" : "streetName",
+      "definition" : "Street name. If the address is a P.O. Box then the Dutch word \"Postbus\" shall be communicated. If the address is an answer number (mailing address where the receiver pays postage) then the Dutch word \"Antwoordnummer\" shall be communicated.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.10 Straatnaam",
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.12",
+        "comment" : "Street"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.12",
+        "comment" : "Street"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.2",
+        "comment" : "Street"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.10",
+        "comment" : "Straatnaam"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:streetName.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString"
+    },
+    {
+      "id" : "Address.line.extension:houseNumber",
+      "path" : "Address.line.extension",
+      "sliceName" : "houseNumber",
+      "definition" : "The element houseNumber shall contain the house number. The house number may contains non-numeric parts that further determine the address, e.g. \"23a\", but only if the source system cannot discretely communicate those. House letter shall, if possible, be communicated through the element buildingNumberSuffix. Information such as \"to\" (house boats that do not have their own house number, but are across (tegenover) a house with a house number or \"3 hoog achter\" are not part of this attribute. This type of information is conveyed elsewhere in the Address datatype.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.20 Huisnummer",
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.13",
+        "comment" : "HouseNumber"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.13",
+        "comment" : "HouseNumber"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.12",
+        "comment" : "HouseNumber"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.20",
+        "comment" : "Huisnummer"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:houseNumber.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString"
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix",
+      "path" : "Address.line.extension",
+      "sliceName" : "buildingNumbersuffix",
+      "definition" : "HouseNumberLetter\r\n- A letter following the house number as assigned by the municipal authorities.\r\n\r\nHouseNumberAddition\r\n- The letters or signs needed to locate the mailbox, in addition to the house number and letter.",
+      "comment" : "Export\r\n\r\n- If a house letter as well as a house number addition is known: house letter first, followed by a space and finally the house letter suffix.\r\n- If only a house letter is known send just that. No trailing space is required.\r\n- If only a house letter suffix is known, communicate that with a leading space.\r\n\r\nImport\r\n\r\n- If the value of buildingNumberSuffix contains no space, then the whole value is considered to be the house letter\r\n- If the value of buildingNumberSuffix contains a space, then everything before the first space is considered to be the house letter, and the everything trailing the first space is considered to be the house number suffix",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.30 Huisletter\r\n11.40 Huisnummertoevoeging\r\n12.10 Locatieomschrijving",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.40",
+        "comment" : "HouseNumberLetter"
+      },
+      {
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.41",
+        "comment" : "HouseNumberAddition"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.40",
+        "comment" : "HouseNumberLetter"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.41",
+        "comment" : "HouseNumberAddition"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.11",
+        "comment" : "HouseNumberLetter"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.10",
+        "comment" : "HouseNumberAddition"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.30",
+        "comment" : "Huisletter"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.40",
+        "comment" : "Huisnummertoevoeging"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:buildingNumbersuffix.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString"
+    },
+    {
+      "id" : "Address.line.extension:unitID",
+      "path" : "Address.line.extension",
+      "sliceName" : "unitID",
+      "definition" : "Extra information such as the building name, building number, entrance, route number.",
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.28",
+        "comment" : "AdditionalInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.28",
+        "comment" : "AdditionalInformation"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.7",
+        "comment" : "AdditionalInformation"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:unitID.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString"
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator",
+      "path" : "Address.line.extension",
+      "sliceName" : "additionalLocator",
+      "definition" : "HouseNumberIndication - The indication used for addresses that do not consist of the usual street name and house number.",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.50 Aanduiding bij huisnummer",
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.42",
+        "comment" : "HouseNumberIndication"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.42",
+        "comment" : "HouseNumberIndication"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.9",
+        "comment" : "HouseNumberIndication"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.50",
+        "comment" : "Aanduiding bij huisnummer"
+      }]
+    },
+    {
+      "id" : "Address.line.extension:additionalLocator.valueString:valueString",
+      "path" : "Address.line.extension.valueString",
+      "sliceName" : "valueString"
+    },
+    {
+      "id" : "Address.city",
+      "path" : "Address.city",
+      "requirements" : "Basisregistratie Persoonsgegevens 11.70 Woonplaatsnaam",
+      "alias" : ["Municipality",
+      "woonplaats"],
+      "example" : [{
+        "label" : "Example city",
+        "valueString" : "Den Haag"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.14",
+        "comment" : "Place of residence"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.14",
+        "comment" : "Place of residence"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.3",
+        "comment" : "PlaceOfResidence"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.70",
+        "comment" : "Woonplaatsnaam"
+      }]
+    },
+    {
+      "id" : "Address.district",
+      "path" : "Address.district",
+      "comment" : "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead. In a Dutch address this element is used for the population of a \"gemeente\"",
+      "requirements" : "Basisregistratie Persoonsgegevens 09.10 Gemeente van inschrijving",
+      "alias" : ["Gemeente"],
+      "example" : [{
+        "label" : "Example district",
+        "valueString" : "Wateringen"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.16",
+        "comment" : "Municipality"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.16",
+        "comment" : "Municipality"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.4",
+        "comment" : "Municipality"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "09.10",
+        "comment" : "Gemeente van inschrijving"
+      }]
+    },
+    {
+      "id" : "Address.state",
+      "path" : "Address.state",
+      "short" : "Sub-unit of country (abbreviations ok).",
+      "definition" : "Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). For Dutch addresses this element should contain the \"provincie\" code",
+      "requirements" : "Some (Dutch) cities have the same name in multiple provinces. Dutch examples include Bergen (Noord-Holland / Limburg) and  Geesteren (Gelderland / Overijssel).",
+      "alias" : ["Provincie"],
+      "example" : [{
+        "label" : "Example province",
+        "valueString" : "ZH"
+      }]
+    },
+    {
+      "id" : "Address.postalCode",
+      "path" : "Address.postalCode",
+      "comment" : "Dutch postal codes have pattern '\\d{4}[A-Z]{2}' so they do not have spaces. Systems can easily render postal codes with a space if necessary.",
+      "alias" : ["Postcode"],
+      "example" : [{
+        "label" : "Example postcode",
+        "valueString" : "9132AG"
+      }],
+      "condition" : ["nl-postal-code-pattern"],
+      "constraint" : [{
+        "key" : "nl-postal-code-pattern",
+        "severity" : "error",
+        "human" : "Dutch postal code pattern 'nnnnAA'",
+        "expression" : "(country in 'nl' | 'nld' | 'nederland').not() or matches('^\\\\d{4}[A-Z]{2}$')",
+        "xpath" : "not(../f:country[lower-case(@value)=('nl','nld','nederland')]) or matches(@value,'^\\d{4}[A-Z]{2}$')"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.15",
+        "comment" : "Postcode"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.15",
+        "comment" : "Postcode"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.6",
+        "comment" : "Postcode"
+      },
+      {
+        "identity" : "BRP",
+        "map" : "11.60",
+        "comment" : "Postcode"
+      }]
+    },
+    {
+      "id" : "Address.country",
+      "path" : "Address.country",
+      "short" : "Country (can be ISO 3166 3 letter code)",
+      "definition" : "A country (code) for the address.",
+      "comment" : "The FHIR datatype does not properly support coding the country using a CodeableConcept or Coding datatype. If the sender supports coded countries, it SHALL send the coded value using the code-specification extension under Address.country.",
+      "alias" : ["land"],
+      "example" : [{
+        "label" : "Example country",
+        "valueString" : "NLD"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-address-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.17",
+        "comment" : "Country"
+      },
+      {
+        "identity" : "hcim-addressinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.17",
+        "comment" : "Country"
+      },
+      {
+        "identity" : "hcim-addressinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.5.5",
+        "comment" : "Country"
+      }]
+    },
+    {
+      "id" : "Address.country.extension",
+      "path" : "Address.country.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Address.country.extension:countryCode",
+      "path" : "Address.country.extension",
+      "sliceName" : "countryCode",
+      "short" : "CountryGBACode | CountryISOCode",
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept",
+      "path" : "Address.country.extension.valueCodeableConcept",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "CountryGBACode | CountryISOCode",
+      "alias" : ["LandGBACodelijst",
+      "LandISOCodelijst"]
+    },
+    {
+      "id" : "Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept.coding",
+      "path" : "Address.country.extension.valueCodeableConcept.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "min" : 1
+    },
+    {
+      "id" : "Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept.coding:countryGBACodelist",
+      "path" : "Address.country.extension.valueCodeableConcept.coding",
+      "sliceName" : "countryGBACodelist",
+      "patternCoding" : {
+        "system" : "urn:oid:2.16.840.1.113883.2.4.4.16.34"
+      },
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "LandGBACodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000"
+        }
+      }
+    },
+    {
+      "id" : "Address.country.extension:countryCode.valueCodeableConcept:valueCodeableConcept.coding:countryISOCodelist",
+      "path" : "Address.country.extension.valueCodeableConcept.coding",
+      "sliceName" : "countryISOCodelist",
+      "patternCoding" : {
+        "system" : "urn:iso:std:iso:3166"
+      },
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "LandISOCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000"
+        }
+      }
+    }]
+  }
+}

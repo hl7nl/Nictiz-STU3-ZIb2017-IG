@@ -1,0 +1,126 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html\"><code>http://hl7.org/fhir/v3/AddressUse</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td><td><b><a href=\"http://hl7.org/fhir/STU3/valueset-address-type.html\">AdresSoortCodelijst-to-AddressType</a></b></td><td><b><a href=\"http://hl7.org/fhir/STU3/valueset-address-use.html\">AdresSoortCodelijst-to-AddressUse</a></b></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html#v3-AddressUse-PST\">PST</a></td><td>Postal Addres</td><td>Description: Used to send mail.</td><td>Postadres</td><td>Postadres</td><td><span title=\"EQUIVALENT\">~</span>postal</td><td/></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html#v3-AddressUse-HP\">HP</a></td><td>Primary Home</td><td>Description: The primary home, to reach a person after business hours.</td><td>Officieel adres</td><td>Officieel adres</td><td><span title=\"RELATEDTO\">?</span>physical<i>(HP: Primary home/officieel adres. physical: A physical address that can be visited. Use in conjunction with Address.use = home, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HP and Address.extension http://fhir.nl/fhir/StructureDefinition/nl-core-address-official = true to mark as primary)</i></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>home<i>(HP: Primary home/officieel adres. home: Home address. Use in conjunction with Address.type = physical (optional), Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HP and Address.extension http://fhir.nl/fhir/StructureDefinition/nl-core-address-official = true to mark as primary)</i></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html#v3-AddressUse-PHYS\">PHYS</a></td><td>Visit Address</td><td>Description: Used primarily to visit an address.</td><td>Woon-/verblijfadres</td><td>Woon-/verblijfadres</td><td><span title=\"EQUIVALENT\">~</span>physical<i>(PHYS: Visit Address/Woon-/verblijfadres. physical: A physical address that can be visited. Use in conjunction with Address.use = home, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = PHYS)</i></td><td><span title=\"EQUIVALENT\">~</span>home<i>(PHYS: Visit Address/Woon-/verblijfadres. home: A communication address at a home. Use in conjunction with Address.type = physical, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = PHYS)</i></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html#v3-AddressUse-TMP\">TMP</a></td><td>Tempory Address</td><td>Description: A temporary address, may be good for visit or mailing. Note that an address history can provide more detailed information.</td><td>Tijdelijk adres</td><td>Tijdelijk adres</td><td/><td><span title=\"EQUIVALENT\">~</span>temp</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html#v3-AddressUse-WP\">WP</a></td><td>Work Place</td><td>Description: An office address. First choice for business related contacts during business hours.</td><td>Werkadres</td><td>Werkadres</td><td/><td><span title=\"EQUIVALENT\">~</span>work</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html#v3-AddressUse-HV\">HV</a></td><td>Vacation Home</td><td>Description: A vacation home, to reach a person while on vacation.</td><td>Vakantie adres</td><td>Vakantie adres</td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>physical<i>(HV: Vacation Home. physical: A physical address that can be visited. Use in conjunction with Address.use = temp, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HV)</i></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>temp<i>(HV: Vacation Home. temp: Any temporary address. Use in conjunction with Address.type = physical (optional), Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HV)</i></td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3"
+  }],
+  "version" : "1.3.15",
+  "name" : "AdresSoortCodelijst",
+  "title" : "AdresSoortCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "AdresSoortCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/v3/AddressUse",
+      "concept" : [{
+        "code" : "PST",
+        "display" : "Postal Addres",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Postadres"
+        }]
+      },
+      {
+        "code" : "HP",
+        "display" : "Primary Home",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Officieel adres"
+        }]
+      },
+      {
+        "code" : "PHYS",
+        "display" : "Visit Address",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Woon-/verblijfadres"
+        }]
+      },
+      {
+        "code" : "TMP",
+        "display" : "Tempory Address",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Tijdelijk adres"
+        }]
+      },
+      {
+        "code" : "WP",
+        "display" : "Work Place",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Werkadres"
+        }]
+      },
+      {
+        "code" : "HV",
+        "display" : "Vacation Home",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Vakantie adres"
+        }]
+      }]
+    }]
+  }
+}

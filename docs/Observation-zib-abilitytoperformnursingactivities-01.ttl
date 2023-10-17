@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-abilitytoperformnursingactivities-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-abilitytoperformnursingactivities-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToPerformNursingActivities"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-abilitytoperformnursingactivities-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-abilitytoperformnursingactivities-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-AbilityToPerformNursingActivities.html\">HCIM AbilityToPerformNursingActivities</a></p></div><p><b>Reference to zib-NursingIntervention</b>: <a href=\"Procedure-zib-abilitytoperformnursinginterventions-intervention-01.html\">Procedure/zib-abilitytoperformnursinginterventions-intervention-01: Katheteriseren</a></p><p><b>Backported Observation.focus for FHIR STU3</b>: <a href=\"RelatedPerson-zib-abilitytoperformnursingactivities-mother-01.html\">RelatedPerson/zib-abilitytoperformnursingactivities-mother-01: Moeder</a></p><p><b>status</b>: final</p><p><b>code</b>: Ability to manage personal health care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#303074009)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2018-06-01</p><p><b>value</b>: Met hulp <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#27931000146101)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/observation-zibNursingInterventionReference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Procedure/zib-abilitytoperformnursinginterventions-intervention-01> ;
+       fhir:reference [ fhir:v "Procedure/zib-abilitytoperformnursinginterventions-intervention-01" ] ;
+       fhir:display [ fhir:v "Katheteriseren" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/RelatedPerson/zib-abilitytoperformnursingactivities-mother-01> ;
+       fhir:reference [ fhir:v "RelatedPerson/zib-abilitytoperformnursingactivities-mother-01" ] ;
+       fhir:display [ fhir:v "Moeder" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:303074009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "303074009" ] ;
+       fhir:display [ fhir:v "Ability to manage personal health care" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2018-06-01"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:27931000146101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "27931000146101" ] ;
+       fhir:display [ fhir:v "Met hulp" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

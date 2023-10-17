@@ -1,0 +1,73 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "zib-procedure-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Surgical procedure (387713003 - SNOMED CT)\">Surgical\n                    procedure</span>, Status: voltooid<div>Uitvoerende: <a href=\"Organization/nl-core-organization-02\">UMCG - Afdeling\n                            Orthopedie</a>\n                        <div>Zorgverlenerrol: <a href=\"PractitionerRole/nl-core-practitionerrole-01\">Medisch specialisten, orthopedie</a>\n                        </div>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Implantation of Swanson prosthesis of knee (procedure) (60159002 - SNOMED CT)\">Implantation of Swanson prosthesis of knee (procedure)</span>\n                        </td>\n                        <td>\n                            <div>Uitgevoerd: Vanaf 2012-06-05</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Deel van lichaam</th>\n                        <td>\n                            <span title=\"Knee region structure (body structure) (72696002 - SNOMED CT)\">Knee region structure (body structure)</span>\n                            <span title=\"Left (7771000 - SNOMED CT)\">Left</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-02\">Arthropathy (disorder)</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>apparaat</th>\n                        <td>\n                            <a href=\"Device/zib-medicaldeviceproduct-01\">Knee joint prosthesis,\n                                device (physical object)</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "387713003",
+      "display" : "Surgical procedure"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "60159002",
+      "display" : "Implantation of Swanson prosthesis of knee (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "performedPeriod" : {
+    "start" : "2012-06-05"
+  },
+  "performer" : [{
+    "actor" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+        "valueReference" : {
+          "reference" : "PractitionerRole/nl-core-practitionerrole-01",
+          "display" : "Medisch specialisten, orthopedie"
+        }
+      }],
+      "reference" : "Organization/nl-core-organization-02",
+      "display" : "UMCG - Afdeling Orthopedie"
+    }
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/zib-problem-02",
+    "display" : "Arthropathy (disorder)"
+  }],
+  "bodySite" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "72696002",
+      "display" : "Knee region structure (body structure)"
+    }]
+  }],
+  "focalDevice" : [{
+    "manipulated" : {
+      "reference" : "Device/zib-medicaldeviceproduct-01",
+      "display" : "Knee joint prosthesis, device (physical object)"
+    }
+  }]
+}

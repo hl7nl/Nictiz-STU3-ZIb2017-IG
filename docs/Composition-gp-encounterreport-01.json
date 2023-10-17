@@ -1,0 +1,73 @@
+{
+  "resourceType" : "Composition",
+  "id" : "gp-encounterreport-01",
+  "meta" : {
+    "lastUpdated" : "2018-01-11T11:51:36.392+01:00",
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <b>Deelcontact: RELATIEPROBLEMEN OUDERS/FAMILIE</b>\n            <table>\n                <caption>Samengestelde informatie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>. Status: definitief<div>Auteur: <a href=\"Practitioner/nl-core-practitioner-01\">Huisarts H. de Vries</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>67781-5 (LOINC)</td>\n                    </tr>\n                    <tr>\n                        <th>Gemaakt</th>\n                        <td>2018-01-11T11:43:40.0004456+01:00</td>\n                    </tr>\n                    <tr>\n                        <th>Contact</th>\n                        <td>\n                            <a href=\"Encounter/zib-encounter-01\">Consult voor gebroken been met\n                                Huisarts H. de Vries</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "67781-5"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "encounter" : {
+    "reference" : "Encounter/zib-encounter-01",
+    "display" : "Consult voor gebroken been met Huisarts H. de Vries"
+  },
+  "date" : "2018-01-11T11:43:40.0004456+01:00",
+  "author" : [{
+    "reference" : "Practitioner/nl-core-practitioner-01",
+    "display" : "Huisarts H. de Vries"
+  }],
+  "title" : "Deelcontact: RELATIEPROBLEMEN OUDERS/FAMILIE",
+  "section" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "Z20",
+          "display" : "RELATIEPROBLEMEN OUDERS/FAMILIE"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+        "code" : "E",
+        "display" : "Evaluatie"
+      }]
+    },
+    "text" : {
+      "status" : "additional",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">slapen gaat redelijk, regelmatig\n                angstaanvallen, is dan erg onrustig, dat geeft weer benauwdheid &quot;met hart&quot;</div>"
+    },
+    "entry" : [{
+      "reference" : "Bundle/nl-core-episodeofcare-1",
+      "display" : "Relatieproblemen ouders/familie"
+    }]
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+        "code" : "P",
+        "display" : "Plan"
+      }]
+    },
+    "text" : {
+      "status" : "additional",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">doorgaan oxazepam, allen zn.</div>"
+    }
+  }]
+}

@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-livingsituation-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-livingsituation-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: definitief</caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances\n                                (finding)</span>\n                        </td>\n                        <td>\n                            <span title=\"Eengezinswoning (EENGEZW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Eengezinswoning</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:365508006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "365508006" ] ;
+       fhir:display [ fhir:v "Finding of residence and accommodation circumstances (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EENGEZW" ] ;
+       fhir:display [ fhir:v "Eengezinswoning" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

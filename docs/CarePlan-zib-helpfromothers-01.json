@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "zib-helpfromothers-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-HelpFromOthers"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgplan. Subject: <a href=\"Patient/nl-core-patient-03\">Irma Jongeneel-de\n                        Haas</a>. Categorie: <span title=\"Supportive care (243114000 - SNOMED CT)\">Supportive care</span>, Status: <div>Intentie: plan</div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Activiteit</th>\n                        <td>\n                            <table>\n                                <tbody>\n                                    <tr>\n                                        <td colspan=\"2\">\n                                            <table>\n                                                <caption>Details<div>Categorie: <span title=\"Home care of patient (60689008 - SNOMED CT)\">Home care of patient</span>, Status:\n                                                  gepland</div>\n                                                </caption>\n                                                <tbody>\n                                                  <tr>\n                                                  <th>Code</th>\n                                                  <td>Ondersteuning bij wassen</td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Omschrijving</th>\n                                                  <td>Thuiszorg komt langs</td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Schema</th>\n                                                  <td>Dagelijks</td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Uitvoerende</th>\n                                                  <td>\n                                                  <a href=\"Organization/nl-core-organization-07\">Zorg@Home B.V. | Vestiging van Ziekenhuis Gooi en\n                                                  Overvecht</a>\n                                                  </td>\n                                                  </tr>\n                                                </tbody>\n                                            </table>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "draft",
+  "intent" : "plan",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "243114000",
+      "display" : "Supportive care"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "Irma Jongeneel-de Haas"
+  },
+  "activity" : [{
+    "detail" : {
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "60689008",
+          "display" : "Home care of patient"
+        }]
+      },
+      "code" : {
+        "text" : "Ondersteuning bij wassen"
+      },
+      "status" : "scheduled",
+      "scheduledString" : "Dagelijks",
+      "performer" : [{
+        "reference" : "Organization/nl-core-organization-07",
+        "display" : "Zorg@Home B.V. | Vestiging van Ziekenhuis Gooi en Overvecht"
+      }],
+      "description" : "Thuiszorg komt langs"
+    }
+  }]
+}

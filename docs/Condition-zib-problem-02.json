@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Condition",
+  "id" : "zib-problem-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Conditie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief / bevestigd</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Beperking bij het bewegen van het gewricht, drukpijn door\n                            slijtage van twee compartimenten van de linker knie.</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Arthropathy (disorder) (399269003 - SNOMED CT)\">Arthropathy\n                                (disorder)</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "clinicalStatus" : "active",
+  "_clinicalStatus" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "55561003",
+          "display" : "Active"
+        }]
+      }
+    }]
+  },
+  "verificationStatus" : "confirmed",
+  "_verificationStatus" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "410605003",
+          "display" : "Confimed present"
+        }]
+      }
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "399269003",
+      "display" : "Arthropathy (disorder)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "note" : [{
+    "text" : "Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie."
+  }]
+}

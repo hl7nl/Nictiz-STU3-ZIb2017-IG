@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ProcedureRequest/zib-procedurerequest-02> a fhir:ProcedureRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-procedurerequest-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichtingaanvraag. Subject: <a href=\"Patient/nl-core-patient-02\">Paul\n                        XXX_Mesker</a>. Status: actief<div>Intentie: plan</div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Röntgenfoto (168537006 - SNOMED CT)\">Röntgenfoto</span>\n                        </td>\n                        <td>\n                            <div>Wanneer: Vanaf 2012-03-13</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Beoogde uitvoerende</th>\n                        <td>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-03\">Test Medisch\n                                    Centrum</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-09\">Open fractuur van femur\n                                (aandoening)</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:168537006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "168537006" ] ;
+       fhir:display [ fhir:v "Röntgenfoto" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-02> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-02" ] ;
+     fhir:display [ fhir:v "Paul XXX_Mesker" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2012-03-13"^^xsd:date ]
+  ] ; # 
+  fhir:performer [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-03> ;
+     fhir:reference [ fhir:v "Organization/nl-core-organization-03" ] ;
+     fhir:display [ fhir:v "Test Medisch Centrum" ]
+  ] ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-09> ;
+     fhir:reference [ fhir:v "Condition/zib-problem-09" ] ;
+     fhir:display [ fhir:v "Open fractuur van femur (aandoening)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

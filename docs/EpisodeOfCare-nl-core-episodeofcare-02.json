@@ -1,0 +1,44 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "nl-core-episodeofcare-02",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgepisode. Patiënt: <a href=\"Patient/nl-core-patient-02\">Paul\n                        XXX_Mesker</a>. Status: actief</caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Verslaving (bevinding) (32709003 - SNOMED CT)\">Verslaving\n                                (bevinding)</span>\n                            <div>Drugs en alcohol revalidatie</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>Vanaf 2019-02-06</td>\n                    </tr>\n                    <tr>\n                        <th>Zorgmanager</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-04\">Dr. D. de Vries</a>, <a href=\"Organization/nl-core-organization-05\">Ziekenhuis Gooi en\n                                Overvecht</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Diagnose</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-08\">Syndroom van Korsakov</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+    "valueString" : "Drugs en alcohol revalidatie"
+  }],
+  "status" : "active",
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "32709003",
+      "display" : "Verslaving (bevinding)"
+    }]
+  }],
+  "diagnosis" : [{
+    "condition" : {
+      "reference" : "Condition/zib-problem-08",
+      "display" : "Syndroom van Korsakov"
+    }
+  }],
+  "patient" : {
+    "reference" : "Patient/nl-core-patient-02",
+    "display" : "Paul XXX_Mesker"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/nl-core-organization-05",
+    "display" : "Ziekenhuis Gooi en Overvecht"
+  },
+  "period" : {
+    "start" : "2019-02-06"
+  },
+  "careManager" : {
+    "reference" : "Practitioner/nl-core-practitioner-04",
+    "display" : "Dr. D. de Vries"
+  }
+}

@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html\"><code>http://hl7.org/fhir/v3/ActStatus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td><td><b><a href=\"ConceptMap-AllergieStatusCodelijst-to-allergy-status.html\">HCIM AllergieStatusCodelijst to allergy status</a></b></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-active\">active</a></td><td>Active</td><td>The Act can be performed or is being performed</td><td>Actief</td><td>Actief</td><td><span title=\"EQUIVALENT\">~</span>active</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-completed\">completed</a></td><td>Completed</td><td>An Act that has terminated normally after all of its constituents have been performed.</td><td>Niet meer aanwezig</td><td>Niet meer aanwezig</td><td><span title=\"EQUIVALENT\">~</span>resolved</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-obsolete\">obsolete</a></td><td>Obsolete</td><td>This Act instance has been replaced by a new instance.</td><td>Achterhaald</td><td>Achterhaald</td><td><span title=\"EQUIVALENT\">~</span>inactive</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-nullified\">nullified</a></td><td>Nullified</td><td>This Act instance was created in error and has been 'removed' and is treated as though it never existed.  A record is retained for audit purposes only.</td><td>Foutief</td><td>Foutief</td><td><span title=\"EQUIVALENT\">~</span>entered-in-error</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2017-12-31T00:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://art-decor.org/ns/oids/vs"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "AllergieStatusCodelijst"] ; # 
+  fhir:title [ fhir:v "AllergieStatusCodelijst"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Registratie aan de bron" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.registratieaandebron.nl" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://zibs.nl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "AllergieStatusCodelijst"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/v3/ActStatus"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "active" ] ;
+         fhir:display [ fhir:v "Active" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Actief" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "completed" ] ;
+         fhir:display [ fhir:v "Completed" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Niet meer aanwezig" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "obsolete" ] ;
+         fhir:display [ fhir:v "Obsolete" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Achterhaald" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "nullified" ] ;
+         fhir:display [ fhir:v "Nullified" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Foutief" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

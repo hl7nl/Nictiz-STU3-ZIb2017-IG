@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/CarePlan/zib-helpfromothers-01> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-helpfromothers-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-HelpFromOthers"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgplan. Subject: <a href=\"Patient/nl-core-patient-03\">Irma Jongeneel-de\n                        Haas</a>. Categorie: <span title=\"Supportive care (243114000 - SNOMED CT)\">Supportive care</span>, Status: <div>Intentie: plan</div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Activiteit</th>\n                        <td>\n                            <table>\n                                <tbody>\n                                    <tr>\n                                        <td colspan=\"2\">\n                                            <table>\n                                                <caption>Details<div>Categorie: <span title=\"Home care of patient (60689008 - SNOMED CT)\">Home care of patient</span>, Status:\n                                                  gepland</div>\n                                                </caption>\n                                                <tbody>\n                                                  <tr>\n                                                  <th>Code</th>\n                                                  <td>Ondersteuning bij wassen</td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Omschrijving</th>\n                                                  <td>Thuiszorg komt langs</td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Schema</th>\n                                                  <td>Dagelijks</td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Uitvoerende</th>\n                                                  <td>\n                                                  <a href=\"Organization/nl-core-organization-07\">Zorg@Home B.V. | Vestiging van Ziekenhuis Gooi en\n                                                  Overvecht</a>\n                                                  </td>\n                                                  </tr>\n                                                </tbody>\n                                            </table>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:243114000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "243114000" ] ;
+       fhir:display [ fhir:v "Supportive care" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "Irma Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:category [
+         fhir:coding ( [
+           a sct:60689008 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "60689008" ] ;
+           fhir:display [ fhir:v "Home care of patient" ]
+         ] )
+       ] ;
+       fhir:code [
+         fhir:text [ fhir:v "Ondersteuning bij wassen" ]
+       ] ;
+       fhir:status [ fhir:v "scheduled" ] ;
+       fhir:scheduled [ fhir:v "Dagelijks" ] ;
+       fhir:performer ( [
+         fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-07> ;
+         fhir:reference [ fhir:v "Organization/nl-core-organization-07" ] ;
+         fhir:display [ fhir:v "Zorg@Home B.V. | Vestiging van Ziekenhuis Gooi en Overvecht" ]
+       ] ) ;
+       fhir:description [ fhir:v "Thuiszorg komt langs" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

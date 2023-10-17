@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+  <id value="zib-stoma-medicaldevice-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DeviceUseStatement</b><a name="zib-stoma-medicaldevice-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DeviceUseStatement &quot;zib-stoma-medicaldevice-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-MedicalDevice.html">HCIM MedicalDevice</a></p></div><p><b>Backported DeviceUseStatement.reasonReference for STU3</b>: <a href="Observation-zib-stoma-01.html">Observation/zib-stoma-01</a></p><p><b>status</b>: active</p><p><b>subject</b>: <a href="Patient-nl-core-patient-03.html">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>device</b>: <a href="Device-zib-stoma-medicaldevice-product-01.html">Device/zib-stoma-medicaldevice-product-01: Colostomy bags</a></p></div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3">
+    <valueReference>
+      <reference value="Observation/zib-stoma-01"/>
+    </valueReference>
+  </extension>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/nl-core-patient-03"/>
+    <display value="I. Jongeneel-de Haas"/>
+  </subject>
+  <device>
+    <reference value="Device/zib-stoma-medicaldevice-product-01"/>
+    <display value="Colostomy bags"/>
+  </device>
+</DeviceUseStatement>

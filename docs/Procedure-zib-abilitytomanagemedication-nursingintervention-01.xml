@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="zib-abilitytomanagemedication-nursingintervention-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="zib-abilitytomanagemedication-nursingintervention-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;zib-abilitytomanagemedication-nursingintervention-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-NursingIntervention.html">HCIM NursingIntervention</a></p></div><p><b>Comment</b>: toezicht op injecteren van insuline</p><p><b>schedule</b>: Once</p><p><b>status</b>: in-progress</p><p><b>category</b>: 9632001 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#9632001)</span></p><p><b>code</b>: assisteren bij verrichting (verrichting) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#223455001)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-03.html">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p></div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/Comment">
+    <valueString value="toezicht op injecteren van insuline"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/procedure-schedule">
+    <valueTiming>
+      <repeat>
+        <timeOfDay value="08:00:00"/>
+        <timeOfDay value="18:00:00"/>
+      </repeat>
+    </valueTiming>
+  </extension>
+  <status value="in-progress"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="9632001"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="223455001"/>
+      <display value="assisteren bij verrichting (verrichting)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-03"/>
+    <display value="I. Jongeneel-de Haas"/>
+  </subject>
+</Procedure>

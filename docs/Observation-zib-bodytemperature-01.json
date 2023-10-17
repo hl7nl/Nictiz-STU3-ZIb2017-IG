@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-bodytemperature-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">I.\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>,\n                    Status: definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-01\">Practitioner H. de Vries</a>\n                    </div>\n                </caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"3\">Voeten voelen heel koud aan</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td colspan=\"2\">2013-02-08T06:43:00+02:00</td>\n                    </tr>\n                    <tr>\n                        <th>Methode</th>\n                        <td colspan=\"2\">\n                            <span title=\"Tympanic temperature (415974002 - SNOMED CT)\">Tympanic\n                                temperature</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                        <th>Interpretatie</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Body temperature (8310-5 - LOINC)\">Body temperature</span>\n                        </td>\n                        <td>38.6 Cel</td>\n                        <td>\n                            <span title=\"Heart irregular (248650006 - SNOMED CT)\">Heart\n                                irregular</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8310-5",
+      "display" : "Body temperature"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "effectiveDateTime" : "2013-02-08T06:43:00+02:00",
+  "performer" : [{
+    "reference" : "Practitioner/nl-core-practitioner-01",
+    "display" : "Practitioner H. de Vries"
+  }],
+  "valueQuantity" : {
+    "value" : 38.6,
+    "unit" : "Cel",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "Cel"
+  },
+  "interpretation" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "248650006",
+      "display" : "Heart irregular"
+    }]
+  },
+  "comment" : "Voeten voelen heel koud aan",
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "415974002",
+      "display" : "Tympanic temperature"
+    }]
+  }
+}

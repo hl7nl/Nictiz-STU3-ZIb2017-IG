@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Condition/zib-wound-01> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-wound-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Wound"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"zib-wound-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;zib-wound-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Wound.html\">HCIM Wound</a></p></div><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>code</b>: Chirurgische wond <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#112633009)</span></p><p><b>bodySite</b>: Heup <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#29836001)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-01.html\">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>onset</b>: 2019-07-14 11:00:00+0100</p><p><b>note</b>: Wond lekt steeds meer. ( @Jul 14, 2019, 12:00:00 PM)</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [ fhir:v "active"] ; # 
+  fhir:verificationStatus [ fhir:v "confirmed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:112633009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "112633009" ] ;
+       fhir:display [ fhir:v "Chirurgische wond" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:7771000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "7771000" ] ;
+           fhir:display [ fhir:v "Left" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:29836001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "29836001" ] ;
+       fhir:display [ fhir:v "Heup" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2019-07-14T11:00:00.000+01:00"^^xsd:dateTime] ; # 
+  fhir:note ( [
+     fhir:time [ fhir:v "2019-07-14T11:00:00.000+01:00"^^xsd:dateTime ] ;
+     fhir:text [ fhir:v "Wond lekt steeds meer." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

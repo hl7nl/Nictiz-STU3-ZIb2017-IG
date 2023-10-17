@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/vitalsigns-bloodglucose-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vitalsigns-bloodglucose-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/vitalsign-bloodglucose"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">I.\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, Status:\n                        definitief<div>Uitvoerende: <a href=\"Patient/nl-core-patient-03\">I.\n                            Jongeneel-de Haas</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Glucose [Moles/volume] in Capillary blood --2 hours post meal (14760-3 - LOINC)\">Glucose [Moles/volume] in Capillary blood --2 hours post\n                                meal</span>\n                        </td>\n                        <td>6.3 mmol/l</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-eventTiming"^^xsd:anyURI ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/v3/TimingEvent"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "PCD" ] ;
+           fhir:display [ fhir:v "PCD" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "min" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "min" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:49581000146104 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "49581000146104" ] ;
+       fhir:display [ fhir:v "Laboratory test finding (finding)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:14760-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14760-3" ] ;
+       fhir:display [ fhir:v "Glucose [Moles/volume] in Capillary blood --2 hours post meal" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "6.3"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mmol/l" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mmol/L" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

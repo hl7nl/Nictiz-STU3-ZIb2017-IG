@@ -1,0 +1,2380 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/StructureDefinition/zib-Payer> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-Payer"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage\">Coverage</a><a name=\"Coverage\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/coverage.html\">Coverage</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Coverage</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.type\" title=\"Type of insurance policy. Codes as returned in the Check for Right to Insurance\">type</a><a name=\"Coverage.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">InsuranceType<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000.html\">VerzekeringssoortCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): InsuranceTypeCodelist<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.policyHolder\">policyHolder</a><a name=\"Coverage.policyHolder\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-nl-core-patient.html\">nl-core-patient</a> | <a href=\"StructureDefinition-nl-core-relatedperson.html\">nl-core-relatedperson</a> | <a href=\"StructureDefinition-nl-core-organization.html\">nl-core-organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Owner of the policy</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.subscriber\">subscriber</a><a name=\"Coverage.subscriber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-nl-core-patient.html\">nl-core-patient</a> | <a href=\"StructureDefinition-nl-core-relatedperson.html\">nl-core-relatedperson</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Subscriber to the policy</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.subscriberId\" title=\"Number under which the insured person is registered at the insurance company\r\nThis item maps the ‘Identification number of the card’ on EHIC field 8\">subscriberId</a><a name=\"Coverage.subscriberId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">InsurantNumber</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.beneficiary\">beneficiary</a><a name=\"Coverage.beneficiary\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-nl-core-patient.html\">nl-core-patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Plan Beneficiary</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.period\">period</a><a name=\"Coverage.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Coverage start and end dates</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.period.start\" title=\"Date from which the insurance policy coverage applies.\">start</a><a name=\"Coverage.period.start\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">StartDateTime</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.period.end\" title=\"Date until which the insurance policy coverage applies.\r\nThis item maps the ‘Expiry date’ on EHIC field 9.\">end</a><a name=\"Coverage.period.end\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">EndDateTime</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.payor\">payor</a><a name=\"Coverage.payor\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-nl-core-organization.html\">nl-core-organization</a> | <a href=\"StructureDefinition-nl-core-patient.html\">nl-core-patient</a> | <a href=\"StructureDefinition-nl-core-relatedperson.html\">nl-core-relatedperson</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">InsuranceCompany / PayerPerson</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck012.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.payor.extension\">Slices for extension</a><a name=\"Coverage.payor.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck005.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.payor.extension:bankInformation\" title=\"Extension URL = http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation\">bankInformation</a><a name=\"Coverage.payor.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">(Complex)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">BankInformation</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-zib-Payer-BankInformation.html\">http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0054.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.payor.extension:bankInformation.extension:BankName\" title=\"Slice BankName: Name of the financial organization.\">extension:BankName</a><a name=\"Coverage.payor.extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">BankName</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0054.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.payor.extension:bankInformation.extension:AccountNumber\" title=\"Slice AccountNumber: The payer’s bank account number at the listed organization. For European countries, this is the IBAN.\">extension:AccountNumber</a><a name=\"Coverage.payor.extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">AccountNumber</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-zib-Payer-definitions.html#Coverage.payor.extension:bankInformation.extension:Bankcode\" title=\"Slice Bankcode: Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code.\">extension:Bankcode</a><a name=\"Coverage.payor.extension.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Bankcode</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "Zib Payer"] ; # 
+  fhir:title [ fhir:v "HCIM Payer"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@nictiz.nl" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Payer as defined by the Dutch Health and Care Information models (Dutch: Zorginformatiebouwsteen or ZIB)  version 3.1, release 2017."] ; # 
+  fhir:purpose [ fhir:v "Recording the information of the paying authorities and people serves to simplify payment of the fees for the supplied care and to provide insight in advance on how these fees are to be paid, especially when it comes to non-insured healthcare."] ; # 
+  fhir:copyright [ fhir:v "CC0"] ; # 
+  fhir:fhirVersion [ fhir:v "3.0.2"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Payer-v1.2(2015EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Payer-v1.2(2015EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Payer-v3.0(2016EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Payer-v3.0(2016EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Payer-v3.1(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Payer-v3.1(2017EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/BasicElements-v1.0(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM BasicElements-v1.0(2017EN)" ]
+  ] [
+     fhir:identity [ fhir:v "workflow" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/workflow"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Workflow Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "w5" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/w5"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "W5 Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "cdanetv4" ] ;
+     fhir:uri [ fhir:v "http://www.cda-adc.ca/en/services/cdanet/"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Canadian Dental Association eclaims standard" ]
+  ] [
+     fhir:identity [ fhir:v "v2" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HL7 v2 Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "cpha3pharm" ] ;
+     fhir:uri [ fhir:v "http://www.pharmacists.ca/"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Canadian Pharmacy Associaiton eclaims standard" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "resource"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "Coverage"] ; # 
+  fhir:baseDefinition [ fhir:v "http://hl7.org/fhir/StructureDefinition/Coverage"^^xsd:anyURI] ; # 
+  fhir:derivation [ fhir:v "constraint"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "Coverage" ] ;
+       fhir:path [ fhir:v "Coverage" ] ;
+       fhir:short [ fhir:v "Coverage" ] ;
+       fhir:definition [ fhir:v "Financial instrument which may be used to reimburse or pay for health care products and services." ] ;
+       fhir:alias ( [ fhir:v "Verzekering" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "dom-2" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL NOT contain nested Resources" ] ;
+         fhir:expression [ fhir:v "contained.contained.empty()" ] ;
+         fhir:xpath [ fhir:v "not(parent::f:contained and f:contained)" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "dom-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL NOT contain any narrative" ] ;
+         fhir:expression [ fhir:v "contained.text.empty()" ] ;
+         fhir:xpath [ fhir:v "not(parent::f:contained and f:text)" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "dom-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
+         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "dom-3" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource" ] ;
+         fhir:expression [ fhir:v "contained.where(('#'+id in %resource.descendants().reference).not()).empty()" ] ;
+         fhir:xpath [ fhir:v "not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Entity. Role, or Act" ]
+       ] [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Event" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Coverage" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "financial.support" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.8" ] ;
+         fhir:comment [ fhir:v "Insurance" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.8" ] ;
+         fhir:comment [ fhir:v "Insurance" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.8" ] ;
+         fhir:comment [ fhir:v "Insurance" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.1" ] ;
+         fhir:comment [ fhir:v "Payer" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.1" ] ;
+         fhir:comment [ fhir:v "Payer" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.1" ] ;
+         fhir:comment [ fhir:v "Payer" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.id" ] ;
+       fhir:path [ fhir:v "Coverage.id" ] ;
+       fhir:short [ fhir:v "Logical id of this artifact" ] ;
+       fhir:definition [ fhir:v "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." ] ;
+       fhir:comment [ fhir:v "The only time that a resource does not have an id is when it is being submitted to the server using a create operation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "Coverage.meta" ] ;
+       fhir:path [ fhir:v "Coverage.meta" ] ;
+       fhir:short [ fhir:v "Metadata about the resource" ] ;
+       fhir:definition [ fhir:v "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.meta" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "Coverage.implicitRules" ] ;
+       fhir:path [ fhir:v "Coverage.implicitRules" ] ;
+       fhir:short [ fhir:v "A set of rules under which this content was created" ] ;
+       fhir:definition [ fhir:v "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content." ] ;
+       fhir:comment [ fhir:v "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. \n\nThis element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.implicitRules" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "Coverage.language" ] ;
+       fhir:path [ fhir:v "Coverage.language" ] ;
+       fhir:short [ fhir:v "Language of the resource content" ] ;
+       fhir:definition [ fhir:v "The base language in which the resource is written." ] ;
+       fhir:comment [ fhir:v "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.language" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://hl7.org/fhir/ValueSet/all-languages> ;
+             fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/all-languages" ]
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Language" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
+         ] ) ;
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:description [ fhir:v "A human language." ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/languages> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/languages" ]
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Coverage.text" ] ;
+       fhir:path [ fhir:v "Coverage.text" ] ;
+       fhir:short [ fhir:v "Text summary of the resource, for human interpretation" ] ;
+       fhir:definition [ fhir:v "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." ] ;
+       fhir:comment [ fhir:v "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded in formation is added later." ] ;
+       fhir:alias ( [ fhir:v "narrative" ] [ fhir:v "html" ] [ fhir:v "xhtml" ] [ fhir:v "display" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "dom-1" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Act.text?" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.contained" ] ;
+       fhir:path [ fhir:v "Coverage.contained" ] ;
+       fhir:short [ fhir:v "Contained, inline Resources" ] ;
+       fhir:definition [ fhir:v "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." ] ;
+       fhir:comment [ fhir:v "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again." ] ;
+       fhir:alias ( [ fhir:v "inline resources" ] [ fhir:v "anonymous resources" ] [ fhir:v "contained resources" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.contained" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.extension" ] ;
+       fhir:path [ fhir:v "Coverage.extension" ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.modifierExtension" ] ;
+       fhir:path [ fhir:v "Coverage.modifierExtension" ] ;
+       fhir:short [ fhir:v "Extensions that cannot be ignored" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.modifierExtension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.identifier" ] ;
+       fhir:path [ fhir:v "Coverage.identifier" ] ;
+       fhir:short [ fhir:v "The primary coverage ID" ] ;
+       fhir:definition [ fhir:v "The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Certificate number, Personal Health Number or Case ID. May be constructed as the concatination of the Coverage.SubscriberID and the Coverage.dependant." ] ;
+       fhir:requirements [ fhir:v "This value may uniquely identify the coverage or it may be used in conjunction with the additional identifiers below." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.identifier" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Event.identifier" ]
+       ] [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C02" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-2" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.32, C.33, C.39" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "id" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.status" ] ;
+       fhir:path [ fhir:v "Coverage.status" ] ;
+       fhir:short [ fhir:v "active | cancelled | draft | entered-in-error" ] ;
+       fhir:definition [ fhir:v "The status of the resource instance." ] ;
+       fhir:comment [ fhir:v "This element is labeled as a modifier because the status contains the code entered-in-error that marks the coverage as not currently valid." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.status" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "CoverageStatus" ]
+         ] ) ;
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "A code specifying the state of the resource instance." ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/fm-status> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/fm-status" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Event.status" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "status" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.type" ] ;
+       fhir:path [ fhir:v "Coverage.type" ] ;
+       fhir:short [ fhir:v "InsuranceType" ] ;
+       fhir:definition [ fhir:v "Type of insurance policy. Codes as returned in the Check for Right to Insurance" ] ;
+       fhir:requirements [ fhir:v "The order of application of coverages is dependent on the types of coverage." ] ;
+       fhir:alias ( [ fhir:v "VerzekeringsSoort" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.type" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:description [ fhir:v "InsuranceTypeCodelist" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000> ;
+           fhir:reference [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-15" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "class" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.15" ] ;
+         fhir:comment [ fhir:v "InsuranceType" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.15" ] ;
+         fhir:comment [ fhir:v "InsuranceType" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.15" ] ;
+         fhir:comment [ fhir:v "InsuranceType" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.policyHolder" ] ;
+       fhir:path [ fhir:v "Coverage.policyHolder" ] ;
+       fhir:short [ fhir:v "Owner of the policy" ] ;
+       fhir:definition [ fhir:v "The party who 'owns' the insurance policy,  may be an individual, corporation or the subscriber's employer." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.policyHolder" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D01 through D09" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-16, 18,  19-name of insured, address, date of birth" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.35" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "who.focus" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.subscriber" ] ;
+       fhir:path [ fhir:v "Coverage.subscriber" ] ;
+       fhir:short [ fhir:v "Subscriber to the policy" ] ;
+       fhir:definition [ fhir:v "The party who has signed-up for or 'owns' the contractual relationship to the policy or to whom the benefit of the policy for services rendered to them or their family is due." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.subscriber" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D01 through D09" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-16, 18,  19-name of insured, address, date of birth" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.35" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "who.focus" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.subscriberId" ] ;
+       fhir:path [ fhir:v "Coverage.subscriberId" ] ;
+       fhir:short [ fhir:v "InsurantNumber" ] ;
+       fhir:definition [ fhir:v "Number under which the insured person is registered at the insurance company\r\nThis item maps the ‘Identification number of the card’ on EHIC field 8" ] ;
+       fhir:alias ( [ fhir:v "VerzekerdeNummer" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.subscriberId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D01 through D09" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-16, 18,  19-name of insured, address, date of birth" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.35" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "who.focus" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.6" ] ;
+         fhir:comment [ fhir:v "InsurantNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.6" ] ;
+         fhir:comment [ fhir:v "InsurantNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.6" ] ;
+         fhir:comment [ fhir:v "InsurantNumber" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.beneficiary" ] ;
+       fhir:path [ fhir:v "Coverage.beneficiary" ] ;
+       fhir:short [ fhir:v "Plan Beneficiary" ] ;
+       fhir:definition [ fhir:v "The party who benefits from the insurance coverage., the patient when services are provided." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.beneficiary" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Event.subject" ]
+       ] [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D01 through D09" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-16, 18,  19-name of insured, address, date of birth" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.35" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "who.focus" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.11" ] ;
+         fhir:comment [ fhir:v "Subject" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.relationship" ] ;
+       fhir:path [ fhir:v "Coverage.relationship" ] ;
+       fhir:short [ fhir:v "Beneficiary relationship to the Subscriber" ] ;
+       fhir:definition [ fhir:v "The relationship of beneficiary (patient) to the subscriber." ] ;
+       fhir:requirements [ fhir:v "To determine relationship between the patient and the subscriber." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.relationship" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Relationship" ]
+         ] ) ;
+         fhir:strength [ fhir:v "example" ] ;
+         fhir:description [ fhir:v "The relationship between the Policyholder and the Beneficiary (insured/covered party/patient)." ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/policyholder-relationship> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/policyholder-relationship" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C03" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period" ] ;
+       fhir:path [ fhir:v "Coverage.period" ] ;
+       fhir:short [ fhir:v "Coverage start and end dates" ] ;
+       fhir:definition [ fhir:v "Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.period" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "workflow" ] ;
+         fhir:map [ fhir:v "Event.occurrence" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-12 / IN1-13" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "when.done" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.14" ] ;
+         fhir:comment [ fhir:v "DateTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period.id" ] ;
+       fhir:path [ fhir:v "Coverage.period.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period.extension" ] ;
+       fhir:path [ fhir:v "Coverage.period.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period.start" ] ;
+       fhir:path [ fhir:v "Coverage.period.start" ] ;
+       fhir:short [ fhir:v "StartDateTime" ] ;
+       fhir:definition [ fhir:v "Date from which the insurance policy coverage applies." ] ;
+       fhir:comment [ fhir:v "If the low element is missing, the meaning is that the low boundary is not known." ] ;
+       fhir:alias ( [ fhir:v "BeginDatumTijd" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Period.start" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "per-1" ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "DR.1" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./low" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.13" ] ;
+         fhir:comment [ fhir:v "StartDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.13" ] ;
+         fhir:comment [ fhir:v "StartDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.13" ] ;
+         fhir:comment [ fhir:v "StartDateTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period.end" ] ;
+       fhir:path [ fhir:v "Coverage.period.end" ] ;
+       fhir:short [ fhir:v "EndDateTime" ] ;
+       fhir:definition [ fhir:v "Date until which the insurance policy coverage applies.\r\nThis item maps the ‘Expiry date’ on EHIC field 9." ] ;
+       fhir:comment [ fhir:v "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03." ] ;
+       fhir:alias ( [ fhir:v "EindDatumTijd" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Period.end" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] ) ;
+       fhir:meaningWhenMissing [ fhir:v "If the end of the period is missing, it means that the period is ongoing" ] ;
+       fhir:condition ( [ fhir:v "per-1" ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "DR.2" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./high" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.14" ] ;
+         fhir:comment [ fhir:v "EndDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.14" ] ;
+         fhir:comment [ fhir:v "EndDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.14" ] ;
+         fhir:comment [ fhir:v "EndDateTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor" ] ;
+       fhir:path [ fhir:v "Coverage.payor" ] ;
+       fhir:short [ fhir:v "InsuranceCompany / PayerPerson" ] ;
+       fhir:definition [ fhir:v "The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements. May provide multiple identifiers such as insurance company identifier or business identifier (BIN number)." ] ;
+       fhir:requirements [ fhir:v "Need to identify the issuer to target for processing and for coordination of benefit processing." ] ;
+       fhir:alias ( [ fhir:v "Verzekeraar" ] [ fhir:v "BetalerPersoon" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.payor" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "A05" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-3" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.30" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "who.author" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.2" ] ;
+         fhir:comment [ fhir:v "PayerPerson is Patient or RelatedPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.2" ] ;
+         fhir:comment [ fhir:v "PayerPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.2" ] ;
+         fhir:comment [ fhir:v "PayerPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.3" ] ;
+         fhir:comment [ fhir:v "InsuranceCompany" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.3" ] ;
+         fhir:comment [ fhir:v "InsuranceCompany" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.3" ] ;
+         fhir:comment [ fhir:v "InsuranceCompany" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.id" ] ;
+       fhir:path [ fhir:v "Coverage.payor.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension" ] ;
+       fhir:sliceName [ fhir:v "bankInformation" ] ;
+       fhir:short [ fhir:v "BankInformation" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:alias ( [ fhir:v "Bankgegevens" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.4" ] ;
+         fhir:comment [ fhir:v "BankInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.4" ] ;
+         fhir:comment [ fhir:v "BankInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.4" ] ;
+         fhir:comment [ fhir:v "BankInformation" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.id" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:sliceName [ fhir:v "BankName" ] ;
+       fhir:short [ fhir:v "BankName" ] ;
+       fhir:definition [ fhir:v "Name of the financial organization." ] ;
+       fhir:alias ( [ fhir:v "BankNaam" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.9" ] ;
+         fhir:comment [ fhir:v "BankName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.9" ] ;
+         fhir:comment [ fhir:v "BankName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.9" ] ;
+         fhir:comment [ fhir:v "BankName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName.id" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName.extension" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName.url" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "BankName"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName.value[x]" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.value[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:rules [ fhir:v "closed" ]
+       ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName.value[x]:valueString" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.value[x]" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "BankName" ] ;
+       fhir:definition [ fhir:v "Name of the financial organization." ] ;
+       fhir:alias ( [ fhir:v "BankNaam" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:sliceName [ fhir:v "AccountNumber" ] ;
+       fhir:short [ fhir:v "AccountNumber" ] ;
+       fhir:definition [ fhir:v "The payer’s bank account number at the listed organization. For European countries, this is the IBAN." ] ;
+       fhir:alias ( [ fhir:v "Rekeningnummer" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.11" ] ;
+         fhir:comment [ fhir:v "AccountNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.11" ] ;
+         fhir:comment [ fhir:v "AccountNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.11" ] ;
+         fhir:comment [ fhir:v "AccountNumber" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber.id" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber.extension" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber.url" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "AccountNumber"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber.value[x]" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.value[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:rules [ fhir:v "closed" ]
+       ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber.value[x]:valueString" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.value[x]" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "AccountNumber" ] ;
+       fhir:definition [ fhir:v "The payer’s bank account number at the listed organization. For European countries, this is the IBAN." ] ;
+       fhir:alias ( [ fhir:v "Rekeningnummer" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:sliceName [ fhir:v "Bankcode" ] ;
+       fhir:short [ fhir:v "Bankcode" ] ;
+       fhir:definition [ fhir:v "Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." ] ;
+       fhir:alias ( [ fhir:v "Bankcode" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.10" ] ;
+         fhir:comment [ fhir:v "BankCode" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.10" ] ;
+         fhir:comment [ fhir:v "BankCode" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.10" ] ;
+         fhir:comment [ fhir:v "BankCode" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode.id" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode.extension" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode.url" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "Bankcode"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode.value[x]" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.value[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:rules [ fhir:v "closed" ]
+       ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode.value[x]:valueString" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension.value[x]" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "Bankcode" ] ;
+       fhir:definition [ fhir:v "Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." ] ;
+       fhir:alias ( [ fhir:v "Bankcode" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.url" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.value[x]" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.value[x]" ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "0" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "base64Binary"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "decimal"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "instant"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "integer"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "markdown"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "oid"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "time"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "unsignedInt"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Address"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Age"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Annotation"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Attachment"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Count"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Distance"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Duration"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "HumanName"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Money"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Quantity"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Range"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Ratio"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "SampledData"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Signature"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Timing"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.reference" ] ;
+       fhir:path [ fhir:v "Coverage.payor.reference" ] ;
+       fhir:short [ fhir:v "Literal reference, Relative, internal or absolute URL" ] ;
+       fhir:definition [ fhir:v "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." ] ;
+       fhir:comment [ fhir:v "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Reference.reference" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ref-1" ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.identifier" ] ;
+       fhir:path [ fhir:v "Coverage.payor.identifier" ] ;
+       fhir:short [ fhir:v "Logical reference, when literal reference is not known" ] ;
+       fhir:definition [ fhir:v "An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." ] ;
+       fhir:comment [ fhir:v "When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. \n\nWhen both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference\n\nApplications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Reference.identifier" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".identifier" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.display" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
+       ] ) ;
+       fhir:path [ fhir:v "Coverage.payor.display" ] ;
+       fhir:short [ fhir:v "Text alternative for the resource" ] ;
+       fhir:definition [ fhir:v "Plain text narrative that identifies the resource in addition to the resource reference." ] ;
+       fhir:comment [ fhir:v "This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Reference.display" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Group" ]
+       ] ) ;
+       fhir:path [ fhir:v "Coverage.grouping" ] ;
+       fhir:short [ fhir:v "Additional coverage classifications" ] ;
+       fhir:definition [ fhir:v "A suite of underwrite specific classifiers, for example may be used to identify a class of coverage or employer group, Policy, Plan." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "BackboneElement"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.id" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.extension" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.extension" ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.modifierExtension" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.modifierExtension" ] ;
+       fhir:short [ fhir:v "Extensions that cannot be ignored" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] [ fhir:v "modifiers" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "BackboneElement.modifierExtension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.group" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.group" ] ;
+       fhir:short [ fhir:v "An identifier for the group" ] ;
+       fhir:definition [ fhir:v "Identifies a style or collective of coverage issued by the underwriter, for example may be used to identify an employer group. May also be referred to as a Policy or Group ID." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.group" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C11 (Division,Section)" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-8" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.31" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.groupDisplay" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.groupDisplay" ] ;
+       fhir:short [ fhir:v "Display text for an identifier for the group" ] ;
+       fhir:definition [ fhir:v "A short description for the group." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.groupDisplay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C11 (Division,Section)" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-8" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.31" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.subGroup" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.subGroup" ] ;
+       fhir:short [ fhir:v "An identifier for the subsection of the group" ] ;
+       fhir:definition [ fhir:v "Identifies a style or collective of coverage issued by the underwriter, for example may be used to identify a subset of an employer group." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.subGroup" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-8" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.subGroupDisplay" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.subGroupDisplay" ] ;
+       fhir:short [ fhir:v "Display text for the subsection of the group" ] ;
+       fhir:definition [ fhir:v "A short description for the subgroup." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.subGroupDisplay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-8" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.plan" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.plan" ] ;
+       fhir:short [ fhir:v "An identifier for the plan" ] ;
+       fhir:definition [ fhir:v "Identifies a style or collective of coverage issued by the underwriter, for example may be used to identify a collection of benefits provided to employees. May be referred to as a Section or Division ID." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.plan" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C01" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-35" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.planDisplay" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.planDisplay" ] ;
+       fhir:short [ fhir:v "Display text for the plan" ] ;
+       fhir:definition [ fhir:v "A short description for the plan." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.planDisplay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C01" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-35" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.subPlan" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.subPlan" ] ;
+       fhir:short [ fhir:v "An identifier for the subsection of the plan" ] ;
+       fhir:definition [ fhir:v "Identifies a sub-style or sub-collective of coverage issued by the underwriter, for example may be used to identify a subset of a collection of benefits provided to employees." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.subPlan" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-10" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.subPlanDisplay" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.subPlanDisplay" ] ;
+       fhir:short [ fhir:v "Display text for the subsection of the plan" ] ;
+       fhir:definition [ fhir:v "A short description for the subplan." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.subPlanDisplay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-10" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.class" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.class" ] ;
+       fhir:short [ fhir:v "An identifier for the class" ] ;
+       fhir:definition [ fhir:v "Identifies a style or collective of coverage issues by the underwriter, for example may be used to identify a class of coverage such as a level of deductables or co-payment." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.class" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C01" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-35" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.classDisplay" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.classDisplay" ] ;
+       fhir:short [ fhir:v "Display text for the class" ] ;
+       fhir:definition [ fhir:v "A short description for the class." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.classDisplay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C01" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-35" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.subClass" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.subClass" ] ;
+       fhir:short [ fhir:v "An identifier for the subsection of the class" ] ;
+       fhir:definition [ fhir:v "Identifies a sub-style or sub-collective of coverage issues by the underwriter, for example may be used to identify a subclass of coverage such as a sub-level of deductables or co-payment." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.subClass" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C01" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-35" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.grouping.subClassDisplay" ] ;
+       fhir:path [ fhir:v "Coverage.grouping.subClassDisplay" ] ;
+       fhir:short [ fhir:v "Display text for the subsection of the subclass" ] ;
+       fhir:definition [ fhir:v "A short description for the subclass." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.grouping.subClassDisplay" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C01" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-35" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.dependent" ] ;
+       fhir:path [ fhir:v "Coverage.dependent" ] ;
+       fhir:short [ fhir:v "Dependent number" ] ;
+       fhir:definition [ fhir:v "A unique identifier for a dependent under the coverage." ] ;
+       fhir:requirements [ fhir:v "For some coverage a single identifier is issued to the Subscriber and a dependent number issued to each beneficiary." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.dependent" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "C17" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "- No exact HL7 v2 equivalent concept seems to exist;" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.sequence" ] ;
+       fhir:path [ fhir:v "Coverage.sequence" ] ;
+       fhir:short [ fhir:v "The plan instance or sequence counter" ] ;
+       fhir:definition [ fhir:v "An optional counter for a particular instance of the identified coverage which increments upon each renewal." ] ;
+       fhir:requirements [ fhir:v "Some coverage, for example social plans, may be offered in short time increments, for example for a week or a month at a time, so while the rest of the plan details and identifiers may remain constant over time, the instance is incremented with each renewal and provided to the covered party on their 'card'." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.sequence" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D11" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "No HL7 v2 equivalent concept seems to exist" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.order" ] ;
+       fhir:path [ fhir:v "Coverage.order" ] ;
+       fhir:short [ fhir:v "Relative order of the coverage" ] ;
+       fhir:definition [ fhir:v "The order of applicability of this coverage relative to other coverages which are currently inforce. Note, there may be gaps in the numbering and this does not imply primary, secondard etc. as the specific positioning of coverages depends upon the episode of care." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.order" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "positiveInt"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "- No exact HL7 v2 equivalent concept seems to exist;" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.network" ] ;
+       fhir:path [ fhir:v "Coverage.network" ] ;
+       fhir:short [ fhir:v "Insurer network" ] ;
+       fhir:definition [ fhir:v "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' terms and conditions apply." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.network" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D10" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.contract" ] ;
+       fhir:path [ fhir:v "Coverage.contract" ] ;
+       fhir:short [ fhir:v "Contract details" ] ;
+       fhir:definition [ fhir:v "The policy(s) which constitute this insurance coverage." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Coverage.contract" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://hl7.org/fhir/StructureDefinition/Contract"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "cdanetv4" ] ;
+         fhir:map [ fhir:v "D01 through D09" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "IN1-16, 18,  19" ]
+       ] [
+         fhir:identity [ fhir:v "cpha3pharm" ] ;
+         fhir:map [ fhir:v "C.35" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "Coverage" ] ;
+       fhir:path [ fhir:v "Coverage" ] ;
+       fhir:short [ fhir:v "Coverage" ] ;
+       fhir:alias ( [ fhir:v "Verzekering" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.8" ] ;
+         fhir:comment [ fhir:v "Insurance" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.8" ] ;
+         fhir:comment [ fhir:v "Insurance" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.8" ] ;
+         fhir:comment [ fhir:v "Insurance" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.1" ] ;
+         fhir:comment [ fhir:v "Payer" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.1" ] ;
+         fhir:comment [ fhir:v "Payer" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.1" ] ;
+         fhir:comment [ fhir:v "Payer" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.type" ] ;
+       fhir:path [ fhir:v "Coverage.type" ] ;
+       fhir:short [ fhir:v "InsuranceType" ] ;
+       fhir:definition [ fhir:v "Type of insurance policy. Codes as returned in the Check for Right to Insurance" ] ;
+       fhir:alias ( [ fhir:v "VerzekeringsSoort" ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:description [ fhir:v "InsuranceTypeCodelist" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000> ;
+           fhir:reference [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.15" ] ;
+         fhir:comment [ fhir:v "InsuranceType" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.15" ] ;
+         fhir:comment [ fhir:v "InsuranceType" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.15" ] ;
+         fhir:comment [ fhir:v "InsuranceType" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.policyHolder" ] ;
+       fhir:path [ fhir:v "Coverage.policyHolder" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.subscriber" ] ;
+       fhir:path [ fhir:v "Coverage.subscriber" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.subscriberId" ] ;
+       fhir:path [ fhir:v "Coverage.subscriberId" ] ;
+       fhir:short [ fhir:v "InsurantNumber" ] ;
+       fhir:definition [ fhir:v "Number under which the insured person is registered at the insurance company\r\nThis item maps the ‘Identification number of the card’ on EHIC field 8" ] ;
+       fhir:alias ( [ fhir:v "VerzekerdeNummer" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.6" ] ;
+         fhir:comment [ fhir:v "InsurantNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.6" ] ;
+         fhir:comment [ fhir:v "InsurantNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.6" ] ;
+         fhir:comment [ fhir:v "InsurantNumber" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.beneficiary" ] ;
+       fhir:path [ fhir:v "Coverage.beneficiary" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.11" ] ;
+         fhir:comment [ fhir:v "Subject" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period" ] ;
+       fhir:path [ fhir:v "Coverage.period" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.14" ] ;
+         fhir:comment [ fhir:v "DateTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period.start" ] ;
+       fhir:path [ fhir:v "Coverage.period.start" ] ;
+       fhir:short [ fhir:v "StartDateTime" ] ;
+       fhir:definition [ fhir:v "Date from which the insurance policy coverage applies." ] ;
+       fhir:alias ( [ fhir:v "BeginDatumTijd" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.13" ] ;
+         fhir:comment [ fhir:v "StartDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.13" ] ;
+         fhir:comment [ fhir:v "StartDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.13" ] ;
+         fhir:comment [ fhir:v "StartDateTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.period.end" ] ;
+       fhir:path [ fhir:v "Coverage.period.end" ] ;
+       fhir:short [ fhir:v "EndDateTime" ] ;
+       fhir:definition [ fhir:v "Date until which the insurance policy coverage applies.\r\nThis item maps the ‘Expiry date’ on EHIC field 9." ] ;
+       fhir:alias ( [ fhir:v "EindDatumTijd" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.14" ] ;
+         fhir:comment [ fhir:v "EndDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.14" ] ;
+         fhir:comment [ fhir:v "EndDateTime" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.14" ] ;
+         fhir:comment [ fhir:v "EndDateTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor" ] ;
+       fhir:path [ fhir:v "Coverage.payor" ] ;
+       fhir:short [ fhir:v "InsuranceCompany / PayerPerson" ] ;
+       fhir:alias ( [ fhir:v "Verzekeraar" ] [ fhir:v "BetalerPersoon" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.2" ] ;
+         fhir:comment [ fhir:v "PayerPerson is Patient or RelatedPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.2" ] ;
+         fhir:comment [ fhir:v "PayerPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.2" ] ;
+         fhir:comment [ fhir:v "PayerPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.3" ] ;
+         fhir:comment [ fhir:v "InsuranceCompany" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.3" ] ;
+         fhir:comment [ fhir:v "InsuranceCompany" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.3" ] ;
+         fhir:comment [ fhir:v "InsuranceCompany" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension" ] ;
+       fhir:sliceName [ fhir:v "bankInformation" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.4" ] ;
+         fhir:comment [ fhir:v "BankInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.4" ] ;
+         fhir:comment [ fhir:v "BankInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.4" ] ;
+         fhir:comment [ fhir:v "BankInformation" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:BankName" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:sliceName [ fhir:v "BankName" ] ;
+       fhir:short [ fhir:v "BankName" ] ;
+       fhir:definition [ fhir:v "Name of the financial organization." ] ;
+       fhir:alias ( [ fhir:v "BankNaam" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.9" ] ;
+         fhir:comment [ fhir:v "BankName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.9" ] ;
+         fhir:comment [ fhir:v "BankName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.9" ] ;
+         fhir:comment [ fhir:v "BankName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:AccountNumber" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:sliceName [ fhir:v "AccountNumber" ] ;
+       fhir:short [ fhir:v "AccountNumber" ] ;
+       fhir:definition [ fhir:v "The payer’s bank account number at the listed organization. For European countries, this is the IBAN." ] ;
+       fhir:alias ( [ fhir:v "Rekeningnummer" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.11" ] ;
+         fhir:comment [ fhir:v "AccountNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.11" ] ;
+         fhir:comment [ fhir:v "AccountNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.11" ] ;
+         fhir:comment [ fhir:v "AccountNumber" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Coverage.payor.extension:bankInformation.extension:Bankcode" ] ;
+       fhir:path [ fhir:v "Coverage.payor.extension.extension" ] ;
+       fhir:sliceName [ fhir:v "Bankcode" ] ;
+       fhir:short [ fhir:v "Bankcode" ] ;
+       fhir:definition [ fhir:v "Code indicating the bank and branch. For European countries, this is the organization’s BIC or SWIFT code." ] ;
+       fhir:alias ( [ fhir:v "Bankcode" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.10" ] ;
+         fhir:comment [ fhir:v "BankCode" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.10" ] ;
+         fhir:comment [ fhir:v "BankCode" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.10" ] ;
+         fhir:comment [ fhir:v "BankCode" ]
+       ] )
+     ] )
+  ] . # 
+
+<http://hl7.org/fhir/ValueSet/all-languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/fm-status> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/policyholder-relationship> a fhir:ValueSet .
+
+# -------------------------------------------------------------------------------------
+

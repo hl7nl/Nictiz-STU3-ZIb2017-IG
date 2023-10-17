@@ -1,0 +1,122 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "nl-core-relatedperson-05",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div>A.B.C. Jongeneel (Anne)</div>\n            <div>\n                <a href=\"tel:06-98765432\">06-98765432</a> (Tel Mobiel), <a href=\"mailto:a.jongeneel@example.com\">a.jongeneel@example.com</a> (E-mail)</div>\n            <div>Knolweg 1000, 9999XA Sitswerd, Nederland (Privé)</div>\n            <div>\n                <span title=\"Natural daughter (DAU - v3/RoleCode)\">Natural daughter</span> van <a href=\"Patient/nl-core-patient-01\">Irma Jongeneel-de Haas</a>\n            </div>\n        </div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+        "code" : "1",
+        "display" : "Eerste relatie/contactpersoon"
+      }]
+    }
+  }],
+  "patient" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Irma Jongeneel-de Haas"
+  },
+  "relationship" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/v3/RoleCode",
+      "code" : "DAU",
+      "display" : "Natural daughter"
+    }]
+  },
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+      "valueCode" : "NL4"
+    }],
+    "use" : "official",
+    "family" : "Jongeneel",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Jongeneel"
+      }]
+    },
+    "given" : ["Anne",
+    "A.B.C."],
+    "_given" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "CL"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "IN"
+      }]
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "_system" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/AddressUse",
+            "code" : "MC",
+            "display" : "Mobiel telefoonnummer"
+          }]
+        }
+      }]
+    },
+    "value" : "06-98765432",
+    "use" : "mobile",
+    "_use" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/AddressUse",
+            "code" : "MC",
+            "display" : "Mobiel telefoonnummer"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "system" : "email",
+    "value" : "a.jongeneel@example.com"
+  }],
+  "address" : [{
+    "use" : "home",
+    "line" : ["Knolweg 1000"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Knolweg"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "1000"
+      }]
+    }],
+    "city" : "Sitswerd",
+    "postalCode" : "9999XA",
+    "country" : "Nederland",
+    "_country" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+            "code" : "6030",
+            "display" : "Nederland"
+          }]
+        }
+      }]
+    }
+  }]
+}

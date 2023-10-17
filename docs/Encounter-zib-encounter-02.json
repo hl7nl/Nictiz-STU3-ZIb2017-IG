@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "zib-encounter-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+  },
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Patient with id example</caption>\n                <thead>\n                    <tr>\n                        <th>ContactType</th>\n                        <th>StartDateTime</th>\n                        <th>ProblemName</th>\n                        <th>HealthProfessional</th>\n                        <th>OrganizationType</th>\n                        <th>OrganizationName</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td>emergency</td>\n                        <td>16-08-2012</td>\n                        <td>Broken leg</td>\n                        <td>H. de Vries</td>\n                        <td>Hospital</td>\n                        <td>Universitair Medisch Centrum Groningen</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://hl7.org/fhir/v3/ActCode",
+    "code" : "EMER",
+    "display" : "emergency"
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "participant" : [{
+    "individual" : {
+      "reference" : "Practitioner/nl-core-practitioner-01",
+      "display" : "H. de Vries"
+    }
+  }],
+  "period" : {
+    "start" : "2012-08-16"
+  },
+  "diagnosis" : [{
+    "condition" : {
+      "reference" : "Condition/zib-problem-05",
+      "display" : "Broken leg"
+    }
+  }],
+  "serviceProvider" : {
+    "reference" : "Organization/nl-core-organization-02",
+    "display" : "Universitair Medisch Centrum Groningen"
+  }
+}

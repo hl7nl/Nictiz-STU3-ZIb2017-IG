@@ -1,0 +1,202 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NHGTable14-to-ActEncounterCode",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to <a href=\"http://hl7.org/fhir/STU3/v3/ActEncounterCode/vs.html\">ActEncounterCode</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the NHG Table 14 version 7 (September 2011) terminology for ContactType to the FHIR STU3 terminology associated with Encounter.class</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode (version 2016-11-11)</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1 (visite)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>HH (home)</td><td/></tr><tr><td>2 (nacht/dienst visite)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>HH (home)</td><td>Nacht/dienst semantics not covered</td></tr><tr><td>3 (Consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>AMB (ambulatory)</td><td/></tr><tr><td>4 (nacht/dienst consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>AMB (ambulatory)</td><td>Nacht/dienst semantics not covered</td></tr><tr><td>5 (telefonisch contact)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Virtual is broader/wider than just phone</td></tr><tr><td>6 (nacht/dienst telefonisch consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Virtual is broader/wider than just phone. Nacht/dienst semantics not covered</td></tr><tr><td>8 (postverwerking)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Processing the mail is about the patient, but there is no true encounter</td></tr><tr><td>9 (overleg)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Inter-collegial consultation is about the patient, but there is no true encounter</td></tr><tr><td>11 (notitie/memo)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Note/memo is about the patient, but there is no true encounter</td></tr><tr><td>12 (e-consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Virtual is presumably broader/wider than e-consult</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>90 (onbekend)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>UNK (unknown)</td></tr><tr><td>99 (overig)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>OTH (other)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+    "valueBoolean" : false
+  }],
+  "url" : "http://nictiz.nl/fhir/ConceptMap/NHGTable14-to-ActEncounterCode",
+  "version" : "1.3.15",
+  "name" : "NHGTable14-to-ActEncounterCode",
+  "title" : "NHG NHGTable14 to ActEncounterCode",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps the NHG Table 14 version 7 (September 2011) terminology for ContactType to the FHIR STU3 terminology associated with Encounter.class",
+  "purpose" : "To aid in mapping from ZIB Contact value set ContactTypeCodelijst to FHIR STU3 Contact.class",
+  "copyright" : "CC0",
+  "targetUri" : "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/v3/ActCode",
+    "sourceVersion" : "2016-11-11",
+    "element" : [{
+      "code" : "1",
+      "display" : "visite",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "HH",
+        "display" : "home",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "2",
+      "display" : "nacht/dienst visite",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "inexact"
+        }],
+        "code" : "HH",
+        "display" : "home",
+        "equivalence" : "inexact",
+        "comment" : "Nacht/dienst semantics not covered"
+      }]
+    },
+    {
+      "code" : "3",
+      "display" : "Consult",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "AMB",
+        "display" : "ambulatory",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "4",
+      "display" : "nacht/dienst consult",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "inexact"
+        }],
+        "code" : "AMB",
+        "display" : "ambulatory",
+        "equivalence" : "inexact",
+        "comment" : "Nacht/dienst semantics not covered"
+      }]
+    },
+    {
+      "code" : "5",
+      "display" : "telefonisch contact",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "wider"
+        }],
+        "code" : "VR",
+        "display" : "virtual",
+        "equivalence" : "wider",
+        "comment" : "Virtual is broader/wider than just phone"
+      }]
+    },
+    {
+      "code" : "6",
+      "display" : "nacht/dienst telefonisch consult",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "relatedto"
+        }],
+        "code" : "VR",
+        "display" : "virtual",
+        "equivalence" : "relatedto",
+        "comment" : "Virtual is broader/wider than just phone. Nacht/dienst semantics not covered"
+      }]
+    },
+    {
+      "code" : "8",
+      "display" : "postverwerking",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "relatedto"
+        }],
+        "code" : "VR",
+        "display" : "virtual",
+        "equivalence" : "relatedto",
+        "comment" : "Processing the mail is about the patient, but there is no true encounter"
+      }]
+    },
+    {
+      "code" : "9",
+      "display" : "overleg",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "relatedto"
+        }],
+        "code" : "VR",
+        "display" : "virtual",
+        "equivalence" : "relatedto",
+        "comment" : "Inter-collegial consultation is about the patient, but there is no true encounter"
+      }]
+    },
+    {
+      "code" : "11",
+      "display" : "notitie/memo",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "relatedto"
+        }],
+        "code" : "VR",
+        "display" : "virtual",
+        "equivalence" : "relatedto",
+        "comment" : "Note/memo is about the patient, but there is no true encounter"
+      }]
+    },
+    {
+      "code" : "12",
+      "display" : "e-consult",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "VR",
+        "display" : "virtual",
+        "equivalence" : "equal",
+        "comment" : "Virtual is presumably broader/wider than e-consult"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/v3/NullFlavor",
+    "element" : [{
+      "code" : "90",
+      "display" : "onbekend",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "UNK",
+        "display" : "unknown",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "99",
+      "display" : "overig",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "OTH",
+        "display" : "other",
+        "equivalence" : "equal"
+      }]
+    }]
+  }]
+}

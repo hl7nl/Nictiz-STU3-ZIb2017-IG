@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DiagnosticReport/zib-outcomeofcare-02> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-outcomeofcare-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-OutcomeOfCare"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 27574-3}\">Skilled nursing treatment plan Progress note and attainment of goals (narrative)</span> </h2><table class=\"grid\"/><p><b>Report Details</b></p><p>Pijn is onder controle.</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:27574-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "27574-3" ] ;
+       fhir:display [ fhir:v "Skilled nursing treatment plan Progress note and attainment of goals (narrative)" ]
+     ] )
+  ] ; # 
+  fhir:conclusion [ fhir:v "Pijn is onder controle."] . # 
+
+# -------------------------------------------------------------------------------------
+

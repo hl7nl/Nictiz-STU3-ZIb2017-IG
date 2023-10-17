@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+#  MeasuringMethod 
+
+<http://nictiz.nl/fhir/Observation/zib-generalmeasurement-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-generalmeasurement-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">Irma\n                        Jongeneel-de Haas</a>. Status: definitief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Waarschijnlijk delier</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2018-09-10</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Score list delirium (record artifact) (11021000146103 - SNOMED CT)\">Score list delirium (record artifact)</span>\n                        </td>\n                        <td>7</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:11021000146103 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11021000146103" ] ;
+       fhir:display [ fhir:v "Score list delirium (record artifact)" ]
+     ] )
+  ] ; #  MeasurementName 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "Irma Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2018-09-10"^^xsd:date] ; #  ResultDateTime 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "7" ]
+  ] ; #  ResultValue 
+  fhir:comment [ fhir:v "Waarschijnlijk delier"] . #  Comment 
+
+# -------------------------------------------------------------------------------------
+

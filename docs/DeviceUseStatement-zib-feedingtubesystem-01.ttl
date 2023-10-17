@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DeviceUseStatement/zib-feedingtubesystem-01> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-feedingtubesystem-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Beschrijving apparaatgebruik. Subject: <a href=\"Patient/nl-core-patient-03\">I. Jongeneel-de Haas</a>. Status: actief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Sonde is met spoed toegebracht.</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Apparaat/Systeem</th>\n                        <td>\n                            <a href=\"Device/zib-feedingtubesystem-product-01\">Percutaneous\n                                endoscopic gastrostomy catheter</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Gebruiksperiode</th>\n                        <td>Vanaf 2018-12-22</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:whenUsed [
+     fhir:start [ fhir:v "2018-12-22"^^xsd:date ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://nictiz.nl/fhir/Device/zib-feedingtubesystem-product-01> ;
+     fhir:reference [ fhir:v "Device/zib-feedingtubesystem-product-01" ] ;
+     fhir:display [ fhir:v "Percutaneous endoscopic gastrostomy catheter" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Sonde is met spoed toegebracht." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

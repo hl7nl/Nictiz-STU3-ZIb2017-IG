@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Coverage/zib-payer-02> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-payer-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verzekering/garantstelling</caption>\n                <tbody>\n                    <tr>\n                        <th>abonnee</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Betaler</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                            <div>\n                                <div>Bank naam: ING</div>\n                                <div>Rekeningnummer: NL85INGB0001234567</div>Bank code:\n                                INGBNL2A</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>begunstigde</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:subscriber [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:beneficiary [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation"^^xsd:anyURI ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "BankName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ING" ]
+       ] [
+         fhir:url [ fhir:v "AccountNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "NL85INGB0001234567" ]
+       ] [
+         fhir:url [ fhir:v "Bankcode"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "INGBNL2A" ]
+       ] )
+     ] ) ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

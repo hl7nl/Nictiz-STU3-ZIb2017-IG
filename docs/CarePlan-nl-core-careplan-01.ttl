@@ -1,0 +1,118 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/CarePlan/nl-core-careplan-01> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-careplan-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-careplan"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgplan. Subject: <a href=\"Patient/nl-core-patient-02\">Paul\n                    XXX_Mesker</a>. Id: 123456789 (http://myexample.com/system/careplan), Status:\n                        actief<div>Intentie: plan</div>\n                    <div>Auteur: <a href=\"Practitioner/nl-core-practitioner-04\">Dr. D. de Vries</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Context</th>\n                        <td>\n                            <a href=\"EpisodeOfCare/nl-core-episodeofcare-01\">Gebroken been</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>Vanaf 2019-02-06</td>\n                    </tr>\n                    <tr>\n                        <th>Auteur</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-04\">Dr. D. de Vries</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Doel</th>\n                        <td>\n                            <a href=\"Goal/zib-treatmentdirective-01\">Volledig herstel met betrekking\n                                tot het kunnen lopen</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Activiteit</th>\n                        <td>\n                            <table>\n                                <tbody>\n                                    <tr>\n                                        <th>Detaildefinitie</th>\n                                        <td>\n                                            <a href=\"ProcedureRequest/zib-procedurerequest-02\">Aanvrager: Dr. J. Jansen</a>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Activiteit</th>\n                        <td>\n                            <table>\n                                <tbody>\n                                    <tr>\n                                        <th>Notitie</th>\n                                        <td>De interventie verliep zeer soepel.</td>\n                                    </tr>\n                                    <tr>\n                                        <th>Resultaat</th>\n                                        <td>\n                                            <a href=\"DiagnosticReport/zib-outcomeofcare-02\">Pijn is\n                                                onder controle</a>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td colspan=\"2\">\n                                            <table>\n                                                <caption>Details<div>Categorie: <span title=\"Nursing Procedure (9632001 - SNOMED CT)\">Nursing Procedure</span>, Status: voltooid</div>\n                                                </caption>\n                                                <tbody>\n                                                  <tr>\n                                                  <th>Code</th>\n                                                  <td>\n                                                  <span title=\"ontspanningstechniek van Benson (regime/therapie) (228567003 - SNOMED CT)\">ontspanningstechniek van Benson\n                                                  (regime/therapie)</span>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Schema</th>\n                                                  <td>\n                                                  <div>6 februari 2019 - 9 februari 2019, 2 maal per\n                                                  dag</div>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Reden</th>\n                                                  <td>\n                                                  <a href=\"Condition/zib-problem-09\">Gebroken\n                                                  Been</a>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Doel</th>\n                                                  <td>\n                                                  <a href=\"Goal/zib-treatmentobjective-02\">Pijn\n                                                  verminderen</a>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Medisch hulpmiddel</th>\n                                                  <td>\n                                                  <a href=\"DeviceUseStatement/zib-wound-medicaldevice-01\">Verband</a>\n                                                  </td>\n                                                  </tr>\n                                                </tbody>\n                                            </table>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://myexample.com/system/careplan"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-02> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-02" ] ;
+     fhir:display [ fhir:v "Paul XXX_Mesker" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://nictiz.nl/fhir/EpisodeOfCare/nl-core-episodeofcare-01> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/nl-core-episodeofcare-01" ] ;
+     fhir:display [ fhir:v "Gebroken been" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-02-06"^^xsd:date ]
+  ] ; # 
+  fhir:author ( [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-04> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-04" ] ;
+     fhir:display [ fhir:v "Dr. D. de Vries" ]
+  ] ) ; # 
+  fhir:goal ( [
+     fhir:link <http://nictiz.nl/fhir/Goal/zib-treatmentdirective-01> ;
+     fhir:reference [ fhir:v "Goal/zib-treatmentdirective-01" ] ;
+     fhir:display [ fhir:v "Volledig herstel met betrekking tot het kunnen lopen" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:reference [
+       fhir:link <http://nictiz.nl/fhir/ProcedureRequest/zib-procedurerequest-02> ;
+       fhir:reference [ fhir:v "ProcedureRequest/zib-procedurerequest-02" ] ;
+       fhir:display [ fhir:v "Aanvrager: Dr. J. Jansen" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/Comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "De interventie verliep zeer soepel." ]
+     ] ) ;
+     fhir:outcomeReference ( [
+       fhir:link <http://nictiz.nl/fhir/DiagnosticReport/zib-outcomeofcare-02> ;
+       fhir:reference [ fhir:v "DiagnosticReport/zib-outcomeofcare-02" ] ;
+       fhir:display [ fhir:v "Pijn is onder controle" ]
+     ] ) ;
+     fhir:detail [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <http://nictiz.nl/fhir/DeviceUseStatement/zib-wound-medicaldevice-01> ;
+           fhir:reference [ fhir:v "DeviceUseStatement/zib-wound-medicaldevice-01" ] ;
+           fhir:display [ fhir:v "Verband" ]
+         ]
+       ] ) ;
+       fhir:category [
+         fhir:coding ( [
+           a sct:9632001 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "9632001" ] ;
+           fhir:display [ fhir:v "Nursing Procedure" ]
+         ] )
+       ] ;
+       fhir:code [
+         fhir:coding ( [
+           a sct:228567003 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "228567003" ] ;
+           fhir:display [ fhir:v "ontspanningstechniek van Benson (regime/therapie)" ]
+         ] )
+       ] ;
+       fhir:reasonReference ( [
+         fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-09> ;
+         fhir:reference [ fhir:v "Condition/zib-problem-09" ] ;
+         fhir:display [ fhir:v "Gebroken Been" ]
+       ] ) ;
+       fhir:goal ( [
+         fhir:link <http://nictiz.nl/fhir/Goal/zib-treatmentobjective-02> ;
+         fhir:reference [ fhir:v "Goal/zib-treatmentobjective-02" ] ;
+         fhir:display [ fhir:v "Pijn verminderen" ]
+       ] ) ;
+       fhir:status [ fhir:v "completed" ] ;
+       fhir:scheduled [
+         a fhir:Timing ;
+         fhir:repeat [
+           fhir:bounds [
+             a fhir:Period ;
+             fhir:start [ fhir:v "2019-02-06"^^xsd:date ] ;
+             fhir:end [ fhir:v "2019-02-09"^^xsd:date ]
+           ] ;
+           fhir:frequency [ fhir:v "2"^^xsd:integer ] ;
+           fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:periodUnit [ fhir:v "d" ]
+         ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

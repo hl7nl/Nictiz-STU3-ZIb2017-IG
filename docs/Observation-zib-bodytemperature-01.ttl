@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-bodytemperature-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-bodytemperature-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">I.\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>,\n                    Status: definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-01\">Practitioner H. de Vries</a>\n                    </div>\n                </caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"3\">Voeten voelen heel koud aan</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td colspan=\"2\">2013-02-08T06:43:00+02:00</td>\n                    </tr>\n                    <tr>\n                        <th>Methode</th>\n                        <td colspan=\"2\">\n                            <span title=\"Tympanic temperature (415974002 - SNOMED CT)\">Tympanic\n                                temperature</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                        <th>Interpretatie</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Body temperature (8310-5 - LOINC)\">Body temperature</span>\n                        </td>\n                        <td>38.6 Cel</td>\n                        <td>\n                            <span title=\"Heart irregular (248650006 - SNOMED CT)\">Heart\n                                irregular</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8310-5" ] ;
+       fhir:display [ fhir:v "Body temperature" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2013-02-08T06:43:00+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-01> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-01" ] ;
+     fhir:display [ fhir:v "Practitioner H. de Vries" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "38.6"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "Cel" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] ; # 
+  fhir:interpretation [
+     fhir:coding ( [
+       a sct:248650006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "248650006" ] ;
+       fhir:display [ fhir:v "Heart irregular" ]
+     ] )
+  ] ; # 
+  fhir:comment [ fhir:v "Voeten voelen heel koud aan"] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:415974002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "415974002" ] ;
+       fhir:display [ fhir:v "Tympanic temperature" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

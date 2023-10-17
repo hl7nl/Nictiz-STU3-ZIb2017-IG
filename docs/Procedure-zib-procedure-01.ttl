@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Procedure/zib-procedure-01> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-procedure-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Surgical procedure (387713003 - SNOMED CT)\">Surgical\n                    procedure</span>, Status: voltooid<div>Uitvoerende: <a href=\"Organization/nl-core-organization-02\">UMCG - Afdeling\n                            Orthopedie</a>\n                        <div>Zorgverlenerrol: <a href=\"PractitionerRole/nl-core-practitionerrole-01\">Medisch specialisten, orthopedie</a>\n                        </div>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Implantation of Swanson prosthesis of knee (procedure) (60159002 - SNOMED CT)\">Implantation of Swanson prosthesis of knee (procedure)</span>\n                        </td>\n                        <td>\n                            <div>Uitgevoerd: Vanaf 2012-06-05</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Deel van lichaam</th>\n                        <td>\n                            <span title=\"Knee region structure (body structure) (72696002 - SNOMED CT)\">Knee region structure (body structure)</span>\n                            <span title=\"Left (7771000 - SNOMED CT)\">Left</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-02\">Arthropathy (disorder)</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>apparaat</th>\n                        <td>\n                            <a href=\"Device/zib-medicaldeviceproduct-01\">Knee joint prosthesis,\n                                device (physical object)</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:387713003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "387713003" ] ;
+       fhir:display [ fhir:v "Surgical procedure" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:60159002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60159002" ] ;
+       fhir:display [ fhir:v "Implantation of Swanson prosthesis of knee (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2012-06-05"^^xsd:date ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-02> ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <http://nictiz.nl/fhir/PractitionerRole/nl-core-practitionerrole-01> ;
+           fhir:reference [ fhir:v "PractitionerRole/nl-core-practitionerrole-01" ] ;
+           fhir:display [ fhir:v "Medisch specialisten, orthopedie" ]
+         ]
+       ] ) ;
+       fhir:reference [ fhir:v "Organization/nl-core-organization-02" ] ;
+       fhir:display [ fhir:v "UMCG - Afdeling Orthopedie" ]
+     ]
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-02> ;
+     fhir:reference [ fhir:v "Condition/zib-problem-02" ] ;
+     fhir:display [ fhir:v "Arthropathy (disorder)" ]
+  ] ) ; # 
+  fhir:bodySite ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:7771000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "7771000" ] ;
+           fhir:display [ fhir:v "Left" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:72696002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "72696002" ] ;
+       fhir:display [ fhir:v "Knee region structure (body structure)" ]
+     ] )
+  ] ) ; # 
+  fhir:focalDevice ( [
+     fhir:manipulated [
+       fhir:link <http://nictiz.nl/fhir/Device/zib-medicaldeviceproduct-01> ;
+       fhir:reference [ fhir:v "Device/zib-medicaldeviceproduct-01" ] ;
+       fhir:display [ fhir:v "Knee joint prosthesis, device (physical object)" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

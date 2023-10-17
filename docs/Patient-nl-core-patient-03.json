@@ -1,0 +1,204 @@
+{
+  "resourceType" : "Patient",
+  "id" : "nl-core-patient-03",
+  "meta" : {
+    "versionId" : "15",
+    "lastUpdated" : "2017-01-23T13:51:41.677+00:00",
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-patient"]
+  },
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div>\n                <p>BSN: 123456782</p>\n                <p>Naam: Irma Jongeneel-de Haas</p>\n                <p>Geslacht: Vrouw</p>\n                <p>Geboortedatum: 1970-03-04</p>\n                <p>Telefoon: 030-2345456</p>\n                <p>E-mail: user@home.nl</p>\n                <p>Adres: Straatweg 12bII, 1000AA Amsterdam</p>\n                <p>Burgerlijke staat: gehuwd</p>\n                <p>Eerste relatie/contactpersoon is haar man Gerard Eckdom via telefoonnummer\n                    015-23456789</p>\n                <p>Huisarts: Huisartsenpraktijk Van Eijk</p>\n            </div>\n        </div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+    "value" : "123456782"
+  }],
+  "active" : true,
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order",
+      "valueCode" : "NL4"
+    }],
+    "use" : "official",
+    "family" : "Jongeneel-de Haas",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Jongeneel"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix",
+        "valueString" : "de "
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-partner-name",
+        "valueString" : "Haas"
+      }]
+    },
+    "given" : ["Irma",
+    "I."],
+    "_given" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "CL"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "IN"
+      }]
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "_system" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+            "code" : "LL",
+            "display" : "Vast telefoonnummer"
+          }]
+        }
+      }]
+    },
+    "value" : "030-23454567",
+    "use" : "home",
+    "_use" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+            "code" : "LL",
+            "display" : "Vast telefoonnummer"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "system" : "email",
+    "value" : "user@home.nl",
+    "use" : "home"
+  }],
+  "gender" : "female",
+  "_gender" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/v3/AdministrativeGender",
+          "code" : "F",
+          "display" : "Vrouw"
+        }]
+      }
+    }]
+  },
+  "birthDate" : "1970-03-04",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "extension" : [{
+      "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+      "valueBoolean" : true
+    }],
+    "use" : "home",
+    "type" : "both",
+    "line" : ["Straatweg 12bII"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Straatweg"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "12"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+        "valueString" : "bII"
+      }]
+    }],
+    "city" : "Weesp",
+    "postalCode" : "1012AB",
+    "country" : "NLD",
+    "_country" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+            "code" : "6030",
+            "display" : "Nederland"
+          }]
+        }
+      }]
+    }
+  }],
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/v3/MaritalStatus",
+      "code" : "M",
+      "display" : "Married"
+    }]
+  },
+  "multipleBirthBoolean" : false,
+  "contact" : [{
+    "relationship" : [{
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.22.472",
+        "code" : "1",
+        "display" : "Eerste relatie/contactpersoon"
+      }]
+    },
+    {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/v3/RoleCode",
+        "code" : "HUSB",
+        "display" : "Husband"
+      }]
+    }],
+    "name" : {
+      "use" : "official",
+      "family" : "Eckdom",
+      "given" : ["Gerard"]
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "_system" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+              "code" : "LL",
+              "display" : "Vast telefoonnummer"
+            }]
+          }
+        }]
+      },
+      "value" : "015-23456789",
+      "use" : "home",
+      "_use" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+              "code" : "LL",
+              "display" : "Vast telefoonnummer"
+            }]
+          }
+        }]
+      }
+    }]
+  }],
+  "generalPractitioner" : [{
+    "reference" : "Organization/nl-core-organization-01",
+    "display" : "Maatschap Vaste Huisarts"
+  }]
+}

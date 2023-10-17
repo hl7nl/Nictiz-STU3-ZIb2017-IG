@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-snaqrcscore-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-snaqrcscore-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-SNAQrcScore"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-snaqrcscore-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-snaqrcscore-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-SNAQrcScore.html\">HCIM SNAQrcScore</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Short Nutritional Assessment Questionnaire for Residential Care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108311000146106)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2018-02-09 10:00:00+0200</p><p><b>value</b>: 4</p><blockquote><p><b>component</b></p><p><b>code</b>: WeightLoss Score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4.29.3)</span></p><p><b>value</b>: LossAverage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#G1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Assisted Eating <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4.29.8)</span></p><p><b>value</b>: Independent feeding <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#165224005)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Appetite Score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4.29.4)</span></p><p><b>value</b>: GeenEetlust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#B1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: BMIScore <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4.29.5)</span></p><p><b>value</b>: Gezond <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#B0)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:108311000146106 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "108311000146106" ] ;
+       fhir:display [ fhir:v "Short Nutritional Assessment Questionnaire for Residential Care" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2018-02-09T10:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "4"^^xsd:decimal ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4.29.3" ] ;
+         fhir:display [ fhir:v "WeightLoss Score" ]
+       ] )
+     ] ; # WeightLossScore
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.19.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "G1" ] ;
+         fhir:display [ fhir:v "LossAverage" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4.29.8" ] ;
+         fhir:display [ fhir:v "Assisted Eating" ]
+       ] )
+     ] ; # AssistedEating
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:165224005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "165224005" ] ;
+         fhir:display [ fhir:v "Independent feeding" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4.29.4" ] ;
+         fhir:display [ fhir:v "Appetite Score" ]
+       ] )
+     ] ; # AppetiteScore
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.19.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B1" ] ;
+         fhir:display [ fhir:v "GeenEetlust" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4.29.5" ] ;
+         fhir:display [ fhir:v "BMIScore" ]
+       ] )
+     ] ; # BMIScore
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.19.3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B0" ] ;
+         fhir:display [ fhir:v "Gezond" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

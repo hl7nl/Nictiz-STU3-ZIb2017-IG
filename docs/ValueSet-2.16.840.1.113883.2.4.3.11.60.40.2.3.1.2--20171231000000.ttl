@@ -1,0 +1,267 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.22.472</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>1</td><td>Eerste relatie/contactpersoon</td><td>Eerste relatie/contactpersoon</td><td>Eerste relatie/contactpersoon</td></tr><tr><td>2</td><td>Tweede relatie/contactpersoon</td><td>Tweede relatie/contactpersoon</td><td>Tweede relatie/contactpersoon</td></tr><tr><td>3</td><td>Curator (juridisch)</td><td>Curator (juridisch)</td><td>Curator (juridisch)</td></tr><tr><td>4</td><td>Financieel (gemachtigd)</td><td>Financieel (gemachtigd)</td><td>Financieel (gemachtigd)</td></tr><tr><td>5</td><td>Financieel (toetsing)</td><td>Financieel (toetsing)</td><td>Financieel (toetsing)</td></tr><tr><td>6</td><td>Leefeenheid</td><td>Leefeenheid</td><td>Leefeenheid</td></tr><tr><td>7</td><td>Hulpverlener</td><td>Hulpverlener</td><td>Hulpverlener</td></tr><tr><td>9</td><td>Anders</td><td>Anders</td><td>Anders</td></tr><tr><td>11</td><td>Voogd</td><td>Voogd</td><td>Voogd</td></tr><tr><td>14</td><td>Bewindvoerder</td><td>Bewindvoerder</td><td>Bewindvoerder</td></tr><tr><td>15</td><td>Mentor</td><td>Mentor</td><td>Mentor</td></tr><tr><td>19</td><td>Buur</td><td>Buur</td><td>Buur</td></tr><tr><td>20</td><td>Vriend(in)/kennis</td><td>Vriend(in)/kennis</td><td>Vriend(in)/kennis</td></tr><tr><td>21</td><td>Cliëntondersteuner</td><td>Cliëntondersteuner</td><td>Cliëntondersteuner</td></tr><tr><td>23</td><td>Contactpersoon</td><td>Contactpersoon</td><td>Contactpersoon</td></tr><tr><td>24</td><td>Wettelijke vertegenwoordiger</td><td>Wettelijke vertegenwoordiger</td><td>Wettelijke vertegenwoordiger</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2017-12-31T00:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://art-decor.org/ns/oids/vs"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "RolCodelijst"] ; # 
+  fhir:title [ fhir:v "RolCodelijst"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Registratie aan de bron" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.registratieaandebron.nl" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://zibs.nl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "RolCodelijst"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.22.472"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Eerste relatie/contactpersoon" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Eerste relatie/contactpersoon" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "Tweede relatie/contactpersoon" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Tweede relatie/contactpersoon" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Curator (juridisch)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Curator (juridisch)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Financieel (gemachtigd)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Financieel (gemachtigd)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Financieel (toetsing)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Financieel (toetsing)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "Leefeenheid" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Leefeenheid" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "Hulpverlener" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Hulpverlener" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "9" ] ;
+         fhir:display [ fhir:v "Anders" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Anders" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "11" ] ;
+         fhir:display [ fhir:v "Voogd" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Voogd" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "14" ] ;
+         fhir:display [ fhir:v "Bewindvoerder" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Bewindvoerder" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "15" ] ;
+         fhir:display [ fhir:v "Mentor" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Mentor" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "19" ] ;
+         fhir:display [ fhir:v "Buur" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Buur" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "Vriend(in)/kennis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Vriend(in)/kennis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "21" ] ;
+         fhir:display [ fhir:v "Cliëntondersteuner" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Cliëntondersteuner" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "23" ] ;
+         fhir:display [ fhir:v "Contactpersoon" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Contactpersoon" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "24" ] ;
+         fhir:display [ fhir:v "Wettelijke vertegenwoordiger" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Wettelijke vertegenwoordiger" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

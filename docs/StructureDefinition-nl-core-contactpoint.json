@@ -1,0 +1,2451 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "nl-core-contactpoint",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint\" title=\"Contact information includes a person's telephone numbers en e-mail addresses.\">ContactPoint</a><a name=\"ContactPoint\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#ContactPoint\">ContactPoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ContactInformation<br/><span style=\"font-weight:bold\">Example Mobile business phone number. Note: the mobile nature stems from the number being an 06-* number.: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;value&quot;:&quot;+31611234567&quot;,&quot;use&quot;:&quot;work&quot;}</span><br/><span style=\"font-weight:bold\">Example Mobile phone number undetermined private/business. Note: the mobile nature stems from the number being an 06-* number.: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;value&quot;:&quot;+31611234567&quot;,&quot;use&quot;:&quot;mobile&quot;}</span><br/><span style=\"font-weight:bold\">Example Primary Home Land Line: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1&quot;,&quot;code&quot;:&quot;LL&quot;,&quot;display&quot;:&quot;Land Line&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;home&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;HP&quot;,&quot;display&quot;:&quot;Primary Home&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Temporary Land Line: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1&quot;,&quot;code&quot;:&quot;LL&quot;,&quot;display&quot;:&quot;Land Line&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;temp&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;TMP&quot;,&quot;display&quot;:&quot;Temporary&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Work Land Line: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1&quot;,&quot;code&quot;:&quot;LL&quot;,&quot;display&quot;:&quot;Land Line&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;work&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;WP&quot;,&quot;display&quot;:&quot;Primary Work&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Home Fax: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;fax&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1&quot;,&quot;code&quot;:&quot;FAX&quot;,&quot;display&quot;:&quot;Fax&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;home&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;HP&quot;,&quot;display&quot;:&quot;Primary Home&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Temporary Fax: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;fax&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1&quot;,&quot;code&quot;:&quot;FAX&quot;,&quot;display&quot;:&quot;Fax&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;temp&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;TMP&quot;,&quot;display&quot;:&quot;Temporary&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Work Fax: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;fax&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1&quot;,&quot;code&quot;:&quot;FAX&quot;,&quot;display&quot;:&quot;Fax&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;work&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;WP&quot;,&quot;display&quot;:&quot;Primary Work&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Home Mobile Phone: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;MC&quot;,&quot;display&quot;:&quot;Mobile Phone&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;mobile&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;HP&quot;,&quot;display&quot;:&quot;Primary Home&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Temporary Mobile Phone: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;MC&quot;,&quot;display&quot;:&quot;Mobile Phone&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;temp&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;TMP&quot;,&quot;display&quot;:&quot;Temporary&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Work Mobile Phone: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;phone&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;MC&quot;,&quot;display&quot;:&quot;Mobile Phone&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;mobile&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;WP&quot;,&quot;display&quot;:&quot;Primary Work&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Home Pager: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;pager&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;PG&quot;,&quot;display&quot;:&quot;Pager&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;home&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;HP&quot;,&quot;display&quot;:&quot;Primary Home&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Temporary Pager: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;pager&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;PG&quot;,&quot;display&quot;:&quot;Pager&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;temp&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;TMP&quot;,&quot;display&quot;:&quot;Temporary&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Primary Work Pager: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;pager&quot;,&quot;_system&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;PG&quot;,&quot;display&quot;:&quot;Pager&quot;}]}}]},&quot;value&quot;:&quot;...&quot;,&quot;use&quot;:&quot;work&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;WP&quot;,&quot;display&quot;:&quot;Primary Work&quot;}]}}]}}</span><br/><span style=\"font-weight:bold\">Example Private email address: </span><span style=\"color: darkgreen\">{&quot;system&quot;:&quot;email&quot;,&quot;value&quot;:&quot;giesput@myweb.nl&quot;,&quot;use&quot;:&quot;home&quot;,&quot;_use&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://nictiz.nl/fhir/StructureDefinition/code-specification&quot;,&quot;valueCodeableConcept&quot;:{&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/v3/AddressUse&quot;,&quot;code&quot;:&quot;HP&quot;,&quot;display&quot;:&quot;Primary Home&quot;}]}}]}}</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.system\">system</a><a name=\"ContactPoint.system\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TelecomType / EmailAddressType</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck112.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.system.extension\">Slices for extension</a><a name=\"ContactPoint.system.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.system.extension:EmailAddressTypeCodelist\" title=\"Extension URL = http://nictiz.nl/fhir/StructureDefinition/code-specification\">EmailAddressTypeCodelist</a><a name=\"ContactPoint.system.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">EmailAddressTypeCodelist<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-code-specification.html\">http://nictiz.nl/fhir/StructureDefinition/code-specification</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.system.extension:EmailAddressTypeCodelist.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"ContactPoint.system.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000.html\">EmailSoortCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): EmailSoortCodelijst<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck105.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.system.extension:TelecomTypeCodelist\" title=\"Extension URL = http://nictiz.nl/fhir/StructureDefinition/code-specification\">TelecomTypeCodelist</a><a name=\"ContactPoint.system.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TelecomTypeCodelist<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-code-specification.html\">http://nictiz.nl/fhir/StructureDefinition/code-specification</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.system.extension:TelecomTypeCodelist.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"ContactPoint.system.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000.html\">TelecomTypeCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): TelecomSoortCodelijst<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.value\">value</a><a name=\"ContactPoint.value\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TelephoneNumber / EmailAddress<br/><span style=\"font-weight:bold\">Example Example TelephoneNumber international: </span><span style=\"color: darkgreen\">+31611234567</span><br/><span style=\"font-weight:bold\">Example Example EmailAddress: </span><span style=\"color: darkgreen\">giesput@myweb.nl</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use\" title=\"Purpose of this contact point\">use</a><a name=\"ContactPoint.use\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TelecomType / NumberType / EmailAddressType</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck012.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use.extension\">Slices for extension</a><a name=\"ContactPoint.use.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck015.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use.extension:EmailAddressTypeCodelist\" title=\"Extension URL = http://nictiz.nl/fhir/StructureDefinition/code-specification\">EmailAddressTypeCodelist</a><a name=\"ContactPoint.use.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">EmailAddressTypeCodelist<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-code-specification.html\">http://nictiz.nl/fhir/StructureDefinition/code-specification</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0154.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use.extension:EmailAddressTypeCodelist.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"ContactPoint.use.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000.html\">EmailSoortCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): EmailSoortCodelijst<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use.extension:EmailAddressTypeCodelist.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"ContactPoint.use.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000.html\">TelecomTypeCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): TelecomSoortCodelijst<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck005.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use.extension:NumberTypeCodelist\" title=\"Extension URL = http://nictiz.nl/fhir/StructureDefinition/code-specification\">NumberTypeCodelist</a><a name=\"ContactPoint.use.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NumberTypeCodelist<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-code-specification.html\">http://nictiz.nl/fhir/StructureDefinition/code-specification</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-contactpoint-definitions.html#ContactPoint.use.extension:NumberTypeCodelist.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"ContactPoint.use.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000.html\">NummerSoortCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>): NummerSoortCodelijst<br/><br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-contactpoint",
+  "version" : "1.3.15",
+  "name" : "nl-core-contactpoint",
+  "title" : "nl-core-contactpoint",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Base StructureDefinition for Address Type with additions for Dutch realm addresses. Dutch addresses break down Address.line in several parts and it is important to mark an address as being 'officially registered'.",
+  "purpose" : "Address information is used for visiting a person or organization and for addressing of mail.",
+  "copyright" : "CC0",
+  "fhirVersion" : "3.0.2",
+  "mapping" : [{
+    "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+    "uri" : "https://zibs.nl/wiki/Patient-v2.0.1(2015EN)",
+    "name" : "ContactInformation as part of HCIM Patient-v2.0.1(2015EN)",
+    "comment" : "ContactInformation has become an independent information model as of release 2017 of the HCIMs"
+  },
+  {
+    "identity" : "hcim-contactinformation-v3.0-2016EN",
+    "uri" : "https://zibs.nl/wiki/Patient-v3.0(2016EN)",
+    "name" : "ContactInformation as part of HCIM Patient-v3.0(2016EN)",
+    "comment" : "ContactInformation has become an independent information model as of release 2017 of the HCIMs"
+  },
+  {
+    "identity" : "hcim-contactinformation-v1.0-2017EN",
+    "uri" : "https://zibs.nl/wiki/ContactInformation-v1.0(2017EN)",
+    "name" : "HCIM ContactInformation-v1.0.1(2017EN)"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "type" : "ContactPoint",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/ContactPoint",
+  "derivation" : "constraint",
+  "snapshot" : {
+    "element" : [{
+      "id" : "ContactPoint",
+      "path" : "ContactPoint",
+      "short" : "ContactInformation",
+      "definition" : "Contact information includes a person's telephone numbers en e-mail addresses.",
+      "alias" : ["Contactgegevens"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "ContactPoint",
+        "min" : 0,
+        "max" : "*"
+      },
+      "example" : [{
+        "label" : "Mobile business phone number. Note: the mobile nature stems from the number being an 06-* number.",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "value" : "+31611234567",
+          "use" : "work"
+        }
+      },
+      {
+        "label" : "Mobile phone number undetermined private/business. Note: the mobile nature stems from the number being an 06-* number.",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "value" : "+31611234567",
+          "use" : "mobile"
+        }
+      },
+      {
+        "label" : "Primary Home Land Line",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "LL",
+                  "display" : "Land Line"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Land Line",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "LL",
+                  "display" : "Land Line"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Land Line",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "LL",
+                  "display" : "Land Line"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "work",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Home Fax",
+        "valueContactPoint" : {
+          "system" : "fax",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "FAX",
+                  "display" : "Fax"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Fax",
+        "valueContactPoint" : {
+          "system" : "fax",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "FAX",
+                  "display" : "Fax"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Fax",
+        "valueContactPoint" : {
+          "system" : "fax",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "FAX",
+                  "display" : "Fax"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "work",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Home Mobile Phone",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "MC",
+                  "display" : "Mobile Phone"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "mobile",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Mobile Phone",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "MC",
+                  "display" : "Mobile Phone"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Mobile Phone",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "MC",
+                  "display" : "Mobile Phone"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "mobile",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Home Pager",
+        "valueContactPoint" : {
+          "system" : "pager",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "PG",
+                  "display" : "Pager"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Pager",
+        "valueContactPoint" : {
+          "system" : "pager",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "PG",
+                  "display" : "Pager"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Pager",
+        "valueContactPoint" : {
+          "system" : "pager",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "PG",
+                  "display" : "Pager"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "work",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Private email address",
+        "valueContactPoint" : {
+          "system" : "email",
+          "value" : "giesput@myweb.nl",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "cpt-2",
+        "severity" : "error",
+        "human" : "A system is required if a value is provided.",
+        "expression" : "value.empty() or system.exists()",
+        "xpath" : "not(exists(f:value)) or exists(f:system)",
+        "source" : "http://hl7.org/fhir/StructureDefinition/ContactPoint"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "v2",
+        "map" : "XTN"
+      },
+      {
+        "identity" : "rim",
+        "map" : "TEL"
+      },
+      {
+        "identity" : "servd",
+        "map" : "ContactPoint"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.5",
+        "comment" : "ContactInformation"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.5",
+        "comment" : "ContactInformation"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.1",
+        "comment" : "ContactInformation"
+      }]
+    },
+    {
+      "id" : "ContactPoint.id",
+      "path" : "ContactPoint.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.extension",
+      "path" : "ContactPoint.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system",
+      "path" : "ContactPoint.system",
+      "short" : "TelecomType / EmailAddressType",
+      "definition" : "Telecommunications form for contact point - what communications system is required to make use of the contact.",
+      "alias" : ["TelecomSoort / EmailSoort"],
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.system",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "condition" : ["cpt-2"],
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPointSystem"
+        }],
+        "strength" : "required",
+        "description" : "Telecommunications form for contact point",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/contact-point-system"
+        }
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XTN.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./scheme"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./ContactPointType"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointSystem"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.id",
+      "path" : "ContactPoint.system.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension",
+      "path" : "ContactPoint.system.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist",
+      "path" : "ContactPoint.system.extension",
+      "sliceName" : "EmailAddressTypeCodelist",
+      "short" : "EmailAddressTypeCodelist",
+      "definition" : "Defines a more specific coded value for a code or string. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set.",
+      "alias" : ["Bevat de specifieke code conform de zib, bij een FHIR-element die een verplichte koppeling heeft met een bepaalde FHIR waardelijst of een FHIR element die niet gecodeerd is gedefinieerd, terwijl de zib dit wel doet.",
+      "EmailSoortCodelijst"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist.id",
+      "path" : "ContactPoint.system.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist.extension",
+      "path" : "ContactPoint.system.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist.url",
+      "path" : "ContactPoint.system.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist.value[x]",
+      "path" : "ContactPoint.system.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist.value[x]:valueCodeableConcept",
+      "path" : "ContactPoint.system.extension.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "EmailSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist",
+      "path" : "ContactPoint.system.extension",
+      "sliceName" : "TelecomTypeCodelist",
+      "short" : "TelecomTypeCodelist",
+      "definition" : "Defines a more specific coded value for a code or string. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set.",
+      "alias" : ["Bevat de specifieke code conform de zib, bij een FHIR-element die een verplichte koppeling heeft met een bepaalde FHIR waardelijst of een FHIR element die niet gecodeerd is gedefinieerd, terwijl de zib dit wel doet.",
+      "TelecomSoortCodelijst"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist.id",
+      "path" : "ContactPoint.system.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist.extension",
+      "path" : "ContactPoint.system.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist.url",
+      "path" : "ContactPoint.system.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist.value[x]",
+      "path" : "ContactPoint.system.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist.value[x]:valueCodeableConcept",
+      "path" : "ContactPoint.system.extension.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "TelecomSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointSystem"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.value",
+      "path" : "ContactPoint.system.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for code",
+      "definition" : "Primitive value for code",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "string.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-regex",
+          "valueString" : "[^\\s]+([\\s]?[^\\s]+)*"
+        }],
+        "_code" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type",
+            "valueString" : "string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type",
+            "valueString" : "xsd:token"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type",
+            "valueString" : "xsd:token"
+          }]
+        }
+      }]
+    },
+    {
+      "id" : "ContactPoint.value",
+      "path" : "ContactPoint.value",
+      "short" : "TelephoneNumber / EmailAddress",
+      "definition" : "The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).",
+      "comment" : "Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.",
+      "requirements" : "Need to support legacy numbers that are not in a tightly controlled format.",
+      "alias" : ["Telefoonnummer / E-mailadres"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "Example TelephoneNumber international",
+        "valueString" : "+31611234567"
+      },
+      {
+        "label" : "Example EmailAddress",
+        "valueString" : "giesput@myweb.nl"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XTN.1 (or XTN.12)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./url"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Value"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.23",
+        "comment" : "TelephoneNumber"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.23",
+        "comment" : "TelephoneNumber"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.4",
+        "comment" : "EmailAddress"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.20",
+        "comment" : "EmailAddress"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.20",
+        "comment" : "EmailAddress"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.7",
+        "comment" : "EmailAddress"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use",
+      "path" : "ContactPoint.use",
+      "short" : "TelecomType / NumberType / EmailAddressType",
+      "definition" : "Purpose of this contact point",
+      "comment" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old contact etc.for a current/permanent one. Applications can assume that a contact is current unless it explicitly says that it is temporary or old.",
+      "requirements" : "Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.",
+      "alias" : ["TelecomSoort / NummerSoort / EmailSoort"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "isModifier" : true,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ContactPointUse"
+        }],
+        "strength" : "required",
+        "description" : "Use of contact point",
+        "valueSetReference" : {
+          "reference" : "http://hl7.org/fhir/ValueSet/contact-point-use"
+        }
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XTN.2 - but often indicated by field"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./ContactPointPurpose"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.22",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.22",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.6",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.id",
+      "path" : "ContactPoint.use.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension",
+      "path" : "ContactPoint.use.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Extension",
+      "definition" : "An Extension",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist",
+      "path" : "ContactPoint.use.extension",
+      "sliceName" : "EmailAddressTypeCodelist",
+      "short" : "EmailAddressTypeCodelist",
+      "definition" : "Defines a more specific coded value for a code or string. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set.",
+      "alias" : ["Bevat de specifieke code conform de zib, bij een FHIR-element die een verplichte koppeling heeft met een bepaalde FHIR waardelijst of een FHIR element die niet gecodeerd is gedefinieerd, terwijl de zib dit wel doet.",
+      "EmailSoortCodelijst"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.id",
+      "path" : "ContactPoint.use.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.extension",
+      "path" : "ContactPoint.use.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.url",
+      "path" : "ContactPoint.use.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.value[x]",
+      "path" : "ContactPoint.use.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.value[x]:valueCodeableConcept",
+      "path" : "ContactPoint.use.extension.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "EmailSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.value[x]:valueCodeableConcept",
+      "path" : "ContactPoint.use.extension.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "TelecomSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist",
+      "path" : "ContactPoint.use.extension",
+      "sliceName" : "NumberTypeCodelist",
+      "short" : "NumberTypeCodelist",
+      "definition" : "Defines a more specific coded value for a code or string. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set.",
+      "alias" : ["Bevat de specifieke code conform de zib, bij een FHIR-element die een verplichte koppeling heeft met een bepaalde FHIR waardelijst of een FHIR element die niet gecodeerd is gedefinieerd, terwijl de zib dit wel doet.",
+      "NummerSoortCodelijst"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }],
+      "condition" : ["ele-1"],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() | (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist.id",
+      "path" : "ContactPoint.use.extension.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist.extension",
+      "path" : "ContactPoint.use.extension.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional Content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist.url",
+      "path" : "ContactPoint.use.extension.url",
+      "representation" : ["xmlAttr"],
+      "short" : "identifies the meaning of the extension",
+      "definition" : "Source of the definition for the extension code - a logical name or a URL.",
+      "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.url",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "fixedUri" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist.value[x]",
+      "path" : "ContactPoint.use.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "closed"
+      },
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist.value[x]:valueCodeableConcept",
+      "path" : "ContactPoint.use.extension.value[x]",
+      "sliceName" : "valueCodeableConcept",
+      "short" : "Value of extension",
+      "definition" : "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "Extension.value[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "NummerSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.6",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.value",
+      "path" : "ContactPoint.use.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for code",
+      "definition" : "Primitive value for code",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "string.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-regex",
+          "valueString" : "[^\\s]+([\\s]?[^\\s]+)*"
+        }],
+        "_code" : {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type",
+            "valueString" : "string"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type",
+            "valueString" : "xsd:token"
+          },
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type",
+            "valueString" : "xsd:token"
+          }]
+        }
+      }]
+    },
+    {
+      "id" : "ContactPoint.rank",
+      "path" : "ContactPoint.rank",
+      "short" : "Specify preferred order of use (1 = highest)",
+      "definition" : "Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values.",
+      "comment" : "Note that rank does not necessarily follow the order in which the contacts are represented in the instance.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.rank",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "positiveInt"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "ContactPoint.period",
+      "path" : "ContactPoint.period",
+      "short" : "Time period when the contact point was/is in use",
+      "definition" : "Time period when the contact point was/is in use.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "ContactPoint.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./usablePeriod[type=\"IVL<TS>\"]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "ContactPoint",
+      "path" : "ContactPoint",
+      "short" : "ContactInformation",
+      "definition" : "Contact information includes a person's telephone numbers en e-mail addresses.",
+      "alias" : ["Contactgegevens"],
+      "example" : [{
+        "label" : "Mobile business phone number. Note: the mobile nature stems from the number being an 06-* number.",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "value" : "+31611234567",
+          "use" : "work"
+        }
+      },
+      {
+        "label" : "Mobile phone number undetermined private/business. Note: the mobile nature stems from the number being an 06-* number.",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "value" : "+31611234567",
+          "use" : "mobile"
+        }
+      },
+      {
+        "label" : "Primary Home Land Line",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "LL",
+                  "display" : "Land Line"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Land Line",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "LL",
+                  "display" : "Land Line"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Land Line",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "LL",
+                  "display" : "Land Line"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "work",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Home Fax",
+        "valueContactPoint" : {
+          "system" : "fax",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "FAX",
+                  "display" : "Fax"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Fax",
+        "valueContactPoint" : {
+          "system" : "fax",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "FAX",
+                  "display" : "Fax"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Fax",
+        "valueContactPoint" : {
+          "system" : "fax",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                  "code" : "FAX",
+                  "display" : "Fax"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "work",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Home Mobile Phone",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "MC",
+                  "display" : "Mobile Phone"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "mobile",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Mobile Phone",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "MC",
+                  "display" : "Mobile Phone"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Mobile Phone",
+        "valueContactPoint" : {
+          "system" : "phone",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "MC",
+                  "display" : "Mobile Phone"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "mobile",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Home Pager",
+        "valueContactPoint" : {
+          "system" : "pager",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "PG",
+                  "display" : "Pager"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Temporary Pager",
+        "valueContactPoint" : {
+          "system" : "pager",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "PG",
+                  "display" : "Pager"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "temp",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "TMP",
+                  "display" : "Temporary"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Primary Work Pager",
+        "valueContactPoint" : {
+          "system" : "pager",
+          "_system" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "PG",
+                  "display" : "Pager"
+                }]
+              }
+            }]
+          },
+          "value" : "...",
+          "use" : "work",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "WP",
+                  "display" : "Primary Work"
+                }]
+              }
+            }]
+          }
+        }
+      },
+      {
+        "label" : "Private email address",
+        "valueContactPoint" : {
+          "system" : "email",
+          "value" : "giesput@myweb.nl",
+          "use" : "home",
+          "_use" : {
+            "extension" : [{
+              "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://hl7.org/fhir/v3/AddressUse",
+                  "code" : "HP",
+                  "display" : "Primary Home"
+                }]
+              }
+            }]
+          }
+        }
+      }],
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.5",
+        "comment" : "ContactInformation"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.5",
+        "comment" : "ContactInformation"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.1",
+        "comment" : "ContactInformation"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system",
+      "path" : "ContactPoint.system",
+      "short" : "TelecomType / EmailAddressType",
+      "alias" : ["TelecomSoort / EmailSoort"],
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointSystem"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension",
+      "path" : "ContactPoint.system.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist",
+      "path" : "ContactPoint.system.extension",
+      "sliceName" : "EmailAddressTypeCodelist",
+      "short" : "EmailAddressTypeCodelist",
+      "alias" : ["EmailSoortCodelijst"],
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:EmailAddressTypeCodelist.valueCodeableConcept:valueCodeableConcept",
+      "path" : "ContactPoint.system.extension.valueCodeableConcept",
+      "sliceName" : "valueCodeableConcept",
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "EmailSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist",
+      "path" : "ContactPoint.system.extension",
+      "sliceName" : "TelecomTypeCodelist",
+      "short" : "TelecomTypeCodelist",
+      "alias" : ["TelecomSoortCodelijst"],
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }]
+    },
+    {
+      "id" : "ContactPoint.system.extension:TelecomTypeCodelist.valueCodeableConcept:valueCodeableConcept",
+      "path" : "ContactPoint.system.extension.valueCodeableConcept",
+      "sliceName" : "valueCodeableConcept",
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "TelecomSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointSystem"
+      }]
+    },
+    {
+      "id" : "ContactPoint.value",
+      "path" : "ContactPoint.value",
+      "short" : "TelephoneNumber / EmailAddress",
+      "alias" : ["Telefoonnummer / E-mailadres"],
+      "example" : [{
+        "label" : "Example TelephoneNumber international",
+        "valueString" : "+31611234567"
+      },
+      {
+        "label" : "Example EmailAddress",
+        "valueString" : "giesput@myweb.nl"
+      }],
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.23",
+        "comment" : "TelephoneNumber"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.23",
+        "comment" : "TelephoneNumber"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.4",
+        "comment" : "EmailAddress"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.20",
+        "comment" : "EmailAddress"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.20",
+        "comment" : "EmailAddress"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.7",
+        "comment" : "EmailAddress"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use",
+      "path" : "ContactPoint.use",
+      "short" : "TelecomType / NumberType / EmailAddressType",
+      "definition" : "Purpose of this contact point",
+      "alias" : ["TelecomSoort / NummerSoort / EmailSoort"],
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.22",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.22",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.6",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v2.0.1-2015EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v3.0-2016EN",
+        "map" : "NL-CM:0.1.19",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      },
+      {
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension",
+      "path" : "ContactPoint.use.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist",
+      "path" : "ContactPoint.use.extension",
+      "sliceName" : "EmailAddressTypeCodelist",
+      "short" : "EmailAddressTypeCodelist",
+      "alias" : ["EmailSoortCodelijst"],
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.valueCodeableConcept:valueCodeableConcept",
+      "path" : "ContactPoint.use.extension.valueCodeableConcept",
+      "sliceName" : "valueCodeableConcept",
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "EmailSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.8",
+        "comment" : "EmailAddressType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:EmailAddressTypeCodelist.valueCodeableConcept:valueCodeableConcept",
+      "path" : "ContactPoint.use.extension.valueCodeableConcept",
+      "sliceName" : "valueCodeableConcept",
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "TelecomSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.5",
+        "comment" : "TelecomType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointUse"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist",
+      "path" : "ContactPoint.use.extension",
+      "sliceName" : "NumberTypeCodelist",
+      "short" : "NumberTypeCodelist",
+      "alias" : ["NummerSoortCodelijst"],
+      "type" : [{
+        "code" : "Extension",
+        "profile" : "http://nictiz.nl/fhir/StructureDefinition/code-specification"
+      }]
+    },
+    {
+      "id" : "ContactPoint.use.extension:NumberTypeCodelist.valueCodeableConcept:valueCodeableConcept",
+      "path" : "ContactPoint.use.extension.valueCodeableConcept",
+      "sliceName" : "valueCodeableConcept",
+      "binding" : {
+        "strength" : "extensible",
+        "description" : "NummerSoortCodelijst",
+        "valueSetReference" : {
+          "reference" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000"
+        }
+      },
+      "mapping" : [{
+        "identity" : "hcim-contactinformation-v1.0-2017EN",
+        "map" : "NL-CM:20.6.6",
+        "comment" : "NumberType. See for details the ConceptMap https://simplifier.net/resolve?target=simplifier&canonical=http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse"
+      }]
+    }]
+  }
+}

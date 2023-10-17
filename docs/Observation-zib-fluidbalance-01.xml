@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="zib-fluidbalance-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="zib-fluidbalance-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;zib-fluidbalance-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-FluidBalance.html">HCIM FluidBalance</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Fluid balance observable <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#364396009)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-03.html">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2018-03-11 10:00:00+0200 --&gt; 2018-03-11 17:30:00+0200</p><p><b>comment</b>: meting output via catheterzak</p><blockquote><p><b>component</b></p><p><b>code</b>: Total fluid input <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#251852001)</span></p><p><b>value</b>: 800 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL = 'mL')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Total fluid output <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#251841007)</span></p><p><b>value</b>: 1300 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL = 'mL')</span></p></blockquote></div>
+  </text>
+  <status value="preliminary"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="364396009"/>
+      <display value="Fluid balance observable"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-03"/>
+    <display value="I. Jongeneel-de Haas"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2018-03-11T10:00:00+02:00"/>
+    <end value="2018-03-11T17:30:00+02:00"/>
+  </effectivePeriod>
+  <comment value="meting output via catheterzak"/>
+  <component>
+    <!-- FluidTotalIn -->
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251852001"/>
+        <display value="Total fluid input"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="800"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <!-- FluidTotalOut -->
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251841007"/>
+        <display value="Total fluid output"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1300"/>
+      <unit value="mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </valueQuantity>
+  </component>
+</Observation>

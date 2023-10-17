@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Procedure/zib-procedure-02> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-procedure-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Surgical procedure (387713003 - SNOMED CT)\">Surgical\n                    procedure</span>, Status: voltooid<div>Uitvoerende: <a href=\"Organization/nl-core-organization-02\">UMCG - Afdeling\n                            Orthopedie</a>\n                        <div>Zorgverlenerrol: <a href=\"PractitionerRole/nl-core-practitionerrole-01\">Medisch specialisten, orthopedie</a>\n                        </div>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Surgical reduction of fracture (procedure) (274051007 - SNOMED CT)\">Surgical reduction of fracture (procedure)</span>\n                        </td>\n                        <td/>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:387713003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "387713003" ] ;
+       fhir:display [ fhir:v "Surgical procedure" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:274051007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "274051007" ] ;
+       fhir:display [ fhir:v "Surgical reduction of fracture (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-02> ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <http://nictiz.nl/fhir/PractitionerRole/nl-core-practitionerrole-01> ;
+           fhir:reference [ fhir:v "PractitionerRole/nl-core-practitionerrole-01" ] ;
+           fhir:display [ fhir:v "Medisch specialisten, orthopedie" ]
+         ]
+       ] ) ;
+       fhir:reference [ fhir:v "Organization/nl-core-organization-02" ] ;
+       fhir:display [ fhir:v "UMCG - Afdeling Orthopedie" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

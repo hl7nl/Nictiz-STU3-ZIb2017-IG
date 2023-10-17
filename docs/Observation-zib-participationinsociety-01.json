@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-participationinsociety-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">Irma\n                        Jongeneel-de Haas</a>. Status: definitief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Bezoekt activiteitencentrum 2 maal per week.</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2018-08-10</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Patient participation status (314845004 - SNOMED CT)\">Patient participation status</span>\n                        </td>\n                        <td/>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Household, family and support network finding (finding) (365469004 - SNOMED CT)\">Household, family and support network finding (finding)</span>\n                        </td>\n                        <td>Heeft veel aanloop van buren</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Leisure behavior (observable entity) (405081003 - SNOMED CT)\">Leisure behavior (observable entity)</span>\n                        </td>\n                        <td>Nordic walking</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Employment detail (observable entity) (364703007 - SNOMED CT)\">Employment detail (observable entity)</span>\n                        </td>\n                        <td>ICT-er</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "314845004",
+      "display" : "Patient participation status"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "Irma Jongeneel-de Haas"
+  },
+  "effectiveDateTime" : "2018-08-10",
+  "comment" : "Bezoekt activiteitencentrum 2 maal per week.",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "365469004",
+        "display" : "Household, family and support network finding (finding)"
+      }]
+    },
+    "valueString" : "Heeft veel aanloop van buren"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "405081003",
+        "display" : "Leisure behavior (observable entity)"
+      }]
+    },
+    "valueString" : "Nordic walking"
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "364703007",
+        "display" : "Employment detail (observable entity)"
+      }]
+    },
+    "valueString" : "ICT-er"
+  }]
+}

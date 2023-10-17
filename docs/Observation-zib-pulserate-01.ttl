@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-pulserate-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-pulserate-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-PulseRate"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">I.\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>,\n                    Status: definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-03\">Nurse G.Z.M. de Wit</a>\n                    </div>\n                </caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"3\">Sportvrouw</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Context</th>\n                        <td colspan=\"2\">\n                            <a href=\"Encounter/zib-encounter-03\">inpatient encounter</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td colspan=\"2\">2013-02-08T06:43:00+02:00</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                        <th>Interpretatie</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Heart rate Peripheral artery by palpation (8893-0 - LOINC)\">Heart rate Peripheral artery by palpation</span>\n                        </td>\n                        <td>50 /min</td>\n                        <td>\n                            <span title=\"Pulse irregular (61086009 - SNOMED CT)\">Pulse\n                                irregular</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8893-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8893-0" ] ;
+       fhir:display [ fhir:v "Heart rate Peripheral artery by palpation" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://nictiz.nl/fhir/Encounter/zib-encounter-03> ;
+     fhir:reference [ fhir:v "Encounter/zib-encounter-03" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2013-02-08T06:43:00+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-03> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-03" ] ;
+     fhir:display [ fhir:v "Nurse G.Z.M. de Wit" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "/min" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "/min" ]
+  ] ; # 
+  fhir:interpretation [
+     fhir:coding ( [
+       a sct:61086009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "61086009" ] ;
+       fhir:display [ fhir:v "Pulse irregular" ]
+     ] )
+  ] ; # 
+  fhir:comment [ fhir:v "Sportvrouw"] . # 
+
+# -------------------------------------------------------------------------------------
+

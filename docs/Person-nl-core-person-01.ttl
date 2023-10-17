@@ -1,0 +1,155 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Person/nl-core-person-01> a fhir:Person ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-person-01"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2018-06-06T14:07:59.978+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-person"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div>Henk de Haas, Man</div>\n            <div>\n                <a href=\"tel:0612345990\">0612345990</a> (Tel Werk), <a href=\"mailto:dehaas@work.com\">dehaas@work.com</a> (E-mail Werk)</div>\n            <div>Straatweg 12bII, 1012AB Weesp Amsterdam, NLD (officieel Privé Post/Bezoek)</div>\n            <div>Gekoppeld aan: <a href=\"Patient/nl-core-patient-03\">Irma Jongeneel-de Haas</a>\n            </div>\n        </div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [
+       fhir:v "de Haas" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "de " ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Haas" ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Henk" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [
+       fhir:v "phone" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0612345990" ] ;
+     fhir:use [
+       fhir:v "work" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] [
+     fhir:system [
+       fhir:v "email" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "WP" ] ;
+             fhir:display [ fhir:v "Zakelijk e-mailadres" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "dehaas@work.com" ] ;
+     fhir:use [
+       fhir:v "work" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "WP" ] ;
+             fhir:display [ fhir:v "Zakelijk e-mailadres" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:gender [
+     fhir:v "male" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/v3/AdministrativeGender"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "M" ] ;
+           fhir:display [ fhir:v "Man" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Straatweg 12bII" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Straatweg" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "12" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "bII" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Weesp" ] ;
+     fhir:district [ fhir:v "Amsterdam" ] ;
+     fhir:postalCode [ fhir:v "1012AB" ] ;
+     fhir:country [
+       fhir:v "NLD" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.16.34"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "6030" ] ;
+             fhir:display [ fhir:v "Nederland" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:link ( [
+     fhir:target [
+       fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+       fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+       fhir:display [ fhir:v "Irma Jongeneel-de Haas" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

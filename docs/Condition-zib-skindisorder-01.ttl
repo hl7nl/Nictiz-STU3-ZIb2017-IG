@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Condition/zib-skindisorder-01> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-skindisorder-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-SkinDisorder"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"zib-skindisorder-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;zib-skindisorder-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-SkinDisorder.html\">HCIM SkinDisorder</a></p></div><p><b>dueTo</b>: <a href=\"Condition-zib-skindisorder-cause-01.html\">Condition/zib-skindisorder-cause-01: Huidaandoening oorzaak: incontinentie</a></p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>category</b>: Disorder of skin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#95320005)</span></p><p><b>code</b>: irritatief contacteczeem door incontinentie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#402276007)</span></p><p><b>bodySite</b>: structuur van regio inguinalis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#26893007)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-01.html\">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>note</b>: Sinds een jaar nemen de klachen erg toe.</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/condition-dueTo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Condition/zib-skindisorder-cause-01> ;
+       fhir:reference [ fhir:v "Condition/zib-skindisorder-cause-01" ] ;
+       fhir:display [ fhir:v "Huidaandoening oorzaak: incontinentie" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [ fhir:v "active"] ; # 
+  fhir:verificationStatus [ fhir:v "confirmed"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:95320005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "95320005" ] ;
+       fhir:display [ fhir:v "Disorder of skin" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:402276007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "402276007" ] ;
+       fhir:display [ fhir:v "irritatief contacteczeem door incontinentie" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       a sct:26893007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "26893007" ] ;
+       fhir:display [ fhir:v "structuur van regio inguinalis" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Sinds een jaar nemen de klachen erg toe." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

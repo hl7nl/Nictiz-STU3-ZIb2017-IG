@@ -1,0 +1,87 @@
+{
+  "resourceType" : "CareTeam",
+  "id" : "nl-core-careteam-01",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-careteam"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>ZorgteamId: 15689532 (http://example.nl/careteamid), Categorie: <span title=\"Episode (episode - care-team-category)\">Episode</span>, Status:\n                    actief</caption>\n                <tbody>\n                    <tr>\n                        <th>Context</th>\n                        <td>\n                            <a href=\"EpisodeOfCare/nl-core-episodeofcare-02\">Drug and alcohol\n                                rehabilitation</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>Vanaf 2013-02-01T08:53:00+01:00</td>\n                    </tr>\n                    <tr>\n                        <th>Participant</th>\n                        <td>\n                            <ul>\n                                <li>\n                                    <span title=\"Psychologist (59944000 - SNOMED CT)\">Psychologist</span>\n                                    <a href=\"Practitioner/nl-core-practitioner-01\">H. de Vries</a>\n                                    <div>1 februari 2013 08:53:00 - 1 februari 2015 08:53:00</div>\n                                </li>\n                                <li>\n                                    <span title=\"Psychologist (59944000 - SNOMED CT)\">Psychologist</span>\n                                    <a href=\"Practitioner/nl-core-practitioner-04\">D. de Vries</a>\n                                    <div>Vanaf 2015-02-01T08:53:00+01:00</div>\n                                </li>\n                                <li>\n                                    <span title=\"Addiction medicine specialist (446701002 - SNOMED CT)\">Addiction medicine specialist</span>\n                                    <a href=\"Practitioner/nl-core-practitioner-03\">G.Z.M. de Wit</a>\n                                    <div>Vanaf 2013-02-01T08:53:00+01:00</div>\n                                </li>\n                            </ul>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-08\">Syndroom van Korsakov</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Verantwoordelijke organisatie</th>\n                        <td>\n                            <a href=\"Organization/nl-core-organization-01\">Maatschap Vaste\n                                Huisarts</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "system" : "http://example.nl/careteamid",
+    "value" : "15689532"
+  }],
+  "status" : "active",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/care-team-category",
+      "code" : "episode",
+      "display" : "Episode"
+    }]
+  }],
+  "context" : {
+    "reference" : "EpisodeOfCare/nl-core-episodeofcare-02",
+    "display" : "Drug and alcohol rehabilitation"
+  },
+  "period" : {
+    "start" : "2013-02-01T08:53:00+01:00"
+  },
+  "participant" : [{
+    "role" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "59944000",
+        "display" : "Psychologist"
+      }]
+    },
+    "member" : {
+      "reference" : "Practitioner/nl-core-practitioner-01",
+      "display" : "H. de Vries"
+    },
+    "period" : {
+      "start" : "2013-02-01T08:53:00+01:00",
+      "end" : "2015-02-01T08:53:00+01:00"
+    }
+  },
+  {
+    "role" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "59944000",
+        "display" : "Psychologist"
+      }]
+    },
+    "member" : {
+      "reference" : "Practitioner/nl-core-practitioner-04",
+      "display" : "D. de Vries"
+    },
+    "period" : {
+      "start" : "2015-02-01T08:53:00+01:00"
+    }
+  },
+  {
+    "role" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "446701002",
+        "display" : "Addiction medicine specialist"
+      }]
+    },
+    "member" : {
+      "reference" : "Practitioner/nl-core-practitioner-03",
+      "display" : "G.Z.M. de Wit"
+    },
+    "period" : {
+      "start" : "2013-02-01T08:53:00+01:00"
+    }
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/zib-problem-08",
+    "display" : "Syndroom van Korsakov"
+  }],
+  "managingOrganization" : [{
+    "reference" : "Organization/nl-core-organization-01",
+    "display" : "Maatschap Vaste Huisarts"
+  }]
+}

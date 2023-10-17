@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="VerificatieStatusCodelijst-to-ConditionVerificationStatus"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000.html">VerificatieStatusCodelijst</a> to <a href="http://hl7.org/fhir/STU3/valueset-condition-ver-status.html">ConditionVerificationStatus</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href="mailto:info@nictiz.nl">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM Problem release 2017 terminology for VerificationStatus to the FHIR STU3 terminology associated with Condition.verificationStatus.</p>
+</div><br/><p><b>Group 1</b>Mapping from <code>http://hl7.org/fhir/condition-ver-status|http://hl7.org/fhir/condition-ver-status version 3.0.1</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>415684004 (Suspected)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>provisional</td></tr><tr><td>410590009 (Known possible)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>differential</td></tr><tr><td>410605003 (Confirmed present)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>confirmed</td></tr><tr><td>410516002 (Known absent)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>refuted</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href="http://hl7.org/fhir/STU3/codesystem-condition-ver-status.html">ConditionVerificationStatus</a> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>UNK (Unknown)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>unknown</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/concept-bidirectional">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://nictiz.nl/fhir/ConceptMap/VerificatieStatusCodelijst-to-ConditionVerificationStatus"/>
+  <version value="1.3.15"/>
+  <name value="VerificatieStatusCodelijst-to-ConditionVerificationStatus"/>
+  <title value="HCIM VerificatieStatusCodelijst-to-ConditionVerificationStatus"/>
+  <status value="active"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Maps the HCIM Problem release 2017 terminology for VerificationStatus to the FHIR STU3 terminology associated with Condition.verificationStatus."/>
+  <purpose value="To aid in mapping from HCIM Problem value set VerificatieStatusCodelijst to FHIR STU3 Condition.verificationStatus."/>
+  <copyright value="CC0"/>
+  <sourceUri value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000"/>
+  <targetUri value="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+  <group>
+    <source value="http://hl7.org/fhir/condition-ver-status"/>
+    <sourceVersion value="http://hl7.org/fhir/condition-ver-status version 3.0.1"/>
+    <element>
+      <code value="415684004"/>
+      <display value="Suspected"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="provisional"/>
+        <display value="Provisional"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="410590009"/>
+      <display value="Known possible"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="differential"/>
+        <display value="Differential"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="410605003"/>
+      <display value="Confirmed present"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="confirmed"/>
+        <display value="Confirmed"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="410516002"/>
+      <display value="Known absent"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="refuted"/>
+        <display value="Refuted"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://hl7.org/fhir/condition-ver-status"/>
+    <element>
+      <code value="UNK"/>
+      <display value="Unknown"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="unknown"/>
+        <display value="Unknown"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

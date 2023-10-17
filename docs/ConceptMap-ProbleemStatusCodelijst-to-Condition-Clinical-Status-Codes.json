@@ -1,0 +1,104 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000.html\">ProbleemStatusCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-condition-clinical.html\">Condition Clinical Status Codes</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM OverdrachtConcern release 2017 terminology for ProblemStatus to the FHIR STU3 terminology associated with Condition.clinicalStatus</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>http://hl7.org/fhir/condition-clinical|http://hl7.org/fhir/condition-clinical version 3.0.1</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>55561003 (Active)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>active</td><td/></tr><tr><td>55561003 (Active)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>recurrence</td><td>When problem is recurring, it is active, but recurrence also tells you there has been a period of inactivity before. Recurrence thus provides more context than just 'active'.</td></tr><tr><td>73425007 (Inactive)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>inactive</td><td/></tr><tr><td>73425007 (Inactive)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>remission</td><td>When problem is in remission, it is considered inactive, but remission gives more context on the expectation of the problem returning. Remission thus provides more context than just 'inactive'.</td></tr><tr><td>73425007 (Inactive)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>resolved</td><td>When problem is resolved, it is considered inactive, but resolved gives more context on the expectation of the problem returning. Resolved thus provides more context than just 'inactive'.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+    "valueBoolean" : false
+  }],
+  "url" : "http://nictiz.nl/fhir/ConceptMap/ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes",
+  "version" : "1.3.15",
+  "name" : "ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes",
+  "title" : "HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps the HCIM OverdrachtConcern release 2017 terminology for ProblemStatus to the FHIR STU3 terminology associated with Condition.clinicalStatus",
+  "purpose" : "To aid in mapping from ZIB OverdrachtConcern value set ProbleemStatusCodelijst to FHIR STU3 Condition.clinicalStatus",
+  "copyright" : "CC0",
+  "sourceUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000",
+  "targetUri" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/condition-clinical",
+    "sourceVersion" : "http://hl7.org/fhir/condition-clinical version 3.0.1",
+    "element" : [{
+      "code" : "55561003",
+      "display" : "Active",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "active",
+        "display" : "Active",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "55561003",
+      "display" : "Active",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "specializes"
+        }],
+        "code" : "recurrence",
+        "display" : "Recurrence",
+        "equivalence" : "specializes",
+        "comment" : "When problem is recurring, it is active, but recurrence also tells you there has been a period of inactivity before. Recurrence thus provides more context than just 'active'."
+      }]
+    },
+    {
+      "code" : "73425007",
+      "display" : "Inactive",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "inactive",
+        "display" : "Inactive",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "73425007",
+      "display" : "Inactive",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "specializes"
+        }],
+        "code" : "remission",
+        "display" : "Remission",
+        "equivalence" : "specializes",
+        "comment" : "When problem is in remission, it is considered inactive, but remission gives more context on the expectation of the problem returning. Remission thus provides more context than just 'inactive'."
+      }]
+    },
+    {
+      "code" : "73425007",
+      "display" : "Inactive",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "specializes"
+        }],
+        "code" : "resolved",
+        "display" : "Resolved",
+        "equivalence" : "specializes",
+        "comment" : "When problem is resolved, it is considered inactive, but resolved gives more context on the expectation of the problem returning. Resolved thus provides more context than just 'inactive'."
+      }]
+    }]
+  }]
+}

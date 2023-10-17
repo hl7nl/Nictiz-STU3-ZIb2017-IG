@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="zib-strongkidsscore-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-StrongKidsScore"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="zib-strongkidsscore-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;zib-strongkidsscore-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-StrongKidsScore.html">HCIM StrongKidsScore</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: STRONGkids risk screening tool (assessment scale) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#108341000146107)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-03.html">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2013-02-08 09:30:00+0200</p><p><b>value</b>: 4 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM code {score} = '{score}')</span></p><p><b>comment</b>: nog geen diagnose gesteld.</p><blockquote><p><b>component</b></p><p><b>code</b>: Weightloss score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.28.3)</span></p><p><b>value</b>: Gewichtsverlies of stilstand in groei/ gewicht aanwezig <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#G2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Illness score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.28.4)</span></p><p><b>value</b>: Geen ziektebeeld met verhoogd risico <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#R0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Nutrition score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.28.5)</span></p><p><b>value</b>: Verminderde voedselinname <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Z1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Nutrition status score <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#4.28.8)</span></p><p><b>value</b>: Slechte voedingstoestand <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#T1)</span></p></blockquote></div>
+  </text>
+  <status value="preliminary"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="108341000146107"/>
+      <display value="STRONGkids risk screening tool (assessment scale)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-03"/>
+    <display value="I. Jongeneel-de Haas"/>
+  </subject>
+  <effectiveDateTime value="2013-02-08T09:30:00+02:00"/>
+  <valueQuantity>
+    <value value="4"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{score}"/>
+  </valueQuantity>
+  <comment value="nog geen diagnose gesteld."/>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.28.3"/>
+        <display value="Weightloss score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.1"/>
+        <code value="G2"/>
+        <display value="Gewichtsverlies of stilstand in groei/ gewicht aanwezig"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.28.4"/>
+        <display value="Illness score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.2"/>
+        <code value="R0"/>
+        <display value="Geen ziektebeeld met verhoogd risico"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.28.5"/>
+        <display value="Nutrition score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.3"/>
+        <code value="Z1"/>
+        <display value="Verminderde voedselinname"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="4.28.8"/>
+        <display value="Nutrition status score"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.4"/>
+        <code value="T1"/>
+        <display value="Slechte voedingstoestand"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

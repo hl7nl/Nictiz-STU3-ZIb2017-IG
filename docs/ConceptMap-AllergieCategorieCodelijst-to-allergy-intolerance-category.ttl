@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ConceptMap/AllergieCategorieCodelijst-to-allergy-intolerance-category> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AllergieCategorieCodelijst-to-allergy-intolerance-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.8.2.2--20171231000000.html\">AllergieCategorieCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-allergy-intolerance-category.html\">AllergyIntoleranceCategory</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM AllergyIntolerance release 2017 terminology for AllergyCategorie to the FHIR STU3 terminology</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-allergy-intolerance-category.html\">AllergyIntoleranceCategory</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>418471000 (neiging tot ongewenste reactie op voedsel (aandoening))</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>food</td><td/></tr><tr><td>419511003 (neiging tot ongewenste reactie op geneesmiddel (bevinding))</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>medication</td><td/></tr><tr><td>426232007 (omgevingsgerelateerde allergie (bevinding))</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>environment</td><td/></tr><tr><td>419199007 (allergie voor substantie (bevinding))</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>biologic</td><td>https://bits.nictiz.nl/browse/ZIB-998</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>OTH (anders)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/concept-bidirectional"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://nictiz.nl/fhir/ConceptMap/AllergieCategorieCodelijst-to-allergy-intolerance-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "AllergieCategorieCodelijst-to-allergy-intolerance-category"] ; # 
+  fhir:title [ fhir:v "HCIM AllergieCategorieCodelijst to allergy intolerance category"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@nictiz.nl" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps the HCIM AllergyIntolerance release 2017 terminology for AllergyCategorie to the FHIR STU3 terminology"] ; # 
+  fhir:purpose [ fhir:v "To aid in mapping from HCIM AllergyIntolerance value set AllergieCategorieCodelijst to FHIR STU3 AllergyIntoleranceCategory"] ; # 
+  fhir:copyright [ fhir:v "CC0"] ; # 
+  fhir:source [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.2--20171231000000"^^xsd:anyURI] ; # 
+  fhir:target [ fhir:v "http://hl7.org/fhir/ValueSet/allergy-intolerance-category"^^xsd:anyURI] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://hl7.org/fhir/allergy-intolerance-category"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "418471000" ] ;
+       fhir:display [ fhir:v "neiging tot ongewenste reactie op voedsel (aandoening)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "food" ] ;
+         fhir:display [ fhir:v "Food" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "419511003" ] ;
+       fhir:display [ fhir:v "neiging tot ongewenste reactie op geneesmiddel (bevinding)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "medication" ] ;
+         fhir:display [ fhir:v "Medication" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "426232007" ] ;
+       fhir:display [ fhir:v "omgevingsgerelateerde allergie (bevinding)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "environment" ] ;
+         fhir:display [ fhir:v "Environment" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "419199007" ] ;
+       fhir:display [ fhir:v "allergie voor substantie (bevinding)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "subsumes" ]
+         ] ) ;
+         fhir:code [ fhir:v "biologic" ] ;
+         fhir:display [ fhir:v "Biologic" ] ;
+         fhir:equivalence [ fhir:v "subsumes" ] ;
+         fhir:comment [ fhir:v "https://bits.nictiz.nl/browse/ZIB-998" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://hl7.org/fhir/v3/NullFlavor"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "OTH" ] ;
+       fhir:display [ fhir:v "anders" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,111 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-bloodpressure-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>,\n                    Status: definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-02\">Vaste Huisarts 1</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2013-02-01T08:53:00+01:00</td>\n                    </tr>\n                    <tr>\n                        <th>Methode</th>\n                        <td>\n                            <span title=\"Non-invasive (22762002 - SNOMED CT)\">Non-invasive</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Deel van lichaam</th>\n                        <td>\n                            <span title=\"Left upper arm structure (368208006 - SNOMED CT)\">Left\n                                upper arm structure</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Blood pressure panel with all children optional (85354-9 - LOINC)\">Blood pressure panel with all children optional</span>\n                        </td>\n                        <td/>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Systolic blood pressure (8480-6 - LOINC)\">Systolic blood\n                                pressure</span>\n                        </td>\n                        <td>108 mmHg</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Diastolic blood pressure (8462-4 - LOINC)\">Diastolic blood\n                                pressure</span>\n                        </td>\n                        <td>108 mmHg</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Blood pressure device Cuff size (8358-4 - LOINC)\">Blood\n                                pressure device Cuff size</span>\n                        </td>\n                        <td>\n                            <span title=\"Groot (L - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)\">Groot</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Body position with respect to gravity (8361-8 - LOINC)\">Body position with respect to gravity</span>\n                        </td>\n                        <td>\n                            <span title=\"Sitting position (33586001 - SNOMED CT)\">Sitting\n                                position</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "85354-9",
+      "display" : "Blood pressure panel with all children optional"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "effectiveDateTime" : "2013-02-01T08:53:00+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/nl-core-practitioner-02",
+    "display" : "Vaste Huisarts 1"
+  }],
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "368208006",
+      "display" : "Left upper arm structure"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "22762002",
+      "display" : "Non-invasive"
+    }]
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8480-6",
+        "display" : "Systolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 108,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8462-4",
+        "display" : "Diastolic blood pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 108,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8358-4",
+        "display" : "Blood pressure device Cuff size"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1",
+        "code" : "L",
+        "display" : "Groot"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8361-8",
+        "display" : "Body position with respect to gravity"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "33586001",
+        "display" : "Sitting position"
+      }]
+    }
+  }]
+}

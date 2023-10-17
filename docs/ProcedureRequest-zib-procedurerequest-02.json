@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ProcedureRequest",
+  "id" : "zib-procedurerequest-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichtingaanvraag. Subject: <a href=\"Patient/nl-core-patient-02\">Paul\n                        XXX_Mesker</a>. Status: actief<div>Intentie: plan</div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Röntgenfoto (168537006 - SNOMED CT)\">Röntgenfoto</span>\n                        </td>\n                        <td>\n                            <div>Wanneer: Vanaf 2012-03-13</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Beoogde uitvoerende</th>\n                        <td>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-03\">Test Medisch\n                                    Centrum</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-09\">Open fractuur van femur\n                                (aandoening)</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "168537006",
+      "display" : "Röntgenfoto"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-02",
+    "display" : "Paul XXX_Mesker"
+  },
+  "occurrencePeriod" : {
+    "start" : "2012-03-13"
+  },
+  "performer" : {
+    "reference" : "Organization/nl-core-organization-03",
+    "display" : "Test Medisch Centrum"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/zib-problem-09",
+    "display" : "Open fractuur van femur (aandoening)"
+  }]
+}

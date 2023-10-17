@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://snomed.info/id/385644000">385644000</a></td><td>Requested</td><td>Aangevraagd</td><td>Aangevraagd</td></tr><tr><td><a href="http://snomed.info/id/385651009">385651009</a></td><td>In progress</td><td>In uitvoering</td><td>In uitvoering</td></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/ActStatus/cs.html"><code>http://hl7.org/fhir/v3/ActStatus</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-new">new</a></td><td>Ordered</td><td>An Act that is in the preparatory stages and may not yet be acted upon</td><td>Order geplaatst</td><td>Order geplaatst</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-active">active</a></td><td>Pending</td><td>The Act can be performed or is being performed</td><td>In afwachting van uitvoering</td><td>In afwachting van uitvoering</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-held">held</a></td><td>On hold</td><td>An Act that is still in the preparatory stages has been put aside.  No action can occur until the Act is released.</td><td>Opgeschort</td><td>Opgeschort</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-cancelled">cancelled</a></td><td>Cancelled</td><td>The Act has been abandoned before activation.</td><td>Geannuleerd</td><td>Geannuleerd</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-aborted">aborted</a></td><td>Noshow</td><td>The Act has been terminated prior to the originally intended completion.</td><td>Niet nagekomen</td><td>Niet nagekomen</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2017-12-31T00:00:00+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2"/>
+  </identifier>
+  <version value="1.3.15"/>
+  <name value="OrderStatusCodelijst"/>
+  <title value="OrderStatusCodelijst"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Registratie aan de bron"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.registratieaandebron.nl"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://zibs.nl"/>
+    </telecom>
+  </contact>
+  <description value="OrderStatusCodelijst"/>
+  <immutable value="false"/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="385644000"/>
+        <display value="Requested"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Aangevraagd"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="385651009"/>
+        <display value="In progress"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="In uitvoering"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActStatus"/>
+      <concept>
+        <code value="new"/>
+        <display value="Ordered"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Order geplaatst"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="active"/>
+        <display value="Pending"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="In afwachting van uitvoering"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="held"/>
+        <display value="On hold"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Opgeschort"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="cancelled"/>
+        <display value="Cancelled"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Geannuleerd"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="aborted"/>
+        <display value="Noshow"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Niet nagekomen"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

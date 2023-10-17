@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="nl-core-practitionerrole-04"/>
+  <meta>
+    <profile value="http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="nl-core-practitionerrole-04"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;nl-core-practitionerrole-04&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-nl-core-practitionerrole.html">nl-core-practitionerrole</a></p></div><p><b>practitioner</b>: <a href="Practitioner-nl-core-practitioner-04.html">Practitioner/nl-core-practitioner-04: Dirk de Vries</a> &quot; DE VRIES&quot;</p><p><b>code</b>: Responsible Party <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/STU3/v3/ParticipationType/cs.html">v3 Code System ParticipationType</a>#RESP)</span></p><p><b>specialty</b>: Medisch specialisten, geriatrie <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#0335)</span></p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/nl-core-practitioner-04"/>
+    <display value="Dirk de Vries"/>
+  </practitioner>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/v3/ParticipationType"/>
+      <code value="RESP"/>
+      <display value="Responsible Party"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.6.7"/>
+      <code value="0335"/>
+      <display value="Medisch specialisten, geriatrie"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

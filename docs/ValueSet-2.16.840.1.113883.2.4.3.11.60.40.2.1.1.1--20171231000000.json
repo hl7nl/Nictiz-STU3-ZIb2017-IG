@@ -1,0 +1,126 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>B</td><td>Basis</td><td>Basis verzekerd</td><td>Basis verzekerd</td></tr><tr><td>A</td><td>Aanvullend verzekerd</td><td>Aanvullend verzekerd</td><td>Aanvullend verzekerd</td></tr><tr><td>BZ</td><td>Basisverzekering vanuit AWBZ</td><td>Basisverzekering vanuit AWBZ (tegenwoordig uit Wet Langdurige Zorg)</td><td>Basisverzekering vanuit AWBZ (tegenwoordig uit Wet Langdurige Zorg)</td></tr><tr><td>H</td><td>Hoofdverzekering</td><td>Een basisverzekering die geen onderdeel uitmaakt van de ZVW of AWBZ (bijvoorbeeld voor expats in het buitenland).</td><td>Een basisverzekering die geen onderdeel uitmaakt van de ZVW of AWBZ (bijvoorbeeld voor expats in het buitenland).</td></tr><tr><td>T</td><td>Tandverzekering (los)</td><td>Tandverzekering</td><td>Tandverzekering</td></tr><tr><td>AT</td><td>Aanvullend + tand</td><td>Aanvullend + tand</td><td>Aanvullend + tand</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1"
+  }],
+  "version" : "1.3.15",
+  "name" : "VerzekeringssoortCodelijst",
+  "title" : "VerzekeringssoortCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "VerzekeringssoortCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+      "concept" : [{
+        "code" : "B",
+        "display" : "Basis",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Basis verzekerd"
+        }]
+      },
+      {
+        "code" : "A",
+        "display" : "Aanvullend verzekerd",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Aanvullend verzekerd"
+        }]
+      },
+      {
+        "code" : "BZ",
+        "display" : "Basisverzekering vanuit AWBZ",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Basisverzekering vanuit AWBZ (tegenwoordig uit Wet Langdurige Zorg)"
+        }]
+      },
+      {
+        "code" : "H",
+        "display" : "Hoofdverzekering",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Een basisverzekering die geen onderdeel uitmaakt van de ZVW of AWBZ (bijvoorbeeld voor expats in het buitenland)."
+        }]
+      },
+      {
+        "code" : "T",
+        "display" : "Tandverzekering (los)",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Tandverzekering"
+        }]
+      },
+      {
+        "code" : "AT",
+        "display" : "Aanvullend + tand",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Aanvullend + tand"
+        }]
+      }]
+    }]
+  }
+}

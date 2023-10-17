@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="WoundCharacteristics-02"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/WoundCharacteristics"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="WoundCharacteristics-02"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;WoundCharacteristics-02&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-WoundCharacteristics.html">Wound characteristics for HCIM Wound/PressureUlcer</a></p></div><p><b>Reason Reference</b>: <a href="Condition-zib-pressureulcer-01.html">Condition/zib-pressureulcer-01</a></p><p><b>status</b>: final</p><p><b>code</b>: Wound observable (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#364554009)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-01.html">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: lengte van verwonding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#401238003)</span></p><p><b>value</b>: 3 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: breedte van verwonding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#401239006)</span></p><p><b>value</b>: 2 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/event-reasonReference">
+    <valueReference>
+      <reference value="Condition/zib-pressureulcer-01"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="364554009"/>
+      <display value="Wound observable (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-01"/>
+    <display value="Johan XXX_Helleman"/>
+  </subject>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="401238003"/>
+        <display value="lengte van verwonding"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="cm"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="401239006"/>
+        <display value="breedte van verwonding"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="2"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="cm"/>
+    </valueQuantity>
+  </component>
+</Observation>

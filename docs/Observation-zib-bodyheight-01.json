@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-bodyheight-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>,\n                    Status: definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-02\">Vaste Huisarts 1</a>\n                    </div>\n                </caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">met schoenen aan</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2013-02-08</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Body height --standing (8308-9 - LOINC)\">Body height\n                                --standing</span>\n                        </td>\n                        <td>183 cm</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8308-9",
+      "display" : "Body height --standing"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "effectiveDateTime" : "2013-02-08",
+  "performer" : [{
+    "reference" : "Practitioner/nl-core-practitioner-02",
+    "display" : "Vaste Huisarts 1"
+  }],
+  "valueQuantity" : {
+    "value" : 183,
+    "unit" : "cm",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  },
+  "comment" : "met schoenen aan"
+}

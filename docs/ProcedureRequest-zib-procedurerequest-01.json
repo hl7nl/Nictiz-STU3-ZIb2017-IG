@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ProcedureRequest",
+  "id" : "zib-procedurerequest-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichtingaanvraag. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief<div>Intentie: plan</div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Biopsy of skin (procedure) (240977001 - SNOMED CT)\">Biopsy\n                                of skin (procedure)</span>\n                        </td>\n                        <td>\n                            <div>Wanneer: Vanaf 2012-03-13</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Beoogde uitvoerende</th>\n                        <td>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-03\">Test Medisch\n                                    Centrum</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-06\">Pigmented nevus, no International\n                                Classification of Diseases for Oncology subtype (morphologic\n                                abnormality)</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "240977001",
+      "display" : "Biopsy of skin (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "occurrencePeriod" : {
+    "start" : "2012-03-13"
+  },
+  "performer" : {
+    "reference" : "Organization/nl-core-organization-03",
+    "display" : "Test Medisch Centrum"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/zib-problem-06",
+    "display" : "Pigmented nevus, no International Classification of Diseases for Oncology subtype (morphologic abnormality)"
+  }]
+}

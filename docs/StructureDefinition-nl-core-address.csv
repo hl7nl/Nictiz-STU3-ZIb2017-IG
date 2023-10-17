@@ -1,0 +1,237 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: AddressInformation as part of HCIM Patient-v2.0.1(2015EN)","Mapping: AddressInformation as part of HCIM Patient-v3.0(2016EN)","Mapping: HCIM AddressInformation-v1.0.1(2017EN)","Mapping: Basisregistratie Personen","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ServD","Mapping: vCard Mapping"
+"Address","Address","","AdresInformatie
+","",0,*,"","","","null {[]} {[]}
+","Address information","There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world and adds all relevant components to express Dutch addresses.
+
+A Dutch Address is a proper FHIR Address. Systems that do not understand any of the extensions, will be able to render and work with a Dutch address. Dutch addresses make certain address parts separately communicable. These parts are required for use in true Dutch systems when dealing with Dutch addresses, but may not have value for international systems when information gets sent abroad.
+
+To have true compatibility an implementer SHOULD use the core Address parts as intended. To have addresses work for Dutch context, the implementer SHOULD in addition use the extension elements.
+
+The HCIM defines certain address types in the AdresSoortCodelijst. These do not all have a one to one mapping in the FHIR Address datatype. The following explains how to deal with that. In addition, there are the ConceptMaps http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse and http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType to define this relationship
+
+HCIM Postal Address maps to Address.type 'postal'; 
+
+HCIM Primary Home Address maps to Address.extension:official 'true' + Address.use 'home' + Address.use.extension 'HP'; 
+
+HCIM Visit Address (Woon-/verblijfadres) maps to Address.use 'home' + Address.type 'physical' + Address.use.extension 'PHYS'; 
+
+HCIM Temporary Address maps to Address.use 'temp'; 
+
+HCIM Work Place Address maps to Address.use 'work';  
+
+HCIM Vacation Home Address maps to Address.use 'temp' + Address.use.extension 'HV'.
+
+If Address.type is ""both"" then this is to be understood as a dual purpose address (postal and physical). Systems that support importing it like this are encouraged to do so, otherwise they may need to import this as two separate addresses.","Note: address is for postal addresses, not physical locations.","","","","","","<valueAddress xmlns=""http://hl7.org/fhir"">
+  <extension url=""http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"">
+    <valueBoolean value=""false""/>
+  </extension>
+  <use value=""temp"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-AD-use"">
+      <valueCode value=""HV""/>
+    </extension>
+  </use>
+  <line value=""Binnenkant 12A Hoog""/>
+  <city value=""Amsterdam""/>
+  <state value=""NH""/>
+  <postalCode value=""1000AA""/>
+  <country value=""NLD""/>
+</valueAddress>","","",,,,,"",,,,"Address",0,*,"ele-1
+nl-streetname-if-official-and-other-line-parts","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+nl-streetname-if-official-and-other-line-parts:Address.streetName in an official address SHALL have a value if one of houseNumber|buildingNumberSuffix|additionalLocator has a value {(extension.where(url = 'http://fhir.nl/fhir/StructureDefinition/nl-core-address-official').where(value = true)).empty() or (line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty().not() and (line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty().not()))}","NL-CM:0.1.4","NL-CM:0.1.4","NL-CM:20.5.1","XAD","n/a","AD","Address"
+"Address.id","Address.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.extension","Address.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"",""
+"Address.extension:official","Address.extension","official","Markeer een adres als een 'officieel geregistreerd adres.
+","",0,1,"","","","Extension {[CanonicalType[http://fhir.nl/fhir/StructureDefinition/nl-core-address-official]]} {[]}
+","Mark an address as an 'officially registered' address.","Mark an address as an 'officially registered' address. In Dutch context that means it is registered in the Basisregistratie persoonsgegevens (BRP)","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","","NL-CM:0.1.11","NL-CM:0.1.11","NL-CM:20.5.8","n/a","N/A"
+"Address.use","Address.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","home | work | temp | old - purpose of this address","Purpose of this address","This is labeled as ""Is Modifier"" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address","http://hl7.org/fhir/ValueSet/address-use","",,,,"Address.use",0,1,"","","NL-CM:0.1.11","NL-CM:20.5.8","XAD.7","unique(./use)","./AddressPurpose"
+"Address.use.id","Address.use.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"Address.use.extension","Address.use.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"",""
+"Address.use.extension:AD_use","Address.use.extension","AD_use","Precieze definiëring van adressoort op basis van exacte zib-code
+","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-AD-use]]} {[]}
+","Further define the address use with the exact HCIM code.","Further define the address use with the exact HCIM code. Mostly relevant to distinguish between different types of temporary addresses. TMP and WP are not included in the valueset address-use but can be included through this extension","Known issue (MM-1090): this HL7 FHIR core extension is incorrectly placed on Address.use. Instead it should be used on the root of the Address datatype. The next breaking release will fix this issue. More information can be found here: https://bits.nictiz.nl/browse/MM-1090","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","AD.use"
+"Address.use.extension:AD_use.id","Address.use.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.use.extension:AD_use.extension","Address.use.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.use.extension:AD_use.url","Address.use.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/iso21090-AD-use""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.use.extension:AD_use.valueCode:valueCode","Address.use.extension.valueCode","valueCode","","",0,1,"","","","code {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"required","Uses of an address not included in Address.use","http://hl7.org/fhir/ValueSet/postal-address-use","",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.use.value","Address.use.value","","","",0,1,"","","","code {[]} {[]}
+","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
+"Address.type","Address.type","","","",0,1,"","","Y","code {[]} {[]}
+","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal)","http://hl7.org/fhir/ValueSet/address-type","",,,,"Address.type",0,1,"","","NL-CM:0.1.11","NL-CM:20.5.8","XAD.18","unique(./use)","address type parameter"
+"Address.text","Address.text","","","",0,1,"","","Y","string {[]} {[]}
+","Text representation of the address","A full text representation of the address.","Can provide both a text representation and parts.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","","XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6","./formatted","address label parameter"
+"Address.line","Address.line","","","",0,*,"","","Y","string {[]} {[]}
+","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","home | work | temp | old - purpose of this address.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","","XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)","AD.part[parttype = AL]","./StreetAddress (newline delimitted)","street"
+"Address.line.id","Address.line.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"Address.line.extension","Address.line.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"",""
+"Address.line.extension:streetName","Address.line.extension","streetName","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName]]} {[]}
+","streetName","Street name. If the address is a P.O. Box then the Dutch word ""Postbus"" shall be communicated. If the address is an answer number (mailing address where the receiver pays postage) then the Dutch word ""Antwoordnummer"" shall be communicated.","","Basisregistratie Persoonsgegevens 11.10 Straatnaam","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:0.1.12","NL-CM:0.1.12","NL-CM:20.5.2","11.10","ADXP[partType=STR]"
+"Address.line.extension:streetName.id","Address.line.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.line.extension:streetName.extension","Address.line.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.line.extension:streetName.url","Address.line.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.line.extension:streetName.valueString:valueString","Address.line.extension.valueString","valueString","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.line.extension:houseNumber","Address.line.extension","houseNumber","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber]]} {[]}
+","houseNumber","The element houseNumber shall contain the house number. The house number may contains non-numeric parts that further determine the address, e.g. ""23a"", but only if the source system cannot discretely communicate those. House letter shall, if possible, be communicated through the element buildingNumberSuffix. Information such as ""to"" (house boats that do not have their own house number, but are across (tegenover) a house with a house number or ""3 hoog achter"" are not part of this attribute. This type of information is conveyed elsewhere in the Address datatype.","","Basisregistratie Persoonsgegevens 11.20 Huisnummer","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:0.1.13","NL-CM:0.1.13","NL-CM:20.5.12","11.20","ADXP[partType=BNR]"
+"Address.line.extension:houseNumber.id","Address.line.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.line.extension:houseNumber.extension","Address.line.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.line.extension:houseNumber.url","Address.line.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.line.extension:houseNumber.valueString:valueString","Address.line.extension.valueString","valueString","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.line.extension:buildingNumbersuffix","Address.line.extension","buildingNumbersuffix","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix]]} {[]}
+","buildingNumberSuffix","HouseNumberLetter
+- A letter following the house number as assigned by the municipal authorities.
+
+HouseNumberAddition
+- The letters or signs needed to locate the mailbox, in addition to the house number and letter.","Export
+
+- If a house letter as well as a house number addition is known: house letter first, followed by a space and finally the house letter suffix.
+- If only a house letter is known send just that. No trailing space is required.
+- If only a house letter suffix is known, communicate that with a leading space.
+
+Import
+
+- If the value of buildingNumberSuffix contains no space, then the whole value is considered to be the house letter
+- If the value of buildingNumberSuffix contains a space, then everything before the first space is considered to be the house letter, and the everything trailing the first space is considered to be the house number suffix","Basisregistratie Persoonsgegevens 11.30 Huisletter
+11.40 Huisnummertoevoeging
+12.10 Locatieomschrijving","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:0.1.40","NL-CM:0.1.41","NL-CM:0.1.40","NL-CM:0.1.41","NL-CM:20.5.11","NL-CM:20.5.10","11.30","11.40","ADXP[partType=BNS]"
+"Address.line.extension:buildingNumbersuffix.id","Address.line.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.line.extension:buildingNumbersuffix.extension","Address.line.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.line.extension:buildingNumbersuffix.url","Address.line.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.line.extension:buildingNumbersuffix.valueString:valueString","Address.line.extension.valueString","valueString","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.line.extension:unitID","Address.line.extension","unitID","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID]]} {[]}
+","unitID","Extra information such as the building name, building number, entrance, route number.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:0.1.28","NL-CM:0.1.28","NL-CM:20.5.7","ADXP[partType=UNID]"
+"Address.line.extension:unitID.id","Address.line.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.line.extension:unitID.extension","Address.line.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.line.extension:unitID.url","Address.line.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.line.extension:unitID.valueString:valueString","Address.line.extension.valueString","valueString","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.line.extension:additionalLocator","Address.line.extension","additionalLocator","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator]]} {[]}
+","additionalLocator","HouseNumberIndication - The indication used for addresses that do not consist of the usual street name and house number.","","Basisregistratie Persoonsgegevens 11.50 Aanduiding bij huisnummer","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:0.1.42","NL-CM:0.1.42","NL-CM:20.5.9","11.50","ADXP[partType=ADL]"
+"Address.line.extension:additionalLocator.id","Address.line.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.line.extension:additionalLocator.extension","Address.line.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.line.extension:additionalLocator.url","Address.line.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.line.extension:additionalLocator.valueString:valueString","Address.line.extension.valueString","valueString","","",0,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.line.value","Address.line.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
+"Address.city","Address.city","","Municpality
+Municipalitywoonplaats","",0,1,"","","Y","string {[]} {[]}
+","Name of city, town etc.","The name of the city, town, village or other community or delivery center.","","Basisregistratie Persoonsgegevens 11.70 Woonplaatsnaam","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","","NL-CM:0.1.14","NL-CM:0.1.14","NL-CM:20.5.3","11.70","XAD.3","AD.part[parttype = CTY]","./Jurisdiction","locality"
+"Address.district","Address.district","","County
+Gemeente","",0,1,"","","Y","string {[]} {[]}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead. In a Dutch address this element is used for the population of a ""gemeente""","Basisregistratie Persoonsgegevens 09.10 Gemeente van inschrijving","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","","NL-CM:0.1.16","NL-CM:0.1.16","NL-CM:20.5.4","09.10","XAD.9","AD.part[parttype = CNT | CPA]"
+"Address.state","Address.state","","Province
+TerritoryProvincie","",0,1,"","","Y","string {[]} {[]}
+","Sub-unit of country (abbreviations ok).","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes). For Dutch addresses this element should contain the ""provincie"" code","","Some (Dutch) cities have the same name in multiple provinces. Dutch examples include Bergen (Noord-Holland / Limburg) and  Geesteren (Gelderland / Overijssel).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ZH""/>","","",,,,,"",,,,"Address.state",0,1,"","","XAD.4","AD.part[parttype = STA]","./Region","region"
+"Address.postalCode","Address.postalCode","","Zip
+Postcode","",0,1,"","","Y","string {[]} {[]}
+","Postal code for area","A postal code designating a region defined by the postal service.","Dutch postal codes have pattern '\d{4}[A-Z]{2}' so they do not have spaces. Systems can easily render postal codes with a space if necessary.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"nl-postal-code-pattern
+","nl-postal-code-pattern:Dutch postal code pattern 'nnnnAA' {(country in 'nl' | 'nld' | 'nederland').not() or matches('^\\d{4}[A-Z]{2}$')}
+","NL-CM:0.1.15","NL-CM:0.1.15","NL-CM:20.5.6","11.60","XAD.5","AD.part[parttype = ZIP]","./PostalIdentificationCode","code"
+"Address.country","Address.country","","land
+","",0,1,"","","Y","string {[]} {[]}
+","Country (can be ISO 3166 3 letter code)","A country (code) for the address.","The FHIR datatype does not properly support coding the country using a CodeableConcept or Coding datatype. If the sender supports coded countries, it SHALL send the coded value using the code-specification extension under Address.country.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""NLD""/>","","",,,,,"",,,,"Address.country",0,1,"","","NL-CM:0.1.17","NL-CM:0.1.17","NL-CM:20.5.5","XAD.6","AD.part[parttype = CNT]","./Country","country"
+"Address.country.id","Address.country.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references)","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"Address.country.extension","Address.country.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"",""
+"Address.country.extension:countryCode","Address.country.extension","countryCode","Bevat de specifieke code conform de zib, bij een FHIR-element die een verplichte koppeling heeft met een bepaalde FHIR waardelijst of een FHIR element die niet gecodeerd is gedefinieerd, terwijl de zib dit wel doet.
+","",0,1,"","","","Extension {[CanonicalType[http://nictiz.nl/fhir/StructureDefinition/code-specification]]} {[]}
+","CountryGBACode | CountryISOCode","Defines a more specific coded value for a code or string. Especially useful for FHIR's required ValueSets. These extensions are primarily used on codes bound to a required value set, where you would like to use a more specific code than the codes in the bounded value set.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Address.country.extension:countryCode.id","Address.country.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.country.extension:countryCode.extension","Address.country.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.country.extension:countryCode.url","Address.country.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://nictiz.nl/fhir/StructureDefinition/code-specification""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Address.country.extension:countryCode.value[x]","Address.country.extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","","N/A"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept","Address.country.extension.value[x]","valueCodeableConcept","LandGBACodelijst
+LandISOCodelijst","",1,1,"","","","CodeableConcept {[]} {[]}
+","CountryGBACode | CountryISOCode","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","","N/A"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept.id","Address.country.extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept.extension","Address.country.extension.value[x].extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept.coding","Address.country.extension.value[x].coding","","","",1,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"","pattern:$this}
+","",,"open","CodeableConcept.coding",0,*,"","","C*E.1-8, C*E.10-22","union(., ./translation)"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept.coding:countryGBACodelist","Address.country.extension.value[x].coding","countryGBACodelist","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:oid:2.16.840.1.113883.2.4.4.16.34""/>
+</valueCoding>","","","",,"extensible","LandGBACodelijst","http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000","",,,,"CodeableConcept.coding",0,*,"","","C*E.1-8, C*E.10-22","union(., ./translation)"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept.coding:countryISOCodelist","Address.country.extension.value[x].coding","countryISOCodelist","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
+  <system value=""urn:iso:std:iso:3166""/>
+</valueCoding>","","","",,"extensible","LandISOCodelijst","http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000","",,,,"CodeableConcept.coding",0,*,"","","C*E.1-8, C*E.10-22","union(., ./translation)"
+"Address.country.extension:countryCode.value[x]:valueCodeableConcept.text","Address.country.extension.value[x].text","","","",0,1,"","","Y","string {[]} {[]}
+","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","","C*E.9. But note many systems use C*E.2 for this","./originalText[mediaType/code=""text/plain""]/data"
+"Address.country.value","Address.country.value","","","",0,1,"","","","string {[]} {[]}
+","Primitive value for string","The actual value","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
+"Address.period","Address.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
+</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"

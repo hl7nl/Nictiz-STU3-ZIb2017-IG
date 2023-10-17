@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="zib-outcomeofcare-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-OutcomeOfCare"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 27574-3}">Skilled nursing treatment plan Progress note and attainment of goals (narrative)</span> </h2><table class="grid"><tr><td>Subject</td><td><b>Johan J. XXX_Helleman (OFFICIAL)</b> male, DoB: 1964-07-25 ( id: 999911120 (use: OFFICIAL))</td></tr><tr><td>When For</td><td>2019-04-05 10:34:00+0100</td></tr></table><p><b>Report Details</b></p><p>Waarschijnlijk delier.</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
+    <valueReference>
+      <reference value="Procedure/zib-nursingintervention-01"/>
+      <display value="Waarborgen van veiligheid."/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="27574-3"/>
+      <display value="Skilled nursing treatment plan Progress note and attainment of goals (narrative)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-01"/>
+    <display value="Johan XXX_Helleman"/>
+  </subject>
+  <effectiveDateTime value="2019-04-05T10:34:00+01:00"/>
+  <conclusion value="Waarschijnlijk delier."/>
+</DiagnosticReport>

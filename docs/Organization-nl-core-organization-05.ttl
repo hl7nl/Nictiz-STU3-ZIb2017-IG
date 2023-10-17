@@ -1,0 +1,148 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Organization/nl-core-organization-05> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-organization-05"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "6" ] ;
+     fhir:lastUpdated [ fhir:v "2016-11-09T17:27:51.255+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-organization"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>OrganisatieId: 12341234 (AGB-Z), 12341234 (URA)</caption>\n                <tbody>\n                    <tr>\n                        <th>Naam</th>\n                        <td>Ziekenhuis Gooi en Overvecht<div>Alias: ZGO</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <div>\n                                <span title=\"Psychiatrie (0329 - AGB-medisch specialisme)\">Psychiatrie</span>\n                            </div>\n                            <div>\n                                <span title=\"Ziekenhuis (V4 - organization-type)\">Ziekenhuis</span>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Contactgegevens</th>\n                        <td>\n                            <a href=\"tel:030-1234567\">030-1234567</a> (Tel Werk)</td>\n                    </tr>\n                    <tr>\n                        <th>Adres</th>\n                        <td>Ventweg 12, 1000AA Utrecht, NLD (Werk)</td>\n                    </tr>\n                    <tr>\n                        <th colspan=\"2\">\n                            <hr/>\n                        </th>\n                    </tr>\n                    <tr>\n                        <th>\n                            <span title=\"Administrative (ADMIN - contactentity-type)\">Administrative</span>\n                        </th>\n                        <td>\n                            <div>Mevrouw Pietersen</div>\n                            <div>\n                                <a href=\"tel:030-1234567\">030-1234567</a> (Tel Werk)</div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/agb-z"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12341234" ]
+  ] [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/ura"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12341234" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.7"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0329" ] ;
+       fhir:display [ fhir:v "Psychiatrie" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://nictiz.nl/fhir/NamingSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "V4" ] ;
+       fhir:display [ fhir:v "Ziekenhuis" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Ziekenhuis Gooi en Overvecht"] ; # 
+  fhir:alias ( [ fhir:v "ZGO"] ) ; # 
+  fhir:telecom ( [
+     fhir:system [
+       fhir:v "phone" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "LL" ] ;
+             fhir:display [ fhir:v "Vast telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "030-1234567" ] ;
+     fhir:use [
+       fhir:v "work" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "LL" ] ;
+             fhir:display [ fhir:v "Vast telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [
+       fhir:v "Ventweg 12" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Ventweg" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "12" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Utrecht" ] ;
+     fhir:postalCode [ fhir:v "1000AA" ] ;
+     fhir:country [
+       fhir:v "NLD" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.16.34"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "6030" ] ;
+             fhir:display [ fhir:v "Nederland" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:purpose [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/contactentity-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ADMIN" ] ;
+         fhir:display [ fhir:v "Administrative" ]
+       ] )
+     ] ;
+     fhir:name [
+       fhir:text [ fhir:v "Mevrouw Pietersen" ]
+     ] ;
+     fhir:telecom ( [
+       fhir:system [
+         fhir:v "phone" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "LL" ] ;
+               fhir:display [ fhir:v "Vast telefoonnummer" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "030-1234567" ] ;
+       fhir:use [
+         fhir:v "work" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "LL" ] ;
+               fhir:display [ fhir:v "Vast telefoonnummer" ]
+             ] )
+           ]
+         ] )
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

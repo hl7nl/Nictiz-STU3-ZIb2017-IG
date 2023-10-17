@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Condition",
+  "id" : "zib-problem-05",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Conditie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief / bevestigd</caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Fracture of lower limb (disorder) (46866001 - SNOMED CT)\">Fracture of lower limb (disorder)</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "clinicalStatus" : "active",
+  "_clinicalStatus" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "73425007",
+          "display" : "Inactive"
+        }]
+      }
+    }]
+  },
+  "verificationStatus" : "confirmed",
+  "_verificationStatus" : {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "410605003",
+          "display" : "Confimed present"
+        }]
+      }
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "46866001",
+      "display" : "Fracture of lower limb (disorder)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  }
+}

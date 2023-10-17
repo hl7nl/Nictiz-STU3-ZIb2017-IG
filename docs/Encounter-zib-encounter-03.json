@@ -1,0 +1,41 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "zib-encounter-03",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+  },
+  "text" : {
+    "status" : "additional",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Patient with id example</caption>\n                <thead>\n                    <tr>\n                        <th>ContactType</th>\n                        <th>StartDateTime</th>\n                        <th>EndDateTime</th>\n                        <th>Procedure</th>\n                        <th>HealthProfessional</th>\n                        <th>OrganizationType</th>\n                        <th>OrganizationName</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td>Inpatient</td>\n                        <td>16-08-2012</td>\n                        <td>19-08-2012</td>\n                        <td>Surgical reduction of fracture (procedure)</td>\n                        <td>G.Z.M. de Wit</td>\n                        <td>Hospital</td>\n                        <td>St. Lucas Andreas Ziekenhuis</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "finished",
+  "class" : {
+    "system" : "http://hl7.org/fhir/v3/ActCode",
+    "code" : "IMP",
+    "display" : "inpatient encounter"
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "participant" : [{
+    "individual" : {
+      "reference" : "Practitioner/nl-core-practitioner-03",
+      "display" : "G.Z.M. de Wit"
+    }
+  }],
+  "period" : {
+    "start" : "2012-08-16",
+    "end" : "2012-08-19"
+  },
+  "diagnosis" : [{
+    "condition" : {
+      "reference" : "Procedure/zib-procedure-02",
+      "display" : "Surgical reduction of fracture (procedure)"
+    }
+  }],
+  "serviceProvider" : {
+    "reference" : "Organization/nl-core-organization-03",
+    "display" : "Test Medisch Centrum"
+  }
+}

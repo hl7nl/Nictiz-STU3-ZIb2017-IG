@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-participationinsociety-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-participationinsociety-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">Irma\n                        Jongeneel-de Haas</a>. Status: definitief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Bezoekt activiteitencentrum 2 maal per week.</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2018-08-10</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Patient participation status (314845004 - SNOMED CT)\">Patient participation status</span>\n                        </td>\n                        <td/>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Household, family and support network finding (finding) (365469004 - SNOMED CT)\">Household, family and support network finding (finding)</span>\n                        </td>\n                        <td>Heeft veel aanloop van buren</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Leisure behavior (observable entity) (405081003 - SNOMED CT)\">Leisure behavior (observable entity)</span>\n                        </td>\n                        <td>Nordic walking</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Employment detail (observable entity) (364703007 - SNOMED CT)\">Employment detail (observable entity)</span>\n                        </td>\n                        <td>ICT-er</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:314845004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "314845004" ] ;
+       fhir:display [ fhir:v "Patient participation status" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "Irma Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2018-08-10"^^xsd:date] ; # 
+  fhir:comment [ fhir:v "Bezoekt activiteitencentrum 2 maal per week."] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:365469004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "365469004" ] ;
+         fhir:display [ fhir:v "Household, family and support network finding (finding)" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Heeft veel aanloop van buren" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:405081003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "405081003" ] ;
+         fhir:display [ fhir:v "Leisure behavior (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "Nordic walking" ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:364703007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "364703007" ] ;
+         fhir:display [ fhir:v "Employment detail (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "ICT-er" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

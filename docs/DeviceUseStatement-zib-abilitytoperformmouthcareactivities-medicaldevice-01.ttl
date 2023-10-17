@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DeviceUseStatement/zib-abilitytoperformmouthcareactivities-medicaldevice-01> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-abilitytoperformmouthcareactivities-medicaldevice-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToPerformMouthcareActivities-MedicalDevice"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DeviceUseStatement</b><a name=\"zib-abilitytoperformmouthcareactivities-medicaldevice-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource DeviceUseStatement &quot;zib-abilitytoperformmouthcareactivities-medicaldevice-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-AbilityToPerformMouthcareActivities-MedicalDevice.html\">HCIM AbilityToPerformMouthcareActivities MedicalDevice</a></p></div><p><b>Backported DeviceUseStatement.reasonReference for STU3</b>: <a href=\"Observation-zib-abilitytoperformmouthcareactivities-01.html\">Observation/zib-abilitytoperformmouthcareactivities-01: Hulp nodig</a></p><p><b>status</b>: active</p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>device</b>: <a href=\"Device-zib-abilitytoperformmouthcareactivities-medicaldeviceproduct-01.html\">Device/zib-abilitytoperformmouthcareactivities-medicaldeviceproduct-01: Gebitsprothese</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Observation/zib-abilitytoperformmouthcareactivities-01> ;
+       fhir:reference [ fhir:v "Observation/zib-abilitytoperformmouthcareactivities-01" ] ;
+       fhir:display [ fhir:v "Hulp nodig" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://nictiz.nl/fhir/Device/zib-abilitytoperformmouthcareactivities-medicaldeviceproduct-01> ;
+     fhir:reference [ fhir:v "Device/zib-abilitytoperformmouthcareactivities-medicaldeviceproduct-01" ] ;
+     fhir:display [ fhir:v "Gebitsprothese" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

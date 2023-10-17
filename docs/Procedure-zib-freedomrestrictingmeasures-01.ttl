@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Procedure/zib-freedomrestrictingmeasures-01> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-freedomrestrictingmeasures-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-03\">Irma\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Procedures relating to control, restraint, seclusion and segregation (procedure) (225214000 - SNOMED CT)\">Procedures relating to control, restraint, seclusion and segregation\n                        (procedure)</span>, Status: voltooid</caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Restriction of movement (225317005 - SNOMED CT)\">Restriction of movement</span>\n                        </td>\n                        <td>\n                            <div>Uitgevoerd: 1 mei 2014 - 5 mei 2014</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Wilsbekwaam</th>\n                        <td>nee<div>Wilsonbekwaam t.a.v. geldzaken.</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Toestemming</th>\n                        <td>\n                            <span title=\"Instemming wettelijke vertegenwoordiger (4 - 2.16.840.1.113883.2.4.3.11.60.40.4.6.1)\">Instemming wettelijke vertegenwoordiger</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-LegallyCapable"^^xsd:anyURI ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "LegallyCapableIndicator"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "legallyCapableComment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Wilsonbekwaam t.a.v. geldzaken." ]
+     ] ) #  LegallyCapableIndicator 
+  ] [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-Permission"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.6.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Instemming wettelijke vertegenwoordiger" ]
+       ] )
+     ] # <extension url=\"Permission\">
+  ] ) ; #  LegallyCapable 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:225214000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "225214000" ] ;
+       fhir:display [ fhir:v "Procedures relating to control, restraint, seclusion and segregation (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:225317005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ; #  TypeOfInterventionCodelist 
+       fhir:code [ fhir:v "225317005" ] ;
+       fhir:display [ fhir:v "Restriction of movement" ]
+     ] )
+  ] ; #  TypeOfInterventionCode 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "Irma Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2014-05-01"^^xsd:date ] ; #  StartEpisode 
+     fhir:end [ fhir:v "2014-05-05"^^xsd:date ] #  EndOfEpisode 
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

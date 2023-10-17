@@ -1,0 +1,1823 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/StructureDefinition/nl-core-relatedperson> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-relatedperson"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson\">RelatedPerson</a><a name=\"RelatedPerson\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/relatedperson.html\">RelatedPerson</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An person that is related to a patient, but who is not a direct target of care</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.extension\">Slices for extension</a><a name=\"RelatedPerson.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.extension:role\" title=\"Extension URL = http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role\">role</a><a name=\"RelatedPerson.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Role<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/StructureDefinition-nl-core-relatedperson-role.html\">http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.extension:role.valueCodeableConcept:valueCodeableConcept\" title=\"Slice valueCodeableConcept\">valueCodeableConcept:valueCodeableConcept</a><a name=\"RelatedPerson.extension.valueCodeableConcept\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Role</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000.html\">RolCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.identifier\">identifier</a><a name=\"RelatedPerson.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A human identifier for this person</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.patient\">patient</a><a name=\"RelatedPerson.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/references.html\">Reference</a>(<a href=\"StructureDefinition-nl-core-patient.html\">nl-core-patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The patient this person is related to</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.relationship\" title=\"Defines the contact’s familial relationship to the patient.\">relationship</a><a name=\"RelatedPerson.relationship\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Relationship<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000.html\">RelatieCodelijst</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.name\" title=\"Full name of the contact.\">name</a><a name=\"RelatedPerson.name\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-nl-core-humanname.html\" title=\"HumanName\">nl-core-humanname</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NameInformation</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.telecom\">telecom</a><a name=\"RelatedPerson.telecom\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-nl-core-contactpoint.html\" title=\"ContactPoint\">nl-core-contactpoint</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ContactInformation</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.address\">address</a><a name=\"RelatedPerson.address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-nl-core-address.html\" title=\"Address\">nl-core-address</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">AddressInformation</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-relatedperson-definitions.html#RelatedPerson.period\">period</a><a name=\"RelatedPerson.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#Period\">Period</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Period of time that this relationship is considered valid</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "nl-core-relatedperson"] ; # 
+  fhir:title [ fhir:v "nl-core-relatedperson"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@nictiz.nl" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A RelatedPerson resource as defined by the Dutch Health and Care Information models or HCIM (Dutch: Zorginformatiebouwsteen or ZIB) ContactPersoon version 3.1 (Release 2017). The HCIM ContactPerson is meant to deal with both related persons and contacts. This profile targets instantiations of the HCIM ContactPerson who are related persons. An HCIM ContactPerson who is a contact for a patient, belongs in Patient.contact. If a person is both a related person and a contact person, then some data duplication is inevitable. This may or may not be resolved in a future version of the Patient/RelatedPerson resources."] ; # 
+  fhir:purpose [ fhir:v "Recording relevant information to identify the contacts."] ; # 
+  fhir:copyright [ fhir:v "CC0"] ; # 
+  fhir:fhirVersion [ fhir:v "3.0.2"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/ContactPerson-v1.2(2015EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM ContactPerson-v1.2(2015EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/ContactPerson-v3.0(2016EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM ContactPerson-v3.0(2016EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/ContactPerson-v3.1(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM ContactPerson-v3.1(2017EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-contactinformation-v2.0.1-2015EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Patient-v2.0.1(2015EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Patient-v2.0.1(2015EN)" ] ;
+     fhir:comment [ fhir:v "ContactInformation has become an independent information model as of release 2017 of the HCIMs" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-contactinformation-v3.0-2016EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Patient-v3.0(2016EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Patient-v3.0(2016EN)" ] ;
+     fhir:comment [ fhir:v "ContactInformation has become an independent information model as of release 2017 of the HCIMs." ]
+  ] [
+     fhir:identity [ fhir:v "hcim-contactinformation-v1.0-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/ContactInformation-v1.0(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM ContactInformation-v1.0(2017EN)" ] ;
+     fhir:comment [ fhir:v "ContactInformation has become an independent information model as of release 2017 of the HCIMs." ]
+  ] [
+     fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Payer-v1.2(2015EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Payer-v1.2(2015EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Payer-v3.0(2016EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Payer-v3.0(2016EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Payer-v3.1(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM Payer-v3.1(2017EN)" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/BasicElements-v1.0(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM BasicElements-v1.0(2017EN)" ]
+  ] [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "w5" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/w5"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "W5 Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "v2" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HL7 v2 Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "resource"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "RelatedPerson"] ; # 
+  fhir:baseDefinition [ fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI] ; # 
+  fhir:derivation [ fhir:v "constraint"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "RelatedPerson" ] ;
+       fhir:path [ fhir:v "RelatedPerson" ] ;
+       fhir:short [ fhir:v "An person that is related to a patient, but who is not a direct target of care" ] ;
+       fhir:definition [ fhir:v "Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "dom-2" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL NOT contain nested Resources" ] ;
+         fhir:expression [ fhir:v "contained.contained.empty()" ] ;
+         fhir:xpath [ fhir:v "not(parent::f:contained and f:contained)" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "dom-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL NOT contain any narrative" ] ;
+         fhir:expression [ fhir:v "contained.text.empty()" ] ;
+         fhir:xpath [ fhir:v "not(parent::f:contained and f:text)" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "dom-4" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ] ;
+         fhir:expression [ fhir:v "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "dom-3" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource" ] ;
+         fhir:expression [ fhir:v "contained.where(('#'+id in %resource.descendants().reference).not()).empty()" ] ;
+         fhir:xpath [ fhir:v "not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/DomainResource"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Entity. Role, or Act" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "role" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "administrative.individual" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.1" ] ;
+         fhir:comment [ fhir:v "Contact" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.1" ] ;
+         fhir:comment [ fhir:v "Contact" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.1" ] ;
+         fhir:comment [ fhir:v "Contact" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.5" ] ;
+         fhir:comment [ fhir:v "RelatedPersonAsInformationSource::ContactPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.10" ] ;
+         fhir:comment [ fhir:v "RelatedPersonAsAuthor::ContactPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.13" ] ;
+         fhir:comment [ fhir:v "RelatedPersonAsSubject::ContactPerson" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.id" ] ;
+       fhir:path [ fhir:v "RelatedPerson.id" ] ;
+       fhir:short [ fhir:v "Logical id of this artifact" ] ;
+       fhir:definition [ fhir:v "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." ] ;
+       fhir:comment [ fhir:v "The only time that a resource does not have an id is when it is being submitted to the server using a create operation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "id"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.meta" ] ;
+       fhir:path [ fhir:v "RelatedPerson.meta" ] ;
+       fhir:short [ fhir:v "Metadata about the resource" ] ;
+       fhir:definition [ fhir:v "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.meta" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Meta"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.implicitRules" ] ;
+       fhir:path [ fhir:v "RelatedPerson.implicitRules" ] ;
+       fhir:short [ fhir:v "A set of rules under which this content was created" ] ;
+       fhir:definition [ fhir:v "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content." ] ;
+       fhir:comment [ fhir:v "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. \n\nThis element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.implicitRules" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.language" ] ;
+       fhir:path [ fhir:v "RelatedPerson.language" ] ;
+       fhir:short [ fhir:v "Language of the resource content" ] ;
+       fhir:definition [ fhir:v "The base language in which the resource is written." ] ;
+       fhir:comment [ fhir:v "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Resource.language" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:Reference ;
+             fhir:link <http://hl7.org/fhir/ValueSet/all-languages> ;
+             fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/all-languages" ]
+           ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Language" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
+         ] ) ;
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:description [ fhir:v "A human language." ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/languages> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/languages" ]
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.text" ] ;
+       fhir:path [ fhir:v "RelatedPerson.text" ] ;
+       fhir:short [ fhir:v "Text summary of the resource, for human interpretation" ] ;
+       fhir:definition [ fhir:v "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." ] ;
+       fhir:comment [ fhir:v "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded in formation is added later." ] ;
+       fhir:alias ( [ fhir:v "narrative" ] [ fhir:v "html" ] [ fhir:v "xhtml" ] [ fhir:v "display" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Narrative"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "dom-1" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "Act.text?" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.contained" ] ;
+       fhir:path [ fhir:v "RelatedPerson.contained" ] ;
+       fhir:short [ fhir:v "Contained, inline Resources" ] ;
+       fhir:definition [ fhir:v "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." ] ;
+       fhir:comment [ fhir:v "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again." ] ;
+       fhir:alias ( [ fhir:v "inline resources" ] [ fhir:v "anonymous resources" ] [ fhir:v "contained resources" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.contained" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Resource"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension" ] ;
+       fhir:sliceName [ fhir:v "role" ] ;
+       fhir:short [ fhir:v "Role" ] ;
+       fhir:definition [ fhir:v "Defines the role of the contact in relation to the patient." ] ;
+       fhir:alias ( [ fhir:v "Rol" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role.id" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role.extension" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role.url" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role.value[x]" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension.value[x]" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "type" ] ;
+           fhir:path [ fhir:v "$this" ]
+         ] ) ;
+         fhir:ordered [ fhir:v "false"^^xsd:boolean ] ;
+         fhir:rules [ fhir:v "closed" ]
+       ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role.value[x]:valueCodeableConcept" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension.value[x]" ] ;
+       fhir:sliceName [ fhir:v "valueCodeableConcept" ] ;
+       fhir:short [ fhir:v "Role" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:alias ( [ fhir:v "Rol" ] ) ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000> ;
+           fhir:reference [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.modifierExtension" ] ;
+       fhir:path [ fhir:v "RelatedPerson.modifierExtension" ] ;
+       fhir:short [ fhir:v "Extensions that cannot be ignored" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "DomainResource.modifierExtension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.identifier" ] ;
+       fhir:path [ fhir:v "RelatedPerson.identifier" ] ;
+       fhir:short [ fhir:v "A human identifier for this person" ] ;
+       fhir:definition [ fhir:v "Identifier for a person within a particular scope." ] ;
+       fhir:requirements [ fhir:v "People are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the patient. Examples are national person identifier and local identifier." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.identifier" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "NK1-33" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".id" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "id" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.6" ] ;
+         fhir:comment [ fhir:v "IdentificationNumber" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.active" ] ;
+       fhir:path [ fhir:v "RelatedPerson.active" ] ;
+       fhir:short [ fhir:v "Whether this related person's record is in active use" ] ;
+       fhir:definition [ fhir:v "Whether this related person record is in active use." ] ;
+       fhir:comment [ fhir:v "This element is labeled as a modifier because it may be used to mark that the resource was created in error." ] ;
+       fhir:requirements [ fhir:v "Need to be able to mark a related person record as not to be used, such as if it was created in error." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.active" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "boolean"^^xsd:anyURI ]
+       ] ) ;
+       fhir:defaultValue [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".statusCode" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "status" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.patient" ] ;
+       fhir:path [ fhir:v "RelatedPerson.patient" ] ;
+       fhir:short [ fhir:v "The patient this person is related to" ] ;
+       fhir:definition [ fhir:v "The patient this person is related to." ] ;
+       fhir:requirements [ fhir:v "We need to know which patient this RelatedPerson is related to." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.patient" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "PID-3" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "scoper[classCode=PSN|ANM and determinerCode='INSTANCE']/playedRole[classCode='PAT']/id" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.11" ] ;
+         fhir:comment [ fhir:v "Subject" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.relationship" ] ;
+       fhir:path [ fhir:v "RelatedPerson.relationship" ] ;
+       fhir:short [ fhir:v "Relationship" ] ;
+       fhir:definition [ fhir:v "Defines the contact’s familial relationship to the patient." ] ;
+       fhir:requirements [ fhir:v "We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person." ] ;
+       fhir:alias ( [ fhir:v "Relatie" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.relationship" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "PatientRelationshipType" ]
+         ] ) ;
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000> ;
+           fhir:reference [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "NK1-3" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "code" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "class" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.3" ] ;
+         fhir:comment [ fhir:v "Relationship" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.3" ] ;
+         fhir:comment [ fhir:v "Relationship" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.3" ] ;
+         fhir:comment [ fhir:v "Relationship" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.name" ] ;
+       fhir:path [ fhir:v "RelatedPerson.name" ] ;
+       fhir:short [ fhir:v "NameInformation" ] ;
+       fhir:definition [ fhir:v "Full name of the contact." ] ;
+       fhir:comment [ fhir:v "Dutch names require that certain name parts are separately communicable. For this reason, extensions are added onto the base HumanName element to mark the meaning of each part. A Dutch HumanName is still a proper FHIR HumanName; however, there might be an incompatibilty with the default FHIR mechanism for communicating given names. See the compatibility note below for more information.\r\n\r\nThe extension elements cover birth name (NL: eigennaam / geslachtsnaam) and partner/spouse name. Both may have a prefix (NL: voorvoegsel). When a person marries, he or she may keep their own name, assume the partner name, append the partner name to their own name, or the other way around.\r\n\r\n**Incompatibility note**: It has come to light that this specification deviates from the way that the HumanName datatype is normally used. This will be fixed in a future release. However, current implementations should be aware of the special considerations regarding the use of this specification. \r\n\r\nThe issue at hand is the way alternative representations of a name, like initials or a nickname, are communicated. Normally this is done using multiple HumanName instances, which are differentiated using the `.use` element. However, this specification allows for including all alternative representations in the _same_ HumanName instance, with the expectation that the extensions provide enough information for recieving systems to differentiate them. However, this means that contrary to the normal usage of this datatype, repetitions of `.given` names cannot be concatenated to get the full list of given names; the list might be a mix of full names, nicknames and initials.\r\n\r\nSince multiple implementations are based on this specification, sending systems are advised (but not required) to keep the approach with one HumanName instance, while recieving systems should be able to handle this one-instance approach. More specifically:\r\n\r\n* Sending and recieving systems SHOULD always use the specified extensions when using this datatype.\r\n* Sending systems are encouraged to populate the `.text` element to unambigiously communicate the patient name.\r\n* Sending systems are encouraged to send either the full given names or the initials, but not both. This alleviates the duplication of names in `.given`.\r\n* When a sending system uses the current one-instance approach for communicating multiple representations, `.use` MAY NOT be populated. After all, it is not possible to select a single `.use` when the instance contains different representations.\r\n* When a recieving system interprets the instance as the single-instance-multiple-representations approach, the `.given` names marked as initials SHOULD be interpreted as alternatives to the full given names. Note the underlying HCIM expects both the _list_ of full names and _list_ of initials to be a single string; there's no match for an initial to a full name. The instance SHOULD be regarded as using this approach when:\r\n  * They encounter a single instance\r\n  * And the `.use` element is absent\r\n  * And all the name parts are differentiated using the specified extensions\r\n* In any other circumstance, recieving systems SHOULD interpret the usage as the normal use.\r\n\r\nExample: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jongeneel-de Haas:\r\n\r\n* `.family` = \"Jongeneel-de Haas\"\r\n* `.given` = \"Irma\" (with `.given:iso21090EnQualifier` = _BR_)\r\n* `.family:humannameOwnName` = \"Jongeneel\"\r\n* `.family:humannamePartnerPrefix` = \"de \"\r\n* `.family:humannamePartnerName` = \"Haas\"" ] ;
+       fhir:requirements [ fhir:v "Related persons need to be identified by name, but it is uncommon to need details about multiple other names for that person." ] ;
+       fhir:alias ( [ fhir:v "Naamgegevens" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.name" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "HumanName"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-humanname"^^xsd:anyURI ]
+       ] ) ;
+       fhir:example ( [
+         fhir:label [ fhir:v "Structured HumanName (preferred above unstructured)" ] ;
+         fhir:value [
+           a fhir:HumanName ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "NL4" ]
+           ] ) ;
+           fhir:text [ fhir:v "Irma Jongeneel-de Haas" ] ;
+           fhir:family [
+             fhir:v "Jongeneel-de Haas" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "Jongeneel" ]
+             ] [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "de" ]
+             ] [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "Haas" ]
+             ] )
+           ] ;
+           fhir:given ( [ fhir:v "Irma" ] )
+         ]
+       ] [
+         fhir:label [ fhir:v "Unstructured HumanName" ] ;
+         fhir:value [
+           a fhir:HumanName ;
+           fhir:text [ fhir:v "Irma Jongeneel-de Haas" ]
+         ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "nl-core-humanname-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "if you specify a prefix for an own name then an own name is also expected" ] ;
+         fhir:expression [ fhir:v "name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()" ] ;
+         fhir:xpath [ fhir:v "not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-name']" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "nl-core-humanname-2" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "if you specify a voorvoegsel for a partner name then a partner name is also expected" ] ;
+         fhir:expression [ fhir:v "name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()" ] ;
+         fhir:xpath [ fhir:v "not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-name']" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "EN (actually, PN)" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "ProviderName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.6" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.6" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.1" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "BRP" ] ;
+         fhir:map [ fhir:v "02" ] ;
+         fhir:comment [ fhir:v "Naam" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.4" ] ;
+         fhir:comment [ fhir:v "Name" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.4" ] ;
+         fhir:comment [ fhir:v "Name" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.4" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.telecom" ] ;
+       fhir:path [ fhir:v "RelatedPerson.telecom" ] ;
+       fhir:short [ fhir:v "ContactInformation" ] ;
+       fhir:definition [ fhir:v "Contact information includes a person's telephone numbers en e-mail addresses." ] ;
+       fhir:comment [ fhir:v "Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification." ] ;
+       fhir:requirements [ fhir:v "People have (primary) ways to contact them in some way such as phone, email." ] ;
+       fhir:alias ( [ fhir:v "Contactgegevens" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.telecom" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-contactpoint"^^xsd:anyURI ]
+       ] ) ;
+       fhir:example ( [
+         fhir:label [ fhir:v "Mobile business phone number. Note: the mobile nature stems from the number being an 06-* number." ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [ fhir:v "phone" ] ;
+           fhir:value [ fhir:v "+31611234567" ] ;
+           fhir:use [ fhir:v "work" ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Mobile phone number undetermined private/business. Note: the mobile nature stems from the number being an 06-* number." ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [ fhir:v "phone" ] ;
+           fhir:value [ fhir:v "+31611234567" ] ;
+           fhir:use [ fhir:v "mobile" ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Home Land Line" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "phone" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "LL" ] ;
+                   fhir:display [ fhir:v "Land Line" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "home" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "HP" ] ;
+                   fhir:display [ fhir:v "Primary Home" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Temporary Land Line" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "phone" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "LL" ] ;
+                   fhir:display [ fhir:v "Land Line" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "temp" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "TMP" ] ;
+                   fhir:display [ fhir:v "Temporary" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Work Land Line" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "phone" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "LL" ] ;
+                   fhir:display [ fhir:v "Land Line" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "work" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "WP" ] ;
+                   fhir:display [ fhir:v "Primary Work" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Home Fax" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "fax" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "FAX" ] ;
+                   fhir:display [ fhir:v "Fax" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "home" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "HP" ] ;
+                   fhir:display [ fhir:v "Primary Home" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Temporary Fax" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "fax" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "FAX" ] ;
+                   fhir:display [ fhir:v "Fax" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "temp" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "TMP" ] ;
+                   fhir:display [ fhir:v "Temporary" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Work Fax" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "fax" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "FAX" ] ;
+                   fhir:display [ fhir:v "Fax" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "work" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "WP" ] ;
+                   fhir:display [ fhir:v "Primary Work" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Home Mobile Phone" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "phone" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "MC" ] ;
+                   fhir:display [ fhir:v "Mobile Phone" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "mobile" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "HP" ] ;
+                   fhir:display [ fhir:v "Primary Home" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Temporary Mobile Phone" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "phone" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "MC" ] ;
+                   fhir:display [ fhir:v "Mobile Phone" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "temp" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "TMP" ] ;
+                   fhir:display [ fhir:v "Temporary" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Work Mobile Phone" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "phone" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "MC" ] ;
+                   fhir:display [ fhir:v "Mobile Phone" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "mobile" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "WP" ] ;
+                   fhir:display [ fhir:v "Primary Work" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Home Pager" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "pager" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "PG" ] ;
+                   fhir:display [ fhir:v "Pager" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "home" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "HP" ] ;
+                   fhir:display [ fhir:v "Primary Home" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Temporary Pager" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "pager" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "PG" ] ;
+                   fhir:display [ fhir:v "Pager" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "temp" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "TMP" ] ;
+                   fhir:display [ fhir:v "Temporary" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Primary Work Pager" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [
+             fhir:v "pager" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "PG" ] ;
+                   fhir:display [ fhir:v "Pager" ]
+                 ] )
+               ]
+             ] )
+           ] ;
+           fhir:value [ fhir:v "..." ] ;
+           fhir:use [
+             fhir:v "work" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "WP" ] ;
+                   fhir:display [ fhir:v "Primary Work" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Private email address" ] ;
+         fhir:value [
+           a fhir:ContactPoint ;
+           fhir:system [ fhir:v "email" ] ;
+           fhir:value [ fhir:v "giesput@myweb.nl" ] ;
+           fhir:use [
+             fhir:v "home" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "HP" ] ;
+                   fhir:display [ fhir:v "Primary Home" ]
+                 ] )
+               ]
+             ] )
+           ]
+         ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "cpt-2" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "A system is required if a value is provided." ] ;
+         fhir:expression [ fhir:v "value.empty() or system.exists()" ] ;
+         fhir:xpath [ fhir:v "not(exists(f:value)) or exists(f:system)" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/ContactPoint"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XTN" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "TEL" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "ContactPoint" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.5" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.5" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.6.1" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.6" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.6" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.6" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.6.4" ] ;
+         fhir:comment [ fhir:v "TelephoneNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.12" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.12" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.12" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.gender" ] ;
+       fhir:path [ fhir:v "RelatedPerson.gender" ] ;
+       fhir:short [ fhir:v "male | female | other | unknown" ] ;
+       fhir:definition [ fhir:v "Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes." ] ;
+       fhir:requirements [ fhir:v "Needed for identification of the person, in combination with (at least) name and birth date." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.gender" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "AdministrativeGender" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "true"^^xsd:boolean ]
+         ] ) ;
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "The gender of a person used for administrative purposes." ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/administrative-gender> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/administrative-gender" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "NK1-15" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "administrativeGender" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.birthDate" ] ;
+       fhir:path [ fhir:v "RelatedPerson.birthDate" ] ;
+       fhir:short [ fhir:v "The date on which the related person was born" ] ;
+       fhir:definition [ fhir:v "The date on which the related person was born." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.birthDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "date"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "player.birthTime" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.address" ] ;
+       fhir:path [ fhir:v "RelatedPerson.address" ] ;
+       fhir:short [ fhir:v "AddressInformation" ] ;
+       fhir:definition [ fhir:v "There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world and adds all relevant components to express Dutch addresses.\r\n\r\nA Dutch Address is a proper FHIR Address. Systems that do not understand any of the extensions, will be able to render and work with a Dutch address. Dutch addresses make certain address parts separately communicable. These parts are required for use in true Dutch systems when dealing with Dutch addresses, but may not have value for international systems when information gets sent abroad.\r\n\r\nTo have true compatibility an implementer SHOULD use the core Address parts as intended. To have addresses work for Dutch context, the implementer SHOULD in addition use the extension elements.\r\n\r\nThe HCIM defines certain address types in the AdresSoortCodelijst. These do not all have a one to one mapping in the FHIR Address datatype. The following explains how to deal with that. In addition, there are the ConceptMaps http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse and http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType to define this relationship\r\n\r\nHCIM Postal Address maps to Address.type 'postal'; \r\n\r\nHCIM Primary Home Address maps to Address.extension:official 'true' + Address.use 'home' + Address.use.extension 'HP'; \r\n\r\nHCIM Visit Address (Woon-/verblijfadres) maps to Address.use 'home' + Address.type 'physical' + Address.use.extension 'PHYS'; \r\n\r\nHCIM Temporary Address maps to Address.use 'temp'; \r\n\r\nHCIM Work Place Address maps to Address.use 'work';  \r\n\r\nHCIM Vacation Home Address maps to Address.use 'temp' + Address.use.extension 'HV'.\r\n\r\nIf Address.type is \"both\" then this is to be understood as a dual purpose address (postal and physical). Systems that support importing it like this are encouraged to do so, otherwise they may need to import this as two separate addresses." ] ;
+       fhir:comment [ fhir:v "Note: address is for postal addresses, not physical locations." ] ;
+       fhir:requirements [ fhir:v "Need to keep track where the related person can be contacted per postal mail or visited." ] ;
+       fhir:alias ( [ fhir:v "AdresInformatie" ] [ fhir:v "Adresgegevens" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.address" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Address"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address"^^xsd:anyURI ]
+       ] ) ;
+       fhir:example ( [
+         fhir:label [ fhir:v "Example of a vacation home address" ] ;
+         fhir:value [
+           a fhir:Address ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "false"^^xsd:boolean ]
+           ] ) ;
+           fhir:use [
+             fhir:v "temp" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-AD-use"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "HV" ]
+             ] )
+           ] ;
+           fhir:line ( [ fhir:v "Binnenkant 12A Hoog" ] ) ;
+           fhir:city [ fhir:v "Amsterdam" ] ;
+           fhir:state [ fhir:v "NH" ] ;
+           fhir:postalCode [ fhir:v "1000AA" ] ;
+           fhir:country [ fhir:v "NLD" ]
+         ]
+       ] [
+         fhir:label [ fhir:v "Example of a primary home address" ] ;
+         fhir:value [
+           a fhir:Address ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "true"^^xsd:boolean ]
+           ] ) ;
+           fhir:use [ fhir:v "home" ] ;
+           fhir:line ( [ fhir:v "Binnenkant to 10" ] ) ;
+           fhir:city [ fhir:v "Amsterdam" ] ;
+           fhir:state [ fhir:v "NH" ] ;
+           fhir:postalCode [ fhir:v "1001AA" ] ;
+           fhir:country [ fhir:v "NLD" ]
+         ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] [ fhir:v "nl-streetname-if-official-and-other-line-parts" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "nl-streetname-if-official-and-other-line-parts" ] ;
+         fhir:requirements [ fhir:v "This constraint checks conformance against the Dutch BRP constraints on address parts. However: when you only send postalCode + houseNumber which is enough for certain cases this may still be a valid address" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Address.streetName in an official address SHALL have a value if one of houseNumber|buildingNumberSuffix|additionalLocator has a value" ] ;
+         fhir:expression [ fhir:v "(extension.where(url = 'http://fhir.nl/fhir/StructureDefinition/nl-core-address-official').where(value = true)).empty() or (line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty().not() and (line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty().not()))" ] ;
+         fhir:xpath [ fhir:v "not(.[f:extension[@url='http://fhir.nl/fhir/StructureDefinition/nl-core-address-official'][f:valueBoolean/@value='true']][f:line[empty(f:extension[@url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'])][f:extension[@url=('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator')]]])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/RelatedPerson"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XAD" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "AD" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-address-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.4" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-addressinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.4" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-addressinformation-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.5.1" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.5" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.5" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.5" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.17" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.17" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.17" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.photo" ] ;
+       fhir:path [ fhir:v "RelatedPerson.photo" ] ;
+       fhir:short [ fhir:v "Image of the person" ] ;
+       fhir:definition [ fhir:v "Image of the person." ] ;
+       fhir:requirements [ fhir:v "Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.photo" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Attachment"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "OBX-5 - needs a profile" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "player[classCode='PSN' and determinerCode='INSTANCE']/desc" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.period" ] ;
+       fhir:path [ fhir:v "RelatedPerson.period" ] ;
+       fhir:short [ fhir:v "Period of time that this relationship is considered valid" ] ;
+       fhir:definition [ fhir:v "The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "RelatedPerson.period" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".effectiveTime" ]
+       ] [
+         fhir:identity [ fhir:v "w5" ] ;
+         fhir:map [ fhir:v "when.done" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.14" ] ;
+         fhir:comment [ fhir:v "DateTime" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "RelatedPerson" ] ;
+       fhir:path [ fhir:v "RelatedPerson" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.1" ] ;
+         fhir:comment [ fhir:v "Contact" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.1" ] ;
+         fhir:comment [ fhir:v "Contact" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.1" ] ;
+         fhir:comment [ fhir:v "Contact" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.5" ] ;
+         fhir:comment [ fhir:v "RelatedPersonAsInformationSource::ContactPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.10" ] ;
+         fhir:comment [ fhir:v "RelatedPersonAsAuthor::ContactPerson" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.13" ] ;
+         fhir:comment [ fhir:v "RelatedPersonAsSubject::ContactPerson" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension" ] ;
+       fhir:sliceName [ fhir:v "role" ] ;
+       fhir:short [ fhir:v "Role" ] ;
+       fhir:definition [ fhir:v "Defines the role of the contact in relation to the patient." ] ;
+       fhir:alias ( [ fhir:v "Rol" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.2" ] ;
+         fhir:comment [ fhir:v "Role" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.extension:role.valueCodeableConcept:valueCodeableConcept" ] ;
+       fhir:path [ fhir:v "RelatedPerson.extension.valueCodeableConcept" ] ;
+       fhir:sliceName [ fhir:v "valueCodeableConcept" ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000> ;
+           fhir:reference [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000" ]
+         ]
+       ]
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.identifier" ] ;
+       fhir:path [ fhir:v "RelatedPerson.identifier" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.6" ] ;
+         fhir:comment [ fhir:v "IdentificationNumber" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.patient" ] ;
+       fhir:path [ fhir:v "RelatedPerson.patient" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
+         fhir:targetProfile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.11" ] ;
+         fhir:comment [ fhir:v "Subject" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.relationship" ] ;
+       fhir:path [ fhir:v "RelatedPerson.relationship" ] ;
+       fhir:short [ fhir:v "Relationship" ] ;
+       fhir:definition [ fhir:v "Defines the contact’s familial relationship to the patient." ] ;
+       fhir:alias ( [ fhir:v "Relatie" ] ) ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "PatientRelationshipType" ]
+         ] ) ;
+         fhir:strength [ fhir:v "extensible" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000> ;
+           fhir:reference [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.3" ] ;
+         fhir:comment [ fhir:v "Relationship" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.3" ] ;
+         fhir:comment [ fhir:v "Relationship" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.3" ] ;
+         fhir:comment [ fhir:v "Relationship" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.name" ] ;
+       fhir:path [ fhir:v "RelatedPerson.name" ] ;
+       fhir:short [ fhir:v "NameInformation" ] ;
+       fhir:definition [ fhir:v "Full name of the contact." ] ;
+       fhir:alias ( [ fhir:v "Naamgegevens" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "HumanName"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-humanname"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.4" ] ;
+         fhir:comment [ fhir:v "Name" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.4" ] ;
+         fhir:comment [ fhir:v "Name" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.4" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.telecom" ] ;
+       fhir:path [ fhir:v "RelatedPerson.telecom" ] ;
+       fhir:short [ fhir:v "ContactInformation" ] ;
+       fhir:alias ( [ fhir:v "Contactgegevens" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "ContactPoint"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-contactpoint"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.6" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.6" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.6" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.5" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.5" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactinformation-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.6.4" ] ;
+         fhir:comment [ fhir:v "TelephoneNumber" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.12" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.12" ] ;
+         fhir:comment [ fhir:v "TelephoneE-mail" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.12" ] ;
+         fhir:comment [ fhir:v "ContactInformation" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.address" ] ;
+       fhir:path [ fhir:v "RelatedPerson.address" ] ;
+       fhir:short [ fhir:v "AddressInformation" ] ;
+       fhir:alias ( [ fhir:v "Adresgegevens" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Address"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-contactperson-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.5" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.5" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-contactperson-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:3.1.5" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.17" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.17" ] ;
+         fhir:comment [ fhir:v "Address" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.17" ] ;
+         fhir:comment [ fhir:v "AddressInformation" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "RelatedPerson.period" ] ;
+       fhir:path [ fhir:v "RelatedPerson.period" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-basicelements-v1.0-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.0.14" ] ;
+         fhir:comment [ fhir:v "DateTime" ]
+       ] )
+     ] )
+  ] . # 
+
+<http://hl7.org/fhir/ValueSet/all-languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/administrative-gender> a fhir:ValueSet .
+
+# -------------------------------------------------------------------------------------
+

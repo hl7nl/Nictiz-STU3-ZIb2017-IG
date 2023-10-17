@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="nl-core-humanname"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName">HumanName</a><a name="HumanName"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;" href="http://hl7.org/fhir/STU3/conformance-rules.html#constraints" title="This element has or is affected by constraints (nl-core-humanname-1, nl-core-humanname-2)">C</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Name of a human - parts and usage</span><br/><span style="font-weight:bold">nl-core-humanname-1: </span>if you specify a prefix for an own name then an own name is also expected<br/><span style="font-weight:bold">nl-core-humanname-2: </span>if you specify a voorvoegsel for a partner name then a partner name is also expected<br/><span style="font-weight:bold">Example Structured HumanName (preferred above unstructured): </span><span style="color: darkgreen">{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-assembly-order&quot;,&quot;valueCode&quot;:&quot;NL4&quot;}],&quot;text&quot;:&quot;Irma Jongeneel-de Haas&quot;,&quot;family&quot;:&quot;Jongeneel-de Haas&quot;,&quot;_family&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-own-name&quot;,&quot;valueString&quot;:&quot;Jongeneel&quot;},{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix&quot;,&quot;valueString&quot;:&quot;de&quot;},{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-partner-name&quot;,&quot;valueString&quot;:&quot;Haas&quot;}]},&quot;given&quot;:[&quot;Irma&quot;]}</span><br/><span style="font-weight:bold">Example Unstructured HumanName: </span><span style="color: darkgreen">{&quot;text&quot;:&quot;Irma Jongeneel-de Haas&quot;}</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.extension">Slices for extension</a><a name="HumanName.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.extension:humannameAssemblyOrder" title="Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">humannameAssemblyOrder</a><a name="HumanName.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Preferred display order of name parts</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/extension-humanname-assembly-order.html">http://hl7.org/fhir/StructureDefinition/humanname-assembly-order</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/STU3/valueset-name-assembly-order.html">HumanNameAssemblyOrder</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): A code that represents the preferred display order of the components of a human name<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.text">text</a><a name="HumanName.text"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Text representation of the full name</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family">family</a><a name="HumanName.family"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Surname</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck112.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension">Slices for extension</a><a name="HumanName.family.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnPrefix" title="Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">humannameOwnPrefix</a><a name="HumanName.family.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PrefixOwnName<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/extension-humanname-own-prefix.html">http://hl7.org/fhir/StructureDefinition/humanname-own-prefix</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnPrefix.valueString:valueString" title="Slice valueString">valueString:valueString</a><a name="HumanName.family.extension.valueString"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnName" title="Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-own-name">humannameOwnName</a><a name="HumanName.family.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">OwnName<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/extension-humanname-own-name.html">http://hl7.org/fhir/StructureDefinition/humanname-own-name</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnName.valueString:valueString" title="Slice valueString">valueString:valueString</a><a name="HumanName.family.extension.valueString"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerPrefix" title="Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">humannamePartnerPrefix</a><a name="HumanName.family.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">PrefixSurname<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/extension-humanname-partner-prefix.html">http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerPrefix.valueString:valueString" title="Slice valueString">valueString:valueString</a><a name="HumanName.family.extension.valueString"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck105.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerName" title="Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-partner-name">humannamePartnerName</a><a name="HumanName.family.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">LastNamePartner<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/extension-humanname-partner-name.html">http://hl7.org/fhir/StructureDefinition/humanname-partner-name</a></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1044.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerName.valueString:valueString" title="Slice valueString">valueString:valueString</a><a name="HumanName.family.extension.valueString"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.given" title="Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot.">given</a><a name="HumanName.given"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Given</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck012.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.given.extension">Slices for extension</a><a name="HumanName.given.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck005.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.given.extension:iso21090EnQualifier" title="Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">iso21090EnQualifier</a><a name="HumanName.given.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/extension-iso21090-en-qualifier.html">http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/STU3/valueset-name-part-qualifier.html">EntityNamePartQualifier</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0044.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-nl-core-humanname-definitions.html#HumanName.given.extension:iso21090EnQualifier.valueCode:valueCode" title="Slice valueCode">valueCode:valueCode</a><a name="HumanName.given.extension.valueCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://fhir.nl/fhir/StructureDefinition/nl-core-humanname"/>
+  <version value="1.3.15"/>
+  <name value="nl-core-humanname"/>
+  <title value="nl-core-humanname"/>
+  <status value="active"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Base datatype for HumanName Type with additions for Dutch realm names. Dutch names break down the family into maximum of 4 parts that are important to know separately in some if not most use cases."/>
+  <purpose value="Name information is used to identify and address person."/>
+  <copyright value="CC0"/>
+  <fhirVersion value="3.0.2"/>
+  <mapping>
+    <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+    <uri value="https://zibs.nl/wiki/Patient-v2.0.1(2015EN)"/>
+    <name value="NameInformation as part of HCIM Patient-v2.0.1(2015EN)"/>
+    <comment value="NameInformation has become an independent information model as of release 2017 of the HCIMs"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-nameinformation-v3.0-2016EN"/>
+    <uri value="https://zibs.nl/wiki/Patient-v3.0(2016EN)"/>
+    <name value="NameInformation as part of HCIM Patient-v3.0(2016EN)"/>
+    <comment value="NameInformation has become an independent information model as of release 2017 of the HCIMs"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+    <uri value="https://zibs.nl/wiki/NameInformation-v1.0.1(2017EN)"/>
+    <name value="HCIM NameInformation-v1.0.1(2017EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="BRP"/>
+    <uri value="https://nl.wikipedia.org/wiki/Basisregistratie_Personen"/>
+    <name value="Basisregistratie Personen"/>
+    <comment value="Voorheen GBA - Gemeentelijke basisregistratie"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="servd"/>
+    <uri value="http://www.omg.org/spec/ServD/1.0/"/>
+    <name value="ServD"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="HumanName"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HumanName"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="HumanName">
+      <path value="HumanName"/>
+      <short value="Name of a human - parts and usage"/>
+      <definition value="A human's name with the ability to identify parts and usage."/>
+      <comment value="Dutch names require that certain name parts are separately communicable. For this reason, extensions are added onto the base HumanName element to mark the meaning of each part. A Dutch HumanName is still a proper FHIR HumanName; however, there might be an incompatibilty with the default FHIR mechanism for communicating given names. See the compatibility note below for more information.&#xD;&#xA;&#xD;&#xA;The extension elements cover birth name (NL: eigennaam / geslachtsnaam) and partner/spouse name. Both may have a prefix (NL: voorvoegsel). When a person marries, he or she may keep their own name, assume the partner name, append the partner name to their own name, or the other way around.&#xD;&#xA;&#xD;&#xA;**Incompatibility note**: It has come to light that this specification deviates from the way that the HumanName datatype is normally used. This will be fixed in a future release. However, current implementations should be aware of the special considerations regarding the use of this specification. &#xD;&#xA;&#xD;&#xA;The issue at hand is the way alternative representations of a name, like initials or a nickname, are communicated. Normally this is done using multiple HumanName instances, which are differentiated using the `.use` element. However, this specification allows for including all alternative representations in the _same_ HumanName instance, with the expectation that the extensions provide enough information for recieving systems to differentiate them. However, this means that contrary to the normal usage of this datatype, repetitions of `.given` names cannot be concatenated to get the full list of given names; the list might be a mix of full names, nicknames and initials.&#xD;&#xA;&#xD;&#xA;Since multiple implementations are based on this specification, sending systems are advised (but not required) to keep the approach with one HumanName instance, while recieving systems should be able to handle this one-instance approach. More specifically:&#xD;&#xA;&#xD;&#xA;* Sending and recieving systems SHOULD always use the specified extensions when using this datatype.&#xD;&#xA;* Sending systems are encouraged to populate the `.text` element to unambigiously communicate the patient name.&#xD;&#xA;* Sending systems are encouraged to send either the full given names or the initials, but not both. This alleviates the duplication of names in `.given`.&#xD;&#xA;* When a sending system uses the current one-instance approach for communicating multiple representations, `.use` MAY NOT be populated. After all, it is not possible to select a single `.use` when the instance contains different representations.&#xD;&#xA;* When a recieving system interprets the instance as the single-instance-multiple-representations approach, the `.given` names marked as initials SHOULD be interpreted as alternatives to the full given names. Note the underlying HCIM expects both the _list_ of full names and _list_ of initials to be a single string; there's no match for an initial to a full name. The instance SHOULD be regarded as using this approach when:&#xD;&#xA;  * They encounter a single instance&#xD;&#xA;  * And the `.use` element is absent&#xD;&#xA;  * And all the name parts are differentiated using the specified extensions&#xD;&#xA;* In any other circumstance, recieving systems SHOULD interpret the usage as the normal use.&#xD;&#xA;&#xD;&#xA;Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jongeneel-de Haas:&#xD;&#xA;&#xD;&#xA;* `.family` = &quot;Jongeneel-de Haas&quot;&#xD;&#xA;* `.given` = &quot;Irma&quot; (with `.given:iso21090EnQualifier` = _BR_)&#xD;&#xA;* `.family:humannameOwnName` = &quot;Jongeneel&quot;&#xD;&#xA;* `.family:humannamePartnerPrefix` = &quot;de &quot;&#xD;&#xA;* `.family:humannamePartnerName` = &quot;Haas&quot;"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <example>
+        <label value="Structured HumanName (preferred above unstructured)"/>
+        <valueHumanName>
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+            <valueCode value="NL4"/>
+          </extension>
+          <text value="Irma Jongeneel-de Haas"/>
+          <family value="Jongeneel-de Haas">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Jongeneel"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
+              <valueString value="de"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+              <valueString value="Haas"/>
+            </extension>
+          </family>
+          <given value="Irma"/>
+        </valueHumanName>
+      </example>
+      <example>
+        <label value="Unstructured HumanName"/>
+        <valueHumanName>
+          <text value="Irma Jongeneel-de Haas"/>
+        </valueHumanName>
+      </example>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="nl-core-humanname-1"/>
+        <severity value="error"/>
+        <human value="if you specify a prefix for an own name then an own name is also expected"/>
+        <expression value="name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()"/>
+        <xpath value="not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-name']"/>
+      </constraint>
+      <constraint>
+        <key value="nl-core-humanname-2"/>
+        <severity value="error"/>
+        <human value="if you specify a voorvoegsel for a partner name then a partner name is also expected"/>
+        <expression value="name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()"/>
+        <xpath value="not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-name']"/>
+      </constraint>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="EN (actually, PN)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="ProviderName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.6"/>
+        <comment value="NameInformation"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.6"/>
+        <comment value="NameInformation"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.1"/>
+        <comment value="NameInformation"/>
+      </mapping>
+      <mapping>
+        <identity value="BRP"/>
+        <map value="02"/>
+        <comment value="Naam"/>
+      </mapping>
+    </element>
+    <element id="HumanName.id">
+      <path value="HumanName.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.extension">
+      <path value="HumanName.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="HumanName.extension:humannameAssemblyOrder">
+      <path value="HumanName.extension"/>
+      <sliceName value="humannameAssemblyOrder"/>
+      <short value="Preferred display order of name parts"/>
+      <definition value="A code that represents the preferred display order of the components of this human name."/>
+      <alias value="Voorkeursvolgorde van de naamdelen."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"/>
+      </type>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.34"/>
+        <comment value="NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.34"/>
+        <comment value="NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.7"/>
+        <comment value="NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder"/>
+      </mapping>
+    </element>
+    <element id="HumanName.use">
+      <path value="HumanName.use"/>
+      <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
+      <definition value="Identifies the purpose for this name."/>
+      <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old."/>
+      <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.use"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="NameUse"/>
+        </extension>
+        <strength value="required"/>
+        <description value="The use of a human name"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/name-use"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.7, but often indicated by which field contains the name"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="unique(./use)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./NamePurpose"/>
+      </mapping>
+    </element>
+    <element id="HumanName.text">
+      <path value="HumanName.text"/>
+      <short value="Text representation of the full name"/>
+      <definition value="A full text representation of the name."/>
+      <comment value="Can provide both a text representation and structured parts."/>
+      <requirements value="A renderable, unencoded form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="implied by XPN.11"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./formatted"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-payer-v1.2-2015EN"/>
+        <map value="NL-CM:1.1.5"/>
+        <comment value="PayerName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-payer-v3.0-2016EN"/>
+        <map value="NL-CM:1.1.5"/>
+        <comment value="PayerName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-payer-v3.1-2017EN"/>
+        <map value="NL-CM:1.1.5"/>
+        <comment value="PayerName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family">
+      <path value="HumanName.family"/>
+      <short value="Surname"/>
+      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+      <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
+      <alias value="surname"/>
+      <alias value="Achternaam"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.family"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.1/FN.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = FAM]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./FamilyName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.id">
+      <path value="HumanName.family.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="HumanName.family.extension">
+      <path value="HumanName.family.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannameOwnPrefix"/>
+      <short value="PrefixOwnName"/>
+      <definition value="The prefix portion (e.g. voorvoegsel) inclusive of the space between the prefix and the surname, if applicable, of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse."/>
+      <comment value="An example of a voorvoegsel is the &quot;van&quot; in &quot;Ludwig van Beethoven&quot;. Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to specify it as a separate sub-component."/>
+      <alias value="VoorvoegselGeslachtsnaam"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mapping>
+        <identity value="v2"/>
+        <map value="FN.2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ENXP where Qualifiers = (VV, R)"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.38"/>
+        <comment value="Prefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.38"/>
+        <comment value="Prefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.11"/>
+        <comment value="Prefix"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix.id">
+      <path value="HumanName.family.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix.extension">
+      <path value="HumanName.family.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix.url">
+      <path value="HumanName.family.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannameOwnName"/>
+      <short value="OwnName"/>
+      <definition value="The person’s official last name."/>
+      <comment value="The portion of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's &quot;maiden name&quot;."/>
+      <alias value="Geslachtsnaam"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mapping>
+        <identity value="v2"/>
+        <map value="FN.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ENXP where Qualifiers = (BR)"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.24"/>
+        <comment value="LastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.24"/>
+        <comment value="LastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.10"/>
+        <comment value="LastName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName.id">
+      <path value="HumanName.family.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName.extension">
+      <path value="HumanName.family.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName.url">
+      <path value="HumanName.family.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/humanname-own-name"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannamePartnerPrefix"/>
+      <short value="PrefixSurname"/>
+      <definition value="Voorvoegsel derived from person's partner's surname inclusive of the space between the prefix and the surname, if applicable."/>
+      <comment value="An example of a voorvoegsel is the &quot;van&quot; in &quot;Ludwig van Beethoven&quot;. Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to identify it as a separate sub-component."/>
+      <alias value="VoorvoegselGeslachtsnaamPartner"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mapping>
+        <identity value="v2"/>
+        <map value="FN.4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ENXP where Qualifiers = (VV, SP)"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.39"/>
+        <comment value="PartnerPrefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.39"/>
+        <comment value="PartnerPrefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.9"/>
+        <comment value="PartnerPrefix"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix.id">
+      <path value="HumanName.family.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix.extension">
+      <path value="HumanName.family.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix.url">
+      <path value="HumanName.family.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannamePartnerName"/>
+      <short value="LastNamePartner"/>
+      <definition value="Partner’s official last name."/>
+      <comment value="The portion of the family name that is derived from the person's partner's surname, as distinguished from any portion that is derived from the surname of the person's own name. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's &quot;maiden name&quot;."/>
+      <alias value="GeslachtsnaamPartner"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-name"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mapping>
+        <identity value="v2"/>
+        <map value="FN.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ENXP where Qualifiers = (SP)"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.25"/>
+        <comment value="PartnerLastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.25"/>
+        <comment value="PartnerLastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.8"/>
+        <comment value="PartnerLastName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName.id">
+      <path value="HumanName.family.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName.extension">
+      <path value="HumanName.family.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName.url">
+      <path value="HumanName.family.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/humanname-partner-name"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.value">
+      <path value="HumanName.family.value"/>
+      <representation value="xmlAttr"/>
+      <short value="Primitive value for string"/>
+      <definition value="The actual value"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="string.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:string"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:string"/>
+          </extension>
+        </code>
+      </type>
+      <maxLength value="1048576"/>
+    </element>
+    <element id="HumanName.given">
+      <path value="HumanName.given"/>
+      <short value="Given"/>
+      <definition value="Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot."/>
+      <comment value="Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot. To be conformant to the HCIM for NameInformation, at least the following qualifiers SHALL be supported: _BR_, _IN_ and _CL_. The qualifier _BR_maps to the HCIM concept FirstNames, _IN_ maps to Initials and _CL_ to GivenName.&#xD;&#xA;&#xD;&#xA;Please see the compatibility note on the containing element as well!"/>
+      <alias value="first name"/>
+      <alias value="middle name"/>
+      <alias value="Voornamen"/>
+      <alias value="Initialen"/>
+      <alias value="Roepnaam"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.given"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Given Names appear in the correct order for presenting the name"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.2 + XPN.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = GIV]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./GivenNames"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.26"/>
+        <comment value="FirstNames. Qualifier 'BR'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.35"/>
+        <comment value="Initials. Qualifier 'IN'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.27"/>
+        <comment value="GivenName. Qualifier 'CL'"/>
+      </mapping>
+      <mapping>
+        <identity value="BRP"/>
+        <map value="02.10"/>
+        <comment value="Voornamen"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.26"/>
+        <comment value="FirstNames. Qualifier 'BR'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.35"/>
+        <comment value="Initials. Qualifier 'IN'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.27"/>
+        <comment value="GivenName. Qualifier 'CL'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.4"/>
+        <comment value="FirstNames. Qualifier 'BR'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.5"/>
+        <comment value="Initials. Qualifier 'IN'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.6"/>
+        <comment value="GivenName. Qualifier 'CL'"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.id">
+      <path value="HumanName.given.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="HumanName.given.extension">
+      <path value="HumanName.given.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier">
+      <path value="HumanName.given.extension"/>
+      <sliceName value="iso21090EnQualifier"/>
+      <short value="LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV"/>
+      <definition value="A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type."/>
+      <comment value="Used to indicate additional information about the name part and how it should be used."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ENXP.qualifier"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier.id">
+      <path value="HumanName.given.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier.extension">
+      <path value="HumanName.given.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier.url">
+      <path value="HumanName.given.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier.valueCode:valueCode">
+      <path value="HumanName.given.extension.valueCode"/>
+      <sliceName value="valueCode"/>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="EntityNamePartQualifier"/>
+        </extension>
+        <strength value="required"/>
+        <description value="A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/name-part-qualifier"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.value">
+      <path value="HumanName.given.value"/>
+      <representation value="xmlAttr"/>
+      <short value="Primitive value for string"/>
+      <definition value="The actual value"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="string.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:string"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:string"/>
+          </extension>
+        </code>
+      </type>
+      <maxLength value="1048576"/>
+    </element>
+    <element id="HumanName.prefix">
+      <path value="HumanName.prefix"/>
+      <short value="Parts that come before the name"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.prefix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Prefixes appear in the correct order for presenting the name"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = PFX]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./TitleCode"/>
+      </mapping>
+    </element>
+    <element id="HumanName.suffix">
+      <path value="HumanName.suffix"/>
+      <short value="Parts that come after the name"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.suffix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Suffixes appear in the correct order for presenting the name"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN/4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = SFX]"/>
+      </mapping>
+    </element>
+    <element id="HumanName.period">
+      <path value="HumanName.period"/>
+      <short value="Time period when name was/is in use"/>
+      <definition value="Indicates the period of time when this name was valid for the named person."/>
+      <requirements value="Allows names to be placed in historical context."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.13 + XPN.14"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./StartDate and ./EndDate"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="HumanName">
+      <path value="HumanName"/>
+      <comment value="Dutch names require that certain name parts are separately communicable. For this reason, extensions are added onto the base HumanName element to mark the meaning of each part. A Dutch HumanName is still a proper FHIR HumanName; however, there might be an incompatibilty with the default FHIR mechanism for communicating given names. See the compatibility note below for more information.&#xD;&#xA;&#xD;&#xA;The extension elements cover birth name (NL: eigennaam / geslachtsnaam) and partner/spouse name. Both may have a prefix (NL: voorvoegsel). When a person marries, he or she may keep their own name, assume the partner name, append the partner name to their own name, or the other way around.&#xD;&#xA;&#xD;&#xA;**Incompatibility note**: It has come to light that this specification deviates from the way that the HumanName datatype is normally used. This will be fixed in a future release. However, current implementations should be aware of the special considerations regarding the use of this specification. &#xD;&#xA;&#xD;&#xA;The issue at hand is the way alternative representations of a name, like initials or a nickname, are communicated. Normally this is done using multiple HumanName instances, which are differentiated using the `.use` element. However, this specification allows for including all alternative representations in the _same_ HumanName instance, with the expectation that the extensions provide enough information for recieving systems to differentiate them. However, this means that contrary to the normal usage of this datatype, repetitions of `.given` names cannot be concatenated to get the full list of given names; the list might be a mix of full names, nicknames and initials.&#xD;&#xA;&#xD;&#xA;Since multiple implementations are based on this specification, sending systems are advised (but not required) to keep the approach with one HumanName instance, while recieving systems should be able to handle this one-instance approach. More specifically:&#xD;&#xA;&#xD;&#xA;* Sending and recieving systems SHOULD always use the specified extensions when using this datatype.&#xD;&#xA;* Sending systems are encouraged to populate the `.text` element to unambigiously communicate the patient name.&#xD;&#xA;* Sending systems are encouraged to send either the full given names or the initials, but not both. This alleviates the duplication of names in `.given`.&#xD;&#xA;* When a sending system uses the current one-instance approach for communicating multiple representations, `.use` MAY NOT be populated. After all, it is not possible to select a single `.use` when the instance contains different representations.&#xD;&#xA;* When a recieving system interprets the instance as the single-instance-multiple-representations approach, the `.given` names marked as initials SHOULD be interpreted as alternatives to the full given names. Note the underlying HCIM expects both the _list_ of full names and _list_ of initials to be a single string; there's no match for an initial to a full name. The instance SHOULD be regarded as using this approach when:&#xD;&#xA;  * They encounter a single instance&#xD;&#xA;  * And the `.use` element is absent&#xD;&#xA;  * And all the name parts are differentiated using the specified extensions&#xD;&#xA;* In any other circumstance, recieving systems SHOULD interpret the usage as the normal use.&#xD;&#xA;&#xD;&#xA;Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jongeneel-de Haas:&#xD;&#xA;&#xD;&#xA;* `.family` = &quot;Jongeneel-de Haas&quot;&#xD;&#xA;* `.given` = &quot;Irma&quot; (with `.given:iso21090EnQualifier` = _BR_)&#xD;&#xA;* `.family:humannameOwnName` = &quot;Jongeneel&quot;&#xD;&#xA;* `.family:humannamePartnerPrefix` = &quot;de &quot;&#xD;&#xA;* `.family:humannamePartnerName` = &quot;Haas&quot;"/>
+      <example>
+        <label value="Structured HumanName (preferred above unstructured)"/>
+        <valueHumanName>
+          <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
+            <valueCode value="NL4"/>
+          </extension>
+          <text value="Irma Jongeneel-de Haas"/>
+          <family value="Jongeneel-de Haas">
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+              <valueString value="Jongeneel"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix">
+              <valueString value="de"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/humanname-partner-name">
+              <valueString value="Haas"/>
+            </extension>
+          </family>
+          <given value="Irma"/>
+        </valueHumanName>
+      </example>
+      <example>
+        <label value="Unstructured HumanName"/>
+        <valueHumanName>
+          <text value="Irma Jongeneel-de Haas"/>
+        </valueHumanName>
+      </example>
+      <constraint>
+        <key value="nl-core-humanname-1"/>
+        <severity value="error"/>
+        <human value="if you specify a prefix for an own name then an own name is also expected"/>
+        <expression value="name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()"/>
+        <xpath value="not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-name']"/>
+      </constraint>
+      <constraint>
+        <key value="nl-core-humanname-2"/>
+        <severity value="error"/>
+        <human value="if you specify a voorvoegsel for a partner name then a partner name is also expected"/>
+        <expression value="name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()"/>
+        <xpath value="not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-name']"/>
+      </constraint>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.6"/>
+        <comment value="NameInformation"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.6"/>
+        <comment value="NameInformation"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.1"/>
+        <comment value="NameInformation"/>
+      </mapping>
+      <mapping>
+        <identity value="BRP"/>
+        <map value="02"/>
+        <comment value="Naam"/>
+      </mapping>
+    </element>
+    <element id="HumanName.extension">
+      <path value="HumanName.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="HumanName.extension:humannameAssemblyOrder">
+      <path value="HumanName.extension"/>
+      <sliceName value="humannameAssemblyOrder"/>
+      <alias value="Voorkeursvolgorde van de naamdelen."/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"/>
+      </type>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.34"/>
+        <comment value="NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.34"/>
+        <comment value="NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.7"/>
+        <comment value="NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder"/>
+      </mapping>
+    </element>
+    <element id="HumanName.text">
+      <path value="HumanName.text"/>
+      <mapping>
+        <identity value="hcim-payer-v1.2-2015EN"/>
+        <map value="NL-CM:1.1.5"/>
+        <comment value="PayerName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-payer-v3.0-2016EN"/>
+        <map value="NL-CM:1.1.5"/>
+        <comment value="PayerName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-payer-v3.1-2017EN"/>
+        <map value="NL-CM:1.1.5"/>
+        <comment value="PayerName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family">
+      <path value="HumanName.family"/>
+      <short value="Surname"/>
+      <alias value="Achternaam"/>
+    </element>
+    <element id="HumanName.family.extension">
+      <path value="HumanName.family.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannameOwnPrefix"/>
+      <short value="PrefixOwnName"/>
+      <definition value="The prefix portion (e.g. voorvoegsel) inclusive of the space between the prefix and the surname, if applicable, of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse."/>
+      <alias value="VoorvoegselGeslachtsnaam"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"/>
+      </type>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.38"/>
+        <comment value="Prefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.38"/>
+        <comment value="Prefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.11"/>
+        <comment value="Prefix"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnPrefix.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannameOwnName"/>
+      <short value="OwnName"/>
+      <definition value="The person’s official last name."/>
+      <comment value="The portion of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's &quot;maiden name&quot;."/>
+      <alias value="Geslachtsnaam"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name"/>
+      </type>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.24"/>
+        <comment value="LastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.24"/>
+        <comment value="LastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.10"/>
+        <comment value="LastName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannameOwnName.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannamePartnerPrefix"/>
+      <short value="PrefixSurname"/>
+      <definition value="Voorvoegsel derived from person's partner's surname inclusive of the space between the prefix and the surname, if applicable."/>
+      <alias value="VoorvoegselGeslachtsnaamPartner"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"/>
+      </type>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.39"/>
+        <comment value="PartnerPrefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.39"/>
+        <comment value="PartnerPrefix"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.9"/>
+        <comment value="PartnerPrefix"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerPrefix.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName">
+      <path value="HumanName.family.extension"/>
+      <sliceName value="humannamePartnerName"/>
+      <short value="LastNamePartner"/>
+      <definition value="Partner’s official last name."/>
+      <comment value="The portion of the family name that is derived from the person's partner's surname, as distinguished from any portion that is derived from the surname of the person's own name. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's &quot;maiden name&quot;."/>
+      <alias value="GeslachtsnaamPartner"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-partner-name"/>
+      </type>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.25"/>
+        <comment value="PartnerLastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.25"/>
+        <comment value="PartnerLastName"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.8"/>
+        <comment value="PartnerLastName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family.extension:humannamePartnerName.valueString:valueString">
+      <path value="HumanName.family.extension.valueString"/>
+      <sliceName value="valueString"/>
+    </element>
+    <element id="HumanName.given">
+      <path value="HumanName.given"/>
+      <short value="Given"/>
+      <definition value="Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot."/>
+      <comment value="Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot. To be conformant to the HCIM for NameInformation, at least the following qualifiers SHALL be supported: _BR_, _IN_ and _CL_. The qualifier _BR_maps to the HCIM concept FirstNames, _IN_ maps to Initials and _CL_ to GivenName.&#xD;&#xA;&#xD;&#xA;Please see the compatibility note on the containing element as well!"/>
+      <alias value="Voornamen"/>
+      <alias value="Initialen"/>
+      <alias value="Roepnaam"/>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.26"/>
+        <comment value="FirstNames. Qualifier 'BR'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.35"/>
+        <comment value="Initials. Qualifier 'IN'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v2.0.1-2015EN"/>
+        <map value="NL-CM:0.1.27"/>
+        <comment value="GivenName. Qualifier 'CL'"/>
+      </mapping>
+      <mapping>
+        <identity value="BRP"/>
+        <map value="02.10"/>
+        <comment value="Voornamen"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.26"/>
+        <comment value="FirstNames. Qualifier 'BR'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.35"/>
+        <comment value="Initials. Qualifier 'IN'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v3.0-2016EN"/>
+        <map value="NL-CM:0.1.27"/>
+        <comment value="GivenName. Qualifier 'CL'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.4"/>
+        <comment value="FirstNames. Qualifier 'BR'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.5"/>
+        <comment value="Initials. Qualifier 'IN'"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-nameinformation-v1.0.1-2017EN"/>
+        <map value="NL-CM:20.4.6"/>
+        <comment value="GivenName. Qualifier 'CL'"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given.extension">
+      <path value="HumanName.given.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier">
+      <path value="HumanName.given.extension"/>
+      <sliceName value="iso21090EnQualifier"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"/>
+      </type>
+    </element>
+    <element id="HumanName.given.extension:iso21090EnQualifier.valueCode:valueCode">
+      <path value="HumanName.given.extension.valueCode"/>
+      <sliceName value="valueCode"/>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,133 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.7--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.7</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>Musc1</td><td>Muscles fully relaxed</td><td>Spieren volledig ontspannen; geen spierspanning</td><td>Spieren volledig ontspannen; geen spierspanning</td></tr><tr><td>Musc2</td><td>Reduced muscle tone</td><td>Verminderde spierspanning; minder weerstand dan normaal</td><td>Verminderde spierspanning; minder weerstand dan normaal</td></tr><tr><td>Musc3</td><td>Normal muscle tone</td><td>Normale spierspanning</td><td>Normale spierspanning</td></tr><tr><td>Musc4</td><td>Increased muscle tone</td><td>Toegenomen spierspanning en buiging van vingers en tenen</td><td>Toegenomen spierspanning en buiging van vingers en tenen</td></tr><tr><td>Musc5</td><td>Extreme muscle rigidity</td><td>Extreme spierstijfheid en buiging van vingers en tenen</td><td>Extreme spierstijfheid en buiging van vingers en tenen</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.7--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.7"
+  }],
+  "version" : "1.3.15",
+  "name" : "SpierspanningCodelijst",
+  "title" : "SpierspanningCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "SpierspanningCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.7",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "code" : "Musc1",
+        "display" : "Muscles fully relaxed",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Spieren volledig ontspannen; geen spierspanning"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "code" : "Musc2",
+        "display" : "Reduced muscle tone",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Verminderde spierspanning; minder weerstand dan normaal"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "code" : "Musc3",
+        "display" : "Normal muscle tone",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Normale spierspanning"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 4
+        }],
+        "code" : "Musc4",
+        "display" : "Increased muscle tone",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Toegenomen spierspanning en buiging van vingers en tenen"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 5
+        }],
+        "code" : "Musc5",
+        "display" : "Extreme muscle rigidity",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Extreme spierstijfheid en buiging van vingers en tenen"
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,1910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="zib-VaccinationRecommendation"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation">ImmunizationRecommendation</a><a name="ImmunizationRecommendation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/immunizationrecommendation.html">ImmunizationRecommendation</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Guidance or advice relating to an immunization</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.extension">Slices for extension</a><a name="ImmunizationRecommendation.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span><br/><span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.extension:orderStatus" title="Extension URL = http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus">orderStatus</a><a name="ImmunizationRecommendation.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">OrderStatus<br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/STU3/StructureDefinition-zib-VaccinationRecommendation-OrderStatus.html">http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus</a><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000.html">OrderStatusCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.">preferred</a>): OrderStatusCodelist<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck144.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.extension:orderStatus.valueCodeableConcept:valueCodeableConcept" title="Slice valueCodeableConcept">valueCodeableConcept:valueCodeableConcept</a><a name="ImmunizationRecommendation.extension.valueCodeableConcept"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">OrderStatus</span><br/><span style="font-weight:bold">Binding: </span><a style="opacity: 0.5" href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000.html">OrderStatusCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.identifier">identifier</a><a name="ImmunizationRecommendation.identifier"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Business identifier</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.patient">patient</a><a name="ImmunizationRecommendation.patient"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-nl-core-patient.html">nl-core-patient</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who this profile is for</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation">recommendation</a><a name="ImmunizationRecommendation.recommendation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.date" title="Date on which this vaccination will have to be repeated according to the author’s information.">date</a><a name="ImmunizationRecommendation.recommendation.date"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DesiredDateForRevaccination</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode" title="The product code of the vaccine administered.
+There are several possible code systems for documenting the product code. If the vaccination data is registered based on an anamnesis, coding with the ATC code is preferred. In all cases it concerns those products that fall under ATC group J07 (vaccines).">vaccineCode</a><a name="ImmunizationRecommendation.recommendation.vaccineCode"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ProductCode</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0103.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <a style="font-style: italic" href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding">Slices for coding</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic"/><span style="font-style: italic">1</span><span style="font-style: italic">..</span><span style="opacity: 0.5; font-style: italic">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; font-style: italic" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5; font-style: italic">Code defined by a terminology system</span><br style="font-style: italic"/><span style="font-weight:bold; font-style: italic">Slice: </span><span style="font-style: italic">Unordered, Open by value:system</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01034.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeGPKCodelijst" title="Slice productCodeGPKCodelijst">coding:productCodeGPKCodelijst</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.11.1.3--20171231000000.html">ProductCodeGPKCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): ProductCodeGPKCodelijst<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01034.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeHPKCodelijst" title="Slice productCodeHPKCodelijst">coding:productCodeHPKCodelijst</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.11.1.2--20171231000000.html">ProductCodeHPKCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): ProductCodeHPKCodelijst<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01034.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeZICodelijst" title="Slice productCodeZICodelijst">coding:productCodeZICodelijst</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.11.1.6--20171231000000.html">ProductCodeZICodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): ProductCodeZICodelijst<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01034.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeATCCodelijst" title="Slice productCodeATCCodelijst">coding:productCodeATCCodelijst</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.11.1.4--20171231000000.html">ProductCodeATCCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): ProductCodeATCCodelijst<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01034.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodePRKCodelijst" title="Slice productCodePRKCodelijst">coding:productCodePRKCodelijst</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.11.1.1--20171231000000.html">ProductCodePRKCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): ProductCodePRKCodelijst<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01024.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeGTINCodelijst" title="Slice productCodeGTINCodelijst">coding:productCodeGTINCodelijst</a><a name="ImmunizationRecommendation.recommendation.vaccineCode.coding"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span>..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Code defined by a terminology system</span><br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.11.1.5--20171231000000.html">ProductCodeGTINCodelijst</a> (<a href="http://hl7.org/fhir/STU3/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>): ProductCodeGTINCodelijst<br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.dateCriterion">dateCriterion</a><a name="ImmunizationRecommendation.recommendation.dateCriterion"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">StartDate / EndDate</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.protocol">protocol</a><a name="ImmunizationRecommendation.recommendation.protocol"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.protocol.authority">authority</a><a name="ImmunizationRecommendation.recommendation.protocol.authority"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-nl-core-organization.html">nl-core-organization</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who is responsible for protocol</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.supportingImmunization">supportingImmunization</a><a name="ImmunizationRecommendation.recommendation.supportingImmunization"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-zib-Vaccination.html">HCIM Vaccination</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Past immunizations supporting recommendation</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-zib-VaccinationRecommendation-definitions.html#ImmunizationRecommendation.recommendation.supportingPatientInformation">supportingPatientInformation</a><a name="ImmunizationRecommendation.recommendation.supportingPatientInformation"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/STU3/references.html">Reference</a>(<a href="StructureDefinition-zib-AllergyIntolerance.html">HCIM AllergyIntolerance</a>)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Patient observations supporting recommendation</span></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation"/>
+  <version value="1.3.15"/>
+  <name value="Zib VaccinationRecommendation"/>
+  <title value="HCIM VaccinationRecommendation"/>
+  <status value="active"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="This profile is one of two profile based on Vaccination as defined by the Dutch Health and Care Information models (Dutch: Zorginformatiebouwsteen or ZIB) version 3.1. This profile is also used for the Dutch Health and Care Information model PlannedCareActivityForTransfer version 3.1"/>
+  <purpose value="The ZIB vaccinatie defines the concept DesiredDateForRevaccination. FHIR has a dedicated resources for this. To cover DesiredDateForRevaccination and to exand on the ZIB vaccination, the ImmunizationRecommendation Resource is used and profiled."/>
+  <copyright value="CC0"/>
+  <fhirVersion value="3.0.2"/>
+  <mapping>
+    <identity value="hcim-vaccination-v1.2-2015EN"/>
+    <uri value="https://zibs.nl/wiki/Vaccination-v1.2(2015EN)"/>
+    <name value="HCIM Vaccination-v1.2(2015EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-vaccination-v3.0-2016EN"/>
+    <uri value="https://zibs.nl/wiki/Vaccination-v3.0(2016EN)"/>
+    <name value="HCIM Vaccination-v3.0(2016EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-vaccination-v3.1-2017EN"/>
+    <uri value="https://zibs.nl/wiki/Vaccination-v3.1(2017EN)"/>
+    <name value="HCIM Vaccination-v3.1(2017EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+    <uri value="https://zibs.nl/wiki/PlannedCareActivityForTransfer-v1.2.1(2015EN)"/>
+    <name value="HCIM PlannedCareActivityForTransfer-v1.2.1(2015EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+    <uri value="https://zibs.nl/wiki/PlannedCareActivityForTransfer-v3.0(2016EN)"/>
+    <name value="HCIM PlannedCareActivityForTransfer-v3.0(2016EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+    <uri value="https://zibs.nl/wiki/PlannedCareActivityForTransfer-v3.1(2017EN)"/>
+    <name value="HCIM PlannedCareActivityForTransfer-v3.1(2017EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="hcim-basicelements-v1.0-2017EN"/>
+    <uri value="https://zibs.nl/wiki/BasicElements-v1.0(2017EN)"/>
+    <name value="HCIM BasicElements-v1.0(2017EN)"/>
+  </mapping>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="w5"/>
+    <uri value="http://hl7.org/fhir/w5"/>
+    <name value="W5 Mapping"/>
+  </mapping>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ImmunizationRecommendation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="ImmunizationRecommendation">
+      <path value="ImmunizationRecommendation"/>
+      <short value="Guidance or advice relating to an immunization"/>
+      <definition value="A patient's point-in-time immunization and recommendation (i.e. forecasting a patient's immunization eligibility according to a published schedule) with optional supporting justification."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ImmunizationRecommendation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <constraint>
+        <key value="dom-2"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"/>
+        <expression value="contained.contained.empty()"/>
+        <xpath value="not(parent::f:contained and f:contained)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="dom-1"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"/>
+        <expression value="contained.text.empty()"/>
+        <xpath value="not(parent::f:contained and f:text)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="dom-4"/>
+        <severity value="error"/>
+        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
+        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"/>
+        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="dom-3"/>
+        <severity value="error"/>
+        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"/>
+        <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"/>
+        <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Entity. Role, or Act"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="VXU_V04"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="SubstanceAdministration[moodCode=RMD]"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="clinical.medication"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.5"/>
+        <comment value="Vaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.5"/>
+        <comment value="Vaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.5"/>
+        <comment value="Vaccination"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.id">
+      <path value="ImmunizationRecommendation.id"/>
+      <short value="Logical id of this artifact"/>
+      <definition value="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes."/>
+      <comment value="The only time that a resource does not have an id is when it is being submitted to the server using a create operation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="id"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="ImmunizationRecommendation.meta">
+      <path value="ImmunizationRecommendation.meta"/>
+      <short value="Metadata about the resource"/>
+      <definition value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.meta"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Meta"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="ImmunizationRecommendation.implicitRules">
+      <path value="ImmunizationRecommendation.implicitRules"/>
+      <short value="A set of rules under which this content was created"/>
+      <definition value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content."/>
+      <comment value="Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. &#xA;&#xA;This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.implicitRules"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+    </element>
+    <element id="ImmunizationRecommendation.language">
+      <path value="ImmunizationRecommendation.language"/>
+      <short value="Language of the resource content"/>
+      <definition value="The base language in which the resource is written."/>
+      <comment value="Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Resource.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+          <valueReference>
+            <reference value="http://hl7.org/fhir/ValueSet/all-languages"/>
+          </valueReference>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Language"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true"/>
+        </extension>
+        <strength value="extensible"/>
+        <description value="A human language."/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/languages"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.text">
+      <path value="ImmunizationRecommendation.text"/>
+      <short value="Text summary of the resource, for human interpretation"/>
+      <definition value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety."/>
+      <comment value="Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a &quot;text blob&quot; or where text is additionally entered raw or narrated and encoded in formation is added later."/>
+      <alias value="narrative"/>
+      <alias value="html"/>
+      <alias value="xhtml"/>
+      <alias value="display"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Narrative"/>
+      </type>
+      <condition value="dom-1"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="Act.text?"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.contained">
+      <path value="ImmunizationRecommendation.contained"/>
+      <short value="Contained, inline Resources"/>
+      <definition value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope."/>
+      <comment value="This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+      <alias value="inline resources"/>
+      <alias value="anonymous resources"/>
+      <alias value="contained resources"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.contained"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Resource"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension">
+      <path value="ImmunizationRecommendation.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus">
+      <path value="ImmunizationRecommendation.extension"/>
+      <sliceName value="orderStatus"/>
+      <short value="OrderStatus"/>
+      <definition value="The status of the order / recommendation."/>
+      <alias value="OrderStatus"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.9"/>
+        <comment value="OrderStatus"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.9"/>
+        <comment value="OrderStatus"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.9"/>
+        <comment value="OrderStatus"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus.id">
+      <path value="ImmunizationRecommendation.extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus.extension">
+      <path value="ImmunizationRecommendation.extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus.url">
+      <path value="ImmunizationRecommendation.extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus.value[x]">
+      <path value="ImmunizationRecommendation.extension.value[x]"/>
+      <slicing>
+        <discriminator>
+          <type value="type"/>
+          <path value="$this"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="closed"/>
+      </slicing>
+      <short value="Value of extension"/>
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus.value[x]:valueCodeableConcept">
+      <path value="ImmunizationRecommendation.extension.value[x]"/>
+      <sliceName value="valueCodeableConcept"/>
+      <short value="OrderStatus"/>
+      <definition value="The status of the order / recommendation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.modifierExtension">
+      <path value="ImmunizationRecommendation.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="DomainResource.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.identifier">
+      <path value="ImmunizationRecommendation.identifier"/>
+      <short value="Business identifier"/>
+      <definition value="A unique identifier assigned to this particular recommendation record."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ImmunizationRecommendation.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".id"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="id"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN"/>
+        <map value="NL-CM:0.0.6"/>
+        <comment value="IdentificationNumber"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.patient">
+      <path value="ImmunizationRecommendation.patient"/>
+      <short value="Who this profile is for"/>
+      <definition value="The patient the recommendations are for."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.patient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="PID-3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".partipication[typeCode=SUBJ].role"/>
+      </mapping>
+      <mapping>
+        <identity value="w5"/>
+        <map value="who.focus"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN"/>
+        <map value="NL-CM:0.0.11"/>
+        <comment value="Subject"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation">
+      <path value="ImmunizationRecommendation.recommendation"/>
+      <short value="Vaccine administration recommendations"/>
+      <definition value="Vaccine administration recommendations."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="imr-1"/>
+        <severity value="error"/>
+        <human value="One of vaccineCode or targetDisease SHALL be present"/>
+        <expression value="vaccineCode.exists() or targetDisease.exists()"/>
+        <xpath value="exists(f:vaccineCode) or exists(f:targetDisease)"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
+      </constraint>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode='COMP'].target[classCode=SBADM, moodCode=RMD]"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.id">
+      <path value="ImmunizationRecommendation.recommendation.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.extension">
+      <path value="ImmunizationRecommendation.recommendation.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.modifierExtension">
+      <path value="ImmunizationRecommendation.recommendation.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.date">
+      <path value="ImmunizationRecommendation.recommendation.date"/>
+      <short value="DesiredDateForRevaccination"/>
+      <definition value="Date on which this vaccination will have to be repeated according to the author’s information."/>
+      <alias value="GewensteDatumHervaccinatie"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-15"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".partipication[typeCode=AUTH].time"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-vaccination-v1.2-2015EN"/>
+        <map value="NL-CM:11.1.5"/>
+        <comment value="DesiredDateForRevaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-vaccination-v3.0-2016EN"/>
+        <map value="NL-CM:11.1.5"/>
+        <comment value="DesiredDateForRevaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-vaccination-v3.1-2017EN"/>
+        <map value="NL-CM:11.1.5"/>
+        <comment value="PreferedDateForRevaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN"/>
+        <map value="NL-CM:0.0.14"/>
+        <comment value="DateTime"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode"/>
+      <short value="ProductCode"/>
+      <definition value="The product code of the vaccine administered.&#xD;&#xA;There are several possible code systems for documenting the product code. If the vaccination data is registered based on an anamnesis, coding with the ATC code is preferred. In all cases it concerns those products that fall under ATC group J07 (vaccines)."/>
+      <alias value="ProductCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.vaccineCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="VaccineCode"/>
+        </extension>
+        <strength value="example"/>
+        <description value="The type of vaccine administered"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/vaccine-code"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 e { 30956-7 | 38890-0 }"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".partipication[typeCode=CSM].role[classCode=ADMM].code"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-vaccination-v1.2-2015EN"/>
+        <map value="NL-CM:11.1.2"/>
+        <comment value="ProductCode"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.id">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.extension">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeGPKCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeGPKCodelijst"/>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeGPKCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.3--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeHPKCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeHPKCodelijst"/>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeHPKCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.2--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeZICodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeZICodelijst"/>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeZICodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.6--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeATCCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeATCCodelijst"/>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeATCCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.4--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodePRKCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodePRKCodelijst"/>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodePRKCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.1--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeGTINCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeGTINCodelijst"/>
+      <short value="Code defined by a terminology system"/>
+      <definition value="A reference to a code defined by a terminology system."/>
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true."/>
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.coding"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeGTINCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.5--20171231000000"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.1-8, C*E.10-22"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="union(., ./translation)"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true"/>
+      </extension>
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.text"/>
+      <short value="Plain text representation of the concept"/>
+      <definition value="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user."/>
+      <comment value="Very often the text is the same as a displayName of one of the codings."/>
+      <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CodeableConcept.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="C*E.9. But note many systems use C*E.2 for this"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./originalText[mediaType/code=&quot;text/plain&quot;]/data"/>
+      </mapping>
+      <mapping>
+        <identity value="orim"/>
+        <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.targetDisease">
+      <path value="ImmunizationRecommendation.recommendation.targetDisease"/>
+      <short value="Disease to be immunized against"/>
+      <definition value="The targeted disease for the recommendation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.targetDisease"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="TargetDisease"/>
+        </extension>
+        <strength value="example"/>
+        <description value="The disease that the recommended vaccination targets"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/immunization-recommendation-target-disease"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 e { 30956-7 | 38890-0 }"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".partipication[typeCode=CSM].role[classCode=ADMM].code"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.doseNumber">
+      <path value="ImmunizationRecommendation.recommendation.doseNumber"/>
+      <short value="Recommended dose number"/>
+      <definition value="The next recommended dose number (e.g. dose 2 is the next recommended dose)."/>
+      <comment value="May need other dose concepts such as administered vs. valid."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.doseNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 = 30973-2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=COMP, .source[classCode=SBADM, moodCode=INT]].sequenceNumber"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.forecastStatus">
+      <path value="ImmunizationRecommendation.recommendation.forecastStatus"/>
+      <short value="Vaccine administration status"/>
+      <definition value="Vaccine administration status."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.forecastStatus"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ImmunizationRecommendationStatus"/>
+        </extension>
+        <strength value="example"/>
+        <description value="The patient's status with respect to a vaccination protocol"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/immunization-recommendation-status"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 = 59783-1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=SUBJ] .source[classCode=OBS, moodCode=EVN, code=&quot;Immunization Forecast Status&quot;].value"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion"/>
+      <short value="StartDate / EndDate"/>
+      <definition value="Vaccine date recommendations.  For example, earliest date to administer, latest date to administer, etc."/>
+      <comment value="This element can be used to capture the StartDate and EndDate concepts of the ZIB OverdrachtGeplandeZorgActiviteit."/>
+      <alias value="StartDate"/>
+      <alias value="EndDate"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.dateCriterion"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-3: 30980-7 = Next dose recommended, 59777-3 = Latest next dose should be given, 59778-1 = Dose is overdue"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode='LIMIT'].target[classCode=OBS, moodCode=EVN, isCriterionInd=true]"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.10"/>
+        <comment value="StartDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.10"/>
+        <comment value="StartDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.10"/>
+        <comment value="StartDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.11"/>
+        <comment value="EndDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.11"/>
+        <comment value="EndDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.11"/>
+        <comment value="EndDate"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion.id">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion.extension">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion.code">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion.code"/>
+      <short value="Type of date"/>
+      <definition value="Date classification of recommendation.  For example, earliest date to give, latest date to give, etc."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.dateCriterion.code"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ImmunizationRecommendationDateCriterion"/>
+        </extension>
+        <strength value="example"/>
+        <description value="Classifies date criterion with respect to conveying information about a patient's vaccination status (e.g. due date, latest to give date, etc.)"/>
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/immunization-recommendation-date-criterion"/>
+        </valueSetReference>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".code"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion.value">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion.value"/>
+      <short value="Recommended date"/>
+      <definition value="The date whose meaning is specified by dateCriterion.code."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.dateCriterion.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".value"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol">
+      <path value="ImmunizationRecommendation.recommendation.protocol"/>
+      <short value="Protocol used by recommendation"/>
+      <definition value="Contains information about the protocol under which the vaccine was administered."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.protocol"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() | (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=INST].source[classCode=SBADM, moodCode=DEF]"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.id">
+      <path value="ImmunizationRecommendation.recommendation.protocol.id"/>
+      <representation value="xmlAttr"/>
+      <short value="xml:id (or equivalent in JSON)"/>
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.extension">
+      <path value="ImmunizationRecommendation.recommendation.protocol.extension"/>
+      <short value="Additional Content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.modifierExtension">
+      <path value="ImmunizationRecommendation.recommendation.protocol.modifierExtension"/>
+      <short value="Extensions that cannot be ignored"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <alias value="modifiers"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="BackboneElement.modifierExtension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <isModifier value="true"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.doseSequence">
+      <path value="ImmunizationRecommendation.recommendation.protocol.doseSequence"/>
+      <short value="Dose number within sequence"/>
+      <definition value="Indicates the nominal position in a series of the next dose.  This is the recommended dose number as per a specified protocol."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.protocol.doseSequence"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 = 30973-2"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".inboundRelationship[typeCode=COMP, .source[classCode=SBADM, moodCode=DEF]].sequenceNumber"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.description">
+      <path value="ImmunizationRecommendation.recommendation.protocol.description"/>
+      <short value="Protocol details"/>
+      <definition value="Contains the description about the protocol under which the vaccine was administered."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.protocol.description"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 = 30956-7"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".text"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.authority">
+      <path value="ImmunizationRecommendation.recommendation.protocol.authority"/>
+      <short value="Who is responsible for protocol"/>
+      <definition value="Indicates the authority who published the protocol.  For example, ACIP."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.protocol.authority"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX-5 : OBX-3 = 59779-9"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=AUT]"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.series">
+      <path value="ImmunizationRecommendation.recommendation.protocol.series"/>
+      <short value="Name of vaccination series"/>
+      <definition value="One possible path to achieve presumed immunity against a disease - within the context of an authority."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.protocol.series"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="RXA-5-administered code"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".title"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.supportingImmunization">
+      <path value="ImmunizationRecommendation.recommendation.supportingImmunization"/>
+      <short value="Past immunizations supporting recommendation"/>
+      <definition value="Immunization event history that supports the status and recommendation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.supportingImmunization"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="? No clear way to associate in HL7 v2 or IG"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=RSON].target[classCode=SBADM, moodCode=EVN, code=&quot;immunization&quot;]"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.supportingPatientInformation">
+      <path value="ImmunizationRecommendation.recommendation.supportingPatientInformation"/>
+      <short value="Patient observations supporting recommendation"/>
+      <definition value="Patient Information that supports the status and recommendation.  This includes patient observations, adverse reactions and allergy/intolerance information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ImmunizationRecommendation.recommendation.supportingPatientInformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"/>
+      </type>
+      <mapping>
+        <identity value="v2"/>
+        <map value="OBX If OBX is associated with ( RXA : RXA-5-administered code = '998^No vaccine administered^CVX'), could contain the reason the vaccine was not administered"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".outboundRelationship[typeCode=RSON].target[classCode=OBS, moodCode=EVN]"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ImmunizationRecommendation">
+      <path value="ImmunizationRecommendation"/>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.5"/>
+        <comment value="Vaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.5"/>
+        <comment value="Vaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.5"/>
+        <comment value="Vaccination"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension">
+      <path value="ImmunizationRecommendation.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus">
+      <path value="ImmunizationRecommendation.extension"/>
+      <sliceName value="orderStatus"/>
+      <short value="OrderStatus"/>
+      <definition value="The status of the order / recommendation."/>
+      <alias value="OrderStatus"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus"/>
+      </type>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.9"/>
+        <comment value="OrderStatus"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.9"/>
+        <comment value="OrderStatus"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.9"/>
+        <comment value="OrderStatus"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.extension:orderStatus.valueCodeableConcept:valueCodeableConcept">
+      <path value="ImmunizationRecommendation.extension.valueCodeableConcept"/>
+      <sliceName value="valueCodeableConcept"/>
+      <binding>
+        <strength value="extensible"/>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.identifier">
+      <path value="ImmunizationRecommendation.identifier"/>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN"/>
+        <map value="NL-CM:0.0.6"/>
+        <comment value="IdentificationNumber"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.patient">
+      <path value="ImmunizationRecommendation.patient"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-patient"/>
+      </type>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN"/>
+        <map value="NL-CM:0.0.11"/>
+        <comment value="Subject"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.date">
+      <path value="ImmunizationRecommendation.recommendation.date"/>
+      <short value="DesiredDateForRevaccination"/>
+      <definition value="Date on which this vaccination will have to be repeated according to the author’s information."/>
+      <alias value="GewensteDatumHervaccinatie"/>
+      <mapping>
+        <identity value="hcim-vaccination-v1.2-2015EN"/>
+        <map value="NL-CM:11.1.5"/>
+        <comment value="DesiredDateForRevaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-vaccination-v3.0-2016EN"/>
+        <map value="NL-CM:11.1.5"/>
+        <comment value="DesiredDateForRevaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-vaccination-v3.1-2017EN"/>
+        <map value="NL-CM:11.1.5"/>
+        <comment value="PreferedDateForRevaccination"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-basicelements-v1.0-2017EN"/>
+        <map value="NL-CM:0.0.14"/>
+        <comment value="DateTime"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode"/>
+      <short value="ProductCode"/>
+      <definition value="The product code of the vaccine administered.&#xD;&#xA;There are several possible code systems for documenting the product code. If the vaccination data is registered based on an anamnesis, coding with the ATC code is preferred. In all cases it concerns those products that fall under ATC group J07 (vaccines)."/>
+      <alias value="ProductCode"/>
+      <mapping>
+        <identity value="hcim-vaccination-v1.2-2015EN"/>
+        <map value="NL-CM:11.1.2"/>
+        <comment value="ProductCode"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="system"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeGPKCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeGPKCodelijst"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeGPKCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.3--20171231000000"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeHPKCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeHPKCodelijst"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeHPKCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.2--20171231000000"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeZICodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeZICodelijst"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeZICodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.6--20171231000000"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeATCCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeATCCodelijst"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeATCCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.4--20171231000000"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodePRKCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodePRKCodelijst"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodePRKCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.1--20171231000000"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.vaccineCode.coding:productCodeGTINCodelijst">
+      <path value="ImmunizationRecommendation.recommendation.vaccineCode.coding"/>
+      <sliceName value="productCodeGTINCodelijst"/>
+      <max value="1"/>
+      <binding>
+        <strength value="extensible"/>
+        <description value="ProductCodeGTINCodelijst"/>
+        <valueSetReference>
+          <reference value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.5--20171231000000"/>
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.dateCriterion">
+      <path value="ImmunizationRecommendation.recommendation.dateCriterion"/>
+      <short value="StartDate / EndDate"/>
+      <comment value="This element can be used to capture the StartDate and EndDate concepts of the ZIB OverdrachtGeplandeZorgActiviteit."/>
+      <alias value="StartDate"/>
+      <alias value="EndDate"/>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.10"/>
+        <comment value="StartDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.10"/>
+        <comment value="StartDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.10"/>
+        <comment value="StartDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v1.2.1-2015EN"/>
+        <map value="NL-CM:16.1.11"/>
+        <comment value="EndDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.0-2016EN"/>
+        <map value="NL-CM:16.1.11"/>
+        <comment value="EndDate"/>
+      </mapping>
+      <mapping>
+        <identity value="hcim-plannedcareactivityfortransfer-v3.1-2017EN"/>
+        <map value="NL-CM:16.1.11"/>
+        <comment value="EndDate"/>
+      </mapping>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.protocol.authority">
+      <path value="ImmunizationRecommendation.recommendation.protocol.authority"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://fhir.nl/fhir/StructureDefinition/nl-core-organization"/>
+      </type>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.supportingImmunization">
+      <path value="ImmunizationRecommendation.recommendation.supportingImmunization"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"/>
+      </type>
+    </element>
+    <element id="ImmunizationRecommendation.recommendation.supportingPatientInformation">
+      <path value="ImmunizationRecommendation.recommendation.supportingPatientInformation"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

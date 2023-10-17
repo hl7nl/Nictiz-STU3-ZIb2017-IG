@@ -1,0 +1,200 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ConceptMap/NHGTable14-to-ActEncounterCode> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NHGTable14-to-ActEncounterCode"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to <a href=\"http://hl7.org/fhir/STU3/v3/ActEncounterCode/vs.html\">ActEncounterCode</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the NHG Table 14 version 7 (September 2011) terminology for ContactType to the FHIR STU3 terminology associated with Encounter.class</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode (version 2016-11-11)</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1 (visite)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>HH (home)</td><td/></tr><tr><td>2 (nacht/dienst visite)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>HH (home)</td><td>Nacht/dienst semantics not covered</td></tr><tr><td>3 (Consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>AMB (ambulatory)</td><td/></tr><tr><td>4 (nacht/dienst consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>AMB (ambulatory)</td><td>Nacht/dienst semantics not covered</td></tr><tr><td>5 (telefonisch contact)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Virtual is broader/wider than just phone</td></tr><tr><td>6 (nacht/dienst telefonisch consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Virtual is broader/wider than just phone. Nacht/dienst semantics not covered</td></tr><tr><td>8 (postverwerking)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Processing the mail is about the patient, but there is no true encounter</td></tr><tr><td>9 (overleg)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Inter-collegial consultation is about the patient, but there is no true encounter</td></tr><tr><td>11 (notitie/memo)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Note/memo is about the patient, but there is no true encounter</td></tr><tr><td>12 (e-consult)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td><td>Virtual is presumably broader/wider than e-consult</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>90 (onbekend)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>UNK (unknown)</td></tr><tr><td>99 (overig)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>OTH (other)</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/concept-bidirectional"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://nictiz.nl/fhir/ConceptMap/NHGTable14-to-ActEncounterCode"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "NHGTable14-to-ActEncounterCode"] ; # 
+  fhir:title [ fhir:v "NHG NHGTable14 to ActEncounterCode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@nictiz.nl" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps the NHG Table 14 version 7 (September 2011) terminology for ContactType to the FHIR STU3 terminology associated with Encounter.class"] ; # 
+  fhir:purpose [ fhir:v "To aid in mapping from ZIB Contact value set ContactTypeCodelijst to FHIR STU3 Contact.class"] ; # 
+  fhir:copyright [ fhir:v "CC0"] ; # 
+  fhir:target [ fhir:v "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"^^xsd:anyURI] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://hl7.org/fhir/v3/ActCode"^^xsd:anyURI ] ;
+     fhir:sourceVersion [ fhir:v "2016-11-11" ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "visite" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "HH" ] ;
+         fhir:display [ fhir:v "home" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "nacht/dienst visite" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "inexact" ]
+         ] ) ;
+         fhir:code [ fhir:v "HH" ] ;
+         fhir:display [ fhir:v "home" ] ;
+         fhir:equivalence [ fhir:v "inexact" ] ;
+         fhir:comment [ fhir:v "Nacht/dienst semantics not covered" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Consult" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "AMB" ] ;
+         fhir:display [ fhir:v "ambulatory" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "nacht/dienst consult" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "inexact" ]
+         ] ) ;
+         fhir:code [ fhir:v "AMB" ] ;
+         fhir:display [ fhir:v "ambulatory" ] ;
+         fhir:equivalence [ fhir:v "inexact" ] ;
+         fhir:comment [ fhir:v "Nacht/dienst semantics not covered" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "telefonisch contact" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "wider" ]
+         ] ) ;
+         fhir:code [ fhir:v "VR" ] ;
+         fhir:display [ fhir:v "virtual" ] ;
+         fhir:equivalence [ fhir:v "wider" ] ;
+         fhir:comment [ fhir:v "Virtual is broader/wider than just phone" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "6" ] ;
+       fhir:display [ fhir:v "nacht/dienst telefonisch consult" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "relatedto" ]
+         ] ) ;
+         fhir:code [ fhir:v "VR" ] ;
+         fhir:display [ fhir:v "virtual" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ] ;
+         fhir:comment [ fhir:v "Virtual is broader/wider than just phone. Nacht/dienst semantics not covered" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "postverwerking" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "relatedto" ]
+         ] ) ;
+         fhir:code [ fhir:v "VR" ] ;
+         fhir:display [ fhir:v "virtual" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ] ;
+         fhir:comment [ fhir:v "Processing the mail is about the patient, but there is no true encounter" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:display [ fhir:v "overleg" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "relatedto" ]
+         ] ) ;
+         fhir:code [ fhir:v "VR" ] ;
+         fhir:display [ fhir:v "virtual" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ] ;
+         fhir:comment [ fhir:v "Inter-collegial consultation is about the patient, but there is no true encounter" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "11" ] ;
+       fhir:display [ fhir:v "notitie/memo" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "relatedto" ]
+         ] ) ;
+         fhir:code [ fhir:v "VR" ] ;
+         fhir:display [ fhir:v "virtual" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ] ;
+         fhir:comment [ fhir:v "Note/memo is about the patient, but there is no true encounter" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "12" ] ;
+       fhir:display [ fhir:v "e-consult" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "VR" ] ;
+         fhir:display [ fhir:v "virtual" ] ;
+         fhir:equivalence [ fhir:v "equal" ] ;
+         fhir:comment [ fhir:v "Virtual is presumably broader/wider than e-consult" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://hl7.org/fhir/v3/NullFlavor"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "90" ] ;
+       fhir:display [ fhir:v "onbekend" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "unknown" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "99" ] ;
+       fhir:display [ fhir:v "overig" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "OTH" ] ;
+         fhir:display [ fhir:v "other" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="d52c4a9e-1f3c-4924-926a-036fde004f0a"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://nictiz.nl/fhir/NamingSystem/d52c4a9e-1f3c-4924-926a-036fde004f0a</td></tr><tr><td>Version</td><td>1.3.15</td></tr><tr><td>Name</td><td>UZOVI identification number</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Unique healthcare insurance company identification (the UZOVI number).</p>
+</div></td></tr><tr><td>Publisher</td><td>HL7 Netherlands</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.nl/fhir/NamingSystem/uzovi</td><td>true</td></tr><tr><td>OID</td><td>2.16.840.1.113883.2.4.6.4</td><td>false</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="http://nictiz.nl/fhir/NamingSystem/d52c4a9e-1f3c-4924-926a-036fde004f0a"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="1.3.15"/>
+  </extension>
+  <name value="UZOVI identification number"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2017-04-05T13:14:57.478+01:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unique healthcare insurance company identification (the UZOVI number)."/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://fhir.nl/fhir/NamingSystem/uzovi"/>
+    <preferred value="true"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="oid"/>
+    <value value="2.16.840.1.113883.2.4.6.4"/>
+    <preferred value="false"/>
+  </uniqueId>
+</NamingSystem>

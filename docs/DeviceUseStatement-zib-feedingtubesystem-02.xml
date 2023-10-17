@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeviceUseStatement xmlns="http://hl7.org/fhir">
+  <id value="zib-feedingtubesystem-02"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DeviceUseStatement</b><a name="zib-feedingtubesystem-02"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DeviceUseStatement &quot;zib-feedingtubesystem-02&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-FeedingTubeSystem.html">HCIM FeedingTubeSystem</a></p></div><p><b>HCIM FeedingTubeSystem FeedingTubeLength</b>: 52 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p><p><b>HCIM FeedingTubeSystem EnteralNutrition</b>: <a href="MedicationAdministration/example-sondevoeding">MedicationAdministration/example-sondevoeding: XXX Nutrition</a></p><p><b>MedicalDevice extension</b>: <a href="DeviceUseStatement-zib-infusion-01.html">DeviceUseStatement/zib-infusion-01: Enteral feeding pump</a></p><p><b>status</b>: active</p><p><b>subject</b>: <a href="Patient-nl-core-patient-01.html">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>whenUsed</b>: 2018-12-22 --&gt; (ongoing)</p><p><b>device</b>: <a href="Device-zib-feedingtubesystem-product-01.html">Device/zib-feedingtubesystem-product-01: Percutaneous endoscopic gastrostomy catheter</a></p><p><b>note</b>: Sonde is met spoed toegebracht.</p></div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem-FeedingTubeLength">
+    <valueQuantity>
+      <value value="52"/>
+      <unit value="cm"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="cm"/>
+    </valueQuantity>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem-EnteralNutrition">
+    <valueReference>
+      <reference value="MedicationAdministration/example-sondevoeding"/>
+      <display value="XXX Nutrition"/>
+    </valueReference>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice">
+    <valueReference>
+      <reference value="DeviceUseStatement/zib-infusion-01"/>
+      <display value="Enteral feeding pump"/>
+    </valueReference>
+  </extension>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/nl-core-patient-01"/>
+    <display value="Johan XXX_Helleman"/>
+  </subject>
+  <whenUsed>
+    <start value="2018-12-22"/>
+  </whenUsed>
+  <device>
+    <reference value="Device/zib-feedingtubesystem-product-01"/>
+    <display value="Percutaneous endoscopic gastrostomy catheter"/>
+  </device>
+  <note>
+    <text value="Sonde is met spoed toegebracht."/>
+  </note>
+</DeviceUseStatement>

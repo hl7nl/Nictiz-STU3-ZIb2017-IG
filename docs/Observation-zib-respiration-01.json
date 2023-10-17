@@ -1,0 +1,94 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-respiration-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Respiration"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-respiration-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-respiration-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Respiration.html\">HCIM Respiration</a></p></div><blockquote><p><b>HCIM Respiration AdministeredOxygen</b></p><p><b>url</b>: <code>extraOxygenAdministration</code></p><p><b>value</b>: true</p><p><b>url</b>: <code>flowRate</code></p><p><b>value</b>: 2 2/min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 2/min = '2/min')</span></p><p><b>url</b>: <code>fiO2</code></p><p><b>value</b>: 0.29 fractionele inspiratoire zuurstofconcentratie</p></blockquote><p><b>status</b>: final</p><p><b>code</b>: Respiratory assessment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#422834003)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2015-03-11 14:47:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: Ritme <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#48064009)</span></p><p><b>value</b>: Normaal ademhalingsritme <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5467003)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diepte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#271626009)</span></p><p><b>value</b>: Normale ademhalingsdiepte <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#301284009)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Ademfrequentie <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#9279-1)</span></p><p><b>value</b>: 15 breaths per minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code {breaths}/min = '{breaths}/min')</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen",
+    "extension" : [{
+      "url" : "extraOxygenAdministration",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "flowRate",
+      "valueQuantity" : {
+        "value" : 2,
+        "unit" : "2/min",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "2/min"
+      }
+    },
+    {
+      "url" : "fiO2",
+      "valueQuantity" : {
+        "value" : 0.29,
+        "unit" : "fractionele inspiratoire zuurstofconcentratie"
+      }
+    }]
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "422834003",
+      "display" : "Respiratory assessment"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "effectiveDateTime" : "2015-03-11T14:47:00Z",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "48064009",
+        "display" : "Ritme"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "5467003",
+        "display" : "Normaal ademhalingsritme"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271626009",
+        "display" : "Diepte"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "301284009",
+        "display" : "Normale ademhalingsdiepte"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "9279-1",
+        "display" : "Ademfrequentie"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 15,
+      "unit" : "breaths per minute",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{breaths}/min"
+    }
+  }]
+}

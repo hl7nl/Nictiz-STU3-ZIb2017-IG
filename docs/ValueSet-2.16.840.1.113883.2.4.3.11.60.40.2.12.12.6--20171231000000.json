@@ -1,0 +1,133 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.6--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.6</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>Face1</td><td>Facial muscles totally relaxed</td><td>Gezichtsspieren volkomen ontspannen</td><td>Gezichtsspieren volkomen ontspannen</td></tr><tr><td>Face2</td><td>Normal facial tone</td><td>Normale spanning van het gezicht</td><td>Normale spanning van het gezicht</td></tr><tr><td>Face3</td><td>Tension evident in some facial muscles</td><td>Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend)</td><td>Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend)</td></tr><tr><td>Face4</td><td>Tension evident throughout facial muscles</td><td>Spanning duidelijk in alle gelaatsspieren (aanhoudend)</td><td>Spanning duidelijk in alle gelaatsspieren (aanhoudend)</td></tr><tr><td>Face5</td><td>Facial muscles contorted and grimacing</td><td>Gezichtsspieren verwrongen en in een grimas</td><td>Gezichtsspieren verwrongen en in een grimas</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.6--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.6"
+  }],
+  "version" : "1.3.15",
+  "name" : "GezichtsspanningCodelijst",
+  "title" : "GezichtsspanningCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "GezichtsspanningCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.6",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "code" : "Face1",
+        "display" : "Facial muscles totally relaxed",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Gezichtsspieren volkomen ontspannen"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "code" : "Face2",
+        "display" : "Normal facial tone",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Normale spanning van het gezicht"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "code" : "Face3",
+        "display" : "Tension evident in some facial muscles",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend)"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 4
+        }],
+        "code" : "Face4",
+        "display" : "Tension evident throughout facial muscles",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Spanning duidelijk in alle gelaatsspieren (aanhoudend)"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue",
+          "valueDecimal" : 5
+        }],
+        "code" : "Face5",
+        "display" : "Facial muscles contorted and grimacing",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Gezichtsspieren verwrongen en in een grimas"
+        }]
+      }]
+    }]
+  }
+}

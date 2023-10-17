@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Device/zib-medicaldeviceproduct-01> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-medicaldeviceproduct-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Apparaat/Systeem. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Id: 1148130801</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Implantant, Gen 2 Tibia Insert 5/6-9mm</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Knee joint prosthesis, device (physical object) (109228008 - SNOMED CT)\">Knee joint prosthesis, device (physical object)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>UDI</th>\n                        <td>UDI barcode: {01}05050474530799{17}160131{21}1148130801</td>\n                    </tr>\n                    <tr>\n                        <th>Verloopdatum</th>\n                        <td>2016-01-31</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/identifier-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SNO" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1148130801" ]
+  ] ) ; # 
+  fhir:udi [
+     fhir:deviceIdentifier [ fhir:v "05050474530799" ] ;
+     fhir:carrierHRF [ fhir:v "{01}05050474530799{17}160131{21}1148130801" ]
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:109228008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "109228008" ] ;
+       fhir:display [ fhir:v "Knee joint prosthesis, device (physical object)" ]
+     ] )
+  ] ; # 
+  fhir:expirationDate [ fhir:v "2016-01-31"^^xsd:date] ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Implantant, Gen 2 Tibia Insert 5/6-9mm" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

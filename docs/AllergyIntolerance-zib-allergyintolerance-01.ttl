@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/AllergyIntolerance/zib-allergyintolerance-01> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-allergyintolerance-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Allergie/intolerantie. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Allergy to substance (419199007 - SNOMED CT)\">Allergy to\n                        substance</span>, Status: actief / bevestigd</caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Bee venom (288328004 - SNOMED CT)\">Bee venom</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Eerste symptomen</th>\n                        <td>2008-11-08</td>\n                    </tr>\n                    <tr>\n                        <th>Meest recente voorkomen</th>\n                        <td>2009-11-15</td>\n                    </tr>\n                    <tr>\n                        <th>Reactie</th>\n                        <td>\n                            <ul>\n                                <li>\n                                    <div>\n                                        <span title=\"Severe (24484000 - SNOMED CT)\">Severe</span>\n                                    </div>\n                                    <div>\n                                        <span title=\"Nausea and vomiting (16932000 - SNOMED CT)\">Nausea and vomiting</span>\n                                    </div>\n                                </li>\n                            </ul>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:v "active" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/v3/ActStatus"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "active" ] ;
+           fhir:display [ fhir:v "Active" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [ fhir:v "confirmed"] ; # 
+  fhir:category ( [
+     fhir:v "environment" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:419199007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "419199007" ] ;
+           fhir:display [ fhir:v "Allergy to substance" ]
+         ] )
+       ]
+     ] )
+  ] ) ; # 
+  fhir:criticality [
+     fhir:v "high" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:24484000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "24484000" ] ;
+           fhir:display [ fhir:v "Severe" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:288328004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "288328004" ] ;
+       fhir:display [ fhir:v "Bee venom" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2008-11-08"^^xsd:date] ; # 
+  fhir:lastOccurrence [ fhir:v "2009-11-15"^^xsd:date] ; # 
+  fhir:reaction ( [
+     fhir:manifestation ( [
+       fhir:coding ( [
+         a sct:16932000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "16932000" ] ;
+         fhir:display [ fhir:v "Nausea and vomiting" ]
+       ] )
+     ] ) ;
+     fhir:severity [
+       fhir:v "severe" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             a sct:24484000 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "24484000" ] ;
+             fhir:display [ fhir:v "Severe" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="zib-comfortscale-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-ComfortScale"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="zib-comfortscale-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;zib-comfortscale-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-ComfortScale.html">HCIM ComfortScale</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: ComfortScale <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#108301000146109)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-03.html">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2019-09-03 11:01:07+0000</p><p><b>value</b>: 18</p><p><b>comment</b>: Controle na verhogen pijnmedicatie.</p><blockquote><p><b>component</b></p><p><b>code</b>: 12.12.3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.3)</span></p><p><b>value</b>: Licht in slaap (ogen grotendeels gesloten, af en toe reactie) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Alert2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Respiratory Response <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.5)</span></p><p><b>value</b>: Onrust of verzet tegen de beademing <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Vent3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Calmness Agitation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.4)</span></p><p><b>value</b>: Calmness Agitation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Calm2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Crying <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.6)</span></p><p><b>value</b>: Jengelen of dreinen (monotoon geluid) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Cry3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Muscle Tone <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.10)</span></p><p><b>value</b>: Verminderde spierspanning; minder weerstand dan normaal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Musc2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Body movement <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.8)</span></p><p><b>value</b>: Frequente (3 of meer) kleine bewegingen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Mov3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Facial Tone <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#12.12.9)</span></p><p><b>value</b>: Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#Face3)</span></p></blockquote></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <code value="108301000146109"/>
+      <system value="http://snomed.info/sct"/>
+      <display value="ComfortScale"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/nl-core-patient-03"/>
+    <display value="I. Jongeneel-de Haas"/>
+  </subject>
+  <effectiveDateTime value="2019-09-03T11:01:07.9477128+00:00"/>
+  <valueQuantity>
+    <value value="18"/>
+  </valueQuantity>
+  <comment value="Controle na verhogen pijnmedicatie."/>
+  <component>
+    <!-- Alertness -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.3"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.1"/>
+        <code value="Alert2"/>
+        <display value="Licht in slaap (ogen grotendeels gesloten, af en toe reactie)"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- RespiratoryResponse -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.5"/>
+        <display value="Respiratory Response"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.3"/>
+        <code value="Vent3"/>
+        <display value="Onrust of verzet tegen de beademing"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- CalmnessAgitation -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.4"/>
+        <display value="Calmness Agitation"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.2"/>
+        <code value="Calm2"/>
+        <display value="Calmness Agitation"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- Crying -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.6"/>
+        <display value="Crying"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.4"/>
+        <code value="Cry3"/>
+        <display value="Jengelen of dreinen (monotoon geluid)"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- MuscleTone -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.10"/>
+        <display value="Muscle Tone"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.7"/>
+        <code value="Musc2"/>
+        <display value="Verminderde spierspanning; minder weerstand dan normaal"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- BodyMovement -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.8"/>
+        <display value="Body movement"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.5"/>
+        <code value="Mov3"/>
+        <display value="Frequente (3 of meer) kleine bewegingen"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <!-- FacialTone -->
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0"/>
+        <code value="12.12.9"/>
+        <display value="Facial Tone"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.6"/>
+        <code value="Face3"/>
+        <display value="Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend)"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

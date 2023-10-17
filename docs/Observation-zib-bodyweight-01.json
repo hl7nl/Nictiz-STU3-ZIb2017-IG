@@ -1,0 +1,57 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-bodyweight-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Vital Signs (vital-signs - observation-category)\">Vital Signs</span>,\n                    Status: definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-02\">Vaste Huisarts 1</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2013-02-03</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Body weight (29463-7 - LOINC)\">Body weight</span>\n                        </td>\n                        <td>72 kg</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Clothing worn during measure (8352-7 - LOINC)\">Clothing\n                                worn during measure</span>\n                        </td>\n                        <td>\n                            <span title=\"Minimal dressed (MINIMAL - 2.16.840.1.113883.2.4.3.11.60.40.4.8.1)\">Minimal dressed</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "29463-7",
+      "display" : "Body weight"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "effectiveDateTime" : "2013-02-03",
+  "performer" : [{
+    "reference" : "Practitioner/nl-core-practitioner-02",
+    "display" : "Vaste Huisarts 1"
+  }],
+  "valueQuantity" : {
+    "value" : 72,
+    "unit" : "kg",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "kg"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8352-7",
+        "display" : "Clothing worn during measure"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.8.1",
+        "code" : "MINIMAL",
+        "display" : "Minimal dressed"
+      }]
+    }
+  }]
+}

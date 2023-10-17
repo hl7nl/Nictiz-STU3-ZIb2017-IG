@@ -1,0 +1,33 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "nl-core-practitionerrole-02",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgverlenerrol</caption>\n                <tbody>\n                    <tr>\n                        <th>Zorgverlener</th>\n                        <td>\n                            <div>\n                                <a href=\"Practitioner/nl-core-practitioner-02\">Vaste Huisarts 1</a>\n                            </div>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-01\">Maatschap Vaste\n                                    Huisarts</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Performer (PRF - v3/ParticipationType)\">Performer</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Specialisme</th>\n                        <td>\n                            <span title=\"Huisartsen, niet nader gespecificeerd (0100 - AGB-medisch specialisme)\">Huisartsen, niet nader gespecificeerd</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/nl-core-practitioner-02",
+    "display" : "Vaste Huisarts 1"
+  },
+  "organization" : {
+    "reference" : "Organization/nl-core-organization-01",
+    "display" : "Maatschap Vaste Huisarts"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/v3/ParticipationType",
+      "code" : "PRF",
+      "display" : "Performer"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.6.7",
+      "code" : "0100",
+      "display" : "Huisartsen, niet nader gespecificeerd"
+    }]
+  }]
+}

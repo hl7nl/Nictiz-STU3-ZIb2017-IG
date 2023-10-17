@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Device",
+  "id" : "zib-infusion-product-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Infusion-Product"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Apparaat/Systeem</caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Catheter, device (physical object) (19923001 - SNOMED CT)\">Catheter, device (physical object)</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "19923001",
+      "display" : "Catheter, device (physical object)"
+    }]
+  }
+}

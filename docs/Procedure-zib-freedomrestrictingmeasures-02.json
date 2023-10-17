@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "zib-freedomrestrictingmeasures-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"zib-freedomrestrictingmeasures-02\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;zib-freedomrestrictingmeasures-02&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-FreedomRestrictingMeasures.html\">HCIM FreedomRestrictingMeasures</a></p></div><blockquote><p><b>HCIM FreedomRestrictingMeasures LegallyCapable</b></p><p><b>url</b>: <code>LegallyCapableIndicator</code></p><p><b>value</b>: false</p><p><b>url</b>: <code>legallyCapableComment</code></p><p><b>value</b>: Wilsonbekwaam t.a.v. geldzaken.</p></blockquote><p><b>HCIM FreedomrestrictingMeasures Permission</b>: Instemming wettelijke vertegenwoordiger <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#4)</span></p><p><b>status</b>: completed</p><p><b>category</b>: Procedures relating to control, restraint, seclusion and segregation (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225214000)</span></p><p><b>code</b>: Restriction of movement <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225317005)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-01.html\">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>performed</b>: 2014-05-01 --&gt; 2014-05-05</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-LegallyCapable",
+    "extension" : [{
+      "url" : "LegallyCapableIndicator",
+      "valueBoolean" : false
+    },
+    {
+      "url" : "legallyCapableComment",
+      "valueString" : "Wilsonbekwaam t.a.v. geldzaken."
+    }]
+  },
+  {
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-Permission",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.6.1",
+        "code" : "4",
+        "display" : "Instemming wettelijke vertegenwoordiger"
+      }]
+    }
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225214000",
+      "display" : "Procedures relating to control, restraint, seclusion and segregation (procedure)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225317005",
+      "display" : "Restriction of movement"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "performedPeriod" : {
+    "start" : "2014-05-01",
+    "end" : "2014-05-05"
+  }
+}

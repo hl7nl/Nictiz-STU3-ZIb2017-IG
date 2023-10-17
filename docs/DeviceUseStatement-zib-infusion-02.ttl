@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DeviceUseStatement/zib-infusion-02> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-infusion-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Infusion"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Beschrijving apparaatgebruik. Subject: <a href=\"Patient/nl-core-patient-03\">I. Jongeneel-de Haas</a>. Status: actief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Het systeem is op 2018-10-28 schoon gemaakt</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Apparaat/Systeem</th>\n                        <td>\n                            <a href=\"Device/zib-infusion-product-02\">Catheter, device (physical\n                                object)</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Lumen of lijn</th>\n                        <td>\n                            <div>Lijnstatus: <span title=\"Lopend (LNP - 2.16.840.1.113883.2.4.3.11.60.40.4.12.1)\">Lopend</span>\n                            </div>\n                            <div>Lumenlocatie: <span title=\"Proximal (40415009 - SNOMED CT)\">Proximal</span>\n                            </div>\n                            <div>Slotvloeistof: <a href=\"MedicationAdministration/lockfluid-example\">Lockfluid NaCl 0.9 %</a>\n                            </div>\n                            <div>Toedieningssysteem: <a href=\"MedicationAdministration/infusionfluid-example\">NaCl 0,9%\n                                    + medicatie 5000 E heparine (totaal 48ml)</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Gebruiksperiode</th>\n                        <td>Vanaf 2018-11-01</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Infusion-LumenOrLine"^^xsd:anyURI ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "LineStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.12.1"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "LNP" ] ;
+           fhir:display [ fhir:v "Lopend" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "LumenLocation"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:40415009 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "40415009" ] ;
+           fhir:display [ fhir:v "Proximal" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "LockFluid"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://nictiz.nl/fhir/MedicationAdministration/lockfluid-example> ;
+         fhir:reference [ fhir:v "MedicationAdministration/lockfluid-example" ] ;
+         fhir:display [ fhir:v "Lockfluid NaCl 0.9 %" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "AdministeringSystem"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://nictiz.nl/fhir/MedicationAdministration/infusionfluid-example> ;
+         fhir:reference [ fhir:v "MedicationAdministration/infusionfluid-example" ] ;
+         fhir:display [ fhir:v "NaCl 0,9% + medicatie 5000 E heparine (totaal 48ml)" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:whenUsed [
+     fhir:start [ fhir:v "2018-11-01"^^xsd:date ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://nictiz.nl/fhir/Device/zib-infusion-product-02> ;
+     fhir:reference [ fhir:v "Device/zib-infusion-product-02" ] ;
+     fhir:display [ fhir:v "Catheter, device (physical object)" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Het systeem is op 2018-10-28 schoon gemaakt" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

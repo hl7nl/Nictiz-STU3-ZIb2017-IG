@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/PractitionerRole/nl-core-practitionerrole-02> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-practitionerrole-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgverlenerrol</caption>\n                <tbody>\n                    <tr>\n                        <th>Zorgverlener</th>\n                        <td>\n                            <div>\n                                <a href=\"Practitioner/nl-core-practitioner-02\">Vaste Huisarts 1</a>\n                            </div>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-01\">Maatschap Vaste\n                                    Huisarts</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Performer (PRF - v3/ParticipationType)\">Performer</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Specialisme</th>\n                        <td>\n                            <span title=\"Huisartsen, niet nader gespecificeerd (0100 - AGB-medisch specialisme)\">Huisartsen, niet nader gespecificeerd</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-02> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-02" ] ;
+     fhir:display [ fhir:v "Vaste Huisarts 1" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-01> ;
+     fhir:reference [ fhir:v "Organization/nl-core-organization-01" ] ;
+     fhir:display [ fhir:v "Maatschap Vaste Huisarts" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/v3/ParticipationType"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PRF" ] ;
+       fhir:display [ fhir:v "Performer" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.7"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0100" ] ;
+       fhir:display [ fhir:v "Huisartsen, niet nader gespecificeerd" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

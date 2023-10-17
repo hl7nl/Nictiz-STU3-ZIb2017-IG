@@ -1,0 +1,100 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html\"><code>http://hl7.org/fhir/v3/ActStatus</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td><td><b><a href=\"ConceptMap-AllergieStatusCodelijst-to-allergy-status.html\">HCIM AllergieStatusCodelijst to allergy status</a></b></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-active\">active</a></td><td>Active</td><td>The Act can be performed or is being performed</td><td>Actief</td><td>Actief</td><td><span title=\"EQUIVALENT\">~</span>active</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-completed\">completed</a></td><td>Completed</td><td>An Act that has terminated normally after all of its constituents have been performed.</td><td>Niet meer aanwezig</td><td>Niet meer aanwezig</td><td><span title=\"EQUIVALENT\">~</span>resolved</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-obsolete\">obsolete</a></td><td>Obsolete</td><td>This Act instance has been replaced by a new instance.</td><td>Achterhaald</td><td>Achterhaald</td><td><span title=\"EQUIVALENT\">~</span>inactive</td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/ActStatus/cs.html#v3-ActStatus-nullified\">nullified</a></td><td>Nullified</td><td>This Act instance was created in error and has been 'removed' and is treated as though it never existed.  A record is retained for audit purposes only.</td><td>Foutief</td><td>Foutief</td><td><span title=\"EQUIVALENT\">~</span>entered-in-error</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3"
+  }],
+  "version" : "1.3.15",
+  "name" : "AllergieStatusCodelijst",
+  "title" : "AllergieStatusCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "AllergieStatusCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/v3/ActStatus",
+      "concept" : [{
+        "code" : "active",
+        "display" : "Active",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Actief"
+        }]
+      },
+      {
+        "code" : "completed",
+        "display" : "Completed",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Niet meer aanwezig"
+        }]
+      },
+      {
+        "code" : "obsolete",
+        "display" : "Obsolete",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Achterhaald"
+        }]
+      },
+      {
+        "code" : "nullified",
+        "display" : "Nullified",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Foutief"
+        }]
+      }]
+    }]
+  }
+}

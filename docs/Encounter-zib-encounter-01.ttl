@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Encounter/zib-encounter-01> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-encounter-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Contact. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: voltooid</caption>\n                <tbody>\n                    <tr>\n                        <th>Type contact</th>\n                        <td/>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>16 augustus 2012 - 19 augustus 2012</td>\n                    </tr>\n                    <tr>\n                        <th>Probleem</th>\n                        <td>\n                            <ul>\n                                <li>\n                                    <a href=\"Condition/zib-problem-05\">Fracture of lower limb\n                                        (disorder)</a>\n                                </li>\n                                <li>\n                                    <a href=\"Procedure/zib-procedure-02\">Surgical reduction of\n                                        fracture (procedure)</a>\n                                </li>\n                            </ul>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Participant</th>\n                        <td>\n                            <div>\n                                <a href=\"Practitioner/nl-core-practitioner-03\">G.Z.M. de Wit</a>\n                            </div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://hl7.org/fhir/v3/ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:individual [
+       fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-03> ;
+       fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-03" ] ;
+       fhir:display [ fhir:v "G.Z.M. de Wit" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2012-08-16"^^xsd:date ] ;
+     fhir:end [ fhir:v "2012-08-19"^^xsd:date ]
+  ] ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-05> ;
+       fhir:reference [ fhir:v "Condition/zib-problem-05" ] ;
+       fhir:display [ fhir:v "Fracture of lower limb (disorder)" ]
+     ]
+  ] [
+     fhir:condition [
+       fhir:link <http://nictiz.nl/fhir/Procedure/zib-procedure-02> ;
+       fhir:reference [ fhir:v "Procedure/zib-procedure-02" ] ;
+       fhir:display [ fhir:v "Surgical reduction of fracture (procedure)" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-02> ;
+     fhir:reference [ fhir:v "Organization/nl-core-organization-02" ] ;
+     fhir:display [ fhir:v "UMCG - Afdeling Orthopedie" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

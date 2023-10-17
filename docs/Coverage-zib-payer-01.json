@@ -1,0 +1,34 @@
+{
+  "resourceType" : "Coverage",
+  "id" : "zib-payer-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Payer"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verzekering/garantstelling</caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Basis verzekerd (B - 2.16.840.1.113883.2.4.3.11.60.101.5.1)\">Basis verzekerd</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>1 januari 2018 - 31 januari 2019</td>\n                    </tr>\n                    <tr>\n                        <th>abonnee</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Betaler</th>\n                        <td>\n                            <a href=\"Organization/nl-core-organization-04\">Menzis Zorgverzekeraar\n                                N.V.</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>begunstigde</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1",
+      "code" : "B",
+      "display" : "Basis verzekerd"
+    }]
+  },
+  "subscriber" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "beneficiary" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "period" : {
+    "start" : "2018-01-01",
+    "end" : "2019-01-31"
+  },
+  "payor" : [{
+    "reference" : "Organization/nl-core-organization-04",
+    "display" : "Menzis Zorgverzekeraar N.V."
+  }]
+}

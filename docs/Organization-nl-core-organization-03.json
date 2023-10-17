@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Organization",
+  "id" : "nl-core-organization-03",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Organisatie</caption>\n                <tbody>\n                    <tr>\n                        <th>Naam</th>\n                        <td>Test Medisch Centrum</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "name" : "Test Medisch Centrum"
+}

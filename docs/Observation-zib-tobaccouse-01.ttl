@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-tobaccouse-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-tobaccouse-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: definitief</caption>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>1980 - 1983</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Finding of tobacco use and exposure (finding) (365980008 - SNOMED CT)\">Finding of tobacco use and exposure (finding)</span>\n                        </td>\n                        <td>\n                            <span title=\"Ex-smoker (finding) (8517006 - SNOMED CT)\">Ex-smoker\n                                (finding)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Type of tobacco used (observable entity) (53661000146106 - SNOMED CT)\">Type of tobacco used (observable entity)</span>\n                        </td>\n                        <td>\n                            <span title=\"Cigarette smoker (finding) (65568007 - SNOMED CT)\">Cigarette smoker (finding)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Tobacco smoking consumption (observable entity) (266918002 - SNOMED CT)\">Tobacco smoking consumption (observable entity)</span>\n                        </td>\n                        <td>2 packs per week</td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Cigarette pack-years (observable entity) (401201003 - SNOMED CT)\">Cigarette pack-years (observable entity)</span>\n                        </td>\n                        <td>1 PackYears</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:365980008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "365980008" ] ;
+       fhir:display [ fhir:v "Finding of tobacco use and exposure (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "1980"^^xsd:gYear ] ;
+     fhir:end [ fhir:v "1983"^^xsd:gYear ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:8517006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8517006" ] ;
+       fhir:display [ fhir:v "Ex-smoker (finding)" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:53661000146106 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "53661000146106" ] ;
+         fhir:display [ fhir:v "Type of tobacco used (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:65568007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "65568007" ] ;
+         fhir:display [ fhir:v "Cigarette smoker (finding)" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:266918002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "266918002" ] ;
+         fhir:display [ fhir:v "Tobacco smoking consumption (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "packs per week" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{packs}/wk" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:401201003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "401201003" ] ;
+         fhir:display [ fhir:v "Cigarette pack-years (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "PackYears" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "{PackYears}" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

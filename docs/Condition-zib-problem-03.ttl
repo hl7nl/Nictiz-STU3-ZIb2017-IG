@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Condition/zib-problem-03> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-problem-03"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Problem"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Conditie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief / onbekend</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Gevallen op de kunstijsbaan</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <td>\n                            <span title=\"Fracture of wrist (disorder) (31641000146105 - SNOMED CT)\">Fracture of wrist (disorder)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Eerste symptomen</th>\n                        <td>Vanaf 2001</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:v "active" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:73425007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "73425007" ] ;
+           fhir:display [ fhir:v "Inactive" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:v "unknown" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/v3/NullFlavor"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "UNK" ] ;
+           fhir:display [ fhir:v "Unknown" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:31641000146105 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "31641000146105" ] ;
+       fhir:display [ fhir:v "Fracture of wrist (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:24028007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "24028007" ] ;
+           fhir:display [ fhir:v "Right" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:361289009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "361289009" ] ;
+       fhir:display [ fhir:v "Entire wrist region" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2001"^^xsd:gYear ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Gevallen op de kunstijsbaan" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

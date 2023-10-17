@@ -1,0 +1,362 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Patient/zib-languageproficiency-01> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-languageproficiency-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-patient"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <div>Id 999911120 (BSN), A. XXX_Helleman (Alex), Man, 1964-08-02, <span title=\"Married (M - v3/MaritalStatus)\">Married</span>\n            </div>\n            <div>\n                <a href=\"tel:06-12345678\">06-12345678</a> (Tel Mobiel), <a href=\"mailto:XXX_Helleman@hotmail.com\">XXX_Helleman@hotmail.com</a> (E-mail\n                Privé)</div>\n            <div>Knolweg 1020, 9999XB Stitswerd, NLD (officieel Privé Post/Bezoek)</div>\n            <div>\n                <span title=\"Eerste relatie/contactpersoon (1 - RoleCodeLijst (COD472-VEKT))\">Eerste\n                    relatie/contactpersoon</span>, <span title=\"Husband (HUSB - v3/RoleCode)\">Husband</span> J.P.M. van Molenaar van der Jutte (Janni)<div>\n                    <a href=\"tel:06-12345645\">06-12345645</a> (Tel Mobiel), <a href=\"mailto:j.vanderjutte@example.com\">j.vanderjutte@example.com</a>\n                    (E-mail), Knolweg 1020, 9999XB Sitswerd, Nederland (Privé)</div>\n            </div>\n            <ul>\n                <li>\n                    <span title=\"Dutch (Netherlands) (nl-NL - urn:ietf:bcp:47)\">Dutch\n                        (Netherlands)</span> (voorkeur)<div>Received spoken: Good, Expressed spoken:\n                        Fair, Received written: Good</div>\n                    <div>Bij gesprek met arts zoon uitnodigen voor vertalen</div>\n                </li>\n            </ul>\n            <div>Huisarts: <a href=\"Practitioner/nl-core-organization-02\">Vaste Huisarts 1</a>\n            </div>\n        </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/bsn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "999911120" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "NL4" ]
+     ] ) ;
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:v "XXX_Helleman" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "XXX_Verweij" ]
+       ] )
+     ] ;
+     fhir:given ( [
+       fhir:v "Alex" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CL" ]
+       ] )
+     ] [
+       fhir:v "A." ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "IN" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [
+       fhir:v "phone" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "06-12345678" ] ;
+     fhir:use [
+       fhir:v "mobile" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] [
+     fhir:system [
+       fhir:v "email" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "HP" ] ;
+             fhir:display [ fhir:v "Privé e-mailadres" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "XXX_Helleman@hotmail.com" ] ;
+     fhir:use [
+       fhir:v "home" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "HP" ] ;
+             fhir:display [ fhir:v "Privé e-mailadres" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:gender [
+     fhir:v "male" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/v3/AdministrativeGender"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "M" ] ;
+           fhir:display [ fhir:v "Man" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:birthDate [ fhir:v "1964-08-02"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Knolweg 1020" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Knolweg" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1020" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Stitswerd" ] ;
+     fhir:postalCode [ fhir:v "9999XB" ] ;
+     fhir:country [
+       fhir:v "NLD" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.16.34"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "6030" ] ;
+             fhir:display [ fhir:v "Nederland" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/v3/MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ] ;
+       fhir:display [ fhir:v "Married" ]
+     ] )
+  ] ; # 
+  fhir:multipleBirth [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:contact ( [
+     fhir:relationship ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.22.472"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Eerste relatie/contactpersoon" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/v3/RoleCode"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HUSB" ] ;
+         fhir:display [ fhir:v "Husband" ]
+       ] )
+     ] ) ;
+     fhir:name [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "NL4" ]
+       ] ) ;
+       fhir:use [ fhir:v "official" ] ;
+       fhir:family [
+         fhir:v "van Molenaar van der Jutte" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "van" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Molenaar" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "van der" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Jutte" ]
+         ] )
+       ] ;
+       fhir:given ( [
+         fhir:v "Janni" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "CL" ]
+         ] )
+       ] [
+         fhir:v "J.P.M." ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "IN" ]
+         ] )
+       ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [
+         fhir:v "phone" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "MC" ] ;
+               fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+             ] )
+           ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "06-12345645" ] ;
+       fhir:use [
+         fhir:v "mobile" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "MC" ] ;
+               fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+             ] )
+           ]
+         ] )
+       ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "j.vanderjutte@example.com" ]
+     ] ) ;
+     fhir:address [
+       fhir:use [ fhir:v "home" ] ;
+       fhir:line ( [
+         fhir:v "Knolweg 1020" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Knolweg" ]
+         ] [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "1020" ]
+         ] )
+       ] ) ;
+       fhir:city [ fhir:v "Sitswerd" ] ;
+       fhir:postalCode [ fhir:v "9999XB" ] ;
+       fhir:country [
+         fhir:v "Nederland" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.16.34"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "6030" ] ;
+               fhir:display [ fhir:v "Nederland" ]
+             ] )
+           ]
+         ] )
+       ]
+     ]
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency"^^xsd:anyURI ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "RSP" ] ;
+           fhir:display [ fhir:v "Received spoken" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "level"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "G" ] ;
+           fhir:display [ fhir:v "Good" ]
+         ]
+       ] )
+     ] [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency"^^xsd:anyURI ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "ESP" ] ;
+           fhir:display [ fhir:v "Expressed spoken" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "level"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "F" ] ;
+           fhir:display [ fhir:v "Fair" ]
+         ]
+       ] )
+     ] [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency"^^xsd:anyURI ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "RWR" ] ;
+           fhir:display [ fhir:v "Received written" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "level"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "G" ] ;
+           fhir:display [ fhir:v "Good" ]
+         ]
+       ] )
+     ] [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/Comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Bij gesprek met arts zoon uitnodigen voor vertalen" ]
+     ] ) ;
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "nl-NL" ] ;
+         fhir:display [ fhir:v "Dutch (Netherlands)" ]
+       ] )
+     ] ;
+     fhir:preferred [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:generalPractitioner ( [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-organization-02> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-organization-02" ] ;
+     fhir:display [ fhir:v "Vaste Huisarts 1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

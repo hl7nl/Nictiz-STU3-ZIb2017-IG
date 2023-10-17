@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-livingsituation-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: definitief</caption>\n                <tbody>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Finding of residence and accommodation circumstances (finding) (365508006 - SNOMED CT)\">Finding of residence and accommodation circumstances\n                                (finding)</span>\n                        </td>\n                        <td>\n                            <span title=\"Eengezinswoning (EENGEZW - 2.16.840.1.113883.2.4.3.11.60.40.4.13.1)\">Eengezinswoning</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "365508006",
+      "display" : "Finding of residence and accommodation circumstances (finding)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1",
+      "code" : "EENGEZW",
+      "display" : "Eengezinswoning"
+    }]
+  }
+}

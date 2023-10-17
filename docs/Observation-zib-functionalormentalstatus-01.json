@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-functionalormentalstatus-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Functional finding (finding) (118228005 - SNOMED CT)\">Functional\n                        finding (finding)</span>, Status: definitief</caption>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>Vanaf 2001</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Zich wassen (d510 - sid/icf-nl)\">Zich wassen</span>\n                        </td>\n                        <td>\n                            <span title=\"MATIGE beperking/participatieprobleem (tamelijk) 25-49% (d510.3 - sid/icf-nl)\">MATIGE beperking/participatieprobleem (tamelijk) 25-49%</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "118228005",
+      "display" : "Functional finding (finding)"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icf-nl",
+      "code" : "d510",
+      "display" : "Zich wassen"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "effectivePeriod" : {
+    "start" : "2001"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/icf-nl",
+      "code" : "d510.3",
+      "display" : "MATIGE beperking/participatieprobleem (tamelijk) 25-49%"
+    }]
+  }
+}

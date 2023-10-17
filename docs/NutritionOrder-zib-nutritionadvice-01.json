@@ -1,0 +1,25 @@
+{
+  "resourceType" : "NutritionOrder",
+  "id" : "zib-nutritionadvice-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Voedingsadvies. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: actief</caption>\n                <tbody>\n                    <tr>\n                        <th>Aanvraagdatum</th>\n                        <td>2018-01-01</td>\n                    </tr>\n                    <tr>\n                        <td colspan=\"2\">\n                            <table>\n                                <caption>Orale voeding</caption>\n                                <thead>\n                                    <tr>\n                                        <th>Type</th>\n                                        <th>Vloeistofconsistentie</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>Energie verrijkt</td>\n                                        <td>Dikvloeibaar</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "active",
+  "patient" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "dateTime" : "2018-01-01",
+  "oralDiet" : {
+    "type" : [{
+      "text" : "Energie verrijkt"
+    }],
+    "fluidConsistencyType" : [{
+      "text" : "Dikvloeibaar"
+    }]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000.html\">MateVanKritiekZijnCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-allergy-intolerance-criticality.html\">AllergyIntoleranceCriticality</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM AllergyIntolerance release 2017 terminology for AllergyCriticalExtent to the FHIR STU3 terminology</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-allergy-intolerance-criticality.html\">AllergyIntoleranceCriticality</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>255604002 (Mild)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>low</td></tr><tr><td>62482003 (Low)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>low</td></tr><tr><td>6736007 (Moderate)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>high</td></tr><tr><td>255508009 (Medium)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>high</td></tr><tr><td>24484000 (Severe)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>high</td></tr><tr><td>75540009 (High)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>high</td></tr><tr><td>399166001 (Fatal)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>high</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+    "valueBoolean" : false
+  }],
+  "url" : "http://nictiz.nl/fhir/ConceptMap/MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality",
+  "version" : "1.3.15",
+  "name" : "MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality",
+  "title" : "HCIM MateVanKritiekZijnCodelijst to allergy-intolerance-criticality",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps the HCIM AllergyIntolerance release 2017 terminology for AllergyCriticalExtent to the FHIR STU3 terminology",
+  "purpose" : "To aid in mapping from ZIB AllergyIntolerance value set MateVanKritiekZijnCodelijst to FHIR STU3 AllergyIntolerance criticality",
+  "copyright" : "CC0",
+  "sourceUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000",
+  "targetUri" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/allergy-intolerance-criticality",
+    "element" : [{
+      "code" : "255604002",
+      "display" : "Mild",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "low",
+        "display" : "Low",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "62482003",
+      "display" : "Low",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "low",
+        "display" : "Low",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "6736007",
+      "display" : "Moderate",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "wider"
+        }],
+        "code" : "high",
+        "display" : "High",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "255508009",
+      "display" : "Medium",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "wider"
+        }],
+        "code" : "high",
+        "display" : "High",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "24484000",
+      "display" : "Severe",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "high",
+        "display" : "High",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "75540009",
+      "display" : "High",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "high",
+        "display" : "High",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "399166001",
+      "display" : "Fatal",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "wider"
+        }],
+        "code" : "high",
+        "display" : "High",
+        "equivalence" : "wider"
+      }]
+    }]
+  }]
+}

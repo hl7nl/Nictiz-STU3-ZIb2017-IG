@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20171231000000"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>Overig</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Overig</td><td>Overig</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-NI">NI</a></td><td>Geen Informatie</td><td>Description:The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.</td><td>Geen Informatie</td><td>Geen Informatie</td></tr></table></li><li>Include these codes as defined in <code>https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>1022</td><td>Bij een aanval</td><td>Bij een aanval</td><td>Bij een aanval</td></tr><tr><td>1023</td><td>Bij benauwdheid</td><td>Bij benauwdheid</td><td>Bij benauwdheid</td></tr><tr><td>1024</td><td>Bij diarree</td><td>Bij diarree</td><td>Bij diarree</td></tr><tr><td>1028</td><td>Bij pijn</td><td>Bij pijn</td><td>Bij pijn</td></tr><tr><td>1121</td><td>Bij jeuk</td><td>Bij jeuk</td><td>Bij jeuk</td></tr><tr><td>1137</td><td>Zo nodig</td><td>Zo nodig</td><td>Zo nodig</td></tr><tr><td>1144</td><td>Bij hoofdpijn</td><td>Bij hoofdpijn</td><td>Bij hoofdpijn</td></tr><tr><td>1145</td><td>Bij koorts</td><td>Bij koorts</td><td>Bij koorts</td></tr><tr><td>1146</td><td>Bij hoge koorts</td><td>Bij hoge koorts</td><td>Bij hoge koorts</td></tr><tr><td>1147</td><td>Bij koorts en/of pijn</td><td>Bij koorts en/of pijn</td><td>Bij koorts en/of pijn</td></tr><tr><td>1387</td><td>Bij hoest</td><td>Bij hoest</td><td>Bij hoest</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2017-12-31T00:00:00+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20171231000000"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4"/>
+  </identifier>
+  <version value="1.3.15"/>
+  <name value="ZonodigCriteriumCodelijst"/>
+  <title value="ZonodigCriteriumCodelijst"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Registratie aan de bron"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.registratieaandebron.nl"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://zibs.nl"/>
+    </telecom>
+  </contact>
+  <description value="ZonodigCriteriumCodelijst"/>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="Overig"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Overig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="NI"/>
+        <display value="Geen Informatie"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Geen Informatie"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek"/>
+      <concept>
+        <code value="1022"/>
+        <display value="Bij een aanval"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij een aanval"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1023"/>
+        <display value="Bij benauwdheid"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij benauwdheid"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1024"/>
+        <display value="Bij diarree"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij diarree"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1028"/>
+        <display value="Bij pijn"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij pijn"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1121"/>
+        <display value="Bij jeuk"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij jeuk"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1137"/>
+        <display value="Zo nodig"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Zo nodig"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1144"/>
+        <display value="Bij hoofdpijn"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij hoofdpijn"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1145"/>
+        <display value="Bij koorts"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij koorts"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1146"/>
+        <display value="Bij hoge koorts"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij hoge koorts"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1147"/>
+        <display value="Bij koorts en/of pijn"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij koorts en/of pijn"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1387"/>
+        <display value="Bij hoest"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Bij hoest"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

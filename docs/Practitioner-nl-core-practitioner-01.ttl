@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-01> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-practitioner-01"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "5" ] ;
+     fhir:lastUpdated [ fhir:v "2016-12-08T14:05:42.283+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "additional" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <tbody>\n                    <tr>\n                        <th colspan=\"2\" style=\"text-align: center;\">Practitioner (since April,\n                            2015)</th>\n                    </tr>\n                    <tr>\n                        <th>ID</th>\n                        <th>Name</th>\n                    </tr>\n                    <tr>\n                        <td>01069857 (AGB)<br/>129854656 (UZI)<br/>12345678912 (BIG)</td>\n                        <td>Huisarts H. de Vries</td>\n                    </tr>\n                    <tr>\n                        <th>Contact</th>\n                        <th>Address</th>\n                    </tr>\n                    <tr>\n                        <td>work phone: <a href=\"tel:+31612345990\">0612345990</a>\n                            <br/>work email: devries@work.com</td>\n                        <td>Straatweg 12 bII<br/>1200AA<br/>Amsterdam</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "129854656" ]
+  ] [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/agb-z"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "01069857" ]
+  ] [
+     fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/big"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678912" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [
+       fhir:v "de Vries" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "de " ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Vries" ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Henk" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [
+       fhir:v "phone" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0612345990" ] ;
+     fhir:use [
+       fhir:v "work" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "MC" ] ;
+             fhir:display [ fhir:v "Mobiel telefoonnummer" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] [
+     fhir:system [
+       fhir:v "email" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "WP" ] ;
+             fhir:display [ fhir:v "Zakelijk e-mailadres" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "devries@work.com" ] ;
+     fhir:use [
+       fhir:v "work" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://hl7.org/fhir/v3/AddressUse"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "WP" ] ;
+             fhir:display [ fhir:v "Zakelijk e-mailadres" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Straatweg 12bII" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Straatweg" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "12" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "bII" ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Weesp" ] ;
+     fhir:district [ fhir:v "Amsterdam" ] ;
+     fhir:postalCode [ fhir:v "1012AB" ] ;
+     fhir:country [
+       fhir:v "NLD" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-specification"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.16.34"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "6030" ] ;
+             fhir:display [ fhir:v "Nederland" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2015-04"^^xsd:gYearMonth ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

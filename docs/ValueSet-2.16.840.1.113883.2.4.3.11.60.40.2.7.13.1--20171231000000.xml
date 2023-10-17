@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.2.4.3.11.60.40.2.7.13.1--20171231000000"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://snomed.info/id/105529008">105529008</a></td><td>Lives alone</td><td>Alleenwonend</td><td>Alleenwonend</td></tr><tr><td><a href="http://snomed.info/id/408821002">408821002</a></td><td>Lives with partner</td><td>Samenwonend met partner</td><td>Samenwonend met partner</td></tr><tr><td><a href="http://snomed.info/id/8871000146101">8871000146101</a></td><td>Lives with underage children</td><td>Inwonende minderjarige kinderen</td><td>Inwonende minderjarige kinderen</td></tr><tr><td><a href="http://snomed.info/id/8861000146107">8861000146107</a></td><td>Lives with adult children</td><td>Inwonende meerderjarige kinderen</td><td>Inwonende meerderjarige kinderen</td></tr><tr><td><a href="http://snomed.info/id/224137008">224137008</a></td><td>Lives with parents</td><td>Woont samen met ouders</td><td>Woont samen met ouders</td></tr><tr><td><a href="http://snomed.info/id/160756002">160756002</a></td><td>Lives with relatives</td><td>Woont samen met familie</td><td>Woont samen met familie</td></tr><tr><td><a href="http://snomed.info/id/224131009">224131009</a></td><td>Lives with friends</td><td>Woont samen met vrienden</td><td>Woont samen met vrienden</td></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Anders</td><td>Anders</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2017-12-31T00:00:00+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.13.1--20171231000000"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.7.13.1"/>
+  </identifier>
+  <version value="1.3.15"/>
+  <name value="GezinssamenstellingCodelijst"/>
+  <title value="GezinssamenstellingCodelijst"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Registratie aan de bron"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.registratieaandebron.nl"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://zibs.nl"/>
+    </telecom>
+  </contact>
+  <description value="GezinssamenstellingCodelijst"/>
+  <immutable value="false"/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="105529008"/>
+        <display value="Lives alone"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Alleenwonend"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="408821002"/>
+        <display value="Lives with partner"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Samenwonend met partner"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8871000146101"/>
+        <display value="Lives with underage children"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inwonende minderjarige kinderen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8861000146107"/>
+        <display value="Lives with adult children"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Inwonende meerderjarige kinderen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224137008"/>
+        <display value="Lives with parents"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Woont samen met ouders"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="160756002"/>
+        <display value="Lives with relatives"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Woont samen met familie"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="224131009"/>
+        <display value="Lives with friends"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Woont samen met vrienden"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="Other"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Anders"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

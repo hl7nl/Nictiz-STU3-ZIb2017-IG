@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-abilitytomanagemedication-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToManageMedication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-abilitytomanagemedication-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-abilitytomanagemedication-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-AbilityToManageMedication.html\">HCIM AbilityToManageMedication</a></p></div><p><b>Reference to zib-NursingIntervention</b>: <a href=\"Procedure-zib-abilitytomanagemedication-nursingintervention-01.html\">Procedure/zib-abilitytomanagemedication-nursingintervention-01</a></p><p><b>status</b>: final</p><p><b>code</b>: ZelfstandigMedicatieGebruik <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#285033005)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>value</b>: Hulp nodig <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#27921000146103)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/observation-zibNursingInterventionReference",
+    "valueReference" : {
+      "reference" : "Procedure/zib-abilitytomanagemedication-nursingintervention-01"
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "285033005",
+      "display" : "ZelfstandigMedicatieGebruik"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "27921000146103",
+      "display" : "Hulp nodig"
+    }]
+  }
+}

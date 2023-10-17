@@ -1,0 +1,139 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-comfortscale-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-ComfortScale"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-comfortscale-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-comfortscale-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-ComfortScale.html\">HCIM ComfortScale</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: ComfortScale <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108301000146109)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2019-09-03 11:01:07+0000</p><p><b>value</b>: 18</p><p><b>comment</b>: Controle na verhogen pijnmedicatie.</p><blockquote><p><b>component</b></p><p><b>code</b>: 12.12.3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.3)</span></p><p><b>value</b>: Licht in slaap (ogen grotendeels gesloten, af en toe reactie) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Alert2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Respiratory Response <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.5)</span></p><p><b>value</b>: Onrust of verzet tegen de beademing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Vent3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Calmness Agitation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.4)</span></p><p><b>value</b>: Calmness Agitation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Calm2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Crying <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.6)</span></p><p><b>value</b>: Jengelen of dreinen (monotoon geluid) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Cry3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Muscle Tone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.10)</span></p><p><b>value</b>: Verminderde spierspanning; minder weerstand dan normaal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Musc2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Body movement <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.8)</span></p><p><b>value</b>: Frequente (3 of meer) kleine bewegingen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Mov3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Facial Tone <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#12.12.9)</span></p><p><b>value</b>: Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Face3)</span></p></blockquote></div>"
+  },
+  "status" : "registered",
+  "code" : {
+    "coding" : [{
+      "code" : "108301000146109",
+      "system" : "http://snomed.info/sct",
+      "display" : "ComfortScale"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "effectiveDateTime" : "2019-09-03T11:01:07.9477128+00:00",
+  "valueQuantity" : {
+    "value" : 18
+  },
+  "comment" : "Controle na verhogen pijnmedicatie.",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.3"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.1",
+        "code" : "Alert2",
+        "display" : "Licht in slaap (ogen grotendeels gesloten, af en toe reactie)"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.5",
+        "display" : "Respiratory Response"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.3",
+        "code" : "Vent3",
+        "display" : "Onrust of verzet tegen de beademing"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.4",
+        "display" : "Calmness Agitation"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.2",
+        "code" : "Calm2",
+        "display" : "Calmness Agitation"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.6",
+        "display" : "Crying"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.4",
+        "code" : "Cry3",
+        "display" : "Jengelen of dreinen (monotoon geluid)"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.10",
+        "display" : "Muscle Tone"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.7",
+        "code" : "Musc2",
+        "display" : "Verminderde spierspanning; minder weerstand dan normaal"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.8",
+        "display" : "Body movement"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.5",
+        "code" : "Mov3",
+        "display" : "Frequente (3 of meer) kleine bewegingen"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.0",
+        "code" : "12.12.9",
+        "display" : "Facial Tone"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.6",
+        "code" : "Face3",
+        "display" : "Spanning duidelijk in sommige gelaatsspieren (niet aanhoudend)"
+      }]
+    }
+  }]
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Device",
+  "id" : "zib-visualfunction-visualaidproduct-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction-VisualAidProduct"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"zib-visualfunction-visualaidproduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;zib-visualfunction-visualaidproduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-VisualFunction-VisualAidProduct.html\">HCIM VisualFunction VisualAid Product</a></p></div><p><b>type</b>: Leesbril <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#423013001)</span></p></div>"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "423013001",
+      "display" : "Leesbril"
+    }]
+  }
+}

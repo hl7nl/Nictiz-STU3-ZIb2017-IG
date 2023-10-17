@@ -1,0 +1,130 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href=\"http://snomed.info/id/66598005\">66598005</a></td><td>Infectious disease carrier</td><td>Drager van besmettelijke ziekte</td><td>Drager van besmettelijke ziekte</td></tr><tr><td><a href=\"http://snomed.info/id/432415000\">432415000</a></td><td>Methicillin resistant staphylococcus aureus carrier</td><td>Drager MRSA</td><td>Drager MRSA</td></tr><tr><td><a href=\"http://snomed.info/id/431109006\">431109006</a></td><td>Carrier of vancomycin resistant enterococcus</td><td>Drager VRE</td><td>Drager VRE</td></tr><tr><td><a href=\"http://snomed.info/id/699433000\">699433000</a></td><td>Human immunodeficiency virus (HIV) carrier</td><td>Drager HIV</td><td>Drager HIV</td></tr><tr><td><a href=\"http://snomed.info/id/397940009\">397940009</a></td><td>Victim of child abuse</td><td>Kindermishandeling</td><td>Kindermishandeling</td></tr></table></li><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH\">OTH</a></td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>\n                        \n                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>\n                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Anders</td><td>Anders</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2"
+  }],
+  "version" : "1.3.15",
+  "name" : "AlertNaamCodelijst",
+  "title" : "AlertNaamCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "AlertNaamCodelijst",
+  "immutable" : false,
+  "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "66598005",
+        "display" : "Infectious disease carrier",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Drager van besmettelijke ziekte"
+        }]
+      },
+      {
+        "code" : "432415000",
+        "display" : "Methicillin resistant staphylococcus aureus carrier",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Drager MRSA"
+        }]
+      },
+      {
+        "code" : "431109006",
+        "display" : "Carrier of vancomycin resistant enterococcus",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Drager VRE"
+        }]
+      },
+      {
+        "code" : "699433000",
+        "display" : "Human immunodeficiency virus (HIV) carrier",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Drager HIV"
+        }]
+      },
+      {
+        "code" : "397940009",
+        "display" : "Victim of child abuse",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Kindermishandeling"
+        }]
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/v3/NullFlavor",
+      "concept" : [{
+        "code" : "OTH",
+        "display" : "Other",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Anders"
+        }]
+      }]
+    }]
+  }
+}

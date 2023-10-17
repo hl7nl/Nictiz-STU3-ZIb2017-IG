@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Coverage",
+  "id" : "zib-payer-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Payer"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verzekering/garantstelling</caption>\n                <tbody>\n                    <tr>\n                        <th>abonnee</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Betaler</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                            <div>\n                                <div>Bank naam: ING</div>\n                                <div>Rekeningnummer: NL85INGB0001234567</div>Bank code:\n                                INGBNL2A</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>begunstigde</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "subscriber" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "beneficiary" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "payor" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation",
+      "extension" : [{
+        "url" : "BankName",
+        "valueString" : "ING"
+      },
+      {
+        "url" : "AccountNumber",
+        "valueString" : "NL85INGB0001234567"
+      },
+      {
+        "url" : "Bankcode",
+        "valueString" : "INGBNL2A"
+      }]
+    }],
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  }]
+}

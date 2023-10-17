@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/EpisodeOfCare/nl-core-episodeofcare-02> a fhir:EpisodeOfCare ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-episodeofcare-02"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgepisode. Patiënt: <a href=\"Patient/nl-core-patient-02\">Paul\n                        XXX_Mesker</a>. Status: actief</caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Verslaving (bevinding) (32709003 - SNOMED CT)\">Verslaving\n                                (bevinding)</span>\n                            <div>Drugs en alcohol revalidatie</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>Vanaf 2019-02-06</td>\n                    </tr>\n                    <tr>\n                        <th>Zorgmanager</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-04\">Dr. D. de Vries</a>, <a href=\"Organization/nl-core-organization-05\">Ziekenhuis Gooi en\n                                Overvecht</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Diagnose</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-08\">Syndroom van Korsakov</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Drugs en alcohol revalidatie" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:32709003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "32709003" ] ;
+       fhir:display [ fhir:v "Verslaving (bevinding)" ]
+     ] )
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-08> ;
+       fhir:reference [ fhir:v "Condition/zib-problem-08" ] ;
+       fhir:display [ fhir:v "Syndroom van Korsakov" ]
+     ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-02> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-02" ] ;
+     fhir:display [ fhir:v "Paul XXX_Mesker" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-05> ;
+     fhir:reference [ fhir:v "Organization/nl-core-organization-05" ] ;
+     fhir:display [ fhir:v "Ziekenhuis Gooi en Overvecht" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-02-06"^^xsd:date ]
+  ] ; # 
+  fhir:careManager [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-04> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-04" ] ;
+     fhir:display [ fhir:v "Dr. D. de Vries" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

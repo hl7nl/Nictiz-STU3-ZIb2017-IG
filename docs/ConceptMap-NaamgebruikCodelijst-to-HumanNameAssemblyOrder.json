@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "NaamgebruikCodelijst-to-HumanNameAssemblyOrder",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000.html\">NaamgebruikCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-name-assembly-order.html\">HumanNameAssemblyOrder</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). </p><div><p>Maps NameUsage codes as found in HCIM NameInformation (release 2017) to HumanName.extension(humanname-assembly-order) codes as found in FHIR STU3</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-name-assembly-order.html\">HumanNameAssemblyOrder</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>NL1 (Own Name)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>NL1</td></tr><tr><td>NL2 (Partner Name)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>NL2</td></tr><tr><td>NL3 (Partner Name followed by Maiden Name)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>NL3</td></tr><tr><td>NL4 (Own Name followed by Partner Name)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>NL4</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>UNK (unknown)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>UNK</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+    "valueBoolean" : true
+  }],
+  "url" : "http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder",
+  "version" : "1.3.15",
+  "name" : "NaamgebruikCodelijst-to-HumanNameAssemblyOrder",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps NameUsage codes as found in HCIM NameInformation (release 2017) to HumanName.extension(humanname-assembly-order) codes as found in FHIR STU3",
+  "sourceUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000",
+  "targetUri" : "http://hl7.org/fhir/ValueSet/name-assembly-order",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/name-assembly-order",
+    "element" : [{
+      "code" : "NL1",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "NL1",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "NL2",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "NL2",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "NL3",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "NL3",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "NL4",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "NL4",
+        "equivalence" : "equal"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/v3/NullFlavor",
+    "element" : [{
+      "code" : "UNK",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "UNK",
+        "equivalence" : "equal"
+      }]
+    }]
+  }]
+}

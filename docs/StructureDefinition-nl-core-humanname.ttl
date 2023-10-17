@@ -1,0 +1,1673 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/StructureDefinition/nl-core-humanname> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-humanname"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName\">HumanName</a><a name=\"HumanName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/STU3/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (nl-core-humanname-1, nl-core-humanname-2)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name of a human - parts and usage</span><br/><span style=\"font-weight:bold\">nl-core-humanname-1: </span>if you specify a prefix for an own name then an own name is also expected<br/><span style=\"font-weight:bold\">nl-core-humanname-2: </span>if you specify a voorvoegsel for a partner name then a partner name is also expected<br/><span style=\"font-weight:bold\">Example Structured HumanName (preferred above unstructured): </span><span style=\"color: darkgreen\">{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-assembly-order&quot;,&quot;valueCode&quot;:&quot;NL4&quot;}],&quot;text&quot;:&quot;Irma Jongeneel-de Haas&quot;,&quot;family&quot;:&quot;Jongeneel-de Haas&quot;,&quot;_family&quot;:{&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-own-name&quot;,&quot;valueString&quot;:&quot;Jongeneel&quot;},{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix&quot;,&quot;valueString&quot;:&quot;de&quot;},{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/humanname-partner-name&quot;,&quot;valueString&quot;:&quot;Haas&quot;}]},&quot;given&quot;:[&quot;Irma&quot;]}</span><br/><span style=\"font-weight:bold\">Example Unstructured HumanName: </span><span style=\"color: darkgreen\">{&quot;text&quot;:&quot;Irma Jongeneel-de Haas&quot;}</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.extension\">Slices for extension</a><a name=\"HumanName.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.extension:humannameAssemblyOrder\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-assembly-order\">humannameAssemblyOrder</a><a name=\"HumanName.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Preferred display order of name parts</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-humanname-assembly-order.html\">http://hl7.org/fhir/StructureDefinition/humanname-assembly-order</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/STU3/valueset-name-assembly-order.html\">HumanNameAssemblyOrder</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): A code that represents the preferred display order of the components of a human name<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.text\">text</a><a name=\"HumanName.text\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Text representation of the full name</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family\">family</a><a name=\"HumanName.family\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Surname</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck112.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension\">Slices for extension</a><a name=\"HumanName.family.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnPrefix\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-own-prefix\">humannameOwnPrefix</a><a name=\"HumanName.family.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">PrefixOwnName<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-humanname-own-prefix.html\">http://hl7.org/fhir/StructureDefinition/humanname-own-prefix</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnPrefix.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"HumanName.family.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnName\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-own-name\">humannameOwnName</a><a name=\"HumanName.family.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">OwnName<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-humanname-own-name.html\">http://hl7.org/fhir/StructureDefinition/humanname-own-name</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannameOwnName.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"HumanName.family.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck115.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerPrefix\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix\">humannamePartnerPrefix</a><a name=\"HumanName.family.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">PrefixSurname<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-humanname-partner-prefix.html\">http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1144.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerPrefix.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"HumanName.family.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck105.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerName\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/humanname-partner-name\">humannamePartnerName</a><a name=\"HumanName.family.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">LastNamePartner<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-humanname-partner-name.html\">http://hl7.org/fhir/StructureDefinition/humanname-partner-name</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.family.extension:humannamePartnerName.valueString:valueString\" title=\"Slice valueString\">valueString:valueString</a><a name=\"HumanName.family.extension.valueString\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.given\" title=\"Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot.\">given</a><a name=\"HumanName.given\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Given</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck012.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.given.extension\">Slices for extension</a><a name=\"HumanName.given.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck005.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.given.extension:iso21090EnQualifier\" title=\"Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier\">iso21090EnQualifier</a><a name=\"HumanName.given.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV</span><br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/STU3/extension-iso21090-en-qualifier.html\">http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"http://hl7.org/fhir/STU3/valueset-name-part-qualifier.html\">EntityNamePartQualifier</a> (<a href=\"http://hl7.org/fhir/STU3/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>): A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type<br/><br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0044.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-nl-core-humanname-definitions.html#HumanName.given.extension:iso21090EnQualifier.valueCode:valueCode\" title=\"Slice valueCode\">valueCode:valueCode</a><a name=\"HumanName.given.extension.valueCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/STU3/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Value of extension</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-humanname"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "nl-core-humanname"] ; # 
+  fhir:title [ fhir:v "nl-core-humanname"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@nictiz.nl" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Base datatype for HumanName Type with additions for Dutch realm names. Dutch names break down the family into maximum of 4 parts that are important to know separately in some if not most use cases."] ; # 
+  fhir:purpose [ fhir:v "Name information is used to identify and address person."] ; # 
+  fhir:copyright [ fhir:v "CC0"] ; # 
+  fhir:fhirVersion [ fhir:v "3.0.2"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Patient-v2.0.1(2015EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "NameInformation as part of HCIM Patient-v2.0.1(2015EN)" ] ;
+     fhir:comment [ fhir:v "NameInformation has become an independent information model as of release 2017 of the HCIMs" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/Patient-v3.0(2016EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "NameInformation as part of HCIM Patient-v3.0(2016EN)" ] ;
+     fhir:comment [ fhir:v "NameInformation has become an independent information model as of release 2017 of the HCIMs" ]
+  ] [
+     fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+     fhir:uri [ fhir:v "https://zibs.nl/wiki/NameInformation-v1.0.1(2017EN)"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HCIM NameInformation-v1.0.1(2017EN)" ]
+  ] [
+     fhir:identity [ fhir:v "BRP" ] ;
+     fhir:uri [ fhir:v "https://nl.wikipedia.org/wiki/Basisregistratie_Personen"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "Basisregistratie Personen" ] ;
+     fhir:comment [ fhir:v "Voorheen GBA - Gemeentelijke basisregistratie" ]
+  ] [
+     fhir:identity [ fhir:v "v2" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v2"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "HL7 v2 Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] [
+     fhir:identity [ fhir:v "servd" ] ;
+     fhir:uri [ fhir:v "http://www.omg.org/spec/ServD/1.0/"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "ServD" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "complex-type"] ; # 
+  fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "HumanName"] ; # 
+  fhir:baseDefinition [ fhir:v "http://hl7.org/fhir/StructureDefinition/HumanName"^^xsd:anyURI] ; # 
+  fhir:derivation [ fhir:v "constraint"] ; # 
+  fhir:snapshot [
+     fhir:element ( [
+       fhir:id [ fhir:v "HumanName" ] ;
+       fhir:path [ fhir:v "HumanName" ] ;
+       fhir:short [ fhir:v "Name of a human - parts and usage" ] ;
+       fhir:definition [ fhir:v "A human's name with the ability to identify parts and usage." ] ;
+       fhir:comment [ fhir:v "Dutch names require that certain name parts are separately communicable. For this reason, extensions are added onto the base HumanName element to mark the meaning of each part. A Dutch HumanName is still a proper FHIR HumanName; however, there might be an incompatibilty with the default FHIR mechanism for communicating given names. See the compatibility note below for more information.\r\n\r\nThe extension elements cover birth name (NL: eigennaam / geslachtsnaam) and partner/spouse name. Both may have a prefix (NL: voorvoegsel). When a person marries, he or she may keep their own name, assume the partner name, append the partner name to their own name, or the other way around.\r\n\r\n**Incompatibility note**: It has come to light that this specification deviates from the way that the HumanName datatype is normally used. This will be fixed in a future release. However, current implementations should be aware of the special considerations regarding the use of this specification. \r\n\r\nThe issue at hand is the way alternative representations of a name, like initials or a nickname, are communicated. Normally this is done using multiple HumanName instances, which are differentiated using the `.use` element. However, this specification allows for including all alternative representations in the _same_ HumanName instance, with the expectation that the extensions provide enough information for recieving systems to differentiate them. However, this means that contrary to the normal usage of this datatype, repetitions of `.given` names cannot be concatenated to get the full list of given names; the list might be a mix of full names, nicknames and initials.\r\n\r\nSince multiple implementations are based on this specification, sending systems are advised (but not required) to keep the approach with one HumanName instance, while recieving systems should be able to handle this one-instance approach. More specifically:\r\n\r\n* Sending and recieving systems SHOULD always use the specified extensions when using this datatype.\r\n* Sending systems are encouraged to populate the `.text` element to unambigiously communicate the patient name.\r\n* Sending systems are encouraged to send either the full given names or the initials, but not both. This alleviates the duplication of names in `.given`.\r\n* When a sending system uses the current one-instance approach for communicating multiple representations, `.use` MAY NOT be populated. After all, it is not possible to select a single `.use` when the instance contains different representations.\r\n* When a recieving system interprets the instance as the single-instance-multiple-representations approach, the `.given` names marked as initials SHOULD be interpreted as alternatives to the full given names. Note the underlying HCIM expects both the _list_ of full names and _list_ of initials to be a single string; there's no match for an initial to a full name. The instance SHOULD be regarded as using this approach when:\r\n  * They encounter a single instance\r\n  * And the `.use` element is absent\r\n  * And all the name parts are differentiated using the specified extensions\r\n* In any other circumstance, recieving systems SHOULD interpret the usage as the normal use.\r\n\r\nExample: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jongeneel-de Haas:\r\n\r\n* `.family` = \"Jongeneel-de Haas\"\r\n* `.given` = \"Irma\" (with `.given:iso21090EnQualifier` = _BR_)\r\n* `.family:humannameOwnName` = \"Jongeneel\"\r\n* `.family:humannamePartnerPrefix` = \"de \"\r\n* `.family:humannamePartnerName` = \"Haas\"" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:example ( [
+         fhir:label [ fhir:v "Structured HumanName (preferred above unstructured)" ] ;
+         fhir:value [
+           a fhir:HumanName ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "NL4" ]
+           ] ) ;
+           fhir:text [ fhir:v "Irma Jongeneel-de Haas" ] ;
+           fhir:family [
+             fhir:v "Jongeneel-de Haas" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "Jongeneel" ]
+             ] [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "de" ]
+             ] [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "Haas" ]
+             ] )
+           ] ;
+           fhir:given ( [ fhir:v "Irma" ] )
+         ]
+       ] [
+         fhir:label [ fhir:v "Unstructured HumanName" ] ;
+         fhir:value [
+           a fhir:HumanName ;
+           fhir:text [ fhir:v "Irma Jongeneel-de Haas" ]
+         ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "nl-core-humanname-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "if you specify a prefix for an own name then an own name is also expected" ] ;
+         fhir:expression [ fhir:v "name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()" ] ;
+         fhir:xpath [ fhir:v "not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-name']" ]
+       ] [
+         fhir:key [ fhir:v "nl-core-humanname-2" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "if you specify a voorvoegsel for a partner name then a partner name is also expected" ] ;
+         fhir:expression [ fhir:v "name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()" ] ;
+         fhir:xpath [ fhir:v "not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-name']" ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "EN (actually, PN)" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "ProviderName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.6" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.6" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.1" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "BRP" ] ;
+         fhir:map [ fhir:v "02" ] ;
+         fhir:comment [ fhir:v "Naam" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.id" ] ;
+       fhir:path [ fhir:v "HumanName.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.extension" ] ;
+       fhir:path [ fhir:v "HumanName.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.extension:humannameAssemblyOrder" ] ;
+       fhir:path [ fhir:v "HumanName.extension" ] ;
+       fhir:sliceName [ fhir:v "humannameAssemblyOrder" ] ;
+       fhir:short [ fhir:v "Preferred display order of name parts" ] ;
+       fhir:definition [ fhir:v "A code that represents the preferred display order of the components of this human name." ] ;
+       fhir:alias ( [ fhir:v "Voorkeursvolgorde van de naamdelen." ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.34" ] ;
+         fhir:comment [ fhir:v "NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.34" ] ;
+         fhir:comment [ fhir:v "NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.7" ] ;
+         fhir:comment [ fhir:v "NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.use" ] ;
+       fhir:path [ fhir:v "HumanName.use" ] ;
+       fhir:short [ fhir:v "usual | official | temp | nickname | anonymous | old | maiden" ] ;
+       fhir:definition [ fhir:v "Identifies the purpose for this name." ] ;
+       fhir:comment [ fhir:v "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old." ] ;
+       fhir:requirements [ fhir:v "Allows the appropriate name for a particular context of use to be selected from among a set of names." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.use" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "NameUse" ]
+         ] ) ;
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "The use of a human name" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/name-use> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/name-use" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN.7, but often indicated by which field contains the name" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "unique(./use)" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./NamePurpose" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.text" ] ;
+       fhir:path [ fhir:v "HumanName.text" ] ;
+       fhir:short [ fhir:v "Text representation of the full name" ] ;
+       fhir:definition [ fhir:v "A full text representation of the name." ] ;
+       fhir:comment [ fhir:v "Can provide both a text representation and structured parts." ] ;
+       fhir:requirements [ fhir:v "A renderable, unencoded form." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "implied by XPN.11" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./formatted" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family" ] ;
+       fhir:path [ fhir:v "HumanName.family" ] ;
+       fhir:short [ fhir:v "Surname" ] ;
+       fhir:definition [ fhir:v "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." ] ;
+       fhir:comment [ fhir:v "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)." ] ;
+       fhir:alias ( [ fhir:v "surname" ] [ fhir:v "Achternaam" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.family" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN.1/FN.1" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./part[partType = FAM]" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./FamilyName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.id" ] ;
+       fhir:path [ fhir:v "HumanName.family.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannameOwnPrefix" ] ;
+       fhir:short [ fhir:v "PrefixOwnName" ] ;
+       fhir:definition [ fhir:v "The prefix portion (e.g. voorvoegsel) inclusive of the space between the prefix and the surname, if applicable, of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse." ] ;
+       fhir:comment [ fhir:v "An example of a voorvoegsel is the \"van\" in \"Ludwig van Beethoven\". Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to specify it as a separate sub-component." ] ;
+       fhir:alias ( [ fhir:v "VoorvoegselGeslachtsnaam" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "FN.2" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "ENXP where Qualifiers = (VV, R)" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.38" ] ;
+         fhir:comment [ fhir:v "Prefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.38" ] ;
+         fhir:comment [ fhir:v "Prefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.11" ] ;
+         fhir:comment [ fhir:v "Prefix" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix.id" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix.extension" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix.url" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannameOwnName" ] ;
+       fhir:short [ fhir:v "OwnName" ] ;
+       fhir:definition [ fhir:v "The person’s official last name." ] ;
+       fhir:comment [ fhir:v "The portion of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's \"maiden name\"." ] ;
+       fhir:alias ( [ fhir:v "Geslachtsnaam" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "FN.3" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "ENXP where Qualifiers = (BR)" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.24" ] ;
+         fhir:comment [ fhir:v "LastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.24" ] ;
+         fhir:comment [ fhir:v "LastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.10" ] ;
+         fhir:comment [ fhir:v "LastName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName.id" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName.extension" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName.url" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannamePartnerPrefix" ] ;
+       fhir:short [ fhir:v "PrefixSurname" ] ;
+       fhir:definition [ fhir:v "Voorvoegsel derived from person's partner's surname inclusive of the space between the prefix and the surname, if applicable." ] ;
+       fhir:comment [ fhir:v "An example of a voorvoegsel is the \"van\" in \"Ludwig van Beethoven\". Since the voorvoegsel doesn't sort completely alphabetically, it is reasonable to identify it as a separate sub-component." ] ;
+       fhir:alias ( [ fhir:v "VoorvoegselGeslachtsnaamPartner" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "FN.4" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "ENXP where Qualifiers = (VV, SP)" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.39" ] ;
+         fhir:comment [ fhir:v "PartnerPrefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.39" ] ;
+         fhir:comment [ fhir:v "PartnerPrefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.9" ] ;
+         fhir:comment [ fhir:v "PartnerPrefix" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix.id" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix.extension" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix.url" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannamePartnerName" ] ;
+       fhir:short [ fhir:v "LastNamePartner" ] ;
+       fhir:definition [ fhir:v "Partner’s official last name." ] ;
+       fhir:comment [ fhir:v "The portion of the family name that is derived from the person's partner's surname, as distinguished from any portion that is derived from the surname of the person's own name. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's \"maiden name\"." ] ;
+       fhir:alias ( [ fhir:v "GeslachtsnaamPartner" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "FN.5" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "ENXP where Qualifiers = (SP)" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.25" ] ;
+         fhir:comment [ fhir:v "PartnerLastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.25" ] ;
+         fhir:comment [ fhir:v "PartnerLastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.8" ] ;
+         fhir:comment [ fhir:v "PartnerLastName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName.id" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName.extension" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName.url" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.value" ] ;
+       fhir:path [ fhir:v "HumanName.family.value" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Primitive value for string" ] ;
+       fhir:definition [ fhir:v "The actual value" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "string.value" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "string" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "xsd:string" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "xsd:string" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:maxLength [ fhir:v "1048576"^^xsd:integer ]
+     ] [
+       fhir:id [ fhir:v "HumanName.given" ] ;
+       fhir:path [ fhir:v "HumanName.given" ] ;
+       fhir:short [ fhir:v "Given" ] ;
+       fhir:definition [ fhir:v "Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot." ] ;
+       fhir:comment [ fhir:v "Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot. To be conformant to the HCIM for NameInformation, at least the following qualifiers SHALL be supported: _BR_, _IN_ and _CL_. The qualifier _BR_maps to the HCIM concept FirstNames, _IN_ maps to Initials and _CL_ to GivenName.\r\n\r\nPlease see the compatibility note on the containing element as well!" ] ;
+       fhir:alias ( [ fhir:v "first name" ] [ fhir:v "middle name" ] [ fhir:v "Voornamen" ] [ fhir:v "Initialen" ] [ fhir:v "Roepnaam" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.given" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:orderMeaning [ fhir:v "Given Names appear in the correct order for presenting the name" ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN.2 + XPN.3" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./part[partType = GIV]" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./GivenNames" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.26" ] ;
+         fhir:comment [ fhir:v "FirstNames. Qualifier 'BR'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.35" ] ;
+         fhir:comment [ fhir:v "Initials. Qualifier 'IN'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.27" ] ;
+         fhir:comment [ fhir:v "GivenName. Qualifier 'CL'" ]
+       ] [
+         fhir:identity [ fhir:v "BRP" ] ;
+         fhir:map [ fhir:v "02.10" ] ;
+         fhir:comment [ fhir:v "Voornamen" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.26" ] ;
+         fhir:comment [ fhir:v "FirstNames. Qualifier 'BR'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.35" ] ;
+         fhir:comment [ fhir:v "Initials. Qualifier 'IN'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.27" ] ;
+         fhir:comment [ fhir:v "GivenName. Qualifier 'CL'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.4" ] ;
+         fhir:comment [ fhir:v "FirstNames. Qualifier 'BR'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.5" ] ;
+         fhir:comment [ fhir:v "Initials. Qualifier 'IN'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.6" ] ;
+         fhir:comment [ fhir:v "GivenName. Qualifier 'CL'" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.id" ] ;
+       fhir:path [ fhir:v "HumanName.given.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Extension" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension" ] ;
+       fhir:sliceName [ fhir:v "iso21090EnQualifier" ] ;
+       fhir:short [ fhir:v "LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV" ] ;
+       fhir:definition [ fhir:v "A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type." ] ;
+       fhir:comment [ fhir:v "Used to indicate additional information about the name part and how it should be used." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ]
+       ] ) ;
+       fhir:condition ( [ fhir:v "ele-1" ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() | (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:source [ fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "ENXP.qualifier" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier.id" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "xml:id (or equivalent in JSON)" ] ;
+       fhir:definition [ fhir:v "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier.extension" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional Content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier.url" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension.url" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "identifies the meaning of the extension" ] ;
+       fhir:definition [ fhir:v "Source of the definition for the extension code - a logical name or a URL." ] ;
+       fhir:comment [ fhir:v "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.url" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "uri"^^xsd:anyURI ]
+       ] ) ;
+       fhir:fixed [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier.valueCode:valueCode" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension.valueCode" ] ;
+       fhir:sliceName [ fhir:v "valueCode" ] ;
+       fhir:short [ fhir:v "Value of extension" ] ;
+       fhir:definition [ fhir:v "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Extension.value[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "code"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "EntityNamePartQualifier" ]
+         ] ) ;
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type" ] ;
+         fhir:valueSet [
+           a fhir:Reference ;
+           fhir:link <http://hl7.org/fhir/ValueSet/name-part-qualifier> ;
+           fhir:reference [ fhir:v "http://hl7.org/fhir/ValueSet/name-part-qualifier" ]
+         ]
+       ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "N/A" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.value" ] ;
+       fhir:path [ fhir:v "HumanName.given.value" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Primitive value for string" ] ;
+       fhir:definition [ fhir:v "The actual value" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "string.value" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "string" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "xsd:string" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "xsd:string" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:maxLength [ fhir:v "1048576"^^xsd:integer ]
+     ] [
+       fhir:id [ fhir:v "HumanName.prefix" ] ;
+       fhir:path [ fhir:v "HumanName.prefix" ] ;
+       fhir:short [ fhir:v "Parts that come before the name" ] ;
+       fhir:definition [ fhir:v "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.prefix" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:orderMeaning [ fhir:v "Prefixes appear in the correct order for presenting the name" ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN.5" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./part[partType = PFX]" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./TitleCode" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.suffix" ] ;
+       fhir:path [ fhir:v "HumanName.suffix" ] ;
+       fhir:short [ fhir:v "Parts that come after the name" ] ;
+       fhir:definition [ fhir:v "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.suffix" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:orderMeaning [ fhir:v "Suffixes appear in the correct order for presenting the name" ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN/4" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./part[partType = SFX]" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.period" ] ;
+       fhir:path [ fhir:v "HumanName.period" ] ;
+       fhir:short [ fhir:v "Time period when name was/is in use" ] ;
+       fhir:definition [ fhir:v "Indicates the period of time when this name was valid for the named person." ] ;
+       fhir:requirements [ fhir:v "Allows names to be placed in historical context." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "HumanName.period" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "XPN.13 + XPN.14" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./usablePeriod[type=\"IVL<TS>\"]" ]
+       ] [
+         fhir:identity [ fhir:v "servd" ] ;
+         fhir:map [ fhir:v "./StartDate and ./EndDate" ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "HumanName" ] ;
+       fhir:path [ fhir:v "HumanName" ] ;
+       fhir:comment [ fhir:v "Dutch names require that certain name parts are separately communicable. For this reason, extensions are added onto the base HumanName element to mark the meaning of each part. A Dutch HumanName is still a proper FHIR HumanName; however, there might be an incompatibilty with the default FHIR mechanism for communicating given names. See the compatibility note below for more information.\r\n\r\nThe extension elements cover birth name (NL: eigennaam / geslachtsnaam) and partner/spouse name. Both may have a prefix (NL: voorvoegsel). When a person marries, he or she may keep their own name, assume the partner name, append the partner name to their own name, or the other way around.\r\n\r\n**Incompatibility note**: It has come to light that this specification deviates from the way that the HumanName datatype is normally used. This will be fixed in a future release. However, current implementations should be aware of the special considerations regarding the use of this specification. \r\n\r\nThe issue at hand is the way alternative representations of a name, like initials or a nickname, are communicated. Normally this is done using multiple HumanName instances, which are differentiated using the `.use` element. However, this specification allows for including all alternative representations in the _same_ HumanName instance, with the expectation that the extensions provide enough information for recieving systems to differentiate them. However, this means that contrary to the normal usage of this datatype, repetitions of `.given` names cannot be concatenated to get the full list of given names; the list might be a mix of full names, nicknames and initials.\r\n\r\nSince multiple implementations are based on this specification, sending systems are advised (but not required) to keep the approach with one HumanName instance, while recieving systems should be able to handle this one-instance approach. More specifically:\r\n\r\n* Sending and recieving systems SHOULD always use the specified extensions when using this datatype.\r\n* Sending systems are encouraged to populate the `.text` element to unambigiously communicate the patient name.\r\n* Sending systems are encouraged to send either the full given names or the initials, but not both. This alleviates the duplication of names in `.given`.\r\n* When a sending system uses the current one-instance approach for communicating multiple representations, `.use` MAY NOT be populated. After all, it is not possible to select a single `.use` when the instance contains different representations.\r\n* When a recieving system interprets the instance as the single-instance-multiple-representations approach, the `.given` names marked as initials SHOULD be interpreted as alternatives to the full given names. Note the underlying HCIM expects both the _list_ of full names and _list_ of initials to be a single string; there's no match for an initial to a full name. The instance SHOULD be regarded as using this approach when:\r\n  * They encounter a single instance\r\n  * And the `.use` element is absent\r\n  * And all the name parts are differentiated using the specified extensions\r\n* In any other circumstance, recieving systems SHOULD interpret the usage as the normal use.\r\n\r\nExample: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jongeneel-de Haas:\r\n\r\n* `.family` = \"Jongeneel-de Haas\"\r\n* `.given` = \"Irma\" (with `.given:iso21090EnQualifier` = _BR_)\r\n* `.family:humannameOwnName` = \"Jongeneel\"\r\n* `.family:humannamePartnerPrefix` = \"de \"\r\n* `.family:humannamePartnerName` = \"Haas\"" ] ;
+       fhir:example ( [
+         fhir:label [ fhir:v "Structured HumanName (preferred above unstructured)" ] ;
+         fhir:value [
+           a fhir:HumanName ;
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "NL4" ]
+           ] ) ;
+           fhir:text [ fhir:v "Irma Jongeneel-de Haas" ] ;
+           fhir:family [
+             fhir:v "Jongeneel-de Haas" ;
+             fhir:extension ( [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "Jongeneel" ]
+             ] [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "de" ]
+             ] [
+               fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ] ;
+               fhir:value [ fhir:v "Haas" ]
+             ] )
+           ] ;
+           fhir:given ( [ fhir:v "Irma" ] )
+         ]
+       ] [
+         fhir:label [ fhir:v "Unstructured HumanName" ] ;
+         fhir:value [
+           a fhir:HumanName ;
+           fhir:text [ fhir:v "Irma Jongeneel-de Haas" ]
+         ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "nl-core-humanname-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "if you specify a prefix for an own name then an own name is also expected" ] ;
+         fhir:expression [ fhir:v "name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()" ] ;
+         fhir:xpath [ fhir:v "not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-own-name']" ]
+       ] [
+         fhir:key [ fhir:v "nl-core-humanname-2" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "if you specify a voorvoegsel for a partner name then a partner name is also expected" ] ;
+         fhir:expression [ fhir:v "name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()" ] ;
+         fhir:xpath [ fhir:v "not(f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix']) or f:extension[@url='http://hl7.org/fhir/StructureDefinition/humanname-partner-name']" ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.6" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.6" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.1" ] ;
+         fhir:comment [ fhir:v "NameInformation" ]
+       ] [
+         fhir:identity [ fhir:v "BRP" ] ;
+         fhir:map [ fhir:v "02" ] ;
+         fhir:comment [ fhir:v "Naam" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.extension" ] ;
+       fhir:path [ fhir:v "HumanName.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HumanName.extension:humannameAssemblyOrder" ] ;
+       fhir:path [ fhir:v "HumanName.extension" ] ;
+       fhir:sliceName [ fhir:v "humannameAssemblyOrder" ] ;
+       fhir:alias ( [ fhir:v "Voorkeursvolgorde van de naamdelen." ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.34" ] ;
+         fhir:comment [ fhir:v "NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.34" ] ;
+         fhir:comment [ fhir:v "NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.7" ] ;
+         fhir:comment [ fhir:v "NameUsage. Use FHIR Core ConceptMap for HCIM mapping: http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.text" ] ;
+       fhir:path [ fhir:v "HumanName.text" ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-payer-v1.2-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-payer-v3.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:1.1.5" ] ;
+         fhir:comment [ fhir:v "PayerName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family" ] ;
+       fhir:path [ fhir:v "HumanName.family" ] ;
+       fhir:short [ fhir:v "Surname" ] ;
+       fhir:alias ( [ fhir:v "Achternaam" ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannameOwnPrefix" ] ;
+       fhir:short [ fhir:v "PrefixOwnName" ] ;
+       fhir:definition [ fhir:v "The prefix portion (e.g. voorvoegsel) inclusive of the space between the prefix and the surname, if applicable, of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse." ] ;
+       fhir:alias ( [ fhir:v "VoorvoegselGeslachtsnaam" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.38" ] ;
+         fhir:comment [ fhir:v "Prefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.38" ] ;
+         fhir:comment [ fhir:v "Prefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.11" ] ;
+         fhir:comment [ fhir:v "Prefix" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnPrefix.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ]
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannameOwnName" ] ;
+       fhir:short [ fhir:v "OwnName" ] ;
+       fhir:definition [ fhir:v "The person’s official last name." ] ;
+       fhir:comment [ fhir:v "The portion of the family name that is derived from the person's own surname, as distinguished from any portion that is derived from the surname of the person's partner or spouse. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's \"maiden name\"." ] ;
+       fhir:alias ( [ fhir:v "Geslachtsnaam" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.24" ] ;
+         fhir:comment [ fhir:v "LastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.24" ] ;
+         fhir:comment [ fhir:v "LastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.10" ] ;
+         fhir:comment [ fhir:v "LastName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannameOwnName.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ]
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannamePartnerPrefix" ] ;
+       fhir:short [ fhir:v "PrefixSurname" ] ;
+       fhir:definition [ fhir:v "Voorvoegsel derived from person's partner's surname inclusive of the space between the prefix and the surname, if applicable." ] ;
+       fhir:alias ( [ fhir:v "VoorvoegselGeslachtsnaamPartner" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.39" ] ;
+         fhir:comment [ fhir:v "PartnerPrefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.39" ] ;
+         fhir:comment [ fhir:v "PartnerPrefix" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.9" ] ;
+         fhir:comment [ fhir:v "PartnerPrefix" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerPrefix.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ]
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension" ] ;
+       fhir:sliceName [ fhir:v "humannamePartnerName" ] ;
+       fhir:short [ fhir:v "LastNamePartner" ] ;
+       fhir:definition [ fhir:v "Partner’s official last name." ] ;
+       fhir:comment [ fhir:v "The portion of the family name that is derived from the person's partner's surname, as distinguished from any portion that is derived from the surname of the person's own name. If the person's surname has legally changed to become (or incorporate) the surname of the person's partner or spouse, this is the person's surname immediately prior to such change. Often this is the person's \"maiden name\"." ] ;
+       fhir:alias ( [ fhir:v "GeslachtsnaamPartner" ] ) ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-partner-name"^^xsd:anyURI ]
+       ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.25" ] ;
+         fhir:comment [ fhir:v "PartnerLastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.25" ] ;
+         fhir:comment [ fhir:v "PartnerLastName" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.8" ] ;
+         fhir:comment [ fhir:v "PartnerLastName" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.family.extension:humannamePartnerName.valueString:valueString" ] ;
+       fhir:path [ fhir:v "HumanName.family.extension.valueString" ] ;
+       fhir:sliceName [ fhir:v "valueString" ]
+     ] [
+       fhir:id [ fhir:v "HumanName.given" ] ;
+       fhir:path [ fhir:v "HumanName.given" ] ;
+       fhir:short [ fhir:v "Given" ] ;
+       fhir:definition [ fhir:v "Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot." ] ;
+       fhir:comment [ fhir:v "Note that in order to mark the type of a given name, the FHIR standard extension for ISO 21090 EN Qualifiers is to be used. Examples include call me name (Dutch: roepnaam) and initials. Each initial is expected to be delimited by a dot. To be conformant to the HCIM for NameInformation, at least the following qualifiers SHALL be supported: _BR_, _IN_ and _CL_. The qualifier _BR_maps to the HCIM concept FirstNames, _IN_ maps to Initials and _CL_ to GivenName.\r\n\r\nPlease see the compatibility note on the containing element as well!" ] ;
+       fhir:alias ( [ fhir:v "Voornamen" ] [ fhir:v "Initialen" ] [ fhir:v "Roepnaam" ] ) ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.26" ] ;
+         fhir:comment [ fhir:v "FirstNames. Qualifier 'BR'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.35" ] ;
+         fhir:comment [ fhir:v "Initials. Qualifier 'IN'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v2.0.1-2015EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.27" ] ;
+         fhir:comment [ fhir:v "GivenName. Qualifier 'CL'" ]
+       ] [
+         fhir:identity [ fhir:v "BRP" ] ;
+         fhir:map [ fhir:v "02.10" ] ;
+         fhir:comment [ fhir:v "Voornamen" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.26" ] ;
+         fhir:comment [ fhir:v "FirstNames. Qualifier 'BR'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.35" ] ;
+         fhir:comment [ fhir:v "Initials. Qualifier 'IN'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v3.0-2016EN" ] ;
+         fhir:map [ fhir:v "NL-CM:0.1.27" ] ;
+         fhir:comment [ fhir:v "GivenName. Qualifier 'CL'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.4" ] ;
+         fhir:comment [ fhir:v "FirstNames. Qualifier 'BR'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.5" ] ;
+         fhir:comment [ fhir:v "Initials. Qualifier 'IN'" ]
+       ] [
+         fhir:identity [ fhir:v "hcim-nameinformation-v1.0.1-2017EN" ] ;
+         fhir:map [ fhir:v "NL-CM:20.4.6" ] ;
+         fhir:comment [ fhir:v "GivenName. Qualifier 'CL'" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension" ] ;
+       fhir:sliceName [ fhir:v "iso21090EnQualifier" ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ] ;
+         fhir:profile [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "HumanName.given.extension:iso21090EnQualifier.valueCode:valueCode" ] ;
+       fhir:path [ fhir:v "HumanName.given.extension.valueCode" ] ;
+       fhir:sliceName [ fhir:v "valueCode" ]
+     ] )
+  ] . # 
+
+<http://hl7.org/fhir/ValueSet/name-use> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/name-part-qualifier> a fhir:ValueSet .
+
+# -------------------------------------------------------------------------------------
+

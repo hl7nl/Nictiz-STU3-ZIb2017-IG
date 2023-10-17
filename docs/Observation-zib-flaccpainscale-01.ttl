@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/zib-flaccpainscale-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-flaccpainscale-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-FLACCPainScale"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"zib-flaccpainscale-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;zib-flaccpainscale-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-FLACCPainScale.html\">HCIM FLACCPainScale</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: FLACC pain assessment panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#38213-5)</span></p><p><b>subject</b>: <a href=\"Patient-nl-core-patient-03.html\">Patient/nl-core-patient-03: I. Jongeneel-de Haas</a> &quot; JONGENEEL-DE HAAS&quot;</p><p><b>effective</b>: 2013-02-08 06:43:00+0200</p><p><b>value</b>: 6</p><p><b>comment</b>: Controle voor toediening pijnmedicatie</p><blockquote><p><b>component</b></p><p><b>code</b>: Pain severity Face FLACC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#38216-8)</span></p><p><b>value</b>: Fronst af en toe of trekt een grimas, is teruggetrokken, ongeïnteresseerd <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Face1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Pain severity Legs FLACC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#38217-6)</span></p><p><b>value</b>: Schopt of heeft opgetrokken benen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Legs2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Pain severity Activity FLACC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#38218-4)</span></p><p><b>value</b>: Kronkelt, wringt zich in bochten, verandert steeds van houding,is gespannen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Act1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Pain severity Cry FLACC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#38219-2)</span></p><p><b>value</b>: Kronkelt, wringt zich in bochten, verandert steeds van houding,is gespannen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Act1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Pain severity Cry FLACC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#38219-2)</span></p><p><b>value</b>: Huilt niet (wakker of slapend) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#Cry0)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "preliminary"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:38213-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38213-5" ] ;
+       fhir:display [ fhir:v "FLACC pain assessment panel" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2013-02-08T06:43:00+02:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "6"^^xsd:decimal ]
+  ] ; # 
+  fhir:comment [ fhir:v "Controle voor toediening pijnmedicatie"] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:38216-8 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38216-8" ] ;
+         fhir:display [ fhir:v "Pain severity Face FLACC" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.1"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Face1" ] ;
+         fhir:display [ fhir:v "Fronst af en toe of trekt een grimas, is teruggetrokken, ongeïnteresseerd" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:38217-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38217-6" ] ;
+         fhir:display [ fhir:v "Pain severity Legs FLACC" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Legs2" ] ;
+         fhir:display [ fhir:v "Schopt of heeft opgetrokken benen" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:38218-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38218-4" ] ;
+         fhir:display [ fhir:v "Pain severity Activity FLACC" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Act1" ] ;
+         fhir:display [ fhir:v "Kronkelt, wringt zich in bochten, verandert steeds van houding,is gespannen" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:38219-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38219-2" ] ;
+         fhir:display [ fhir:v "Pain severity Cry FLACC" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Act1" ] ;
+         fhir:display [ fhir:v "Kronkelt, wringt zich in bochten, verandert steeds van houding,is gespannen" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:38219-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "38219-2" ] ;
+         fhir:display [ fhir:v "Pain severity Cry FLACC" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.4"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Cry0" ] ;
+         fhir:display [ fhir:v "Huilt niet (wakker of slapend)" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

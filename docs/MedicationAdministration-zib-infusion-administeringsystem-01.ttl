@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/MedicationAdministration/zib-infusion-administeringsystem-01> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-infusion-administeringsystem-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Infusion-AdministeringSystem"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Medicatietoediening. Subject: <a href=\"Patient/nl-core-patient-03\">I.\n                        Jongeneel-de Haas</a>. Categorie: <span title=\"Administration of drug or medicament (procedure) (18629005 - SNOMED CT)\">Administration of drug or medicament (procedure)</span>, Status: is\n                    bezig</caption>\n                <tbody>\n                    <tr>\n                        <th>Medicatie</th>\n                        <td>\n                            <a href=\"Medication/76333-2-16-830-1-112183-2-4-4-10\">Tipranavir\n                                (TPV)</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Datum/tijd</th>\n                        <td>Vanaf 2014-11-30</td>\n                    </tr>\n                    <tr>\n                        <th>Apparaat/Systeem</th>\n                        <td>\n                            <a href=\"Device/zib-infusion-product-02\">Catheter, device (physical\n                                object)</a>\n                            <div>Medisch hulpmiddel: <a href=\"DeviceUseStatement/zib-infusion-02\">Infuuspomp</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Dosering</th>\n                        <td>\n                            <div>Tekst: 1 liter per 24 uur</div>\n                            <div>Toedieningsweg: <span title=\"parenteraal (10 - G-Standaard thesaurus subtabel 0007)\">parenteraal</span>\n                            </div>\n                            <div>Dosering: dose TODO</div>\n                            <div>Doseerverhouding: 1000 milliliter / 24 uur</div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       a sct:18629005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "18629005" ] ;
+       fhir:display [ fhir:v "Administration of drug or medicament (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <http://nictiz.nl/fhir/Medication/76333-2-16-830-1-112183-2-4-4-10> ;
+     fhir:reference [ fhir:v "Medication/76333-2-16-830-1-112183-2-4-4-10" ] ;
+     fhir:display [ fhir:v "Tipranavir (TPV)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2014-11-30"^^xsd:date ]
+  ] ; # 
+  fhir:device ( [
+     fhir:link <http://nictiz.nl/fhir/Device/zib-infusion-product-02> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://nictiz.nl/fhir/DeviceUseStatement/zib-infusion-02> ;
+         fhir:reference [ fhir:v "DeviceUseStatement/zib-infusion-02" ] ;
+         fhir:display [ fhir:v "Infuuspomp" ]
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "Device/zib-infusion-product-02" ] ; #  Or use direct reference to Device when no meta data about the use of the device is required.  
+     fhir:display [ fhir:v "Catheter, device (physical object)" ]
+  ] ) ; # 
+  fhir:dosage [
+     fhir:text [ fhir:v "1 liter per 24 uur" ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.9"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10" ] ;
+         fhir:display [ fhir:v "parenteraal" ]
+       ] )
+     ] ;
+     fhir:dose [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "stuk" ] ;
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.1.900.2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "245" ]
+     ] ;
+     fhir:rate [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "milliliter" ] ;
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.4.1.900.2"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "233" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "24"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "uur" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "h" ]
+       ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

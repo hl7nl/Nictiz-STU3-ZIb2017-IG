@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Device",
+  "id" : "zib-medicaldeviceproduct-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Apparaat/Systeem. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Id: 1148130801</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Implantant, Gen 2 Tibia Insert 5/6-9mm</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Knee joint prosthesis, device (physical object) (109228008 - SNOMED CT)\">Knee joint prosthesis, device (physical object)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>UDI</th>\n                        <td>UDI barcode: {01}05050474530799{17}160131{21}1148130801</td>\n                    </tr>\n                    <tr>\n                        <th>Verloopdatum</th>\n                        <td>2016-01-31</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/identifier-type",
+        "code" : "SNO"
+      }]
+    },
+    "value" : "1148130801"
+  }],
+  "udi" : {
+    "deviceIdentifier" : "05050474530799",
+    "carrierHRF" : "{01}05050474530799{17}160131{21}1148130801"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "109228008",
+      "display" : "Knee joint prosthesis, device (physical object)"
+    }]
+  },
+  "expirationDate" : "2016-01-31",
+  "patient" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "note" : [{
+    "text" : "Implantant, Gen 2 Tibia Insert 5/6-9mm"
+  }]
+}

@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/PractitionerRole/nl-core-practitionerrole-03> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nl-core-practitionerrole-03"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgverlenerrol</caption>\n                <tbody>\n                    <tr>\n                        <th>Zorgverlener</th>\n                        <td>\n                            <div/>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-03\">Test Medisch\n                                    Centrum</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Specialisme</th>\n                        <td>\n                            <span title=\"Medisch specialisten, dermatologie (0310 - AGB-medisch specialisme)\">Medisch specialisten, dermatologie</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-03> ;
+     fhir:reference [ fhir:v "Organization/nl-core-organization-03" ] ;
+     fhir:display [ fhir:v "Test Medisch Centrum" ]
+  ] ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.6.7"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0310" ] ;
+       fhir:display [ fhir:v "Medisch specialisten, dermatologie" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

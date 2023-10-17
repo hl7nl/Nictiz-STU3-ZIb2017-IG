@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Coverage/zib-payer-01> a fhir:Coverage ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-payer-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Payer"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verzekering/garantstelling</caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Basis verzekerd (B - 2.16.840.1.113883.2.4.3.11.60.101.5.1)\">Basis verzekerd</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>1 januari 2018 - 31 januari 2019</td>\n                    </tr>\n                    <tr>\n                        <th>abonnee</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Betaler</th>\n                        <td>\n                            <a href=\"Organization/nl-core-organization-04\">Menzis Zorgverzekeraar\n                                N.V.</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>begunstigde</th>\n                        <td>\n                            <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "B" ] ;
+       fhir:display [ fhir:v "Basis verzekerd" ]
+     ] )
+  ] ; # 
+  fhir:subscriber [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:beneficiary [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2018-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2019-01-31"^^xsd:date ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-04> ;
+     fhir:reference [ fhir:v "Organization/nl-core-organization-04" ] ;
+     fhir:display [ fhir:v "Menzis Zorgverzekeraar N.V." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

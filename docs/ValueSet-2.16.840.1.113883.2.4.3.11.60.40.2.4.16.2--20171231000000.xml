@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.2.4.3.11.60.40.2.4.16.2--20171231000000"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://snomed.info/id/423013001">423013001</a></td><td>single vision reading glasses</td><td>leesbril</td><td>leesbril</td></tr><tr><td><a href="http://snomed.info/id/50121007">50121007</a></td><td>eye glasses</td><td>bril</td><td>bril</td></tr><tr><td><a href="http://snomed.info/id/57368009">57368009</a></td><td>contact lenses</td><td>contactlenzen</td><td>contactlenzen</td></tr><tr><td><a href="http://snomed.info/id/264865009">264865009</a></td><td>magnifier</td><td>loep</td><td>loep</td></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>anders</td><td>anders</td></tr></table></li><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.22.218</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>0</td><td>geen</td><td>geen visuele hulpmiddelen</td><td>geen visuele hulpmiddelen</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2017-12-31T00:00:00+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.16.2--20171231000000"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.4.16.2"/>
+  </identifier>
+  <version value="1.3.15"/>
+  <name value="ZienHulpmiddelTypeCodelijst"/>
+  <title value="ZienHulpmiddelTypeCodelijst"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Registratie aan de bron"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.registratieaandebron.nl"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://zibs.nl"/>
+    </telecom>
+  </contact>
+  <description value="ZienHulpmiddelTypeCodelijst"/>
+  <immutable value="false"/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="423013001"/>
+        <display value="single vision reading glasses"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="leesbril"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="50121007"/>
+        <display value="eye glasses"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="bril"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="57368009"/>
+        <display value="contact lenses"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="contactlenzen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="264865009"/>
+        <display value="magnifier"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="loep"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="other"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="anders"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.22.218"/>
+      <concept>
+        <code value="0"/>
+        <display value="geen"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="geen visuele hulpmiddelen"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

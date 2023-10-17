@@ -1,0 +1,3293 @@
+[
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.103.11.2--20111012000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.103.11.2--20111012000000",
+    "version" : "1.3.15",
+    "name" : "JournaalregelType"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.103.11.3--20110902000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.103.11.3--20110902000000",
+    "version" : "1.3.15",
+    "name" : "NHGTable14v7-ContactType"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.20.77.11.19--20160617101300",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.19--20160617101300",
+    "version" : "1.3.15",
+    "name" : "Stoptype"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.20.77.11.21--20181218104051",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.21--20181218104051",
+    "version" : "1.3.15",
+    "name" : "RedenMedicatieafspraak"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.20.77.11.27--20160830202453",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.27--20160830202453",
+    "version" : "1.3.15",
+    "name" : "GstdTabel902"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.20.77.11.37--20181218104254",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.37--20181218104254",
+    "version" : "1.3.15",
+    "name" : "RedenWijzStakenMedicatiegebruik"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000",
+    "version" : "1.3.15",
+    "name" : "AanvullendeGebruiksinstructie"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "GeslachtCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerzekeringssoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HulpmiddelAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.1.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedischHulpmiddelLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.2.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.2.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "InfuuskatheterTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LumenLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.2.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.2.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LijnStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.10.3.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.3.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SondeTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.11.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodePRKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.11.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeHPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.11.1.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeGPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.11.1.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeATCCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.11.1.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeGTINCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.11.1.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeZICodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "KledingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AlertheidCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "Kalmte_AgitatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AdemhalingsreactieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LichaamsbewegingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "GezichtsspanningCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.12.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpierspanningCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.13.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "GezichtCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.13.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BenenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.13.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ActiviteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.13.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HuilenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.13.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TroostbaarCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.14.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.14.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SchedelomvangMeetmethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.16.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AdemhalingScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.16.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HartslagScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.16.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpierspanningScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.16.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HuidskleurScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.16.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ReflexenScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.3.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.3.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HartslagRegelmatigheidCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.3.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.3.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HartslagMeetMethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.4.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MeetmethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.4.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DiastolischEindpuntCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.4.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ManchetTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.4.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MeetLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.4.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HoudingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.5.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "RitmeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.5.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DiepteCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.5.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AfwijkendAdemhalingspatroonCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.5.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ToedieningHulpmiddelCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.6.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.6.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TemperatuurTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.7.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.7.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "PolsRegelmatigheidCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.9.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.9.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "PijnMeetmethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.9.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.9.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "PijnAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.12.9.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.9.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "PijnLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ResultaatTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.10--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.10--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MicroorganismeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.11--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.11--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MonsterAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.12--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.12--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.13--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.13--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MorfologieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AfnameprocedureCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TestCodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TestmethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OnderzoekCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MonstermateriaalCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "InterpretatieVlaggenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.8--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.8--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ResultaatStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.1.9--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.9--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ContainerTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.2.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.2.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TekstUitslagTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TekstStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.3.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.3.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MetingNaamCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.3.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.3.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OnderzoekCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.13.3.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.3.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MeetmethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerrichtingAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerrichtingTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.1.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerrichtingLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.1.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerrichtingMethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "InterventieNICCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.2.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.2.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "InterventieSnomedCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.3.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ToestemmingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.3.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "JuridischeStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.3.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SoortInterventieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.3.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ArgusInterventieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.14.3.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ArgusInstemmingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.15.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ContactTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.15.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HerkomstCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.15.1.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BestemmingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OrderStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZorgverlenerRolCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecialismeUZICodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecialismeAGBCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OrganisatieTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AfdelingSpecialismeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DecubitusCategorieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DecubitusAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.1.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.1.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DecubitusWondLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondWeefselWCSCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondWeefselOncoUlcerCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondVochtigheidCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondRandCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondDrainTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.2.8--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.8--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WondLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.3.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.3.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SoortAandoeningCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.3.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.3.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HuidAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.3.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.3.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HuidLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.4.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DieptegraadCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.4.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BrandwondAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.4.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BrandwondSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.19.4.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BrandwondLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.2.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.2.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BehandelingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.2.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.2.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BehandelingToegestaanCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.2.1.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.2.1.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "GeverifieerdBijCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "NaamgebruikCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LandGBACodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LandISOCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AdresSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TelecomTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "NummerSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "EmailSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "RelatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "RolCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.3.2.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.2.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SoortHulpCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.10.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.10.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZichWassenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.10.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.10.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TeWassenLichaamsdeelCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.11.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.11.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZichKledenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.11.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.11.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TeKledenLichaamsdeelCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.13.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.13.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerzorgenTandenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.13.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.13.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProtheseTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.14.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.14.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "UrineContinentieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.14.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.14.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "UrineKatheterTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.15.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "FecesContinentieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.15.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DefecatieConsistentieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.15.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DefecatieKleurCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.16.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.16.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VisueleFunctieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.16.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.16.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZienHulpmiddelTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.17.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.17.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HoorFunctieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.17.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.17.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HorenHulpmiddelTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.17.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.17.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LocatieGehoorapparaatCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.22.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.22.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZorgBijMenstruatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.22.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.22.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ToiletgebruikCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusNaamOMAHACodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusNaamNOCCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusNaamICFCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusNaamSnomedCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusWaardeOMAHACodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusWaardeICFCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusWaardeNOCCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.26.8--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.8--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StatusWaardeSnomedCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.28.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SKGewichtsverliesScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.28.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SKZiektebeeldScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.28.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SKVoedingsScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.28.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SKVoedingstoestandCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.29.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQrcGewichtsverliesScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.29.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQrcEetlustScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.29.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQrcBMIScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.29.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQrcHulpBijEtenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.3.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HoudingVeranderenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.3.12--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.12--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TraplopenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.3.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "HoudingHandhavenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.3.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "UitvoerenTransferCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.3.9--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.9--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LopenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.30.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQ65_GewichtsverliesScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.30.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQ65_EetlustScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.30.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQ65_InspanningsScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.30.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQ65_BovenarmOmtrekScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.31.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.31.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VoedingSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.31.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.31.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VoedingMethodeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.32.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZindelijkheidUrineCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.32.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZindelijkheidFecesCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.32.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OntwikkelingMotoriekCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.32.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OntwikkelingSociaalCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.32.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OntwikkelingTaalCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.32.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "OntwikkelingVerstandelijkCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.33.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.33.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "UiterlijkeVerzorgingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.34.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.34.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerrichtenVPKHandelingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.35.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.35.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZelfstandigMedicatiegebruikCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.5.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.5.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BMIScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.5.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.5.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MUSTGewichtsverliesScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.5.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.5.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZiekteScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.6.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.6.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SNAQGewichtsverliesScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.6.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.6.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "EetlustScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.6.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.6.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VoedingsScoreCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.7.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.7.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "EtenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.7.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.7.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "EetBeperkingenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.8.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.8.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DrinkenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.8.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.8.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DrinkBeperkingenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProbleemTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProbleemStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProbleemNaamCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VerificatieStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.1.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProbleemAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.1.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProbleemLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.2.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StomaTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StomaAnatomischeLocatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.5.2.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "StomaLateraliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.13.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.13.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "GezinssamenstellingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.15.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.15.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WilsverklaringTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.16.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.16.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "GezinssamenstellingKindCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "TabakGebruikStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.2.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SoortTabakGebruikCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.3.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.3.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AlcoholGebruikStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.4.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.4.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DrugsOfGeneesmiddelSoortCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.4.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.4.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DrugsGebruikStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.4.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.4.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ToedieningswegCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.5.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.5.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "LevensovertuigingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.6.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.6.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "NationaliteitCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.8.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.8.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WoningTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "BurgerlijkeStaatCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.10--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.10--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecifiekeStofSNKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.11--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.11--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecifiekeStofThesaurus122Codelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.12--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.12--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WijzeVanBlootstellingCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.13--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.13--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VeroorzakendeStofSSKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.14--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.14--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VeroorzakendeStofSNKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.15--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.15--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VeroorzakendeStofThesaurus122Codelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.16--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.16--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecifiekeStofAllergeneStoffenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.17--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.17--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VeroorzakendeStofAllergeneStoffenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.18--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.18--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecifiekeStofHPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.19--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.19--20171231000000",
+    "version" : "1.3.15",
+    "name" : "VeroorzakendeStofHPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AllergieCategorieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AllergieStatusCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MateVanKritiekZijnCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SymptoomCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ErnstCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.2.9--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.9--20171231000000",
+    "version" : "1.3.15",
+    "name" : "SpecifiekeStofSSKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.3.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AlertTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AlertNaamCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.10.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.10.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "AanvullendeWensenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.11.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.11.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatiegebruikStopTypeCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.11.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.11.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "RedenWijzigenOfStoppenGebruikCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.12.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatieToedieningswegCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.12.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "WeekdagCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.12.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "DagdeelCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZonodigCriteriumCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatieToedieningToedieningswegCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.13.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatieToedieningRedenVanAfwijkenCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.6.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.6.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "RedenMedicatieafspraakCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.6.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.6.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatieafspraakAanvullendeInformatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeZICodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.10--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.10--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeHPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.11--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.11--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodePRKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.12--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.12--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeZICodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.13--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.13--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeATCCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.14--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.14--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeSNKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.15--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.15--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeSSKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.16--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.16--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeGTINCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeGTINCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.3--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.3--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodePRKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.5--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.5--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeHPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.6--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.6--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeGPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.7--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.7--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ProductCodeATCCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.8--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.8--20171231000000",
+    "version" : "1.3.15",
+    "name" : "FarmaceutischeVormCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.7.9--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.9--20171231000000",
+    "version" : "1.3.15",
+    "name" : "IngredientCodeGPKCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.8.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.8.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ToedieningsafspraakAanvullendeInformatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.9.1--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.9.1--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatieverstrekkingDistributievormCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.9.9.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.9.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "MedicatieverstrekkingAanvullendeInformatieCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.53.11.1--20190813000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.53.11.1--20190813000000",
+    "version" : "1.3.15",
+    "name" : "GlucoseMeetmomentenLOINCCodelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.53.11.2--20190813000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.53.11.2--20190813000000",
+    "version" : "1.3.15",
+    "name" : "GlucoseMeetmomentenNhgtable45Codelijst"
+  },
+  {
+    "id" : "2.16.840.1.113883.2.4.3.11.60.7.11.2--20171231000000",
+    "type" : "ValueSet",
+    "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.7.11.2--20171231000000",
+    "version" : "1.3.15",
+    "name" : "ZwangerschapsduurEenheidCodelijst"
+  },
+  {
+    "id" : "nl-core-address",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address",
+    "version" : "1.3.15",
+    "name" : "nl-core-address"
+  },
+  {
+    "id" : "nl-core-address-official",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-address-official",
+    "version" : "1.3.15",
+    "name" : "nl core address official"
+  },
+  {
+    "id" : "nl-core-careplan",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-careplan",
+    "version" : "1.3.15",
+    "name" : "nl-core-careplan"
+  },
+  {
+    "id" : "nl-core-careteam",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-careteam",
+    "version" : "1.3.15",
+    "name" : "nl-core-careteam"
+  },
+  {
+    "id" : "nl-core-contactpoint",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-contactpoint",
+    "version" : "1.3.15",
+    "name" : "nl-core-contactpoint"
+  },
+  {
+    "id" : "nl-core-episodeofcare",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare",
+    "version" : "1.3.15",
+    "name" : "nl-core-episodeofcare"
+  },
+  {
+    "id" : "nl-core-healthcareservice",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-healthcareservice",
+    "version" : "1.3.15",
+    "name" : "nl-core-healthcareservice"
+  },
+  {
+    "id" : "nl-core-humanname",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-humanname",
+    "version" : "1.3.15",
+    "name" : "nl-core-humanname"
+  },
+  {
+    "id" : "nl-core-location",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-location",
+    "version" : "1.3.15",
+    "name" : "nl-core-location"
+  },
+  {
+    "id" : "nl-core-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-observation",
+    "version" : "1.3.15",
+    "name" : "nl-core-observation"
+  },
+  {
+    "id" : "nl-core-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-organization",
+    "version" : "1.3.15",
+    "name" : "nl-core-organization"
+  },
+  {
+    "id" : "nl-core-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-patient",
+    "version" : "1.3.15",
+    "name" : "nl-core-patient"
+  },
+  {
+    "id" : "nl-core-person",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-person",
+    "version" : "1.3.15",
+    "name" : "nl-core-person"
+  },
+  {
+    "id" : "nl-core-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner",
+    "version" : "1.3.15",
+    "name" : "nl-core-practitioner"
+  },
+  {
+    "id" : "nl-core-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole",
+    "version" : "1.3.15",
+    "name" : "nl-core-practitionerrole"
+  },
+  {
+    "id" : "nl-core-preferred-pharmacy",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-preferred-pharmacy",
+    "version" : "1.3.15",
+    "name" : "nl core preferred pharmacy"
+  },
+  {
+    "id" : "nl-core-relatedperson",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson",
+    "version" : "1.3.15",
+    "name" : "nl-core-relatedperson"
+  },
+  {
+    "id" : "nl-core-relatedperson-role",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role",
+    "version" : "1.3.15",
+    "name" : "nl core relatedperson role"
+  },
+  {
+    "id" : "IHE.formatcode.vs",
+    "type" : "ValueSet",
+    "url" : "http://ihe.net/fhir/ValueSet/IHE.formatcode.vs",
+    "version" : "1.3.15",
+    "name" : "IHE.FormatCode.vs",
+    "oids" : ["1.3.6.1.4.1.19376.1.2.7.1"]
+  },
+  {
+    "id" : "AdresSoortCodelijst-to-AddressType",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType",
+    "version" : "1.3.15",
+    "name" : "AdresSoortCodelijst-to-AddressType"
+  },
+  {
+    "id" : "AdresSoortCodelijst-to-AddressUse",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse",
+    "version" : "1.3.15",
+    "name" : "AdresSoortCodelijst-to-AddressUse"
+  },
+  {
+    "id" : "AllergieCategorieCodelijst-to-allergy-intolerance-category",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/AllergieCategorieCodelijst-to-allergy-intolerance-category",
+    "version" : "1.3.15",
+    "name" : "AllergieCategorieCodelijst-to-allergy-intolerance-category"
+  },
+  {
+    "id" : "AllergieStatusCodelijst-to-allergy-status",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/AllergieStatusCodelijst-to-allergy-status",
+    "version" : "1.3.15",
+    "name" : "AllergieStatusCodelijst-to-allergy-status"
+  },
+  {
+    "id" : "Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst",
+    "version" : "1.3.15",
+    "name" : "Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst"
+  },
+  {
+    "id" : "ContactTypeCodelijst-to-ActEncounterCode",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/ContactTypeCodelijst-to-ActEncounterCode",
+    "version" : "1.3.15",
+    "name" : "ContactTypeCodelijst-to-ActEncounterCode"
+  },
+  {
+    "id" : "EmailSoortCodelijst-to-ContactPointSystem",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointSystem",
+    "version" : "1.3.15",
+    "name" : "EmailSoortCodelijst-to-ContactPointSystem"
+  },
+  {
+    "id" : "EmailSoortCodelijst-to-ContactPointUse",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/EmailSoortCodelijst-to-ContactPointUse",
+    "version" : "1.3.15",
+    "name" : "EmailSoortCodelijst-to-ContactPointUse"
+  },
+  {
+    "id" : "ErnstCodelijst-to-AllergyIntoleranceSeverity",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/ErnstCodelijst-to-AllergyIntoleranceSeverity",
+    "version" : "1.3.15",
+    "name" : "ErnstCodelijst-to-AllergyIntoleranceSeverity"
+  },
+  {
+    "id" : "GeslachtCodelijst-to-AdministrativeGender",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/GeslachtCodelijst-to-AdministrativeGender",
+    "version" : "1.3.15",
+    "name" : "GeslachtCodelijst-to-AdministrativeGender"
+  },
+  {
+    "id" : "InterpretatieVlaggenCodelijst-to-observation-interpretation",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/InterpretatieVlaggenCodelijst-to-observation-interpretation",
+    "version" : "1.3.15",
+    "name" : "InterpretatieVlaggenCodelijst-to-observation-interpretation"
+  },
+  {
+    "id" : "MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality",
+    "version" : "1.3.15",
+    "name" : "MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality"
+  },
+  {
+    "id" : "NHGTable14-to-ActEncounterCode",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/NHGTable14-to-ActEncounterCode",
+    "version" : "1.3.15",
+    "name" : "NHGTable14-to-ActEncounterCode"
+  },
+  {
+    "id" : "NaamgebruikCodelijst-to-HumanNameAssemblyOrder",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/NaamgebruikCodelijst-to-HumanNameAssemblyOrder",
+    "version" : "1.3.15",
+    "name" : "NaamgebruikCodelijst-to-HumanNameAssemblyOrder"
+  },
+  {
+    "id" : "NummerSoortCodelijst-to-ContactPointUse",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/NummerSoortCodelijst-to-ContactPointUse",
+    "version" : "1.3.15",
+    "name" : "NummerSoortCodelijst-to-ContactPointUse"
+  },
+  {
+    "id" : "ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes",
+    "version" : "1.3.15",
+    "name" : "ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes"
+  },
+  {
+    "id" : "TelecomSoortCodelijst-to-ContactPointSystem",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointSystem",
+    "version" : "1.3.15",
+    "name" : "TelecomSoortCodelijst-to-ContactPointSystem"
+  },
+  {
+    "id" : "TelecomSoortCodelijst-to-ContactPointUse",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/TelecomSoortCodelijst-to-ContactPointUse",
+    "version" : "1.3.15",
+    "name" : "TelecomSoortCodelijst-to-ContactPointUse"
+  },
+  {
+    "id" : "VerificatieStatusCodelijst-to-ConditionVerificationStatus",
+    "type" : "ConceptMap",
+    "url" : "http://nictiz.nl/fhir/ConceptMap/VerificatieStatusCodelijst-to-ConditionVerificationStatus",
+    "version" : "1.3.15",
+    "name" : "VerificatieStatusCodelijst-to-ConditionVerificationStatus"
+  },
+  {
+    "id" : "zibs2017",
+    "type" : "ImplementationGuide",
+    "url" : "http://nictiz.nl/fhir/ImplementationGuide/zibs2017",
+    "version" : "1.3.15",
+    "name" : "zibs2017"
+  },
+  {
+    "id" : "00f55a90-f7c6-4534-9739-af10932e1187",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/00f55a90-f7c6-4534-9739-af10932e1187",
+    "version" : "1.3.15",
+    "name" : "UZI register abonneenummer (URA); zorgaanbieder die UZI passen aanvraagt"
+  },
+  {
+    "id" : "10562d06-2f08-4bff-8a0f-659a53e8a663",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/10562d06-2f08-4bff-8a0f-659a53e8a663",
+    "version" : "1.3.15",
+    "name" : "Vektis AGB-z zorgverlener tabel"
+  },
+  {
+    "id" : "89b5412d-b23a-4234-961f-f6cde53c804f",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/89b5412d-b23a-4234-961f-f6cde53c804f",
+    "version" : "1.3.15",
+    "name" : "UZI nummer natuurlijke personen; zorgverlener of medewerker met UZI pas"
+  },
+  {
+    "id" : "9a09029a-0725-4c7f-89fb-3864c30156e4",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/9a09029a-0725-4c7f-89fb-3864c30156e4",
+    "version" : "1.3.15",
+    "name" : "RoleCodeNL - zorgaanbiedertype (organisaties)"
+  },
+  {
+    "id" : "c7bd65e8-ddd1-4e21-94f0-17cac50b5c3e",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/c7bd65e8-ddd1-4e21-94f0-17cac50b5c3e",
+    "version" : "1.3.15",
+    "name" : "Burgerservicenummer (BSN)"
+  },
+  {
+    "id" : "d52c4a9e-1f3c-4924-926a-036fde004f0a",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/d52c4a9e-1f3c-4924-926a-036fde004f0a",
+    "version" : "1.3.15",
+    "name" : "UZOVI identification number"
+  },
+  {
+    "id" : "e60d27db-8005-48f4-8a5c-5c43f4647a84",
+    "type" : "NamingSystem",
+    "url" : "http://nictiz.nl/fhir/NamingSystem/e60d27db-8005-48f4-8a5c-5c43f4647a84",
+    "version" : "1.3.15",
+    "name" : "UZI nummer systemen, gekoppeld aan UZI services certificaat"
+  },
+  {
+    "id" : "careplan-activity-goal",
+    "type" : "SearchParameter",
+    "url" : "http://nictiz.nl/fhir/SearchParameter/careplan-activity-goal",
+    "version" : "1.3.15",
+    "name" : "careplan-activity-goal"
+  },
+  {
+    "id" : "careplan-activity-outcomereference",
+    "type" : "SearchParameter",
+    "url" : "http://nictiz.nl/fhir/SearchParameter/careplan-activity-outcomereference",
+    "version" : "1.3.15",
+    "name" : "careplan-activity-outcomereference"
+  },
+  {
+    "id" : "careplan-medicaldevice",
+    "type" : "SearchParameter",
+    "url" : "http://nictiz.nl/fhir/SearchParameter/careplan-medicaldevice",
+    "version" : "1.3.15",
+    "name" : "careplan-medicaldevice"
+  },
+  {
+    "id" : "BodySite-Morphology",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Morphology",
+    "version" : "1.3.15",
+    "name" : "BodySite Morphology"
+  },
+  {
+    "id" : "BodySite-Qualifier",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+    "version" : "1.3.15",
+    "name" : "BodySite Qualifier"
+  },
+  {
+    "id" : "Comment",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/Comment",
+    "version" : "1.3.15",
+    "name" : "Comment"
+  },
+  {
+    "id" : "EpisodeOfCare-DateFirstEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateFirstEncounter",
+    "version" : "1.3.15",
+    "name" : "EpisodeOfCare DateFirstEncounter"
+  },
+  {
+    "id" : "EpisodeOfCare-DateLastEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-DateLastEncounter",
+    "version" : "1.3.15",
+    "name" : "EpisodeOfCare DateLastEncounter"
+  },
+  {
+    "id" : "EpisodeOfCare-Title",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/EpisodeOfCare-Title",
+    "version" : "1.3.15",
+    "name" : "EpisodeOfCare Title"
+  },
+  {
+    "id" : "IHE.MHD.DocumentManifest",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.DocumentManifest",
+    "version" : "1.3.15",
+    "name" : "Nictiz.IHE.MHD.DocumentManifest"
+  },
+  {
+    "id" : "IHE.MHD.List",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.List",
+    "version" : "1.3.15",
+    "name" : "Nictiz.IHE.MHD.List"
+  },
+  {
+    "id" : "IHE.MHD.Provide.Minimal.DocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Provide.Minimal.DocumentReference",
+    "version" : "1.3.15",
+    "name" : "Nictiz.IHE.MHD.Provide.Minimal.DocumentReference"
+  },
+  {
+    "id" : "IHE.MHD.ProvideDocumentBundle.Minimal",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.ProvideDocumentBundle.Minimal",
+    "version" : "1.3.15",
+    "name" : "Nictiz.IHE.MHD.ProvideDocumentBundle.Minimal"
+  },
+  {
+    "id" : "WoundCharacteristics",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/WoundCharacteristics",
+    "version" : "1.3.15",
+    "name" : "WoundCharacteristics"
+  },
+  {
+    "id" : "bodyheight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/bodyheight",
+    "version" : "1.3.15",
+    "name" : "Vital Signs BodyHeight"
+  },
+  {
+    "id" : "bodytemp",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/bodytemp",
+    "version" : "1.3.15",
+    "name" : "Vital Signs BodyTemp"
+  },
+  {
+    "id" : "bodyweight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/bodyweight",
+    "version" : "1.3.15",
+    "name" : "Vital Signs BodyWeight"
+  },
+  {
+    "id" : "code-icpc-1-nl",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl",
+    "version" : "1.3.15",
+    "name" : "code icpc 1 nl"
+  },
+  {
+    "id" : "code-specification",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+    "version" : "1.3.15",
+    "name" : "Zib extension code specification"
+  },
+  {
+    "id" : "condition-dateOfLastDressingChange",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/condition-dateOfLastDressingChange",
+    "version" : "1.3.15",
+    "name" : "Condition-dateOfLastDressingChange"
+  },
+  {
+    "id" : "consent-additionalSources",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/consent-additionalSources",
+    "version" : "1.3.15",
+    "name" : "Consent additionalSources"
+  },
+  {
+    "id" : "deviceUseStatement-reasonReferenceSTU3",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/deviceUseStatement-reasonReferenceSTU3",
+    "version" : "1.3.15",
+    "name" : "DeviceUseStatement reasonReference STU3"
+  },
+  {
+    "id" : "extension-medicaldevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice",
+    "version" : "1.3.15",
+    "name" : "Extension MedicalDevice"
+  },
+  {
+    "id" : "gp-DiagnosticResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult",
+    "version" : "1.3.15",
+    "name" : "gp DiagnosticResult"
+  },
+  {
+    "id" : "gp-Encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/gp-Encounter",
+    "version" : "1.3.15",
+    "name" : "gp-Encounter"
+  },
+  {
+    "id" : "gp-EncounterReport",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport",
+    "version" : "1.3.15",
+    "name" : "gp EncounterReport"
+  },
+  {
+    "id" : "gp-JournalEntry",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/gp-JournalEntry",
+    "version" : "1.3.15",
+    "name" : "gp-JournalEntry"
+  },
+  {
+    "id" : "gp-LaboratoryResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/gp-LaboratoryResult",
+    "version" : "1.3.15",
+    "name" : "gp LaboratoryResult"
+  },
+  {
+    "id" : "vitalsigns-headcircum",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/headcircum",
+    "version" : "1.3.15",
+    "name" : "Vital Signs HeadCircum"
+  },
+  {
+    "id" : "heartrate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/heartrate",
+    "version" : "1.3.15",
+    "name" : "Vital Signs HeartRate"
+  },
+  {
+    "id" : "observation-focusSTU3",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/observation-focusSTU3",
+    "version" : "1.3.15",
+    "name" : "Observation focus STU3"
+  },
+  {
+    "id" : "observation-woundImage",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/observation-woundImage",
+    "version" : "1.3.15",
+    "name" : "Observation woundImage"
+  },
+  {
+    "id" : "observation-zibNursingInterventionReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/observation-zibNursingInterventionReference",
+    "version" : "1.3.15",
+    "name" : "Observation-zib NursingIntervention reference"
+  },
+  {
+    "id" : "observation-zibStomaReference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/observation-zibStomaReference",
+    "version" : "1.3.15",
+    "name" : "Observation-zibStomaReference"
+  },
+  {
+    "id" : "oxygensat",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/oxygensat",
+    "version" : "1.3.15",
+    "name" : "Vital Signs Oxygensat"
+  },
+  {
+    "id" : "patient-proficiency",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/patient-proficiency",
+    "version" : "1.3.15",
+    "name" : "proficiency"
+  },
+  {
+    "id" : "practitionerrole-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+    "version" : "1.3.15",
+    "name" : "PractitionerRole Reference"
+  },
+  {
+    "id" : "vitalsign-bloodglucose",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/vitalsign-bloodglucose",
+    "version" : "1.3.15",
+    "name" : "Vital Signs BloodGlucose"
+  },
+  {
+    "id" : "zib-AbilityToDressOneSelf",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToDressOneself",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToDressOneself"
+  },
+  {
+    "id" : "zib-AbilityToDrink",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToDrink",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToDrink"
+  },
+  {
+    "id" : "zib-AbilityToEat",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToEat",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToEat"
+  },
+  {
+    "id" : "zib-AbilityToGroome",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToGroome",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToGroome"
+  },
+  {
+    "id" : "zib-AbilityToManageMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToManageMedication",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToManageMedication"
+  },
+  {
+    "id" : "zib-AbilityToPerformMouthcareActivities",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToPerformMouthcareActivities",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToPerformMouthcareActivities"
+  },
+  {
+    "id" : "zib-AbilityToPerformMouthcareActivities-MedicalDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToPerformMouthcareActivities-MedicalDevice",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToPerformMouthcareActivities MedicalDevice"
+  },
+  {
+    "id" : "zib-AbilityToPerformMouthcareActivities-MedicalDeviceProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToPerformMouthcareActivities-MedicalDeviceProduct",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToPerformMouthcareActivities MedicalDeviceProduct"
+  },
+  {
+    "id" : "zib-AbilityToPerformNursingActivities",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToPerformNursingActivities",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToPerformNursingActivities"
+  },
+  {
+    "id" : "zib-AbilityToUseToilet",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToUseToilet",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToUseToilet"
+  },
+  {
+    "id" : "zib-AbilityToWashOneSelf",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AbilityToWashOneSelf",
+    "version" : "1.3.15",
+    "name" : "Zib AbilityToWashOneSelf"
+  },
+  {
+    "id" : "zib-AdvanceDirective",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective",
+    "version" : "1.3.15",
+    "name" : "Zib AdvanceDirective"
+  },
+  {
+    "id" : "zib-AdvanceDirective-Disorder",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AdvanceDirective-Disorder",
+    "version" : "1.3.15",
+    "name" : "Zib AdvanceDirective Disorder"
+  },
+  {
+    "id" : "zib-AlcoholUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AlcoholUse",
+    "version" : "1.3.15",
+    "name" : "Zib AlcoholUse"
+  },
+  {
+    "id" : "zib-Alert",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Alert",
+    "version" : "1.3.15",
+    "name" : "Zib Alert"
+  },
+  {
+    "id" : "zib-AllergyIntolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance",
+    "version" : "1.3.15",
+    "name" : "Zib AllergyIntolerance"
+  },
+  {
+    "id" : "zib-ApgarScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ApgarScore",
+    "version" : "1.3.15",
+    "name" : "Zib ApgarScore"
+  },
+  {
+    "id" : "zib-BladderFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BladderFunction",
+    "version" : "1.3.15",
+    "name" : "Zib BladderFunction"
+  },
+  {
+    "id" : "zib-BladderFunction-UrineCatheter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BladderFunction-UrineCatheter",
+    "version" : "1.3.15",
+    "name" : "Zib BladderFunction UrineCatheter"
+  },
+  {
+    "id" : "zib-BladderFunction-UrineCatheterProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BladderFunction-UrineCatheterProduct",
+    "version" : "1.3.15",
+    "name" : "Zib BladderFunction UrineCatheter Product"
+  },
+  {
+    "id" : "zib-BloodPressure",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BloodPressure",
+    "version" : "1.3.15",
+    "name" : "Zib BloodPressure"
+  },
+  {
+    "id" : "zib-BodyHeight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BodyHeight",
+    "version" : "1.3.15",
+    "name" : "Zib BodyHeight"
+  },
+  {
+    "id" : "zib-BodyTemperature",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BodyTemperature",
+    "version" : "1.3.15",
+    "name" : "Zib BodyTemperature"
+  },
+  {
+    "id" : "zib-BodyWeight",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BodyWeight",
+    "version" : "1.3.15",
+    "name" : "Zib BodyWeight"
+  },
+  {
+    "id" : "zib-BowelFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BowelFunction",
+    "version" : "1.3.15",
+    "name" : "Zib BowelFunction"
+  },
+  {
+    "id" : "zib-BurnWound",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BurnWound",
+    "version" : "1.3.15",
+    "name" : "Zib BurnWound"
+  },
+  {
+    "id" : "zib-BurnWound-BurnWoundType",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BurnWound-BurnWoundType",
+    "version" : "1.3.15",
+    "name" : "zib BurnWound BurnWoundType"
+  },
+  {
+    "id" : "zib-BurnWound-Extent",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-BurnWound-Extent",
+    "version" : "1.3.15",
+    "name" : "Zib BurnWound Extent"
+  },
+  {
+    "id" : "zib-ChecklistPainBehaviour",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ChecklistPainBehaviour",
+    "version" : "1.3.15",
+    "name" : "Zib ChecklistPainBehaviour"
+  },
+  {
+    "id" : "zib-ComfortScale",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ComfortScale",
+    "version" : "1.3.15",
+    "name" : "Zib ComfortScale"
+  },
+  {
+    "id" : "zib-DevelopmentChild",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-DevelopmentChild",
+    "version" : "1.3.15",
+    "name" : "Zib DevelopmentChild"
+  },
+  {
+    "id" : "zib-DrugUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-DrugUse",
+    "version" : "1.3.15",
+    "name" : "Zib DrugUse"
+  },
+  {
+    "id" : "zib-Encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Encounter",
+    "version" : "1.3.15",
+    "name" : "Zib Encounter"
+  },
+  {
+    "id" : "zib-FLACCPainScale",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FLACCPainScale",
+    "version" : "1.3.15",
+    "name" : "Zib FLACCPainScale"
+  },
+  {
+    "id" : "zib-FamilySituation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituation",
+    "version" : "1.3.15",
+    "name" : "Zib FamilySituation"
+  },
+  {
+    "id" : "zib-FamilySituation-LivingAtHomeIndicator",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituation-LivingAtHomeIndicator",
+    "version" : "1.3.15",
+    "name" : "Zib FamilySituation-LivingAtHomeIndicator"
+  },
+  {
+    "id" : "zib-FamilySituationChild",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituationChild",
+    "version" : "1.3.15",
+    "name" : "Zib FamilySituationChild"
+  },
+  {
+    "id" : "zib-FamilySituationChild-RelatedPerson",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FamilySituationChild-RelatedPerson",
+    "version" : "1.3.15",
+    "name" : "Zib FamilySituationChild-RelatedPerson"
+  },
+  {
+    "id" : "zib-FeedingPatternInfant",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingPatternInfant",
+    "version" : "1.3.15",
+    "name" : "Zib FeedingPatternInfant"
+  },
+  {
+    "id" : "zib-FeedingPatternInfant-FeedingMethod",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingPatternInfant-FeedingMethod",
+    "version" : "1.3.15",
+    "name" : "Zib FeedingPatternInfant-FeedingMethod"
+  },
+  {
+    "id" : "zib-FeedingTubeSystem",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem",
+    "version" : "1.3.15",
+    "name" : "Zib FeedingTubeSystem"
+  },
+  {
+    "id" : "zib-FeedingTubeSystem-EnteralNutrition",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem-EnteralNutrition",
+    "version" : "1.3.15",
+    "name" : "Zib FeedingTubeSystem EnteralNutrition"
+  },
+  {
+    "id" : "zib-FeedingTubeSystem-FeedingTubeLength",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem-FeedingTubeLength",
+    "version" : "1.3.15",
+    "name" : "Zib FeedingTubeSystem FeedingTubeLength"
+  },
+  {
+    "id" : "zib-FeedingTubeSystem-Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FeedingTubeSystem-Product",
+    "version" : "1.3.15",
+    "name" : "Zib FeedingTubeSystem Product"
+  },
+  {
+    "id" : "zib-FluidBalance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FluidBalance",
+    "version" : "1.3.15",
+    "name" : "Zib FluidBalance"
+  },
+  {
+    "id" : "zib-FreedomRestrictingMeasures",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures",
+    "version" : "1.3.15",
+    "name" : "Zib FreedomRestrictingMeasures"
+  },
+  {
+    "id" : "zib-FreedomRestrictingMeasures-LegallyCapable",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-LegallyCapable",
+    "version" : "1.3.15",
+    "name" : "Zib FreedomRestrictingMeasures-LegallyCapable"
+  },
+  {
+    "id" : "zib-FreedomRestrictingMeasures-Permission",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-Permission",
+    "version" : "1.3.15",
+    "name" : "Zib FreedomRestrictingMeasures-Permission"
+  },
+  {
+    "id" : "zib-FunctionalOrMentalStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus",
+    "version" : "1.3.15",
+    "name" : "Zib FunctionalOrMentalStatus"
+  },
+  {
+    "id" : "zib-FunctionalOrMentalStatus-MedicalDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-FunctionalOrMentalStatus-MedicalDevice",
+    "version" : "1.3.15",
+    "name" : "Zib FunctionalOrMentalStatus MedicalDevice"
+  },
+  {
+    "id" : "zib-GeneralMeasurement",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement",
+    "version" : "1.3.15",
+    "name" : "Zib GeneralMeasurement"
+  },
+  {
+    "id" : "zib-headCircumference",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HeadCircumference",
+    "version" : "1.3.15",
+    "name" : "Zib HeadCircumference"
+  },
+  {
+    "id" : "zib-HearingFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HearingFunction",
+    "version" : "1.3.15",
+    "name" : "Zib HearingFunction"
+  },
+  {
+    "id" : "zib-HearingFunction-HearingAid",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HearingFunction-HearingAid",
+    "version" : "1.3.15",
+    "name" : "Zib HearingFunction HearingAid"
+  },
+  {
+    "id" : "zib-HearingFunction-HearingAid-Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HearingFunction-HearingAid-Product",
+    "version" : "1.3.15",
+    "name" : "Zib HearingFunction HearingAid Product"
+  },
+  {
+    "id" : "zib-HeartRate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HeartRate",
+    "version" : "1.3.15",
+    "name" : "Zib HeartRate"
+  },
+  {
+    "id" : "zib-HelpFromOthers",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-HelpFromOthers",
+    "version" : "1.3.15",
+    "name" : "Zib HelpFromOthers"
+  },
+  {
+    "id" : "zib-illnessPerception",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-IllnessPerception",
+    "version" : "1.3.15",
+    "name" : "Zib IllnessPerception"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult-DiagnosticReport",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-DiagnosticReport",
+    "version" : "1.3.15",
+    "name" : "Zib LaboratoryTestResult DiagnosticReport"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult-Observation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Observation",
+    "version" : "1.3.15",
+    "name" : "Zib LaboratoryTestResult Observation"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult-Specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen",
+    "version" : "1.3.15",
+    "name" : "Zib LaboratoryTestResult Specimen"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult-Specimen-Isolate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen-Isolate",
+    "version" : "1.3.15",
+    "name" : "Zib LaboratoryTestResult Specimen Isolate"
+  },
+  {
+    "id" : "zib-LaboratoryTestResult-Substance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Substance",
+    "version" : "1.3.15",
+    "name" : "Zib LaboratoryTestResult Substance"
+  },
+  {
+    "id" : "zib-LifeStance",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LifeStance",
+    "version" : "1.3.15",
+    "name" : "Zib LifeStance"
+  },
+  {
+    "id" : "zib-LivingSituation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-LivingSituation",
+    "version" : "1.3.15",
+    "name" : "Zib LivingSituation"
+  },
+  {
+    "id" : "zib-MUSTScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MUSTScore",
+    "version" : "1.3.15",
+    "name" : "Zib MUSTScore"
+  },
+  {
+    "id" : "zib-MedicalDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice",
+    "version" : "1.3.15",
+    "name" : "Zib MedicalDevice"
+  },
+  {
+    "id" : "zib-MedicalDevice-Organization",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization",
+    "version" : "1.3.15",
+    "name" : "Zib MedicalDevice Organization"
+  },
+  {
+    "id" : "zib-MedicalDevice-Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Practitioner",
+    "version" : "1.3.15",
+    "name" : "Zib MedicalDevice Practitioner"
+  },
+  {
+    "id" : "zib-MedicalDevice-Problem",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem",
+    "version" : "1.3.15",
+    "name" : "Zib MedicalDevice Problem"
+  },
+  {
+    "id" : "zib-MedicalDeviceProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceProduct",
+    "version" : "1.3.15",
+    "name" : "Zib MedicalDevice Product"
+  },
+  {
+    "id" : "zib-MedicalDeviceRequest",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDeviceRequest",
+    "version" : "1.3.15",
+    "name" : "Zib MedicalDevice Request"
+  },
+  {
+    "id" : "zib-Mobility",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Mobility",
+    "version" : "1.3.15",
+    "name" : "Zib Mobility"
+  },
+  {
+    "id" : "zib-NursingIntervention",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention",
+    "version" : "1.3.15",
+    "name" : "Zib NursingIntervention"
+  },
+  {
+    "id" : "zib-NursingIntervention-Interval",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention-Interval",
+    "version" : "1.3.15",
+    "name" : "Zib NursingIntervention Interval"
+  },
+  {
+    "id" : "zib-NursingIntervention-Requester",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention-Requester",
+    "version" : "1.3.15",
+    "name" : "Zib NursingIntervention Requester"
+  },
+  {
+    "id" : "zib-NutritionAdvice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice",
+    "version" : "1.3.15",
+    "name" : "Zib NutritionAdvice"
+  },
+  {
+    "id" : "zib-NutritionAdvice-Explanation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NutritionAdvice-Explanation",
+    "version" : "1.3.15",
+    "name" : "Zib NutritionAdvice Explanation"
+  },
+  {
+    "id" : "zib-OutcomeOfCare",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-OutcomeOfCare",
+    "version" : "1.3.15",
+    "name" : "zib-OutcomeOfCare"
+  },
+  {
+    "id" : "zib-OxygenSaturation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-OxygenSaturation",
+    "version" : "1.3.15",
+    "name" : "Zib OxygenSaturation"
+  },
+  {
+    "id" : "zib-PainScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-PainScore",
+    "version" : "1.3.15",
+    "name" : "Zib PainScore"
+  },
+  {
+    "id" : "zib-ParticipationInSociety",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ParticipationInSociety",
+    "version" : "1.3.15",
+    "name" : "Zib ParticipationInSociety"
+  },
+  {
+    "id" : "zib-Payer",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Payer",
+    "version" : "1.3.15",
+    "name" : "Zib Payer"
+  },
+  {
+    "id" : "zib-Payer-BankInformation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Payer-BankInformation",
+    "version" : "1.3.15",
+    "name" : "Zib Payer BankInformation"
+  },
+  {
+    "id" : "zib-Pregnancy",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy"
+  },
+  {
+    "id" : "zib-Pregnancy-DateLastMenstruation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-DateLastMenstruation",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy DateLastMenstruation"
+  },
+  {
+    "id" : "zib-Pregnancy-Gravidity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-Gravidity",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy Gravidity"
+  },
+  {
+    "id" : "zib-Pregnancy-Parity",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-Parity",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy Parity"
+  },
+  {
+    "id" : "zib-Pregnancy-PregnancyDuration",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-PregnancyDuration",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy PregnancyDuration"
+  },
+  {
+    "id" : "zib-Pregnancy-PregnancyStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-PregnancyStatus",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy PregnancyStatus"
+  },
+  {
+    "id" : "zib-Pregnancy-TermDate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Pregnancy-TermDate",
+    "version" : "1.3.15",
+    "name" : "Zib Pregnancy TermDate"
+  },
+  {
+    "id" : "zib-PressureUlcer",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-PressureUlcer",
+    "version" : "1.3.15",
+    "name" : "Zib PressureUlcer"
+  },
+  {
+    "id" : "zib-Problem",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Problem",
+    "version" : "1.3.15",
+    "name" : "Zib Problem"
+  },
+  {
+    "id" : "zib-Procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Procedure",
+    "version" : "1.3.15",
+    "name" : "Zib Procedure"
+  },
+  {
+    "id" : "zib-ProcedureRequest",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-ProcedureRequest",
+    "version" : "1.3.15",
+    "name" : "Zib ProcedureRequest"
+  },
+  {
+    "id" : "zib-PulseRate",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-PulseRate",
+    "version" : "1.3.15",
+    "name" : "Zib PulseRate"
+  },
+  {
+    "id" : "zib-Respiration",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration",
+    "version" : "1.3.15",
+    "name" : "Zib Respiration"
+  },
+  {
+    "id" : "zib-Respiration-AdministeredOxygen",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen",
+    "version" : "1.3.15",
+    "name" : "Zib Respiration AdministeredOxygen"
+  },
+  {
+    "id" : "zib-Respiration-AdministeredOxygen-AdministrationDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDevice",
+    "version" : "1.3.15",
+    "name" : "Zib Respiration AdministeredOxygen AdministrationDevice"
+  },
+  {
+    "id" : "zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct",
+    "version" : "1.3.15",
+    "name" : "Zib Respiration AdministeredOxygen AdministrationDeviceProduct"
+  },
+  {
+    "id" : "zib-SNAQ65plusScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SNAQ65+Score",
+    "version" : "1.3.15",
+    "name" : "Zib SNAQ65+Score"
+  },
+  {
+    "id" : "zib-SNAQScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SNAQScore",
+    "version" : "1.3.15",
+    "name" : "Zib SNAQScore"
+  },
+  {
+    "id" : "zib-SNAQrcScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SNAQrcScore",
+    "version" : "1.3.15",
+    "name" : "Zib SNAQrcScore"
+  },
+  {
+    "id" : "zib-SkinDisorder",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-SkinDisorder",
+    "version" : "1.3.15",
+    "name" : "Zib SkinDisorder"
+  },
+  {
+    "id" : "zib-Stoma",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Stoma",
+    "version" : "1.3.15",
+    "name" : "Zib Stoma"
+  },
+  {
+    "id" : "zib-StrongKidsScore",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-StrongKidsScore",
+    "version" : "1.3.15",
+    "name" : "Zib StrongKidsScore"
+  },
+  {
+    "id" : "zib-TextResult",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TextResult",
+    "version" : "1.3.15",
+    "name" : "Zib TextResult"
+  },
+  {
+    "id" : "zib-TobaccoUse",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TobaccoUse",
+    "version" : "1.3.15",
+    "name" : "Zib TobaccoUse"
+  },
+  {
+    "id" : "zib-TreatmentDirective",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective",
+    "version" : "1.3.15",
+    "name" : "Zib TreatmentDirective"
+  },
+  {
+    "id" : "zib-TreatmentDirective-Restrictions",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Restrictions",
+    "version" : "1.3.15",
+    "name" : "Zib TreatmentDirective Restrictions"
+  },
+  {
+    "id" : "zib-TreatmentDirective-Treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Treatment",
+    "version" : "1.3.15",
+    "name" : "Zib TreatmentDirective Treatment"
+  },
+  {
+    "id" : "zib-TreatmentDirective-TreatmentPermitted",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-TreatmentPermitted",
+    "version" : "1.3.15",
+    "name" : "Zib TreatmentDirective TreatmentPermitted"
+  },
+  {
+    "id" : "zib-TreatmentDirective-Verification",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentDirective-Verification",
+    "version" : "1.3.15",
+    "name" : "Zib TreatmentDirective Verification"
+  },
+  {
+    "id" : "zib-TreatmentObjective",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective",
+    "version" : "1.3.15",
+    "name" : "Zib TreatmentObjective"
+  },
+  {
+    "id" : "zib-Vaccination",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination",
+    "version" : "1.3.15",
+    "name" : "Zib Vaccination"
+  },
+  {
+    "id" : "zib-VaccinationRecommendation",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation",
+    "version" : "1.3.15",
+    "name" : "Zib VaccinationRecommendation"
+  },
+  {
+    "id" : "zib-VaccinationRecommendation-OrderStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VaccinationRecommendation-OrderStatus",
+    "version" : "1.3.15",
+    "name" : "Zib VaccinationRecommendation OrderStatus"
+  },
+  {
+    "id" : "zib-VisualFunction",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction",
+    "version" : "1.3.15",
+    "name" : "Zib VisualFunction"
+  },
+  {
+    "id" : "zib-VisualFunction-VisualAid",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction-VisualAid",
+    "version" : "1.3.15",
+    "name" : "Zib VisualFunction VisualAid"
+  },
+  {
+    "id" : "zib-VisualFunction-VisualAidProduct",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VisualFunction-VisualAidProduct",
+    "version" : "1.3.15",
+    "name" : "Zib VisualFunction VisualAid Product"
+  },
+  {
+    "id" : "zib-VitalSigns",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-VitalSigns",
+    "version" : "1.3.15",
+    "name" : "Vital Signs Profile NL"
+  },
+  {
+    "id" : "zib-Wound",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Wound",
+    "version" : "1.3.15",
+    "name" : "Zib Wound"
+  },
+  {
+    "id" : "zib-Wound-MedicalDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Wound-MedicalDevice",
+    "version" : "1.3.15",
+    "name" : "Zib Wound MedicalDevice"
+  },
+  {
+    "id" : "zib-Wound-Drain-Product",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Wound-MedicalDeviceProduct",
+    "version" : "1.3.15",
+    "name" : "Zib Wound Drain Product"
+  },
+  {
+    "id" : "zib-patient-legalstatus",
+    "type" : "StructureDefinition",
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-patient-legalstatus",
+    "version" : "1.3.15",
+    "name" : "zib patient legalstatus"
+  }
+]

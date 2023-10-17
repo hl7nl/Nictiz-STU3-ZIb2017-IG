@@ -1,0 +1,77 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-druguse-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-DrugUse"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: definitief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Op feestjes en in uitgaanscircuit.</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>1981 - 1983</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Finding relating to drug misuse behavior (finding) (228366006 - SNOMED CT)\">Finding relating to drug misuse behavior (finding)</span>\n                        </td>\n                        <td>\n                            <span title=\"Misused drugs in past (finding) (44870007 - SNOMED CT)\">Misused drugs in past (finding)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Drug or medicament (substance) (410942007 - SNOMED CT)\">Drug or medicament (substance)</span>\n                        </td>\n                        <td>\n                            <span title=\"Amphetamine (substance) (703842006 - SNOMED CT)\">Amphetamine (substance)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Route of administration (attribute) (410675002 - SNOMED CT)\">Route of administration (attribute)</span>\n                        </td>\n                        <td>\n                            <span title=\"NASAAL (6 - G-Standaard thesaurus subtabel 0007)\">NASAAL</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Frequency of drug misuse (observable entity) (228390007 - SNOMED CT)\">Frequency of drug misuse (observable entity)</span>\n                        </td>\n                        <td>3 times a year</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "228366006",
+      "display" : "Finding relating to drug misuse behavior (finding)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "effectivePeriod" : {
+    "start" : "1981",
+    "end" : "1983"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "44870007",
+      "display" : "Misused drugs in past (finding)"
+    }]
+  },
+  "comment" : "Op feestjes en in uitgaanscircuit.",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "410942007",
+        "display" : "Drug or medicament (substance)"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "703842006",
+        "display" : "Amphetamine (substance)"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "410675002",
+        "display" : "Route of administration (attribute)"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.4.9",
+        "code" : "6",
+        "display" : "NASAAL"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "228390007",
+        "display" : "Frequency of drug misuse (observable entity)"
+      }]
+    },
+    "valueString" : "3 times a year"
+  }]
+}

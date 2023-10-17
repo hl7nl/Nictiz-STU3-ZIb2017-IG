@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000.html">MateVanKritiekZijnCodelijst</a> to <a href="http://hl7.org/fhir/STU3/valueset-allergy-intolerance-criticality.html">AllergyIntoleranceCriticality</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href="mailto:info@nictiz.nl">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM AllergyIntolerance release 2017 terminology for AllergyCriticalExtent to the FHIR STU3 terminology</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="http://hl7.org/fhir/STU3/codesystem-allergy-intolerance-criticality.html">AllergyIntoleranceCriticality</a> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>255604002 (Mild)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>low</td></tr><tr><td>62482003 (Low)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>low</td></tr><tr><td>6736007 (Moderate)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>high</td></tr><tr><td>255508009 (Medium)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>high</td></tr><tr><td>24484000 (Severe)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>high</td></tr><tr><td>75540009 (High)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>high</td></tr><tr><td>399166001 (Fatal)</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>high</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/concept-bidirectional">
+    <valueBoolean value="false"/>
+  </extension>
+  <url value="http://nictiz.nl/fhir/ConceptMap/MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality"/>
+  <version value="1.3.15"/>
+  <name value="MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality"/>
+  <title value="HCIM MateVanKritiekZijnCodelijst to allergy-intolerance-criticality"/>
+  <status value="active"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Maps the HCIM AllergyIntolerance release 2017 terminology for AllergyCriticalExtent to the FHIR STU3 terminology"/>
+  <purpose value="To aid in mapping from ZIB AllergyIntolerance value set MateVanKritiekZijnCodelijst to FHIR STU3 AllergyIntolerance criticality"/>
+  <copyright value="CC0"/>
+  <sourceUri value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000"/>
+  <targetUri value="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality"/>
+  <group>
+    <source value="http://hl7.org/fhir/allergy-intolerance-criticality"/>
+    <element>
+      <code value="255604002"/>
+      <display value="Mild"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="low"/>
+        <display value="Low"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="62482003"/>
+      <display value="Low"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="low"/>
+        <display value="Low"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="6736007"/>
+      <display value="Moderate"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="wider"/>
+        </modifierExtension>
+        <code value="high"/>
+        <display value="High"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="255508009"/>
+      <display value="Medium"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="wider"/>
+        </modifierExtension>
+        <code value="high"/>
+        <display value="High"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+    <element>
+      <code value="24484000"/>
+      <display value="Severe"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="high"/>
+        <display value="High"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="75540009"/>
+      <display value="High"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equal"/>
+        </modifierExtension>
+        <code value="high"/>
+        <display value="High"/>
+        <equivalence value="equal"/>
+      </target>
+    </element>
+    <element>
+      <code value="399166001"/>
+      <display value="Fatal"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="wider"/>
+        </modifierExtension>
+        <code value="high"/>
+        <display value="High"/>
+        <equivalence value="wider"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

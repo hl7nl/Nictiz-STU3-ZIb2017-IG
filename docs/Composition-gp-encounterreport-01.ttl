@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Composition/gp-encounterreport-01> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gp-encounterreport-01"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2018-01-11T11:51:36.392+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <b>Deelcontact: RELATIEPROBLEMEN OUDERS/FAMILIE</b>\n            <table>\n                <caption>Samengestelde informatie. Subject: <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>. Status: definitief<div>Auteur: <a href=\"Practitioner/nl-core-practitioner-01\">Huisarts H. de Vries</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>67781-5 (LOINC)</td>\n                    </tr>\n                    <tr>\n                        <th>Gemaakt</th>\n                        <td>2018-01-11T11:43:40.0004456+01:00</td>\n                    </tr>\n                    <tr>\n                        <th>Contact</th>\n                        <td>\n                            <a href=\"Encounter/zib-encounter-01\">Consult voor gebroken been met\n                                Huisarts H. de Vries</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:67781-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67781-5" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://nictiz.nl/fhir/Encounter/zib-encounter-01> ;
+     fhir:reference [ fhir:v "Encounter/zib-encounter-01" ] ;
+     fhir:display [ fhir:v "Consult voor gebroken been met Huisarts H. de Vries" ]
+  ] ; # 
+  fhir:date [ fhir:v "2018-01-11T11:43:40.0004456+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-01> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-01" ] ;
+     fhir:display [ fhir:v "Huisarts H. de Vries" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Deelcontact: RELATIEPROBLEMEN OUDERS/FAMILIE"] ; # 
+  fhir:section ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/code-icpc-1-nl"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/sid/icpc-1-nl"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Z20" ] ;
+           fhir:display [ fhir:v "RELATIEPROBLEMEN OUDERS/FAMILIE" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/journaalregeltypen"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "E" ] ;
+         fhir:display [ fhir:v "Evaluatie" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "additional" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">slapen gaat redelijk, regelmatig\n                angstaanvallen, is dan erg onrustig, dat geeft weer benauwdheid &quot;met hart&quot;</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://nictiz.nl/fhir/Bundle/nl-core-episodeofcare-1> ;
+       fhir:reference [ fhir:v "Bundle/nl-core-episodeofcare-1" ] ;
+       fhir:display [ fhir:v "Relatieproblemen ouders/familie" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.nl/fhir/NamingSystem/journaalregeltypen"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "P" ] ;
+         fhir:display [ fhir:v "Plan" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "additional" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">doorgaan oxazepam, allen zn.</div>"
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

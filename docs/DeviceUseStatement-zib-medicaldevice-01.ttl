@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DeviceUseStatement/zib-medicaldevice-01> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-medicaldevice-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Beschrijving apparaatgebruik. Subject: <a href=\"Patient/nl-core-patient-01\">Johan XXX_Helleman</a>. Status: actief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Apparaat niet zichtbaar (diep in de gehooringang)</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Apparaat/Systeem</th>\n                        <td>\n                            <a href=\"Device/zib-MedicalDeviceProduct-03\">Gehoorapparaat</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Deel van lichaam</th>\n                        <td>\n                            <span title=\"Ear Structure (117590005 - SNOMED CT)\">Ear Structure</span>\n                            <span title=\"Right (24028007 - SNOMED CT)\">Right</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Gebruiksperiode</th>\n                        <td>Vanaf 2007</td>\n                    </tr>\n                    <tr>\n                        <th>Indicatie</th>\n                        <td>\n                            <div>\n                                <a href=\"Condition/zib-problem-04\">Presbyacusis</a>\n                            </div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Organization"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Organization/nl-core-organization-03> ;
+       fhir:reference [ fhir:v "Organization/nl-core-organization-03" ] ;
+       fhir:display [ fhir:v "Test Medisch Centrum" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:whenUsed [
+     fhir:start [ fhir:v "2007"^^xsd:gYear ]
+  ] ; # 
+  fhir:device [
+     fhir:link <http://nictiz.nl/fhir/Device/zib-MedicalDeviceProduct-03> ;
+     fhir:reference [ fhir:v "Device/zib-MedicalDeviceProduct-03" ] ;
+     fhir:display [ fhir:v "Gehoorapparaat" ]
+  ] ; # 
+  fhir:indication ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-MedicalDevice-Problem"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-04> ;
+         fhir:reference [ fhir:v "Condition/zib-problem-04" ] ;
+         fhir:display [ fhir:v "Presbyacusis" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:24028007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "24028007" ] ;
+           fhir:display [ fhir:v "Right" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:117590005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "117590005" ] ;
+       fhir:display [ fhir:v "Ear Structure" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Apparaat niet zichtbaar (diep in de gehooringang)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

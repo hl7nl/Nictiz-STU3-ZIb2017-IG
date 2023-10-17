@@ -1,0 +1,137 @@
+{
+  "resourceType" : "Organization",
+  "id" : "nl-core-organization-05",
+  "meta" : {
+    "versionId" : "6",
+    "lastUpdated" : "2016-11-09T17:27:51.255+00:00",
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>OrganisatieId: 12341234 (AGB-Z), 12341234 (URA)</caption>\n                <tbody>\n                    <tr>\n                        <th>Naam</th>\n                        <td>Ziekenhuis Gooi en Overvecht<div>Alias: ZGO</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <div>\n                                <span title=\"Psychiatrie (0329 - AGB-medisch specialisme)\">Psychiatrie</span>\n                            </div>\n                            <div>\n                                <span title=\"Ziekenhuis (V4 - organization-type)\">Ziekenhuis</span>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Contactgegevens</th>\n                        <td>\n                            <a href=\"tel:030-1234567\">030-1234567</a> (Tel Werk)</td>\n                    </tr>\n                    <tr>\n                        <th>Adres</th>\n                        <td>Ventweg 12, 1000AA Utrecht, NLD (Werk)</td>\n                    </tr>\n                    <tr>\n                        <th colspan=\"2\">\n                            <hr/>\n                        </th>\n                    </tr>\n                    <tr>\n                        <th>\n                            <span title=\"Administrative (ADMIN - contactentity-type)\">Administrative</span>\n                        </th>\n                        <td>\n                            <div>Mevrouw Pietersen</div>\n                            <div>\n                                <a href=\"tel:030-1234567\">030-1234567</a> (Tel Werk)</div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.nl/fhir/NamingSystem/agb-z",
+    "value" : "12341234"
+  },
+  {
+    "system" : "http://fhir.nl/fhir/NamingSystem/ura",
+    "value" : "12341234"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.6.7",
+      "code" : "0329",
+      "display" : "Psychiatrie"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://nictiz.nl/fhir/NamingSystem/organization-type",
+      "code" : "V4",
+      "display" : "Ziekenhuis"
+    }]
+  }],
+  "name" : "Ziekenhuis Gooi en Overvecht",
+  "alias" : ["ZGO"],
+  "telecom" : [{
+    "system" : "phone",
+    "_system" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+            "code" : "LL",
+            "display" : "Vast telefoonnummer"
+          }]
+        }
+      }]
+    },
+    "value" : "030-1234567",
+    "use" : "work",
+    "_use" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+            "code" : "LL",
+            "display" : "Vast telefoonnummer"
+          }]
+        }
+      }]
+    }
+  }],
+  "address" : [{
+    "use" : "work",
+    "line" : ["Ventweg 12"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Ventweg"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "12"
+      }]
+    }],
+    "city" : "Utrecht",
+    "postalCode" : "1000AA",
+    "country" : "NLD",
+    "_country" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:oid:2.16.840.1.113883.2.4.4.16.34",
+            "code" : "6030",
+            "display" : "Nederland"
+          }]
+        }
+      }]
+    }
+  }],
+  "contact" : [{
+    "purpose" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/contactentity-type",
+        "code" : "ADMIN",
+        "display" : "Administrative"
+      }]
+    },
+    "name" : {
+      "text" : "Mevrouw Pietersen"
+    },
+    "telecom" : [{
+      "system" : "phone",
+      "_system" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+              "code" : "LL",
+              "display" : "Vast telefoonnummer"
+            }]
+          }
+        }]
+      },
+      "value" : "030-1234567",
+      "use" : "work",
+      "_use" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+              "code" : "LL",
+              "display" : "Vast telefoonnummer"
+            }]
+          }
+        }]
+      }
+    }]
+  }]
+}

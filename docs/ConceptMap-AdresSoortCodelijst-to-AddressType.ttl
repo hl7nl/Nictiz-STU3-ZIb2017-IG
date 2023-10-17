@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AdresSoortCodelijst-to-AddressType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000.html\">AdresSoortCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-address-type.html\">AddressType</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). </p><div><p>Maps AddressType codes as found in HCIM AddressInformation (release 2017) to Address.type codes as found in FHIR STU3</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-address-type.html\">AddressType</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>PST</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>postal</td><td/></tr><tr><td>HP</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>physical</td><td>HP: Primary home/officieel adres. physical: A physical address that can be visited. Use in conjunction with Address.use = home, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HP and Address.extension http://fhir.nl/fhir/StructureDefinition/nl-core-address-official = true to mark as primary</td></tr><tr><td>PHYS</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>physical</td><td>PHYS: Visit Address/Woon-/verblijfadres. physical: A physical address that can be visited. Use in conjunction with Address.use = home, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = PHYS</td></tr><tr><td>TMP</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>WP</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>HV</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>physical</td><td>HV: Vacation Home. physical: A physical address that can be visited. Use in conjunction with Address.use = temp, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HV</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/concept-bidirectional"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "AdresSoortCodelijst-to-AddressType"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Nictiz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@nictiz.nl" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps AddressType codes as found in HCIM AddressInformation (release 2017) to Address.type codes as found in FHIR STU3"] ; # 
+  fhir:source [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000"^^xsd:anyURI] ; # 
+  fhir:target [ fhir:v "http://hl7.org/fhir/ValueSet/address-type"^^xsd:anyURI] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://hl7.org/fhir/address-type"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "PST" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equal" ]
+         ] ) ;
+         fhir:code [ fhir:v "postal" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "relatedto" ]
+         ] ) ;
+         fhir:code [ fhir:v "physical" ] ;
+         fhir:equivalence [ fhir:v "relatedto" ] ;
+         fhir:comment [ fhir:v "HP: Primary home/officieel adres. physical: A physical address that can be visited. Use in conjunction with Address.use = home, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HP and Address.extension http://fhir.nl/fhir/StructureDefinition/nl-core-address-official = true to mark as primary" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "PHYS" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "physical" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "PHYS: Visit Address/Woon-/verblijfadres. physical: A physical address that can be visited. Use in conjunction with Address.use = home, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = PHYS" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TMP" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "WP" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "narrower" ]
+         ] ) ;
+         fhir:code [ fhir:v "physical" ] ;
+         fhir:equivalence [ fhir:v "narrower" ] ;
+         fhir:comment [ fhir:v "HV: Vacation Home. physical: A physical address that can be visited. Use in conjunction with Address.use = temp, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HV" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

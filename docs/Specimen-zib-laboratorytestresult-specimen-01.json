@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Specimen",
+  "id" : "zib-laboratorytestresult-specimen-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-LaboratoryTestResult-Specimen"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Specimen. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. </caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Blood (substance) (87612001 - SNOMED CT)\">Blood\n                                (substance)</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Inzameling</th>\n                        <td>2012-05-23T08:08:00+01:00</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "87612001",
+      "display" : "Blood (substance)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "collection" : {
+    "collectedDateTime" : "2012-05-23T08:08:00+01:00"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Organization",
+  "id" : "nl-core-organization-07",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Organisatie</caption>\n                <tbody>\n                    <tr>\n                        <th>Naam</th>\n                        <td>Zorg@Home B.V. | Vestiging van Ziekenhuis Gooi en Overvecht<div>Alias:\n                                Zorg@Home B.V.</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Thuiszorg (T2 - organization-type)\">Thuiszorg</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://nictiz.nl/fhir/NamingSystem/organization-type",
+      "code" : "T2",
+      "display" : "Thuiszorg"
+    }]
+  }],
+  "name" : "Zorg@Home B.V. | Vestiging van Ziekenhuis Gooi en Overvecht",
+  "alias" : ["Zorg@Home B.V."],
+  "partOf" : {
+    "reference" : "Organization/nl-core-organization-05",
+    "display" : "Ziekenhuis Gooi en Overvecht"
+  }
+}

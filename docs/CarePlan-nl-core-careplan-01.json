@@ -1,0 +1,95 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "nl-core-careplan-01",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-careplan"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgplan. Subject: <a href=\"Patient/nl-core-patient-02\">Paul\n                    XXX_Mesker</a>. Id: 123456789 (http://myexample.com/system/careplan), Status:\n                        actief<div>Intentie: plan</div>\n                    <div>Auteur: <a href=\"Practitioner/nl-core-practitioner-04\">Dr. D. de Vries</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Context</th>\n                        <td>\n                            <a href=\"EpisodeOfCare/nl-core-episodeofcare-01\">Gebroken been</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Periode</th>\n                        <td>Vanaf 2019-02-06</td>\n                    </tr>\n                    <tr>\n                        <th>Auteur</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-04\">Dr. D. de Vries</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Doel</th>\n                        <td>\n                            <a href=\"Goal/zib-treatmentdirective-01\">Volledig herstel met betrekking\n                                tot het kunnen lopen</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Activiteit</th>\n                        <td>\n                            <table>\n                                <tbody>\n                                    <tr>\n                                        <th>Detaildefinitie</th>\n                                        <td>\n                                            <a href=\"ProcedureRequest/zib-procedurerequest-02\">Aanvrager: Dr. J. Jansen</a>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Activiteit</th>\n                        <td>\n                            <table>\n                                <tbody>\n                                    <tr>\n                                        <th>Notitie</th>\n                                        <td>De interventie verliep zeer soepel.</td>\n                                    </tr>\n                                    <tr>\n                                        <th>Resultaat</th>\n                                        <td>\n                                            <a href=\"DiagnosticReport/zib-outcomeofcare-02\">Pijn is\n                                                onder controle</a>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td colspan=\"2\">\n                                            <table>\n                                                <caption>Details<div>Categorie: <span title=\"Nursing Procedure (9632001 - SNOMED CT)\">Nursing Procedure</span>, Status: voltooid</div>\n                                                </caption>\n                                                <tbody>\n                                                  <tr>\n                                                  <th>Code</th>\n                                                  <td>\n                                                  <span title=\"ontspanningstechniek van Benson (regime/therapie) (228567003 - SNOMED CT)\">ontspanningstechniek van Benson\n                                                  (regime/therapie)</span>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Schema</th>\n                                                  <td>\n                                                  <div>6 februari 2019 - 9 februari 2019, 2 maal per\n                                                  dag</div>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Reden</th>\n                                                  <td>\n                                                  <a href=\"Condition/zib-problem-09\">Gebroken\n                                                  Been</a>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Doel</th>\n                                                  <td>\n                                                  <a href=\"Goal/zib-treatmentobjective-02\">Pijn\n                                                  verminderen</a>\n                                                  </td>\n                                                  </tr>\n                                                  <tr>\n                                                  <th>Medisch hulpmiddel</th>\n                                                  <td>\n                                                  <a href=\"DeviceUseStatement/zib-wound-medicaldevice-01\">Verband</a>\n                                                  </td>\n                                                  </tr>\n                                                </tbody>\n                                            </table>\n                                        </td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "identifier" : [{
+    "system" : "http://myexample.com/system/careplan",
+    "value" : "123456789"
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-02",
+    "display" : "Paul XXX_Mesker"
+  },
+  "context" : {
+    "reference" : "EpisodeOfCare/nl-core-episodeofcare-01",
+    "display" : "Gebroken been"
+  },
+  "period" : {
+    "start" : "2019-02-06"
+  },
+  "author" : [{
+    "reference" : "Practitioner/nl-core-practitioner-04",
+    "display" : "Dr. D. de Vries"
+  }],
+  "goal" : [{
+    "reference" : "Goal/zib-treatmentdirective-01",
+    "display" : "Volledig herstel met betrekking tot het kunnen lopen"
+  }],
+  "activity" : [{
+    "reference" : {
+      "reference" : "ProcedureRequest/zib-procedurerequest-02",
+      "display" : "Aanvrager: Dr. J. Jansen"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/Comment",
+      "valueString" : "De interventie verliep zeer soepel."
+    }],
+    "outcomeReference" : [{
+      "reference" : "DiagnosticReport/zib-outcomeofcare-02",
+      "display" : "Pijn is onder controle"
+    }],
+    "detail" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice",
+        "valueReference" : {
+          "reference" : "DeviceUseStatement/zib-wound-medicaldevice-01",
+          "display" : "Verband"
+        }
+      }],
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "9632001",
+          "display" : "Nursing Procedure"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "228567003",
+          "display" : "ontspanningstechniek van Benson (regime/therapie)"
+        }]
+      },
+      "reasonReference" : [{
+        "reference" : "Condition/zib-problem-09",
+        "display" : "Gebroken Been"
+      }],
+      "goal" : [{
+        "reference" : "Goal/zib-treatmentobjective-02",
+        "display" : "Pijn verminderen"
+      }],
+      "status" : "completed",
+      "scheduledTiming" : {
+        "repeat" : {
+          "boundsPeriod" : {
+            "start" : "2019-02-06",
+            "end" : "2019-02-09"
+          },
+          "frequency" : 2,
+          "period" : 1,
+          "periodUnit" : "d"
+        }
+      }
+    }
+  }]
+}

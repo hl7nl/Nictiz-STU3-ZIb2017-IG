@@ -1,0 +1,100 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"http://hl7.org/fhir/STU3/valueset-condition-clinical.html\">Condition Clinical Status Codes</a> to <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000.html\">ProbleemStatusCodelijst</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the FHIR STU3 terminology associated with Condition.clinicalStatus to the HCIM Probleem release 2017 terminology for ProblemStatus</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-snomedct.html\">SNOMED CT (all versions)</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>active</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>55561003 (Active)</td></tr><tr><td>recurrence</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>55561003 (Active)</td></tr><tr><td>inactive</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>73425007 (Inactive)</td></tr><tr><td>remission</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>73425007 (Inactive)</td></tr><tr><td>resolved</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>73425007 (Inactive)</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+    "valueBoolean" : false
+  }],
+  "url" : "http://nictiz.nl/fhir/ConceptMap/Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst",
+  "version" : "1.3.15",
+  "name" : "Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst",
+  "title" : "HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps the FHIR STU3 terminology associated with Condition.clinicalStatus to the HCIM Probleem release 2017 terminology for ProblemStatus",
+  "purpose" : "To aid in mapping from FHIR STU3 Condition.clinicalStatus to ZIB Probleem value set ProbleemStatusCodelijst",
+  "copyright" : "CC0",
+  "sourceUri" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+  "targetUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000",
+  "group" : [{
+    "source" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "active",
+      "display" : "Active",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "55561003",
+        "display" : "Active",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "recurrence",
+      "display" : "Recurrence",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "subsumes"
+        }],
+        "code" : "55561003",
+        "display" : "Active",
+        "equivalence" : "subsumes"
+      }]
+    },
+    {
+      "code" : "inactive",
+      "display" : "Inactive",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "73425007",
+        "display" : "Inactive",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "remission",
+      "display" : "Remission",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "subsumes"
+        }],
+        "code" : "73425007",
+        "display" : "Inactive",
+        "equivalence" : "subsumes"
+      }]
+    },
+    {
+      "code" : "resolved",
+      "display" : "Resolved",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "subsumes"
+        }],
+        "code" : "73425007",
+        "display" : "Inactive",
+        "equivalence" : "subsumes"
+      }]
+    }]
+  }]
+}

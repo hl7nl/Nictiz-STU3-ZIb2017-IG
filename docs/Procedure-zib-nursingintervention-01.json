@@ -1,0 +1,95 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "zib-nursingintervention-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-03\">I. Jongeneel-de\n                        Haas</a>. Categorie: <span title=\"Nursing procedure (procedure) (9632001 - SNOMED CT)\">Nursing\n                        procedure (procedure)</span>, Status: voltooid<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-03\">Nurse G.Z.M. de Wit</a>\n                    </div>\n                </caption>\n                <tfoot>\n                    <tr>\n                        <th>Aangevraagd door</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-01\">Huisarts H. de Vries</a>\n                        </td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Dressing of wound (procedure) (182531007 - SNOMED CT)\">Dressing of wound (procedure)</span>\n                        </td>\n                        <td>\n                            <div>Uitgevoerd: 5 juni 2015 - 10 juni 2015</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Timing</th>\n                        <td>\n                            <div>eenmalig, max frequentie 2 maal per dag</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Deel van lichaam</th>\n                        <td>\n                            <span title=\"Knee region structure (body structure) (72696002 - SNOMED CT)\">Knee region structure (body structure)</span>\n                            <span title=\"Left (7771000 - SNOMED CT)\">Left</span>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Doel</th>\n                        <td>\n                            <a href=\"Goal/zib-wound-treatmentobjective-03\">Wondgenezing</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Reden</th>\n                        <td>\n                            <a href=\"Condition/zib-wound-problem-07\">Derdegraads brandwond linker\n                                knie</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Gebruikt item</th>\n                        <td>\n                            <div>TODO Reference without reference, display or identifier</div>\n                            <div>\n                                <a href=\"DeviceUseStatement/zib-wound-medicaldevice-01\">Wonddrain\n                                    (fysiek object)</a>\n                            </div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+    "valueReference" : {
+      "reference" : "Goal/zib-wound-treatmentobjective-03",
+      "display" : "Wondgenezing"
+    }
+  },
+  {
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-NursingIntervention-Requester",
+    "valueReference" : {
+      "reference" : "Practitioner/nl-core-practitioner-01",
+      "display" : "Huisarts H. de Vries"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/procedure-schedule",
+    "valueTiming" : {
+      "repeat" : {
+        "frequency" : 1,
+        "frequencyMax" : 2,
+        "period" : 1,
+        "periodUnit" : "d"
+      }
+    }
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "9632001",
+      "display" : "Nursing procedure (procedure)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "182531007",
+      "display" : "Dressing of wound (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "performedPeriod" : {
+    "start" : "2015-06-05",
+    "end" : "2015-06-10"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/nl-core-practitioner-03",
+      "display" : "Nurse G.Z.M. de Wit"
+    }
+  }],
+  "reasonReference" : [{
+    "reference" : "Condition/zib-wound-problem-07",
+    "display" : "Derdegraads brandwond linker knie"
+  }],
+  "bodySite" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "7771000",
+          "display" : "Left"
+        }]
+      }
+    }],
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "72696002",
+      "display" : "Knee region structure (body structure)"
+    }]
+  }],
+  "usedReference" : [{
+    "extension" : [{
+      "url" : "http://nictiz.nl/fhir/StructureDefinition/extension-medicaldevice",
+      "valueReference" : {
+        "reference" : "DeviceUseStatement/zib-wound-medicaldevice-01",
+        "display" : "Wonddrain (fysiek object)"
+      }
+    }]
+  }]
+}

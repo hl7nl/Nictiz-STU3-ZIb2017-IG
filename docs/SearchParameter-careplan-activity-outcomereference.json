@@ -1,0 +1,28 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "careplan-activity-outcomereference",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>careplan-activity-outcomereference</h2><p>Parameter <code>activity-outcomereference</code>:<code>reference</code></p><div><p>To alow a search (_include) resources that are use to describe outcomes of CarePlan activities..</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/STU3/careplan.html\">CarePlan</a></td></tr><tr><td>Expression</td><td><code>CarePlan.activity.outcomeReference</code></td></tr><tr><td>Multiples</td><td>The parameter cannot repeat or have multiple values</td></tr></table></div>"
+  },
+  "url" : "http://nictiz.nl/fhir/SearchParameter/careplan-activity-outcomereference",
+  "version" : "1.3.15",
+  "name" : "careplan-activity-outcomereference",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "purpose" : "To search on a outcome Resource, referenced from a CarePlan.activity.outcomeReference. Main purpose is to use this search parameter for including outcome related resouces in the result for a search on CarePlan.",
+  "code" : "activity-outcomereference",
+  "base" : ["CarePlan"],
+  "type" : "reference",
+  "description" : "To alow a search (_include) resources that are use to describe outcomes of CarePlan activities..",
+  "expression" : "CarePlan.activity.outcomeReference"
+}

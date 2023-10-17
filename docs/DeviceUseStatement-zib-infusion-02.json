@@ -1,0 +1,63 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "zib-infusion-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Infusion"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Beschrijving apparaatgebruik. Subject: <a href=\"Patient/nl-core-patient-03\">I. Jongeneel-de Haas</a>. Status: actief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Het systeem is op 2018-10-28 schoon gemaakt</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Apparaat/Systeem</th>\n                        <td>\n                            <a href=\"Device/zib-infusion-product-02\">Catheter, device (physical\n                                object)</a>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Lumen of lijn</th>\n                        <td>\n                            <div>Lijnstatus: <span title=\"Lopend (LNP - 2.16.840.1.113883.2.4.3.11.60.40.4.12.1)\">Lopend</span>\n                            </div>\n                            <div>Lumenlocatie: <span title=\"Proximal (40415009 - SNOMED CT)\">Proximal</span>\n                            </div>\n                            <div>Slotvloeistof: <a href=\"MedicationAdministration/lockfluid-example\">Lockfluid NaCl 0.9 %</a>\n                            </div>\n                            <div>Toedieningssysteem: <a href=\"MedicationAdministration/infusionfluid-example\">NaCl 0,9%\n                                    + medicatie 5000 E heparine (totaal 48ml)</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Gebruiksperiode</th>\n                        <td>Vanaf 2018-11-01</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "extension" : [{
+    "url" : "http://nictiz.nl/fhir/StructureDefinition/zib-Infusion-LumenOrLine",
+    "extension" : [{
+      "url" : "LineStatus",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.12.1",
+          "code" : "LNP",
+          "display" : "Lopend"
+        }]
+      }
+    },
+    {
+      "url" : "LumenLocation",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "40415009",
+          "display" : "Proximal"
+        }]
+      }
+    },
+    {
+      "url" : "LockFluid",
+      "valueReference" : {
+        "reference" : "MedicationAdministration/lockfluid-example",
+        "display" : "Lockfluid NaCl 0.9 %"
+      }
+    },
+    {
+      "url" : "AdministeringSystem",
+      "valueReference" : {
+        "reference" : "MedicationAdministration/infusionfluid-example",
+        "display" : "NaCl 0,9% + medicatie 5000 E heparine (totaal 48ml)"
+      }
+    }]
+  }],
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "I. Jongeneel-de Haas"
+  },
+  "whenUsed" : {
+    "start" : "2018-11-01"
+  },
+  "device" : {
+    "reference" : "Device/zib-infusion-product-02",
+    "display" : "Catheter, device (physical object)"
+  },
+  "note" : [{
+    "text" : "Het systeem is op 2018-10-28 schoon gemaakt"
+  }]
+}

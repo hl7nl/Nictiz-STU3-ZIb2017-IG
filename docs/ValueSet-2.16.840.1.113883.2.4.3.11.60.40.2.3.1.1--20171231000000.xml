@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Anders</td><td>Anders</td></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html"><code>http://hl7.org/fhir/v3/RoleCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTF">ADOPTF</a></td><td>Adoptive father</td><td>The player of the role (father) is a male who has taken the scoper (child) into their family through legal means and raises them as his own child.</td><td>Adoptievader</td><td>Adoptievader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTM">ADOPTM</a></td><td>Adoptive mother</td><td>The player of the role (father) is a female who has taken the scoper (child) into their family through legal means and raises them as her own child.</td><td>Adoptiemoeder</td><td>Adoptiemoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-AUNT">AUNT</a></td><td>Aunt</td><td>The player of the role is a sister of the scoping person's mother or father.</td><td>Tante</td><td>Tante</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BRO">BRO</a></td><td>Brother</td><td>The player of the role is a male sharing one or both parents in common with the scoping entity.</td><td>Broer</td><td>Broer</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BROINLAW">BROINLAW</a></td><td>Brother-in-law</td><td>The player of the role is: (1) a brother of the scoping person's spouse, or (2) the husband of the scoping person's sister, or (3) the husband of a sister of the scoping person's spouse.</td><td>Zwager</td><td>Zwager</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-COUSN">COUSN</a></td><td>Cousin</td><td>The player of the role is a relative of the scoping person descended from a common ancestor, such as a 	grandparent, by two or more steps in a diverging line.</td><td>Neef/nicht, zoon/dochter van oom/tante</td><td>Neef/nicht, zoon/dochter van oom/tante</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUC">DAUC</a></td><td>Daughter</td><td>Description: The player of the role is a female child (of any type) of scoping entity (parent)</td><td>Dochter</td><td>Dochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUINLAW">DAUINLAW</a></td><td>Daughter in-law</td><td>The player of the role is the wife of scoping person's son.</td><td>Schoondochter</td><td>Schoondochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DOMPART">DOMPART</a></td><td>Domestic partner</td><td>The player of the role cohabits with the scoping person but is not the scoping person's spouse.</td><td>Partner</td><td>Partner</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTH">FTH</a></td><td>Father</td><td>The player of the role is a male who begets or raises or nurtures the scoping entity (child).</td><td>Vader</td><td>Vader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHINLAW">FTHINLAW</a></td><td>Father-in-law</td><td>The player of the role is the father of the scoping person's husband or wife.</td><td>Schoonvader</td><td>Schoonvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUFOST">DAUFOST</a></td><td>Foster daughter</td><td>The player of the role is a female child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</td><td>Pleegdochter</td><td>Pleegdochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHFOST">FTHFOST</a></td><td>Foster father</td><td>The player of the role (parent) who is a male state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.<br/>
+                        The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.</td><td>Pleegvader</td><td>Pleegvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHFOST">MTHFOST</a></td><td>Foster mother</td><td>The player of the role (parent) who is a female state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.<br/>
+                        The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.</td><td>Pleegmoeder</td><td>Pleegmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONFOST">SONFOST</a></td><td>Foster son</td><td>The player of the role is a male child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</td><td>Pleegzoon</td><td>Pleegzoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDDAU">GRNDDAU</a></td><td>Granddaughter</td><td>The player of the role is a daughter of the scoping person's son or daughter.</td><td>Kleindochter</td><td>Kleindochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRFTH">GRFTH</a></td><td>Grandfather</td><td>The player of the role is the father of the scoping person's mother or father.</td><td>Opa</td><td>Opa</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRMTH">GRMTH</a></td><td>Grandmother</td><td>The player of the role is the mother of the scoping person's mother or father.</td><td>Oma</td><td>Oma</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDSON">GRNDSON</a></td><td>Grandson</td><td>The player of the role is a son of the scoping person's son or daughter.</td><td>Kleinzoon</td><td>Kleinzoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRFTH">GGRFTH</a></td><td>Great grandfather</td><td>The player of the role is the father of the scoping person's grandparent.</td><td>Overgrootvader</td><td>Overgrootvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRMTH">GGRMTH</a></td><td>Great grandmother</td><td>The player of the role is the mother of the scoping person's grandparent.</td><td>Overgrootmoeder</td><td>Overgrootmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-HUSB">HUSB</a></td><td>Husband</td><td>The player of the role is a man joined to a woman (scoping person) in marriage.</td><td>Echtgenoot</td><td>Echtgenoot</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTH">MTH</a></td><td>Mother</td><td>The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child).</td><td>Moeder</td><td>Moeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHINLAW">MTHINLAW</a></td><td>Mother-in-law</td><td>The player of the role is the mother of the scoping person's husband or wife.</td><td>Schoonmoeder</td><td>Schoonmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NEPHEW">NEPHEW</a></td><td>Nephew</td><td>The player of the role is a son of the scoping person's brother or sister or of the brother or sister of the 	scoping person's spouse.</td><td>Neef, zoon van broer/zus</td><td>Neef, zoon van broer/zus</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NIECE">NIECE</a></td><td>Niece</td><td>The player of the role is a daughter of the scoping person's brother or sister or of the brother or sister of the 	scoping person's spouse.</td><td>Nicht, dochter van broer/zus</td><td>Nicht, dochter van broer/zus</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SIS">SIS</a></td><td>Sister</td><td>The player of the role is a female sharing one or both parents in common with the scoping entity.</td><td>Zuster</td><td>Zuster</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SISINLAW">SISINLAW</a></td><td>Sister-in-law</td><td>The player of the role is: (1) a sister of the scoping person's spouse, or (2) the wife of the scoping person's brother, or (3) the wife of a brother of the scoping person's spouse.</td><td>Schoonzuster</td><td>Schoonzuster</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONC">SONC</a></td><td>Son</td><td>Description: The player of the role is a male child (of any type) of scoping entity (parent)</td><td>Zoon</td><td>Zoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONINLAW">SONINLAW</a></td><td>Son in-law</td><td>The player of the role is the husband of scoping person's daughter.</td><td>Schoonzoon</td><td>Schoonzoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPFTH">STPFTH</a></td><td>Stepfather</td><td>The player of the role is the husband of scoping person's mother and not the scoping person's natural father.</td><td>Stiefvader</td><td>Stiefvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPMTH">STPMTH</a></td><td>Stepmother</td><td>The player of the role is the wife of scoping person's father and not the scoping person's natural mother.</td><td>Stiefmoeder</td><td>Stiefmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-UNCLE">UNCLE</a></td><td>Uncle</td><td>The player of the role is a brother of the scoping person's mother or father.</td><td>Oom</td><td>Oom</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-WIFE">WIFE</a></td><td>Wife</td><td>The player of the role is a woman joined to a man (scoping person) in marriage.</td><td>Echtgenote</td><td>Echtgenote</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2017-12-31T00:00:00+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1"/>
+  </identifier>
+  <version value="1.3.15"/>
+  <name value="RelatieCodelijst"/>
+  <title value="RelatieCodelijst"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Registratie aan de bron"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.registratieaandebron.nl"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://zibs.nl"/>
+    </telecom>
+  </contact>
+  <description value="RelatieCodelijst"/>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="Other"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Anders"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/RoleCode"/>
+      <concept>
+        <code value="ADOPTF"/>
+        <display value="Adoptive father"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Adoptievader"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="ADOPTM"/>
+        <display value="Adoptive mother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Adoptiemoeder"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="AUNT"/>
+        <display value="Aunt"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Tante"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="BRO"/>
+        <display value="Brother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Broer"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="BROINLAW"/>
+        <display value="Brother-in-law"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Zwager"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="COUSN"/>
+        <display value="Cousin"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Neef/nicht, zoon/dochter van oom/tante"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="DAUC"/>
+        <display value="Daughter"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Dochter"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="DAUINLAW"/>
+        <display value="Daughter in-law"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Schoondochter"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="DOMPART"/>
+        <display value="Domestic partner"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Partner"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="FTH"/>
+        <display value="Father"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Vader"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="FTHINLAW"/>
+        <display value="Father-in-law"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Schoonvader"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="DAUFOST"/>
+        <display value="Foster daughter"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pleegdochter"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="FTHFOST"/>
+        <display value="Foster father"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pleegvader"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="MTHFOST"/>
+        <display value="Foster mother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pleegmoeder"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SONFOST"/>
+        <display value="Foster son"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Pleegzoon"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="GRNDDAU"/>
+        <display value="Granddaughter"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Kleindochter"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="GRFTH"/>
+        <display value="Grandfather"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Opa"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="GRMTH"/>
+        <display value="Grandmother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Oma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="GRNDSON"/>
+        <display value="Grandson"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Kleinzoon"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="GGRFTH"/>
+        <display value="Great grandfather"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Overgrootvader"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="GGRMTH"/>
+        <display value="Great grandmother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Overgrootmoeder"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="HUSB"/>
+        <display value="Husband"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Echtgenoot"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="MTH"/>
+        <display value="Mother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Moeder"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="MTHINLAW"/>
+        <display value="Mother-in-law"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Schoonmoeder"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="NEPHEW"/>
+        <display value="Nephew"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Neef, zoon van broer/zus"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="NIECE"/>
+        <display value="Niece"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Nicht, dochter van broer/zus"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SIS"/>
+        <display value="Sister"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Zuster"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SISINLAW"/>
+        <display value="Sister-in-law"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Schoonzuster"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SONC"/>
+        <display value="Son"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Zoon"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="SONINLAW"/>
+        <display value="Son in-law"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Schoonzoon"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="STPFTH"/>
+        <display value="Stepfather"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Stiefvader"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="STPMTH"/>
+        <display value="Stepmother"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Stiefmoeder"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="UNCLE"/>
+        <display value="Uncle"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Oom"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="WIFE"/>
+        <display value="Wife"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="Echtgenote"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

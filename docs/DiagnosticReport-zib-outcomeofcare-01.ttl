@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/DiagnosticReport/zib-outcomeofcare-01> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-outcomeofcare-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-OutcomeOfCare"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 27574-3}\">Skilled nursing treatment plan Progress note and attainment of goals (narrative)</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Johan J. XXX_Helleman (OFFICIAL)</b> male, DoB: 1964-07-25 ( id: 999911120 (use: OFFICIAL))</td></tr><tr><td>When For</td><td>2019-04-05 10:34:00+0100</td></tr></table><p><b>Report Details</b></p><p>Waarschijnlijk delier.</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/event-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://nictiz.nl/fhir/Procedure/zib-nursingintervention-01> ;
+       fhir:reference [ fhir:v "Procedure/zib-nursingintervention-01" ] ;
+       fhir:display [ fhir:v "Waarborgen van veiligheid." ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:27574-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "27574-3" ] ;
+       fhir:display [ fhir:v "Skilled nursing treatment plan Progress note and attainment of goals (narrative)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-04-05T10:34:00+01:00"^^xsd:dateTime] ; # 
+  fhir:conclusion [ fhir:v "Waarschijnlijk delier."] . # 
+
+# -------------------------------------------------------------------------------------
+

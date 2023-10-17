@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Observation",
+  "id" : "zib-generalmeasurement-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-GeneralMeasurement"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-03\">Irma\n                        Jongeneel-de Haas</a>. Status: definitief</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Waarschijnlijk delier</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td>2018-09-10</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"Score list delirium (record artifact) (11021000146103 - SNOMED CT)\">Score list delirium (record artifact)</span>\n                        </td>\n                        <td>7</td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "11021000146103",
+      "display" : "Score list delirium (record artifact)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-03",
+    "display" : "Irma Jongeneel-de Haas"
+  },
+  "effectiveDateTime" : "2018-09-10",
+  "valueCodeableConcept" : {
+    "text" : "7"
+  },
+  "comment" : "Waarschijnlijk delier"
+}

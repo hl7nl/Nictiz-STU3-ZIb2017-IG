@@ -1,0 +1,139 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.15.2--20171231000000",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.3.1</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>Type 1</td><td>Separate hard lumps, like nuts.</td><td>Losse harde keutels, zoals noten</td><td>Losse harde keutels, zoals noten</td></tr><tr><td>Type 2</td><td>Sausage-shaped but lumpy.</td><td>Als een worst, maar klonterig</td><td>Als een worst, maar klonterig</td></tr><tr><td>Type 3</td><td>Like sausage but with  cracks on its surface.</td><td>Als een worst, maar met barstjes aan de buitenkant</td><td>Als een worst, maar met barstjes aan de buitenkant</td></tr><tr><td>Type 4</td><td>Like sausage or snake, smooth and soft.</td><td>Als een worst of slang, glad en zacht</td><td>Als een worst of slang, glad en zacht</td></tr><tr><td>Type 5</td><td>Soft blobs with clear-cut edges</td><td>Zachte keutels met duidelijke randen</td><td>Zachte keutels met duidelijke randen</td></tr><tr><td>Type 6</td><td>Fluffy pieces with ragged edges</td><td>Zachte stukjes met gehavende randen</td><td>Zachte stukjes met gehavende randen</td></tr><tr><td>Type 7</td><td>Entirely liquid</td><td>Helemaal vloeibaar</td><td>Helemaal vloeibaar</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2017-12-31T00:00:00+02:00"
+    }
+  }],
+  "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.2--20171231000000",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://art-decor.org/ns/oids/vs",
+    "value" : "2.16.840.1.113883.2.4.3.11.60.40.2.4.15.2"
+  }],
+  "version" : "1.3.15",
+  "name" : "DefecatieConsistentieCodelijst",
+  "title" : "DefecatieConsistentieCodelijst",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Registratie aan de bron",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.registratieaandebron.nl"
+    },
+    {
+      "system" : "url",
+      "value" : "https://zibs.nl"
+    }]
+  }],
+  "description" : "DefecatieConsistentieCodelijst",
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.3.1",
+      "concept" : [{
+        "code" : "Type 1",
+        "display" : "Separate hard lumps, like nuts.",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Losse harde keutels, zoals noten"
+        }]
+      },
+      {
+        "code" : "Type 2",
+        "display" : "Sausage-shaped but lumpy.",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Als een worst, maar klonterig"
+        }]
+      },
+      {
+        "code" : "Type 3",
+        "display" : "Like sausage but with  cracks on its surface.",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Als een worst, maar met barstjes aan de buitenkant"
+        }]
+      },
+      {
+        "code" : "Type 4",
+        "display" : "Like sausage or snake, smooth and soft.",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Als een worst of slang, glad en zacht"
+        }]
+      },
+      {
+        "code" : "Type 5",
+        "display" : "Soft blobs with clear-cut edges",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Zachte keutels met duidelijke randen"
+        }]
+      },
+      {
+        "code" : "Type 6",
+        "display" : "Fluffy pieces with ragged edges",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Zachte stukjes met gehavende randen"
+        }]
+      },
+      {
+        "code" : "Type 7",
+        "display" : "Entirely liquid",
+        "designation" : [{
+          "language" : "nl-NL",
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "code" : "900000000000013009",
+            "display" : "Synonym"
+          },
+          "value" : "Helemaal vloeibaar"
+        }]
+      }]
+    }]
+  }
+}

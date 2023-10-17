@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="00f55a90-f7c6-4534-9739-af10932e1187"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://nictiz.nl/fhir/NamingSystem/00f55a90-f7c6-4534-9739-af10932e1187</td></tr><tr><td>Version</td><td>1.3.15</td></tr><tr><td>Name</td><td>UZI register abonneenummer (URA); zorgaanbieder die UZI passen aanvraagt</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>UZI registry member number (URA) for health care provider (person or organization) that requests UZI cards</p>
+</div></td></tr><tr><td>Publisher</td><td>HL7 Netherlands</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.nl/fhir/NamingSystem/ura</td><td>true</td></tr><tr><td>OID</td><td>2.16.528.1.1007.3.3</td><td>false</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="http://nictiz.nl/fhir/NamingSystem/00f55a90-f7c6-4534-9739-af10932e1187"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="1.3.15"/>
+  </extension>
+  <name value="UZI register abonneenummer (URA); zorgaanbieder die UZI passen aanvraagt"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2016-10-31T19:14:57.478+01:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Nictiz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="info@nictiz.nl"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="UZI registry member number (URA) for health care provider (person or organization) that requests UZI cards"/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://fhir.nl/fhir/NamingSystem/ura"/>
+    <preferred value="true"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="oid"/>
+    <value value="2.16.528.1.1007.3.3"/>
+    <preferred value="false"/>
+  </uniqueId>
+</NamingSystem>

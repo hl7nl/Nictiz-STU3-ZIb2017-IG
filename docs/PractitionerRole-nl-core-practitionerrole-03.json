@@ -1,0 +1,22 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "nl-core-practitionerrole-03",
+  "meta" : {
+    "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Zorgverlenerrol</caption>\n                <tbody>\n                    <tr>\n                        <th>Zorgverlener</th>\n                        <td>\n                            <div/>\n                            <div>\n                                <a href=\"Organization/nl-core-organization-03\">Test Medisch\n                                    Centrum</a>\n                            </div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Specialisme</th>\n                        <td>\n                            <span title=\"Medisch specialisten, dermatologie (0310 - AGB-medisch specialisme)\">Medisch specialisten, dermatologie</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "organization" : {
+    "reference" : "Organization/nl-core-organization-03",
+    "display" : "Test Medisch Centrum"
+  },
+  "specialty" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.2.4.6.7",
+      "code" : "0310",
+      "display" : "Medisch specialisten, dermatologie"
+    }]
+  }]
+}

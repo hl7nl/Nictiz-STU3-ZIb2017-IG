@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Goal/zib-treatmentobjective-01> a fhir:Goal ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-treatmentobjective-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-TreatmentObjective"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Doel. Subject: <a href=\"Patient/nl-core-patient-03\">I. Jongeneel-de\n                        Haas</a>. Categorie: <span title=\"Physiotherapy (physiotherapy - goal-category)\">Physiotherapy</span>,\n                    Status: geaccepteerd</caption>\n                <tbody>\n                    <tr>\n                        <th>Omschrijving</th>\n                        <td>Target is to be able to wash independently, with a slight\n                            impairment.</td>\n                    </tr>\n                    <tr>\n                        <th>Start</th>\n                        <td>2015-04-05</td>\n                    </tr>\n                    <tr>\n                        <th>Doel</th>\n                        <td>\n                            <span title=\"Zich wassen (d510 - sid/icf-nl)\">Zich wassen</span>\n                            <div>Details: <span title=\"MATIGE beperking/participatieprobleem (tamelijk) 25-49% (d510.3 - sid/icf-nl)\">MATIGE beperking/participatieprobleem (tamelijk) 25-49%</span>\n                            </div>\n                            <div>Streefdatum: 2016-04-05</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Probleem</th>\n                        <td>\n                            <a href=\"Condition/zib-problem-02\">Arthropathy (disorder)</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "accepted"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/goal-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "physiotherapy" ] ;
+       fhir:display [ fhir:v "Physiotherapy" ]
+     ] )
+  ] ) ; # 
+  fhir:description [
+     fhir:text [ fhir:v "Target is to be able to wash independently, with a slight impairment." ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-03> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-03" ] ;
+     fhir:display [ fhir:v "I. Jongeneel-de Haas" ]
+  ] ; # 
+  fhir:start [ fhir:v "2015-04-05"^^xsd:date] ; # 
+  fhir:target [
+     fhir:measure [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icf-nl"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "d510" ] ;
+         fhir:display [ fhir:v "Zich wassen" ]
+       ] )
+     ] ;
+     fhir:detail [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/sid/icf-nl"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "d510.3" ] ;
+         fhir:display [ fhir:v "MATIGE beperking/participatieprobleem (tamelijk) 25-49%" ]
+       ] )
+     ] ;
+     fhir:due [ fhir:v "2016-04-05"^^xsd:date ]
+  ] ; # 
+  fhir:addresses ( [
+     fhir:link <http://nictiz.nl/fhir/Condition/zib-problem-02> ;
+     fhir:reference [ fhir:v "Condition/zib-problem-02" ] ;
+     fhir:display [ fhir:v "Arthropathy (disorder)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

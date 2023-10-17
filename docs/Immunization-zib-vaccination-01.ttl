@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Immunization/zib-vaccination-01> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "zib-vaccination-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/zib-Vaccination"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Vaccinatie. Patiënt: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Status: voltooid</caption>\n                <tfoot>\n                    <tr>\n                        <td colspan=\"2\">Bezoek aan Guatemala</td>\n                    </tr>\n                </tfoot>\n                <tbody>\n                    <tr>\n                        <th>\n                            <span title=\"hepatitis A immunoglobulin (J06BB11 - http://www.whocc.no/atc)\">hepatitis A immunoglobulin</span>\n                        </th>\n                        <td>\n                            <div>Toegediend: ja (1999-03-09)</div>\n                            <div>Gemeld door uitvoerende: nee</div>\n                        </td>\n                    </tr>\n                    <tr>\n                        <th>Zorgverlener</th>\n                        <td>\n                            <a href=\"Practitioner/nl-core-practitioner-01\">Huisarts H. de Vries</a>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:notGiven [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J06BB11" ] ;
+       fhir:display [ fhir:v "hepatitis A immunoglobulin" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-01> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-01" ] ;
+     fhir:display [ fhir:v "Johan XXX_Helleman" ]
+  ] ; # 
+  fhir:date [ fhir:v "1999-03-09"^^xsd:date] ; # 
+  fhir:primarySource [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:practitioner ( [
+     fhir:actor [
+       fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-01> ;
+       fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-01" ] ;
+       fhir:display [ fhir:v "Huisarts H. de Vries" ]
+     ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Bezoek aan Guatemala" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

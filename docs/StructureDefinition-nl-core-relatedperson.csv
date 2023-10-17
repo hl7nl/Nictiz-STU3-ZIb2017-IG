@@ -1,0 +1,159 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: HCIM ContactPerson-v1.2(2015EN)","Mapping: HCIM ContactPerson-v3.0(2016EN)","Mapping: HCIM ContactPerson-v3.1(2017EN)","Mapping: HCIM Patient-v2.0.1(2015EN)","Mapping: HCIM Patient-v3.0(2016EN)","Mapping: HCIM ContactInformation-v1.0(2017EN)","Mapping: HCIM Payer-v1.2(2015EN)","Mapping: HCIM Payer-v3.0(2016EN)","Mapping: HCIM Payer-v3.1(2017EN)","Mapping: HCIM BasicElements-v1.0(2017EN)","Mapping: RIM Mapping","Mapping: W5 Mapping","Mapping: HL7 v2 Mapping"
+"RelatedPerson","RelatedPerson","","","",0,*,"","","","null {[]} {[]}
+","An person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"RelatedPerson",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-1:If the resource is contained in another resource, it SHALL NOT contain any narrative {contained.text.empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource {contained.where(('#'+id in %resource.descendants().reference).not()).empty()}","NL-CM:3.1.1","NL-CM:3.1.1","NL-CM:3.1.1","NL-CM:0.0.5","NL-CM:0.0.10","NL-CM:0.0.13","Entity. Role, or Act","role","administrative.individual"
+"RelatedPerson.id","RelatedPerson.id","","","",0,1,"","","Y","id {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"RelatedPerson.meta","RelatedPerson.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"",""
+"RelatedPerson.implicitRules","RelatedPerson.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"",""
+"RelatedPerson.language","RelatedPerson.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"extensible","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"",""
+"RelatedPerson.text","RelatedPerson.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded in formation is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"dom-1
+","","Act.text?"
+"RelatedPerson.contained","RelatedPerson.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"RelatedPerson.extension","RelatedPerson.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"",""
+"RelatedPerson.extension:role","RelatedPerson.extension","role","Rol
+","",0,*,"","","","Extension {[CanonicalType[http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role]]} {[]}
+","Role","Defines the role of the contact in relation to the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:3.1.2","NL-CM:3.1.2","NL-CM:3.1.2","n/a","N/A"
+"RelatedPerson.extension:role.id","RelatedPerson.extension.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"RelatedPerson.extension:role.extension","RelatedPerson.extension.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","","n/a"
+"RelatedPerson.extension:role.url","RelatedPerson.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://fhir.nl/fhir/StructureDefinition/nl-core-relatedperson-role""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"RelatedPerson.extension:role.value[x]","RelatedPerson.extension.value[x]","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","","N/A"
+"RelatedPerson.extension:role.value[x]:valueCodeableConcept","RelatedPerson.extension.value[x]","valueCodeableConcept","Rol
+","",1,1,"","","","CodeableConcept {[]} {[]}
+","Role","Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).","","","","","","","","","",,"extensible","","http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000","",,,,"Extension.value[x]",0,1,"","","NL-CM:3.1.2","N/A"
+"RelatedPerson.modifierExtension","RelatedPerson.modifierExtension","","extensions
+user content","",0,*,"","Y","","Extension {[]} {[]}
+","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","","N/A"
+"RelatedPerson.identifier","RelatedPerson.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+","A human identifier for this person","Identifier for a person within a particular scope.","","People are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the patient. Examples are national person identifier and local identifier.","","","","","","","",,,,,"",,,,"RelatedPerson.identifier",0,*,"","","NL-CM:0.0.6",".id","id","NK1-33"
+"RelatedPerson.active","RelatedPerson.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
+","Whether this related person's record is in active use","Whether this related person record is in active use.","This element is labeled as a modifier because it may be used to mark that the resource was created in error.","Need to be able to mark a related person record as not to be used, such as if it was created in error.","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"RelatedPerson.active",0,1,"","",".statusCode","status"
+"RelatedPerson.patient","RelatedPerson.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://fhir.nl/fhir/StructureDefinition/nl-core-patient]]}
+","The patient this person is related to","The patient this person is related to.","","We need to know which patient this RelatedPerson is related to.","","","","","","","",,,,,"",,,,"RelatedPerson.patient",1,1,"","","NL-CM:0.0.11","scoper[classCode=PSN|ANM and determinerCode='INSTANCE']/playedRole[classCode='PAT']/id","PID-3"
+"RelatedPerson.relationship","RelatedPerson.relationship","","Relatie
+","",0,1,"","","Y","CodeableConcept {[]} {[]}
+","Relationship","Defines the contact’s familial relationship to the patient.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"extensible","","http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000","",,,,"RelatedPerson.relationship",0,1,"","","NL-CM:3.1.3","NL-CM:3.1.3","NL-CM:3.1.3","code","class","NK1-3"
+"RelatedPerson.name","RelatedPerson.name","","Naamgegevens
+","",0,*,"","","","HumanName {[CanonicalType[http://fhir.nl/fhir/StructureDefinition/nl-core-humanname]]} {[]}
+","NameInformation","Full name of the contact.","Dutch names require that certain name parts are separately communicable. For this reason, extensions are added onto the base HumanName element to mark the meaning of each part. A Dutch HumanName is still a proper FHIR HumanName; however, there might be an incompatibilty with the default FHIR mechanism for communicating given names. See the compatibility note below for more information.
+
+The extension elements cover birth name (NL: eigennaam / geslachtsnaam) and partner/spouse name. Both may have a prefix (NL: voorvoegsel). When a person marries, he or she may keep their own name, assume the partner name, append the partner name to their own name, or the other way around.
+
+**Incompatibility note**: It has come to light that this specification deviates from the way that the HumanName datatype is normally used. This will be fixed in a future release. However, current implementations should be aware of the special considerations regarding the use of this specification. 
+
+The issue at hand is the way alternative representations of a name, like initials or a nickname, are communicated. Normally this is done using multiple HumanName instances, which are differentiated using the `.use` element. However, this specification allows for including all alternative representations in the _same_ HumanName instance, with the expectation that the extensions provide enough information for recieving systems to differentiate them. However, this means that contrary to the normal usage of this datatype, repetitions of `.given` names cannot be concatenated to get the full list of given names; the list might be a mix of full names, nicknames and initials.
+
+Since multiple implementations are based on this specification, sending systems are advised (but not required) to keep the approach with one HumanName instance, while recieving systems should be able to handle this one-instance approach. More specifically:
+
+* Sending and recieving systems SHOULD always use the specified extensions when using this datatype.
+* Sending systems are encouraged to populate the `.text` element to unambigiously communicate the patient name.
+* Sending systems are encouraged to send either the full given names or the initials, but not both. This alleviates the duplication of names in `.given`.
+* When a sending system uses the current one-instance approach for communicating multiple representations, `.use` MAY NOT be populated. After all, it is not possible to select a single `.use` when the instance contains different representations.
+* When a recieving system interprets the instance as the single-instance-multiple-representations approach, the `.given` names marked as initials SHOULD be interpreted as alternatives to the full given names. Note the underlying HCIM expects both the _list_ of full names and _list_ of initials to be a single string; there's no match for an initial to a full name. The instance SHOULD be regarded as using this approach when:
+  * They encounter a single instance
+  * And the `.use` element is absent
+  * And all the name parts are differentiated using the specified extensions
+* In any other circumstance, recieving systems SHOULD interpret the usage as the normal use.
+
+Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jongeneel-de Haas:
+
+* `.family` = ""Jongeneel-de Haas""
+* `.given` = ""Irma"" (with `.given:iso21090EnQualifier` = _BR_)
+* `.family:humannameOwnName` = ""Jongeneel""
+* `.family:humannamePartnerPrefix` = ""de ""
+* `.family:humannamePartnerName` = ""Haas""","Related persons need to be identified by name, but it is uncommon to need details about multiple other names for that person.","","","","","<valueHumanName xmlns=""http://hl7.org/fhir"">
+  <extension url=""http://hl7.org/fhir/StructureDefinition/humanname-assembly-order"">
+    <valueCode value=""NL4""/>
+  </extension>
+  <text value=""Irma Jongeneel-de Haas""/>
+  <family value=""Jongeneel-de Haas"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/humanname-own-name"">
+      <valueString value=""Jongeneel""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix"">
+      <valueString value=""de""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/humanname-partner-name"">
+      <valueString value=""Haas""/>
+    </extension>
+  </family>
+  <given value=""Irma""/>
+</valueHumanName>","","",,,,,"",,,,"RelatedPerson.name",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+nl-core-humanname-1:if you specify a prefix for an own name then an own name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()}nl-core-humanname-2:if you specify a voorvoegsel for a partner name then a partner name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()}","NL-CM:3.1.4","NL-CM:3.1.4","NL-CM:3.1.4","NL-CM:1.1.5","NL-CM:1.1.5","NL-CM:1.1.5","n/a","EN (actually, PN)","XPN"
+"RelatedPerson.telecom","RelatedPerson.telecom","","Contactgegevens
+","",0,*,"","","","ContactPoint {[CanonicalType[http://fhir.nl/fhir/StructureDefinition/nl-core-contactpoint]]} {[]}
+","ContactInformation","Contact information includes a person's telephone numbers en e-mail addresses.","Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","<valueContactPoint xmlns=""http://hl7.org/fhir"">
+  <system value=""phone""/>
+  <value value=""+31611234567""/>
+  <use value=""work""/>
+</valueContactPoint>","","",,,,,"",,,,"RelatedPerson.telecom",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}","NL-CM:3.1.6","NL-CM:3.1.6","NL-CM:3.1.6","NL-CM:0.1.5","NL-CM:0.1.5","NL-CM:20.6.1","NL-CM:20.6.4","NL-CM:1.1.12","NL-CM:1.1.12","NL-CM:1.1.12","n/a","TEL","XTN"
+"RelatedPerson.gender","RelatedPerson.gender","","","",0,1,"","","Y","code {[]} {[]}
+","male | female | other | unknown","Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.","","Needed for identification of the person, in combination with (at least) name and birth date.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"RelatedPerson.gender",0,1,"","","administrativeGender","NK1-15"
+"RelatedPerson.birthDate","RelatedPerson.birthDate","","","",0,1,"","","Y","date {[]} {[]}
+","The date on which the related person was born","The date on which the related person was born.","","","","","","","","","",,,,,"",,,,"RelatedPerson.birthDate",0,1,"","","player.birthTime"
+"RelatedPerson.address","RelatedPerson.address","","AdresInformatie
+Adresgegevens","",0,*,"","","","Address {[CanonicalType[http://fhir.nl/fhir/StructureDefinition/nl-core-address]]} {[]}
+","AddressInformation","There is a variety of postal address formats defined around the world. This format defines a superset that is the basis for all addresses around the world and adds all relevant components to express Dutch addresses.
+
+A Dutch Address is a proper FHIR Address. Systems that do not understand any of the extensions, will be able to render and work with a Dutch address. Dutch addresses make certain address parts separately communicable. These parts are required for use in true Dutch systems when dealing with Dutch addresses, but may not have value for international systems when information gets sent abroad.
+
+To have true compatibility an implementer SHOULD use the core Address parts as intended. To have addresses work for Dutch context, the implementer SHOULD in addition use the extension elements.
+
+The HCIM defines certain address types in the AdresSoortCodelijst. These do not all have a one to one mapping in the FHIR Address datatype. The following explains how to deal with that. In addition, there are the ConceptMaps http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse and http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType to define this relationship
+
+HCIM Postal Address maps to Address.type 'postal'; 
+
+HCIM Primary Home Address maps to Address.extension:official 'true' + Address.use 'home' + Address.use.extension 'HP'; 
+
+HCIM Visit Address (Woon-/verblijfadres) maps to Address.use 'home' + Address.type 'physical' + Address.use.extension 'PHYS'; 
+
+HCIM Temporary Address maps to Address.use 'temp'; 
+
+HCIM Work Place Address maps to Address.use 'work';  
+
+HCIM Vacation Home Address maps to Address.use 'temp' + Address.use.extension 'HV'.
+
+If Address.type is ""both"" then this is to be understood as a dual purpose address (postal and physical). Systems that support importing it like this are encouraged to do so, otherwise they may need to import this as two separate addresses.","Note: address is for postal addresses, not physical locations.","Need to keep track where the related person can be contacted per postal mail or visited.","","","","","<valueAddress xmlns=""http://hl7.org/fhir"">
+  <extension url=""http://fhir.nl/fhir/StructureDefinition/nl-core-address-official"">
+    <valueBoolean value=""false""/>
+  </extension>
+  <use value=""temp"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-AD-use"">
+      <valueCode value=""HV""/>
+    </extension>
+  </use>
+  <line value=""Binnenkant 12A Hoog""/>
+  <city value=""Amsterdam""/>
+  <state value=""NH""/>
+  <postalCode value=""1000AA""/>
+  <country value=""NLD""/>
+</valueAddress>","","",,,,,"",,,,"RelatedPerson.address",0,*,"ele-1
+nl-streetname-if-official-and-other-line-parts","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+nl-streetname-if-official-and-other-line-parts:Address.streetName in an official address SHALL have a value if one of houseNumber|buildingNumberSuffix|additionalLocator has a value {(extension.where(url = 'http://fhir.nl/fhir/StructureDefinition/nl-core-address-official').where(value = true)).empty() or (line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty().not() and (line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix').empty().not() or line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty().not()))}","NL-CM:3.1.5","NL-CM:3.1.5","NL-CM:3.1.5","NL-CM:1.1.17","NL-CM:1.1.17","NL-CM:1.1.17","n/a","AD","XAD"
+"RelatedPerson.photo","RelatedPerson.photo","","","",0,*,"","","","Attachment {[]} {[]}
+","Image of the person","Image of the person.","","Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"RelatedPerson.photo",0,*,"","","player[classCode='PSN' and determinerCode='INSTANCE']/desc","OBX-5 - needs a profile"
+"RelatedPerson.period","RelatedPerson.period","","","",0,1,"","","","Period {[]} {[]}
+","Period of time that this relationship is considered valid","The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown.","","","","","","","","","",,,,,"",,,,"RelatedPerson.period",0,1,"","","NL-CM:0.0.14",".effectiveTime","when.done"

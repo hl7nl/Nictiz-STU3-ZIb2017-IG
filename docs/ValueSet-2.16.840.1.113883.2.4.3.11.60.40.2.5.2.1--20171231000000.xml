@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.2.4.3.11.60.40.2.5.2.1--20171231000000"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://snomed.info/id/281601009">281601009</a></td><td>urological stoma</td><td>urostoma</td><td>urostoma</td></tr><tr><td><a href="http://snomed.info/id/261072008">261072008</a></td><td>double-barrelled colostomy</td><td>dubbelloops colostoma</td><td>dubbelloops colostoma</td></tr><tr><td><a href="http://snomed.info/id/261030007">261030007</a></td><td>end colostomy stoma</td><td>eindstandige colostoma</td><td>eindstandige colostoma</td></tr><tr><td><a href="http://snomed.info/id/311413000">311413000</a></td><td>loop ileostomy stoma</td><td>dubbelloops ileostoma</td><td>dubbelloops ileostoma</td></tr><tr><td><a href="http://snomed.info/id/311412005">311412005</a></td><td>end ileostomy stoma</td><td>eindstandige ileostoma</td><td>eindstandige ileostoma</td></tr><tr><td><a href="http://snomed.info/id/280361007">280361007</a></td><td>tracheostomy stoma</td><td>tracheostoma</td><td>tracheostoma</td></tr><tr><td><a href="http://snomed.info/id/29241000146106">29241000146106</a></td><td>malone stoma</td><td>stoma t.b.v. Malone procedure</td><td>stoma t.b.v. Malone procedure</td></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
+                        
+                           Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>anders</td><td>anders</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2017-12-31T00:00:00+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.1--20171231000000"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.2.4.3.11.60.40.2.5.2.1"/>
+  </identifier>
+  <version value="1.3.15"/>
+  <name value="StomaTypeCodelijst"/>
+  <title value="StomaTypeCodelijst"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T13:17:30+02:00"/>
+  <publisher value="HL7 Netherlands"/>
+  <contact>
+    <name value="Registratie aan de bron"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.registratieaandebron.nl"/>
+    </telecom>
+    <telecom>
+      <system value="url"/>
+      <value value="https://zibs.nl"/>
+    </telecom>
+  </contact>
+  <description value="StomaTypeCodelijst"/>
+  <immutable value="false"/>
+  <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="281601009"/>
+        <display value="urological stoma"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="urostoma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="261072008"/>
+        <display value="double-barrelled colostomy"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="dubbelloops colostoma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="261030007"/>
+        <display value="end colostomy stoma"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="eindstandige colostoma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="311413000"/>
+        <display value="loop ileostomy stoma"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="dubbelloops ileostoma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="311412005"/>
+        <display value="end ileostomy stoma"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="eindstandige ileostoma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="280361007"/>
+        <display value="tracheostomy stoma"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="tracheostoma"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29241000146106"/>
+        <display value="malone stoma"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="stoma t.b.v. Malone procedure"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/v3/NullFlavor"/>
+      <concept>
+        <code value="OTH"/>
+        <display value="other"/>
+        <designation>
+          <language value="nl-NL"/>
+          <use>
+            <system value="http://snomed.info/sct"/>
+            <code value="900000000000013009"/>
+            <display value="Synonym"/>
+          </use>
+          <value value="anders"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

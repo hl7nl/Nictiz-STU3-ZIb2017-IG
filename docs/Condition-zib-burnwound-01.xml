@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="zib-burnwound-01"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/zib-BurnWound"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="zib-burnwound-01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;zib-burnwound-01&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-zib-BurnWound.html">HCIM BurnWound</a></p></div><p><b>Date of last dressing change</b>: 2019-03-07</p><p><b>HCIM BurnWound Extent</b>: 1 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: unknown</p><p><b>code</b>: Burn (disorder) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#125666000)</span></p><p><b>bodySite</b>: structuur van oppervlak van dorsum manus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#362746006)</span></p><p><b>subject</b>: <a href="Patient-nl-core-patient-01.html">Patient/nl-core-patient-01: Johan XXX_Helleman</a> &quot; XXX_HELLEMAN&quot;</p><p><b>onset</b>: 2018-08-16</p><h3>Stages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Summary</b></td></tr><tr><td style="display: none">*</td><td>3e graad <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#262588000)</span></td></tr></table><p><b>note</b>: Werkongeval in de hoogovens IJmuiden.</p></div>
+  </text>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/condition-dateOfLastDressingChange">
+    <valueDate value="2019-03-07"/>
+  </extension>
+  <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-BurnWound-Extent">
+    <valueQuantity>
+      <value value="1"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </extension>
+  <clinicalStatus value="active"/>
+  <verificationStatus value="unknown"/>
+  <code>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-BurnWound-BurnWoundType">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="105594005"/>
+          <display value="Thermische brandwond"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="125666000"/>
+      <display value="Burn (disorder)"/>
+    </coding>
+  </code>
+  <bodySite>
+    <extension url="http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="24028007"/>
+          <display value="Right"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="362746006"/>
+      <display value="structuur van oppervlak van dorsum manus"/>
+    </coding>
+  </bodySite>
+  <subject>
+    <reference value="Patient/nl-core-patient-01"/>
+    <display value="Johan XXX_Helleman"/>
+  </subject>
+  <onsetDateTime value="2018-08-16"/>
+  <stage>
+    <summary>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="262588000"/>
+        <display value="3e graad"/>
+      </coding>
+    </summary>
+  </stage>
+  <note>
+    <text value="Werkongeval in de hoogovens IJmuiden."/>
+  </note>
+</Condition>

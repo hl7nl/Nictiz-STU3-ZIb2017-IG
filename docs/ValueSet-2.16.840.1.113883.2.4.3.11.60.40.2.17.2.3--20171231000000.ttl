@@ -1,0 +1,358 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://hl7.org/fhir/StructureDefinition/shareablevalueset"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://nictiz.nl/fhir/NamingSystem/organization-type</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td>V4</td><td>Ziekenhuis</td><td>Ziekenhuis</td><td>Ziekenhuis</td></tr><tr><td>V5</td><td>Universitair Medisch Centrum</td><td>Universitair Medisch Centrum</td><td>Universitair Medisch Centrum</td></tr><tr><td>V6</td><td>Algemeen ziekenhuis</td><td>Algemeen ziekenhuis</td><td>Algemeen ziekenhuis</td></tr><tr><td>Z4</td><td>Zelfstandig behandelcentrum</td><td>Zelfstandig behandelcentrum</td><td>Zelfstandig behandelcentrum</td></tr><tr><td>Z5</td><td>Diagnostisch centrum</td><td>Diagnostisch centrum</td><td>Diagnostisch centrum</td></tr><tr><td>B2</td><td>Echocentrum</td><td>Echocentrum</td><td>Echocentrum</td></tr><tr><td>X3</td><td>Verplegings- of verzorgingsinstelling</td><td>Verplegings- of verzorgingsinstelling</td><td>Verplegings- of verzorgingsinstelling</td></tr><tr><td>R5</td><td>Verpleeghuis</td><td>Verpleeghuis</td><td>Verpleeghuis</td></tr><tr><td>M1</td><td>Verzorgingstehuis</td><td>Verzorgingstehuis</td><td>Verzorgingstehuis</td></tr><tr><td>J8</td><td>Openbare apotheek</td><td>Openbare apotheek</td><td>Openbare apotheek</td></tr><tr><td>K9</td><td>Zelfstandig opererende ziekenhuisapotheek</td><td>Zelfstandig opererende ziekenhuisapotheek</td><td>Zelfstandig opererende ziekenhuisapotheek</td></tr><tr><td>Z3</td><td>Huisartspraktijk (zelfstandig of groepspraktijk)</td><td>Huisartspraktijk (zelfstandig of groepspraktijk)</td><td>Huisartspraktijk (zelfstandig of groepspraktijk)</td></tr><tr><td>K3</td><td>Apotheekhoudende huisartspraktijk</td><td>Apotheekhoudende huisartspraktijk</td><td>Apotheekhoudende huisartspraktijk</td></tr><tr><td>N6</td><td>Huisartsenpost (t.b.v. dienstwaarneming)</td><td>Huisartsenpost (t.b.v. dienstwaarneming)</td><td>Huisartsenpost (t.b.v. dienstwaarneming)</td></tr><tr><td>L1</td><td>Laboratorium</td><td>Laboratorium</td><td>Laboratorium</td></tr><tr><td>P4</td><td>Polikliniek (als onderdeel van een ziekenhuis)</td><td>Polikliniek (als onderdeel van een ziekenhuis)</td><td>Polikliniek (als onderdeel van een ziekenhuis)</td></tr><tr><td>R8</td><td>Revalidatiecentrum</td><td>Revalidatiecentrum</td><td>Revalidatiecentrum</td></tr><tr><td>P6</td><td>Preventieve gezondheidszorg</td><td>Preventieve gezondheidszorg</td><td>Preventieve gezondheidszorg</td></tr><tr><td>G5</td><td>Geestelijke Gezondheidszorg</td><td>Geestelijke Gezondheidszorg</td><td>Geestelijke Gezondheidszorg</td></tr><tr><td>G6</td><td>Verstandelijk gehandicaptenzorg</td><td>Verstandelijk gehandicaptenzorg</td><td>Verstandelijk gehandicaptenzorg</td></tr><tr><td>T2</td><td>Thuiszorg</td><td>Thuiszorg</td><td>Thuiszorg</td></tr><tr><td>JGZ</td><td>Jeugdgezondheidszorg</td><td>Jeugdgezondheidszorg</td><td>Jeugdgezondheidszorg</td></tr><tr><td>G3</td><td>Verloskundigenpraktijk</td><td>Verloskundigenpraktijk</td><td>Verloskundigenpraktijk</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2017-12-31T00:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://art-decor.org/ns/oids/vs"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.3.15"] ; # 
+  fhir:name [ fhir:v "OrganisatieTypeCodelijst"] ; # 
+  fhir:title [ fhir:v "OrganisatieTypeCodelijst"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Registratie aan de bron" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.registratieaandebron.nl" ]
+     ] [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://zibs.nl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "OrganisatieTypeCodelijst"] ; # 
+  fhir:immutable [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://nictiz.nl/fhir/NamingSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "V4" ] ;
+         fhir:display [ fhir:v "Ziekenhuis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Ziekenhuis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "V5" ] ;
+         fhir:display [ fhir:v "Universitair Medisch Centrum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Universitair Medisch Centrum" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "V6" ] ;
+         fhir:display [ fhir:v "Algemeen ziekenhuis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Algemeen ziekenhuis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "Z4" ] ;
+         fhir:display [ fhir:v "Zelfstandig behandelcentrum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Zelfstandig behandelcentrum" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "Z5" ] ;
+         fhir:display [ fhir:v "Diagnostisch centrum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Diagnostisch centrum" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "B2" ] ;
+         fhir:display [ fhir:v "Echocentrum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Echocentrum" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "X3" ] ;
+         fhir:display [ fhir:v "Verplegings- of verzorgingsinstelling" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Verplegings- of verzorgingsinstelling" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "R5" ] ;
+         fhir:display [ fhir:v "Verpleeghuis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Verpleeghuis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "M1" ] ;
+         fhir:display [ fhir:v "Verzorgingstehuis" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Verzorgingstehuis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "J8" ] ;
+         fhir:display [ fhir:v "Openbare apotheek" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Openbare apotheek" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "K9" ] ;
+         fhir:display [ fhir:v "Zelfstandig opererende ziekenhuisapotheek" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Zelfstandig opererende ziekenhuisapotheek" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "Z3" ] ;
+         fhir:display [ fhir:v "Huisartspraktijk (zelfstandig of groepspraktijk)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Huisartspraktijk (zelfstandig of groepspraktijk)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "K3" ] ;
+         fhir:display [ fhir:v "Apotheekhoudende huisartspraktijk" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Apotheekhoudende huisartspraktijk" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "N6" ] ;
+         fhir:display [ fhir:v "Huisartsenpost (t.b.v. dienstwaarneming)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Huisartsenpost (t.b.v. dienstwaarneming)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "L1" ] ;
+         fhir:display [ fhir:v "Laboratorium" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Laboratorium" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "P4" ] ;
+         fhir:display [ fhir:v "Polikliniek (als onderdeel van een ziekenhuis)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Polikliniek (als onderdeel van een ziekenhuis)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "R8" ] ;
+         fhir:display [ fhir:v "Revalidatiecentrum" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Revalidatiecentrum" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "P6" ] ;
+         fhir:display [ fhir:v "Preventieve gezondheidszorg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Preventieve gezondheidszorg" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "G5" ] ;
+         fhir:display [ fhir:v "Geestelijke Gezondheidszorg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Geestelijke Gezondheidszorg" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "G6" ] ;
+         fhir:display [ fhir:v "Verstandelijk gehandicaptenzorg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Verstandelijk gehandicaptenzorg" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "T2" ] ;
+         fhir:display [ fhir:v "Thuiszorg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Thuiszorg" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "JGZ" ] ;
+         fhir:display [ fhir:v "Jeugdgezondheidszorg" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Jeugdgezondheidszorg" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "G3" ] ;
+         fhir:display [ fhir:v "Verloskundigenpraktijk" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "nl-NL" ] ;
+           fhir:use [
+             a sct:900000000000013009 ;
+             fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "900000000000013009" ] ;
+             fhir:display [ fhir:v "Synonym" ]
+           ] ;
+           fhir:value [ fhir:v "Verloskundigenpraktijk" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

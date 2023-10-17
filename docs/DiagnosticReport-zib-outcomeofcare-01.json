@@ -1,0 +1,32 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "zib-outcomeofcare-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-OutcomeOfCare"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 27574-3}\">Skilled nursing treatment plan Progress note and attainment of goals (narrative)</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>Johan J. XXX_Helleman (OFFICIAL)</b> male, DoB: 1964-07-25 ( id:\u00a0999911120\u00a0(use:\u00a0OFFICIAL))</td></tr><tr><td>When For</td><td>2019-04-05 10:34:00+0100</td></tr></table><p><b>Report Details</b></p><p>Waarschijnlijk delier.</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/event-partOf",
+    "valueReference" : {
+      "reference" : "Procedure/zib-nursingintervention-01",
+      "display" : "Waarborgen van veiligheid."
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "27574-3",
+      "display" : "Skilled nursing treatment plan Progress note and attainment of goals (narrative)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "effectiveDateTime" : "2019-04-05T10:34:00+01:00",
+  "conclusion" : "Waarschijnlijk delier."
+}

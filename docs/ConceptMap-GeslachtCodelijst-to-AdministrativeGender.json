@@ -1,0 +1,80 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "GeslachtCodelijst-to-AdministrativeGender",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000.html\">GeslachtCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-administrative-gender.html\">AdministrativeGender</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). </p><div><p>Maps Gender codes as found in HCIM Patient (release 2017) to Patient.gender codes as found in FHIR STU3</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-administrative-gender.html\">AdministrativeGender</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>M</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>male</td><td/></tr><tr><td>F</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>female</td><td/></tr><tr><td>UN</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>other</td><td>Undifferentiated: The gender of a person could not be uniquely defined as male or female, such as hermaphrodite. Other: 'neither male nor female and not unknown'</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-administrative-gender.html\">AdministrativeGender</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>UNK</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>unknown</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
+    "valueBoolean" : false
+  }],
+  "url" : "http://nictiz.nl/fhir/ConceptMap/GeslachtCodelijst-to-AdministrativeGender",
+  "version" : "1.3.15",
+  "name" : "GeslachtCodelijst-to-AdministrativeGender",
+  "status" : "active",
+  "date" : "2023-10-17T13:17:30+02:00",
+  "publisher" : "HL7 Netherlands",
+  "contact" : [{
+    "name" : "Nictiz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@nictiz.nl",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps Gender codes as found in HCIM Patient (release 2017) to Patient.gender codes as found in FHIR STU3",
+  "sourceUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000",
+  "targetUri" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/administrative-gender",
+    "element" : [{
+      "code" : "M",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "male",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "F",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "female",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "UN",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "narrower"
+        }],
+        "code" : "other",
+        "equivalence" : "narrower",
+        "comment" : "Undifferentiated: The gender of a person could not be uniquely defined as male or female, such as hermaphrodite. Other: 'neither male nor female and not unknown'"
+      }]
+    }]
+  },
+  {
+    "source" : "http://hl7.org/fhir/administrative-gender",
+    "element" : [{
+      "code" : "UNK",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equal"
+        }],
+        "code" : "unknown",
+        "equivalence" : "equal"
+      }]
+    }]
+  }]
+}

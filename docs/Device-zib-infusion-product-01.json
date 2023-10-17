@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Device",
+  "id" : "zib-infusion-product-01",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Infusion-Product"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Apparaat/SysteemStatus: actief</caption>\n                <tbody>\n                    <tr>\n                        <th>Type</th>\n                        <td>\n                            <span title=\"Central venous catheter (52124006 - SNOMED CT)\">Central\n                                venous catheter</span>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "active",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "52124006",
+      "display" : "Central venous catheter"
+    }]
+  }
+}

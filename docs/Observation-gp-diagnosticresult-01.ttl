@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://nictiz.nl/fhir/Observation/gp-diagnosticresult-01> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gp-diagnosticresult-01"] ; # 
+  fhir:meta [
+     fhir:profile ( [ fhir:v "http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"^^xsd:anyURI ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Observatie/bepaling. Subject: <a href=\"Patient/nl-core-patient-02\">Paul\n                        XXX_Mesker</a>. Id: 6324\n                    (http://www.bmc.nl/zorgportal/identifiers/observations), Status:\n                        definitief<div>Uitvoerende: <a href=\"Practitioner/nl-core-practitioner-02\">Vaste Huisarts 1</a>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <th>Bepalingdatum/tijd</th>\n                        <td colspan=\"3\">Vanaf 2013-04-02T09:30:10+01:00</td>\n                    </tr>\n                    <tr>\n                        <th>Code</th>\n                        <th>Waarde</th>\n                        <th>Interpretatie</th>\n                        <th>Referentiewaarden</th>\n                    </tr>\n                    <tr>\n                        <td>\n                            <span title=\"systolische bloeddruk (1744 - nhg-tabel-45-diagnostische-bepalingen)\">systolische bloeddruk</span>\n                        </td>\n                        <td>140 mm[Hg]</td>\n                        <td>\n                            <span title=\"High (H - v2/0078)\">High</span>\n                        </td>\n                        <td>\n                            <div>100 mm[Hg] - 130 mm[Hg]</div>\n                        </td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://www.bmc.nl/zorgportal/identifiers/observations"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "6324" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1744" ] ;
+       fhir:display [ fhir:v "systolische bloeddruk" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://nictiz.nl/fhir/Patient/nl-core-patient-02> ;
+     fhir:reference [ fhir:v "Patient/nl-core-patient-02" ] ;
+     fhir:display [ fhir:v "Paul XXX_Mesker" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2013-04-02T09:30:10+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:issued [ fhir:v "2013-04-03T15:30:10+01:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://nictiz.nl/fhir/Practitioner/nl-core-practitioner-02> ;
+     fhir:reference [ fhir:v "Practitioner/nl-core-practitioner-02" ] ;
+     fhir:display [ fhir:v "Vaste Huisarts 1" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "140"^^xsd:decimal ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mm[Hg]" ]
+  ] ; # 
+  fhir:interpretation [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/v2/0078"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H" ] ;
+       fhir:display [ fhir:v "High" ]
+     ] )
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "130"^^xsd:decimal ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

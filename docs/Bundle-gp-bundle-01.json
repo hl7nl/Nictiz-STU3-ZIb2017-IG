@@ -1,0 +1,3820 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "gp-bundle-01",
+  "type" : "searchset",
+  "total" : 71,
+  "entry" : [{
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.525",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tr>\n                                <th>Tekst</th>\n                                <td>Hartkloppingen -paroxysmaal boezemfibrilleren</td>\n                            </tr>\n                            <tr>\n                                <th>Code</th>\n                                <td/>\n                            </tr>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6",
+        "value" : "525"
+      }],
+      "status" : "active",
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "careManager" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1.525",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td>Hartkloppingen -paroxysmaal boezemfibrilleren</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1",
+        "value" : "525"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "K78",
+          "display" : "Boezemfibrilleren/-fladderen"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Hartkloppingen -paroxysmaal boezemfibrilleren"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:547f93de-fa8c-469e-9df8-1d235d14e58d",
+    "resource" : {
+      "resourceType" : "Flag",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Alert"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>AlertType</th>\n                                    <th>StartDateTime</th>\n                                    <th>EndDateTime</th>\n                                    <th>AlertName</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>Alert</td>\n                                    <td/>\n                                    <td/>\n                                    <td>Hartkloppingen -paroxysmaal boezemfibrilleren</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/flag-detail",
+        "valueReference" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.525",
+          "display" : "Hartkloppingen -paroxysmaal boezemfibrilleren"
+        }
+      }],
+      "status" : "inactive",
+      "category" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74018-3",
+          "display" : "alert",
+          "userSelected" : false
+        }]
+      },
+      "code" : {
+        "text" : "Hartkloppingen -paroxysmaal boezemfibrilleren"
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "author" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.528",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tr>\n                                <th>Tekst</th>\n                                <td>Tinea pedis</td>\n                            </tr>\n                            <tr>\n                                <th>Code</th>\n                                <td/>\n                            </tr>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6",
+        "value" : "528"
+      }],
+      "status" : "active",
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "careManager" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1.528",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td>Tinea pedis</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1",
+        "value" : "528"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "S74.01",
+          "display" : "Tinea pedis"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Tinea pedis"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tr>\n                                <th>Tekst</th>\n                                <td>Keelpijn</td>\n                            </tr>\n                            <tr>\n                                <th>Code</th>\n                                <td/>\n                            </tr>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6",
+        "value" : "529"
+      }],
+      "status" : "active",
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "careManager" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1.529",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td>Keelpijn</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1",
+        "value" : "529"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "R21.01",
+          "display" : "Keelpijn"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Keelpijn"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.530",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tr>\n                                <th>Tekst</th>\n                                <td>Endocarditis profylaxe ivm mitralis insufficiëntie</td>\n                            </tr>\n                            <tr>\n                                <th>Code</th>\n                                <td/>\n                            </tr>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6",
+        "value" : "530"
+      }],
+      "status" : "active",
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "careManager" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1.530",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td>Endocarditis profylaxe ivm mitralis insufficiëntie</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1",
+        "value" : "530"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "K70",
+          "display" : "Infectieziekte hartvaatstelsel"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Endocarditis profylaxe ivm mitralis insufficiëntie"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.531",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tr>\n                                <th>Tekst</th>\n                                <td>Astma</td>\n                            </tr>\n                            <tr>\n                                <th>Code</th>\n                                <td/>\n                            </tr>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6",
+        "value" : "531"
+      }],
+      "status" : "active",
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "careManager" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1.531",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td>Astma</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1",
+        "value" : "531"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "R96",
+          "display" : "Astma"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Astma"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:4db123d6-c5f7-4c4e-b74c-b8c0df87d046",
+    "resource" : {
+      "resourceType" : "Flag",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Alert"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>AlertType</th>\n                                    <th>StartDateTime</th>\n                                    <th>EndDateTime</th>\n                                    <th>AlertName</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>Alert</td>\n                                    <td/>\n                                    <td/>\n                                    <td>Astma</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/flag-detail",
+        "valueReference" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.531",
+          "display" : "Astma"
+        }
+      }],
+      "status" : "inactive",
+      "category" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "74018-3",
+          "display" : "alert",
+          "userSelected" : false
+        }]
+      },
+      "code" : {
+        "text" : "Astma"
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "author" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+    "resource" : {
+      "resourceType" : "EpisodeOfCare",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-episodeofcare"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tr>\n                                <th>Tekst</th>\n                                <td>Rughernia</td>\n                            </tr>\n                            <tr>\n                                <th>Code</th>\n                                <td/>\n                            </tr>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6",
+        "value" : "532"
+      }],
+      "status" : "active",
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "careManager" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1.532",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td>Rughernia</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.1",
+        "value" : "532"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L86.01",
+          "display" : "HNP (thoracaal/lumbaal)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Rughernia"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5837",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201706111100</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-06-11T11:00:00+01:00",
+        "end" : "2017-06-11T11:02:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5837",
+          "display" : "L86.01 - HNP (thoracaal/lumbaal)"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:804b7e72-d055-4b55-998e-26096dd17312",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: HNP</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-06-11T11:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor L86.01 - HNP (thoracaal/lumbaal) met Huisarts\n                                        123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5837",
+        "display" : "Consult voor L86.01 - HNP (thoracaal/lumbaal) met Huisarts 123"
+      },
+      "date" : "2017-06-11T11:00:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: HNP",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">HNP</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nogmaals verwijzing Cesar</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5837",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5837"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L86.01",
+          "display" : "HNP (thoracaal/lumbaal)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5838",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201705021102</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-05-02T11:02:00+01:00",
+        "end" : "2017-05-02T11:05:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5838",
+          "display" : "R21.01 - Keelpijn"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bcb2b039-8e30-489d-89d9-63a43407445d",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Keelpijn eci.</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-05-02T11:02:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor R21.01 - Keelpijn met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5838",
+        "display" : "Consult voor R21.01 - Keelpijn met Huisarts 123"
+      },
+      "date" : "2017-05-02T11:02:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Keelpijn eci.",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keelpijn eci.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+          "display" : "Keelpijn"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bezoek brengen aan de tandarts,\n                            wellicht zit er daar iets.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+          "display" : "Keelpijn"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5838",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5838"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "R21.01",
+          "display" : "Keelpijn"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5839",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201705021105</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-05-02T11:05:00+01:00",
+        "end" : "2017-05-02T11:16:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5839",
+          "display" : "L86.01 - HNP (thoracaal/lumbaal)"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:9d9a986d-e7e8-4766-97b4-bb85032b7fc8",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: HNP</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-05-02T11:05:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor L86.01 - HNP (thoracaal/lumbaal) met Huisarts\n                                        123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5839",
+        "display" : "Consult voor L86.01 - HNP (thoracaal/lumbaal) met Huisarts 123"
+      },
+      "date" : "2017-05-02T11:05:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: HNP",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">HNP</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patiënt geïnformeerd, ziet het nog\n                            even aan.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5839",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5839"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L86.01",
+          "display" : "HNP (thoracaal/lumbaal)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5840",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201704221118</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-04-22T11:18:00+01:00",
+        "end" : "2017-04-22T11:20:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5840",
+          "display" : "L86.01 - HNP (thoracaal/lumbaal)"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:5f6f5fc1-016c-4e37-a5d5-cd96776cd839",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: HNP</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-04-22T11:18:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor L86.01 - HNP (thoracaal/lumbaal) met Huisarts\n                                        123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5840",
+        "display" : "Consult voor L86.01 - HNP (thoracaal/lumbaal) met Huisarts 123"
+      },
+      "date" : "2017-04-22T11:18:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: HNP",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">HNP</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Scan laten maken, afspraak\n                            gepland.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5840",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5840"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L86.01",
+          "display" : "HNP (thoracaal/lumbaal)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5841",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201704021122</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-04-02T11:22:00+01:00",
+        "end" : "2017-04-02T11:28:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5841",
+          "display" : "L03 - Lage-rugpijn zonder uitstraling [ex. L86]"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:b909c91b-bba6-4f03-94af-bc8792b52b1f",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Lage rugpijn</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-04-02T11:22:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor L03 - Lage-rugpijn zonder uitstraling [ex. L86]\n                                        met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5841",
+        "display" : "Consult voor L03 - Lage-rugpijn zonder uitstraling [ex. L86] met Huisarts 123"
+      },
+      "date" : "2017-04-02T11:22:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Lage rugpijn",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lage rugpijn</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">cesar of mensendieck. verwijzing\n                            aangemaakt</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5841",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5841"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L03",
+          "display" : "Lage-rugpijn zonder uitstraling [ex. L86]"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5842",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201704021311</td>\n                                    <td/>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-04-02T13:11:00+01:00",
+        "end" : "2017-04-02T13:13:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:63dc3186-c663-499b-a168-809a1b1473c0",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: </b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-04-02T13:11:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor - met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5842",
+        "display" : "Consult voor - met Huisarts 123"
+      },
+      "date" : "2017-04-02T13:11:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: ",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">medicatie</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5843",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201703231128</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-03-23T11:28:00+01:00",
+        "end" : "2017-03-23T11:31:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5843",
+          "display" : "R21.01 - Keelpijn"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:73ae2122-1dfa-40c4-a85c-6b060fdf6677",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Keelpijn eci.</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-03-23T11:28:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor R21.01 - Keelpijn met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5843",
+        "display" : "Consult voor R21.01 - Keelpijn met Huisarts 123"
+      },
+      "date" : "2017-03-23T11:28:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Keelpijn eci.",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keelpijn eci.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+          "display" : "Keelpijn"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Kweek van aanslag keel</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+          "display" : "Keelpijn"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5843",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5843"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "R21.01",
+          "display" : "Keelpijn"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5844",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201703231133</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-03-23T11:33:00+01:00",
+        "end" : "2017-03-23T11:36:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5844",
+          "display" : "D02 - Maagpijn"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:c6ee6b07-83ac-4528-a239-dd7bed76e721",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Maag/duodenum problemen?</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-03-23T11:33:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor D02 - Maagpijn met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5844",
+        "display" : "Consult voor D02 - Maagpijn met Huisarts 123"
+      },
+      "date" : "2017-03-23T11:33:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Maag/duodenum problemen?",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Maag/duodenum problemen?</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5844",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5844"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "D02",
+          "display" : "Maagpijn"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5845",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201703131138</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-03-13T11:38:00+01:00",
+        "end" : "2017-03-13T11:41:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5845",
+          "display" : "L03 - Lage-rugpijn zonder uitstraling [ex. L86]"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:87db1eff-64cd-4f16-bb7e-27c281473953",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Lage rugpijn</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-03-13T11:38:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor L03 - Lage-rugpijn zonder uitstraling [ex. L86]\n                                        met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5845",
+        "display" : "Consult voor L03 - Lage-rugpijn zonder uitstraling [ex. L86] met Huisarts 123"
+      },
+      "date" : "2017-03-13T11:38:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Lage rugpijn",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lage rugpijn</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">cesar of mensendieck.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5845",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5845"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L03",
+          "display" : "Lage-rugpijn zonder uitstraling [ex. L86]"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5846",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201702261140</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-02-26T11:40:00+01:00",
+        "end" : "2017-02-26T11:45:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5846",
+          "display" : "R21.01 - Keelpijn"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:5c2e49dc-95a4-4106-9802-de289d465bd7",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Keelpijn eci.</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-02-26T11:40:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor R21.01 - Keelpijn met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5846",
+        "display" : "Consult voor R21.01 - Keelpijn met Huisarts 123"
+      },
+      "date" : "2017-02-26T11:40:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Keelpijn eci.",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Keelpijn eci.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+          "display" : "Keelpijn"
+        }]
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Afwachten, zn. Medicatie is nog\n                            beschikbaar.</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.529",
+          "display" : "Keelpijn"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5846",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5846"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "R21.01",
+          "display" : "Keelpijn"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5847",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201702211204</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-02-21T12:04:00+01:00",
+        "end" : "2017-02-21T12:07:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5847",
+          "display" : "L03 - Lage-rugpijn zonder uitstraling [ex. L86]"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:f0593d9c-b749-4ea3-8e0a-0546fdbc3970",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: lage rugpijn</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-02-21T12:04:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor L03 - Lage-rugpijn zonder uitstraling [ex. L86]\n                                        met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5847",
+        "display" : "Consult voor L03 - Lage-rugpijn zonder uitstraling [ex. L86] met Huisarts 123"
+      },
+      "date" : "2017-02-21T12:04:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: lage rugpijn",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">lage rugpijn</div>"
+        },
+        "entry" : [{
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.6.532",
+          "display" : "Rughernia"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5847",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5847"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "L03",
+          "display" : "Lage-rugpijn zonder uitstraling [ex. L86]"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5888",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - consult</td>\n                                    <td>201705101000</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2017-05-10T10:00:00+01:00",
+        "end" : "2017-05-10T10:15:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5888",
+          "display" : "S13 - Beet mens/dier"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:d71ec95d-3e6e-40eb-924a-902e156b56a6",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Hondenbeet.</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2017-05-10T10:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor S13 - Beet mens/dier met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.1.5888",
+        "display" : "Consult voor S13 - Beet mens/dier met Huisarts 123"
+      },
+      "date" : "2017-05-10T10:00:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Hondenbeet.",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hondenbeet.</div>"
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "P",
+            "display" : "Plan"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Wondtoilet uitgevoerd. Maandag\n                            controle eigen huisarts. Instructies gegeven.</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3.5888",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.3",
+        "value" : "5888"
+      }],
+      "clinicalStatus" : "active",
+      "_clinicalStatus" : {
+        "extension" : [{
+          "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "55561003",
+              "display" : "Active"
+            }]
+          }
+        }]
+      },
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "S13",
+          "display" : "Beet mens/dier"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.2222.3.101",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Encounter"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ContactType</th>\n                                    <th>StartDateTime</th>\n                                    <th>ProblemName</th>\n                                    <th>HealthProfessional</th>\n                                    <th>OrganizationType</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>03 - Consult</td>\n                                    <td>200410081930</td>\n                                    <td>\n                                        <div>DISDX</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                    <td>Huisarts</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "finished",
+      "class" : {
+        "system" : "http://hl7.org/fhir/v3/ActCode",
+        "code" : "AMB",
+        "display" : "ambulatory"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze",
+          "code" : "03",
+          "display" : "Consult"
+        }]
+      }],
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ParticipationType",
+            "code" : "AUT",
+            "display" : "author"
+          }]
+        }],
+        "individual" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      }],
+      "period" : {
+        "start" : "2004-10-08T19:30:00+01:00",
+        "end" : "2004-10-08T19:38:00+01:00"
+      },
+      "reason" : [{
+        "text" : "-"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.3.2222.5.101",
+          "display" : "S13 - BEET MENS/DIER"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:74dfd9a6-9ded-4c5c-8bc7-3a7af49c47c0",
+    "resource" : {
+      "resourceType" : "Composition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-EncounterReport"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <b>Deelcontact: Hondebeet</b>\n                        <table>\n                            <caption>Samengestelde informatie. Subject: A. Direnç (Id: 555555914\n                                (BSN)). Status: definitief<div>Auteur: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Type</th>\n                                    <td>67781-5 (LOINC)</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2004-10-08T19:30:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <td>Consult voor S13 - Beet mens/dier met Huisarts 123</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "67781-5"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "encounter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.3.2222.3.101",
+        "display" : "Consult voor S13 - Beet mens/dier met Huisarts 123"
+      },
+      "date" : "2004-10-08T19:30:00+01:00",
+      "author" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "title" : "Deelcontact: Hondebeet",
+      "section" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://fhir.nl/fhir/NamingSystem/journaalregeltypen",
+            "code" : "E",
+            "display" : "Evaluatie"
+          }]
+        },
+        "text" : {
+          "status" : "additional",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hondebeet</div>"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.2222.5.101",
+    "resource" : {
+      "resourceType" : "Condition",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Problem"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th>ProbleemType</th>\n                                    <th>ProbleemNaam</th>\n                                    <th>Toelichting</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>DISDX</td>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.528.1.1007.3.3.2222.5",
+        "value" : "101"
+      }],
+      "clinicalStatus" : "active",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "282291009",
+          "display" : "Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icpc-1-nl",
+          "code" : "S13",
+          "display" : "BEET MENS/DIER"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "asserter" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.2222.6.101",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Medicatieafspraak. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 101 (urn:oid:2.16.528.1.1007.3.3.2222.6), Categorie: <span title=\"Prescription (procedure) (16076005 - SNOMED CT)\">Prescription (procedure)</span>, Status: voltooid<div>Intentie:\n                                    aanvraag</div>\n                                <div>Aangevraagd door: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Medicatie</th>\n                                    <td>doxycycline 100mg tablet</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2004-10-09</td>\n                                </tr>\n                                <tr>\n                                    <th>Doseerinstructie</th>\n                                    <td>\n                                        <div>Volgnummer: 1</div>\n                                        <div>Tekst: 2 maal per dag 1 tablet</div>\n                                        <div>Timing: <div>9 oktober 2004 - 23 oktober 2004, 2 maal\n                                                per dag</div>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.528.1.1007.3.3.2222.6",
+        "value" : "101"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "16076005",
+          "display" : "Prescription (procedure)"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.3.2222.6.10222",
+        "display" : "doxycycline 100mg tablet"
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "authoredOn" : "2004-10-09",
+      "requester" : {
+        "agent" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      },
+      "dosageInstruction" : [{
+        "sequence" : 1,
+        "text" : "2 maal per dag 1 tablet",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2004-10-09",
+              "end" : "2004-10-23"
+            },
+            "frequency" : 2,
+            "period" : 1,
+            "periodUnit" : "d"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.2222.6.10222",
+    "resource" : {
+      "resourceType" : "Medication",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Product"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tbody>\n                                <tr>\n                                    <th>Code</th>\n                                    <td>\n                                        <span title=\"doxycycline 100mg tablet (22179 - G-Standaard GPK)\">doxycycline 100mg tablet</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.4.1",
+          "code" : "22179",
+          "display" : "doxycycline 100mg tablet"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.2222.6.102",
+    "resource" : {
+      "resourceType" : "MedicationRequest",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-MedicationAgreement"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Medicatieafspraak. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 102 (urn:oid:2.16.528.1.1007.3.3.2222.6), Categorie: <span title=\"Prescription (procedure) (16076005 - SNOMED CT)\">Prescription (procedure)</span>, Status: voltooid<div>Intentie:\n                                    aanvraag</div>\n                                <div>Aangevraagd door: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Medicatie</th>\n                                    <td>TETANUSIMMUNOGLOBULINE INJVLST 125IE/ML</td>\n                                </tr>\n                                <tr>\n                                    <th>Gemaakt</th>\n                                    <td>2004-10-08</td>\n                                </tr>\n                                <tr>\n                                    <th>Doseerinstructie</th>\n                                    <td>\n                                        <div>Volgnummer: 1</div>\n                                        <div>Tekst: Aan de huisarts afgeven</div>\n                                        <div>Timing: <div>00:00 - 23:59 op 8 oktober 2004</div>\n                                        </div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.528.1.1007.3.3.2222.6",
+        "value" : "102"
+      }],
+      "status" : "completed",
+      "intent" : "order",
+      "category" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "16076005",
+          "display" : "Prescription (procedure)"
+        }]
+      },
+      "medicationReference" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.3.2222.6.10333",
+        "display" : "TETANUSIMMUNOGLOBULINE INJVLST 125IE/ML"
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "authoredOn" : "2004-10-08",
+      "requester" : {
+        "agent" : {
+          "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+          "display" : "Huisarts 123"
+        }
+      },
+      "dosageInstruction" : [{
+        "sequence" : 1,
+        "text" : "Aan de huisarts afgeven",
+        "timing" : {
+          "repeat" : {
+            "boundsPeriod" : {
+              "start" : "2004-10-08T00:00:00+01:00",
+              "end" : "2004-10-08T23:59:00+01:00"
+            }
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.2222.6.10333",
+    "resource" : {
+      "resourceType" : "Medication",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Product"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tbody>\n                                <tr>\n                                    <th>Code</th>\n                                    <td>\n                                        <span title=\"TETANUSIMMUNOGLOBULINE INJVLST 125IE/ML (66311 - G-Standaard GPK)\">TETANUSIMMUNOGLOBULINE INJVLST 125IE/ML</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.4.1",
+          "code" : "66311",
+          "display" : "TETANUSIMMUNOGLOBULINE INJVLST 125IE/ML"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7.5330",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 5330 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7), Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td>2017-02-26T00:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"temperatuur patiënt (oraal gemeten) (1915 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (oraal gemeten)</span>\n                                    </td>\n                                    <td>37.3 Cel</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7",
+        "value" : "5330"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "1915",
+          "display" : "temperatuur patiënt (oraal gemeten)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2017-02-26T00:00:00+01:00",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueQuantity" : {
+        "value" : 37.3,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7.5331",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-LaboratoryResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 5331 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7),\n                                Categorie: <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td>2017-03-23T00:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"kweek keel (1334 - nhg-tabel-45-diagnostische-bepalingen)\">kweek keel</span>\n                                    </td>\n                                    <td>\n                                        <span title=\"positief (32 - nhg-tabel-45-diagnostische-bepalingen#resultaten)\">positief</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7",
+        "value" : "5331"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "49581000146104",
+          "display" : "Laboratory test finding (finding)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "1334",
+          "display" : "kweek keel"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2017-03-23T00:00:00+01:00",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen#resultaten",
+          "code" : "32",
+          "display" : "positief"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7.5332",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 5332 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7), Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td>2017-03-23T00:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"temperatuur patiënt (oraal gemeten) (1915 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (oraal gemeten)</span>\n                                    </td>\n                                    <td>37.7 Cel</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7",
+        "value" : "5332"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "1915",
+          "display" : "temperatuur patiënt (oraal gemeten)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2017-03-23T00:00:00+01:00",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueQuantity" : {
+        "value" : 37.7,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7.5333",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-LaboratoryResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 5333 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7),\n                                Categorie: <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td>2017-04-02T00:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"glucose nuchter, art/cap (lab) (3208 - nhg-tabel-45-diagnostische-bepalingen)\">glucose nuchter, art/cap (lab)</span>\n                                    </td>\n                                    <td>5.4 mmol/L</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7",
+        "value" : "5333"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "49581000146104",
+          "display" : "Laboratory test finding (finding)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "3208",
+          "display" : "glucose nuchter, art/cap (lab)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2017-04-02T00:00:00+01:00",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueQuantity" : {
+        "value" : 5.4,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mmol/L"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7.5334",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 5334 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7), Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td>2017-05-02T00:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"CT-onderrug/lumbale wervelkolom (2283 - nhg-tabel-45-diagnostische-bepalingen)\">CT-onderrug/lumbale wervelkolom</span>\n                                    </td>\n                                    <td>Duidelijke uitstulping. L0</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7",
+        "value" : "5334"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "2283",
+          "display" : "CT-onderrug/lumbale wervelkolom"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2017-05-02T00:00:00+01:00",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueString" : "Duidelijke uitstulping. L0"
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7.5335",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-DiagnosticResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 5335 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7), Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td>2017-05-02T00:00:00+01:00</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"temperatuur patiënt (in oor gemeten) (1913 - nhg-tabel-45-diagnostische-bepalingen)\">temperatuur patiënt (in oor gemeten)</span>\n                                    </td>\n                                    <td>37.4 Cel</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.7",
+        "value" : "5335"
+      }],
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "1913",
+          "display" : "temperatuur patiënt (in oor gemeten)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2017-05-02T00:00:00+01:00",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueQuantity" : {
+        "value" : 37.4,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "Cel"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.1234567.1.1.0076895252",
+    "resource" : {
+      "resourceType" : "Observation",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/gp-LaboratoryResult"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Observatie/bepaling. Subject: A. Direnç (Id: 555555914 (BSN)).\n                                Id: 0076895252 (urn:oid:2.16.528.1.1007.3.3.1234567.1.1), Categorie:\n                                    <span title=\"Laboratory test finding (finding) (49581000146104 - SNOMED CT)\">Laboratory test finding (finding)</span>, Status:\n                                    definitief<div>Uitvoerende: Huisarts 123</div>\n                            </caption>\n                            <tbody>\n                                <tr>\n                                    <th>Bepalingdatum/tijd</th>\n                                    <td colspan=\"3\">2014-04-30</td>\n                                </tr>\n                                <tr>\n                                    <th>Code</th>\n                                    <th>Waarde</th>\n                                    <th>Interpretatie</th>\n                                    <th>Referentiewaarden</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <span title=\"creatine kinase (CK, CPK) (193 - nhg-tabel-45-diagnostische-bepalingen)\">creatine kinase (CK, CPK)</span>\n                                    </td>\n                                    <td>83 umol/L</td>\n                                    <td>\n                                        <span title=\"Low (L - v3/ObservationInterpretation)\">Low</span>\n                                    </td>\n                                    <td>\n                                        <div>\n                                            <span title=\"Normal (N - v3/ObservationInterpretation)\">Normal</span> 60 umol/L - 60 umol/L</div>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.528.1.1007.3.3.1234567.1.1",
+        "value" : "0076895252"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "49581000146104",
+          "display" : "Laboratory test finding (finding)"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen",
+          "code" : "193",
+          "display" : "creatine kinase (CK, CPK)"
+        }]
+      },
+      "subject" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "effectiveDateTime" : "2014-04-30",
+      "performer" : [{
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      }],
+      "valueQuantity" : {
+        "value" : 83,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "umol/L"
+      },
+      "interpretation" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+          "code" : "L",
+          "display" : "Low"
+        }]
+      },
+      "referenceRange" : [{
+        "low" : {
+          "value" : 60,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "umol/L"
+        },
+        "high" : {
+          "value" : 60,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "umol/L"
+        },
+        "type" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/v3/ObservationInterpretation",
+            "code" : "N",
+            "display" : "Normal"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.8.43284",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Allergie/intolerantie. Patiënt: A. Direnç (Id: 555555914\n                                (BSN)). Id: 43284 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.8),\n                                Status: actief / bevestigd<div>Ingevoerd door: Huisarts 123</div>\n                            </caption>\n                            <tfoot>\n                                <tr>\n                                    <td colspan=\"2\">VERKEERSDEELNAME</td>\n                                </tr>\n                            </tfoot>\n                            <tbody>\n                                <tr>\n                                    <th>Code</th>\n                                    <td>\n                                        <span title=\"VERKEERSDEELNAME (219 - G-Standaard Tabel 40)\">VERKEERSDEELNAME</span>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Eerste symptomen</th>\n                                    <td>Vanaf 2016-11-30</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.8",
+        "value" : "43284"
+      }],
+      "clinicalStatus" : "active",
+      "verificationStatus" : "confirmed",
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.4.1.902.40",
+          "code" : "219",
+          "display" : "VERKEERSDEELNAME"
+        }]
+      },
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "onsetPeriod" : {
+        "start" : "2016-11-30"
+      },
+      "recorder" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "VERKEERSDEELNAME"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.8.43293",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Allergie/intolerantie. Patiënt: A. Direnç (Id: 555555914\n                                (BSN)). Id: 43293 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.8),\n                                Status: actief / bevestigd<div>Ingevoerd door: Huisarts 123</div>\n                            </caption>\n                            <tfoot>\n                                <tr>\n                                    <td colspan=\"2\">ASTMA</td>\n                                </tr>\n                            </tfoot>\n                            <tbody>\n                                <tr>\n                                    <th>Code</th>\n                                    <td>\n                                        <span title=\"ASTMA (1347 - G-Standaard Tabel 40)\">ASTMA</span>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Eerste symptomen</th>\n                                    <td>Vanaf 2016-11-30</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.8",
+        "value" : "43293"
+      }],
+      "clinicalStatus" : "active",
+      "verificationStatus" : "confirmed",
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.4.1.902.40",
+          "code" : "1347",
+          "display" : "ASTMA"
+        }]
+      },
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "onsetPeriod" : {
+        "start" : "2016-11-30"
+      },
+      "recorder" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "ASTMA"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.9.72",
+    "resource" : {
+      "resourceType" : "AllergyIntolerance",
+      "meta" : {
+        "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-AllergyIntolerance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Allergie/intolerantie. Patiënt: A. Direnç (Id: 555555914\n                                (BSN)). Id: 72 (urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.9),\n                                Status: actief / bevestigd<div>Ingevoerd door: Huisarts 123</div>\n                            </caption>\n                            <tfoot>\n                                <tr>\n                                    <td colspan=\"2\">Forse reactie op fenoxymethylpenicilline kal GF\n                                        dispers 250 MG</td>\n                                </tr>\n                            </tfoot>\n                            <tbody>\n                                <tr>\n                                    <th>Code</th>\n                                    <td>\n                                        <span title=\"PENICILLINES (35 - G-Standaard Tabel 122)\">PENICILLINES</span>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Eerste symptomen</th>\n                                    <td>Vanaf 2016-11-30</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "urn:oid:2.16.840.1.113883.2.4.6.6.90000258.4.9",
+        "value" : "72"
+      }],
+      "clinicalStatus" : "active",
+      "verificationStatus" : "confirmed",
+      "code" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.4.1.902.122",
+          "code" : "35",
+          "display" : "PENICILLINES"
+        }]
+      },
+      "patient" : {
+        "identifier" : {
+          "system" : "http://fhir.nl/fhir/NamingSystem/bsn",
+          "value" : "555555914"
+        },
+        "display" : "A. Direnç"
+      },
+      "onsetPeriod" : {
+        "start" : "2016-11-30"
+      },
+      "recorder" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "note" : [{
+        "text" : "Forse reactie op fenoxymethylpenicilline kal GF dispers 250 MG"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:850997c4-29e9-42ee-8946-069e0559ae0e",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Zorgverlenerrol</caption>\n                            <tbody>\n                                <tr>\n                                    <th>Zorgverlener</th>\n                                    <td>\n                                        <div>Huisarts 123</div>\n                                        <div>Tést Zorginstelling 09</div>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Specialisme</th>\n                                    <td>\n                                        <span title=\"Huisarts (01.015 - RoleCodeNL Zorgverlenertype)\">Huisarts</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "practitioner" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "organization" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.3.90000388",
+        "display" : "Tést Zorginstelling 09"
+      },
+      "specialty" : [{
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.15.111",
+          "code" : "01.015",
+          "display" : "Huisarts"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tbody>\n                                <tr>\n                                    <th>ID</th>\n                                    <th>Naam</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <div>00098765 - AGB-Z</div>\n                                        <div>900014719 - UZI Personen</div>\n                                    </td>\n                                    <td>Huisarts 123</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <th>Adres</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <div>telefoon: <a href=\"tel:+31434073576\">tel:+31434073576</a>\n                                        </div>\n                                    </td>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "http://fhir.nl/fhir/NamingSystem/agb-z",
+        "value" : "00098765"
+      },
+      {
+        "system" : "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers",
+        "value" : "900014719"
+      }],
+      "name" : [{
+        "family" : "Huisarts 123"
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "_system" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code" : "LL",
+                "display" : "Vast telefoonnummer"
+              }]
+            }
+          }]
+        },
+        "value" : "+31434073576",
+        "use" : "work",
+        "_use" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+                "code" : "LL",
+                "display" : "Vast telefoonnummer"
+              }]
+            }
+          }]
+        }
+      },
+      {
+        "system" : "phone",
+        "_system" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "MC",
+                "display" : "Mobiel telefoonnummer"
+              }]
+            }
+          }]
+        },
+        "value" : "0612345990",
+        "use" : "work",
+        "_use" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "MC",
+                "display" : "Mobiel telefoonnummer"
+              }]
+            }
+          }]
+        }
+      },
+      {
+        "system" : "email",
+        "_system" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "WP",
+                "display" : "Zakelijk e-mailadres"
+              }]
+            }
+          }]
+        },
+        "value" : "devries@work.com",
+        "use" : "work",
+        "_use" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "WP",
+                "display" : "Zakelijk e-mailadres"
+              }]
+            }
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:6dfb6cf4-cadc-475e-8db8-05052a50f30a",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Zorgverlenerrol</caption>\n                            <tbody>\n                                <tr>\n                                    <th>Zorgverlener</th>\n                                    <td>\n                                        <div>Huisarts 123</div>\n                                        <div>Tést Zorginstelling 09</div>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Specialisme</th>\n                                    <td>\n                                        <span title=\"Huisarts (01.015 - RoleCodeNL Zorgverlenertype)\">Huisarts</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "practitioner" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.900014719",
+        "display" : "Huisarts 123"
+      },
+      "organization" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.3.90000388",
+        "display" : "Tést Zorginstelling 09"
+      },
+      "specialty" : [{
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.15.111",
+          "code" : "01.015",
+          "display" : "Huisarts"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:a52ce73a-ba25-4390-ad37-54a2c6123b5c",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Zorgverlenerrol</caption>\n                            <tbody>\n                                <tr>\n                                    <th>Zorgverlener</th>\n                                    <td>\n                                        <div>Dr. Koos Jansma</div>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Specialisme</th>\n                                    <td>\n                                        <span title=\"Huisarts (01.015 - RoleCodeNL Zorgverlenertype)\">Huisarts</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "practitioner" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.000002222",
+        "display" : "Dr. Koos Jansma"
+      },
+      "specialty" : [{
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.15.111",
+          "code" : "01.015",
+          "display" : "Huisarts"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.1.000002222",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitioner"]
+      },
+      "text" : {
+        "status" : "additional",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <tbody>\n                                <tr>\n                                    <th>ID</th>\n                                    <th>Naam</th>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <div>01638767 - AGB-Z</div>\n                                        <div>000002222 - UZI Personen</div>\n                                    </td>\n                                    <td>Dr. Koos Jansma</td>\n                                </tr>\n                                <tr>\n                                    <th>Contact</th>\n                                    <th>Adres</th>\n                                </tr>\n                                <tr>\n                                    <td/>\n                                    <td/>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "http://fhir.nl/fhir/NamingSystem/agb-z",
+        "value" : "01638767"
+      },
+      {
+        "system" : "http://fhir.nl/fhir/NamingSystem/uzi-nr-pers",
+        "value" : "000002222"
+      }],
+      "name" : [{
+        "family" : "Jansma",
+        "given" : ["Koos"],
+        "prefix" : ["Dr."]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "_system" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "MC",
+                "display" : "Mobiel telefoonnummer"
+              }]
+            }
+          }]
+        },
+        "value" : "0612345990",
+        "use" : "work",
+        "_use" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "MC",
+                "display" : "Mobiel telefoonnummer"
+              }]
+            }
+          }]
+        }
+      },
+      {
+        "system" : "email",
+        "value" : "devries@work.com",
+        "use" : "work",
+        "_use" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "WP",
+                "display" : "Zakelijk e-mailadres"
+              }]
+            }
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:bd9be724-2cbc-4568-a890-c31c12d5f12a",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-practitionerrole"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>Zorgverlenerrol</caption>\n                            <tbody>\n                                <tr>\n                                    <th>Zorgverlener</th>\n                                    <td>\n                                        <div>Dr. Koos Jansma</div>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <th>Specialisme</th>\n                                    <td>\n                                        <span title=\"Huisarts (01.015 - RoleCodeNL Zorgverlenertype)\">Huisarts</span>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "practitioner" : {
+        "reference" : "urn:oid:2.16.528.1.1007.3.1.000002222",
+        "display" : "Dr. Koos Jansma"
+      },
+      "specialty" : [{
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.2.4.15.111",
+          "code" : "01.015",
+          "display" : "Huisarts"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:oid:2.16.528.1.1007.3.3.90000388",
+    "resource" : {
+      "resourceType" : "Organization",
+      "meta" : {
+        "profile" : ["http://fhir.nl/fhir/StructureDefinition/nl-core-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                        <table>\n                            <caption>OrganisatieId: 90000388 (URA)</caption>\n                            <tbody>\n                                <tr>\n                                    <th>Naam</th>\n                                    <td>Tést Zorginstelling 04</td>\n                                </tr>\n                                <tr>\n                                    <th>Contactgegevens</th>\n                                    <td>\n                                        <a href=\"tel:0612345990\">0612345990</a> (Tel Werk)br<a href=\"mailto:devries@work.com\">devries@work.com</a>\n                                        (E-mail Werk)br</td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>"
+      },
+      "identifier" : [{
+        "system" : "http://fhir.nl/fhir/NamingSystem/ura",
+        "value" : "90000388"
+      }],
+      "name" : "Tést Zorginstelling 04",
+      "telecom" : [{
+        "system" : "phone",
+        "_system" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "MC",
+                "display" : "Mobiel telefoonnummer"
+              }]
+            }
+          }]
+        },
+        "value" : "0612345990",
+        "use" : "work",
+        "_use" : {
+          "extension" : [{
+            "url" : "http://nictiz.nl/fhir/StructureDefinition/code-specification",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://hl7.org/fhir/v3/AddressUse",
+                "code" : "MC",
+                "display" : "Mobiel telefoonnummer"
+              }]
+            }
+          }]
+        }
+      },
+      {
+        "system" : "email",
+        "value" : "devries@work.com",
+        "use" : "work"
+      }]
+    }
+  }]
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "zib-procedure-02",
+  "meta" : {
+    "profile" : ["http://nictiz.nl/fhir/StructureDefinition/zib-Procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n                <caption>Verrichting. Subject: <a href=\"Patient/nl-core-patient-01\">Johan\n                        XXX_Helleman</a>. Categorie: <span title=\"Surgical procedure (387713003 - SNOMED CT)\">Surgical\n                    procedure</span>, Status: voltooid<div>Uitvoerende: <a href=\"Organization/nl-core-organization-02\">UMCG - Afdeling\n                            Orthopedie</a>\n                        <div>Zorgverlenerrol: <a href=\"PractitionerRole/nl-core-practitionerrole-01\">Medisch specialisten, orthopedie</a>\n                        </div>\n                    </div>\n                </caption>\n                <tbody>\n                    <tr>\n                        <td>\n                            <span title=\"Surgical reduction of fracture (procedure) (274051007 - SNOMED CT)\">Surgical reduction of fracture (procedure)</span>\n                        </td>\n                        <td/>\n                    </tr>\n                </tbody>\n            </table>\n        </div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "387713003",
+      "display" : "Surgical procedure"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "274051007",
+      "display" : "Surgical reduction of fracture (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/nl-core-patient-01",
+    "display" : "Johan XXX_Helleman"
+  },
+  "performer" : [{
+    "actor" : {
+      "extension" : [{
+        "url" : "http://nictiz.nl/fhir/StructureDefinition/practitionerrole-reference",
+        "valueReference" : {
+          "reference" : "PractitionerRole/nl-core-practitionerrole-01",
+          "display" : "Medisch specialisten, orthopedie"
+        }
+      }],
+      "reference" : "Organization/nl-core-organization-02",
+      "display" : "UMCG - Afdeling Orthopedie"
+    }
+  }]
+}
