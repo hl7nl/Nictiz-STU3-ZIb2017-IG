@@ -1,0 +1,8 @@
+input/capabilitystatements
+input/examples
+input/profiles
+input/resources
+temp
+template
+input-cache
+output/*.zip
