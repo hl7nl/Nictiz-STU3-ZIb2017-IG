@@ -1,6 +1,6 @@
 Used https://github.com/Nictiz/Nictiz-STU3-Zib2017 as a basis.
 
-Output is here: hl7nl.github.io/Nictiz-STU3-ZIb2017-IG
+Output is here: https://hl7nl.github.io/Nictiz-STU3-ZIb2017-IG
 
 Issues:
 1. Duplicate ID, so removed for now:
@@ -17,3 +17,8 @@ Issues:
 Questions:
 1. What to use for packageId = nictiz.fhir.nl.stu3.zib2017
     - For now use "zibs2017" as id/name/packageId
+
+---
+```
+> ln -s docs output
+```
