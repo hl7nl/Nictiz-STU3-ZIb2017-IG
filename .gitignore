@@ -5,4 +5,5 @@ input/resources
 temp
 template
 input-cache
-output/*.zip
+output
+docs/*.zip
