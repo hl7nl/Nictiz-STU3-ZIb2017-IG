@@ -20,5 +20,5 @@ Questions:
 
 ---
 ```
-> ln -s docs output
+> cp -r output docs
 ```
