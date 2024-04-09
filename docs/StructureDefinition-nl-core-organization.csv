@@ -181,7 +181,20 @@ If Address.type is ""both"" then this is to be understood as a dual purpose addr
       <valueCode value=""HV""/>
     </extension>
   </use>
-  <line value=""Binnenkant 12A Hoog""/>
+  <line value=""Binnenkant 12A Hoog"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"">
+      <valueString value=""Binnenkant""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"">
+      <valueString value=""12""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"">
+      <valueString value=""A""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"">
+      <valueString value=""Hoog""/>
+    </extension>
+  </line>
   <city value=""Amsterdam""/>
   <state value=""NH""/>
   <postalCode value=""1000AA""/>

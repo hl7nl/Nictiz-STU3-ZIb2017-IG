@@ -1,13 +1,19 @@
 {
   "url" : "http://nictiz.nl/fhir/ImplementationGuide/zibs2017",
   "name" : "zibs2017",
+  "title" : "Nictiz FHIR NL STU3 Zib2017",
+  "description" : "Nictiz NL package of FHIR STU3 conformance resources for HCIM Release 2017. Includes MedMij and HL7 NL.\\r\\n\\r\\nHCIMs: https://zibs.nl/wiki/HCIM_Release_2017(EN)",
+  "status" : "draft",
   "package-id" : "zibs2017",
   "ig-ver" : "1.3.15",
-  "date" : "Tue, 17 Oct, 2023 13:17:30 +0200",
-  "errs" : 1697,
-  "warnings" : 1620,
-  "hints" : 667,
+  "date" : "Tue, 09 Apr, 2024 16:00:20 +0200",
+  "dateISO8601" : "2024-04-09T16:00:20+02:00",
+  "errs" : 1919,
+  "warnings" : 847,
+  "hints" : 662,
+  "suppressed-hints" : 357,
+  "suppressed-warnings" : 71,
   "version" : "3.0.2",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3908325104
+  "maxMemory" : 3003784832
 }

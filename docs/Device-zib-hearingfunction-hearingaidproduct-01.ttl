@@ -14,7 +14,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"zib-hearingfunction-hearingaidproduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;zib-hearingfunction-hearingaidproduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-HearingFunction-HearingAid-Product.html\">HCIM HearingFunction HearingAid Product</a></p></div><p><b>type</b>: Gehoorapparaat <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6012004)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"zib-hearingfunction-hearingaidproduct-01\"> </a><a name=\"hczib-hearingfunction-hearingaidproduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;zib-hearingfunction-hearingaidproduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-HearingFunction-HearingAid-Product.html\">HCIM HearingFunction HearingAid Product</a></p></div><p><b>type</b>: Gehoorapparaat <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6012004)</span></p></div>"
   ] ; # 
   fhir:type [
      fhir:coding ( [

@@ -28,8 +28,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","LegalStatus","The legal situation that applies to the patient during the intervention.","The concept LegalStatus of the Zib FreedomRestrictingMeasures plays an importand role in the context of mental healthcare (GGZ). This concept will become an independent Zib with the next release of Zibs (2018 release).  
 
 The LegalStatus concept and associated valueset will be split in two concepts: legalstatus and representative. These concept are currently captured in one valueset. It is possible to have a legalstatus AND a representative. Therefore, we allow this extension to have a cardinality of 0..2.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:14.3.2"
+","","NL-CM:14.3.2"
 "Procedure.extension:legalStatus.id","Procedure.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Procedure.extension:legalStatus.extension","Procedure.extension.extension","","extensions
@@ -72,8 +71,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","","./originalText[mediaType/code=""text/plain""]/data","C*E.9. But note many systems use C*E.2 for this"
 "Procedure.extension:legallyCapable","Procedure.extension","legallyCapable","","",0,1,"","","","Extension {[CanonicalType[http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-LegallyCapable]]} {[]}
 ","LegallyCapable","Indicator stating whether the patient is deemed capable of overseeing the consequences of a certain procedure, situation or decision.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+",""
 "Procedure.extension:legallyCapable.id","Procedure.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Procedure.extension:legallyCapable.extension","Procedure.extension.extension","","","",1,*,"","","","Extension {[]} {[]}
@@ -120,8 +118,7 @@ boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}
 "Procedure.extension:permission","Procedure.extension","permission","Toestemming
 ","",0,1,"","","","Extension {[CanonicalType[http://nictiz.nl/fhir/StructureDefinition/zib-FreedomRestrictingMeasures-Permission]]} {[]}
 ","Permission","The permission given to the health professional(s) by the patient or legal representative to implement medical restraints.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:14.3.7"
+","","NL-CM:14.3.7"
 "Procedure.extension:permission.id","Procedure.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Procedure.extension:permission.extension","Procedure.extension.extension","","extensions

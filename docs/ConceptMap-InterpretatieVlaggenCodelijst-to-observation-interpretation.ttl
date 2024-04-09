@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "InterpretatieVlaggenCodelijst-to-observation-interpretation"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000.html\">InterpretatieVlaggenCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-observation-interpretation.html\">Observation Interpretation Codes</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM LaboratoryTestResult release 2017 terminology for ResultFlags to the FHIR STU3 terminology.</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>http://hl7.org/fhir/v2/0078|http://hl7.org/fhir/v2/0078 version 2.8.2</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>281302008 (Above reference range)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>H (High)</td></tr><tr><td>281300000 (Below reference range)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>L (Low)</td></tr><tr><td>11896004 (Intermediate)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>I (Intermediate)</td></tr><tr><td>30714006 (Resistant)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>R (Resistant)</td></tr><tr><td>131196009 (Susceptible)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>S (Susceptible)</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000.html\">InterpretatieVlaggenCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-observation-interpretation.html\">Observation Interpretation Codes</a></p><p>ACTIVE. Published on 2024-04-09 16:00:20+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM LaboratoryTestResult release 2017 terminology for ResultFlags to the FHIR STU3 terminology.</p>\n</div><br/><p><b>Group 1</b> Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-snomedct.html\">SNOMED CT (all versions)</a> to <code>http://hl7.org/fhir/v2/0078|http://hl7.org/fhir/v2/0078 version 2.8.2</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>281302008 (Above reference range)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>H (High)</td></tr><tr><td>281300000 (Below reference range)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>L (Low)</td></tr><tr><td>11896004 (Intermediate)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>I (Intermediate)</td></tr><tr><td>30714006 (Resistant)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>R (Resistant)</td></tr><tr><td>131196009 (Susceptible)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>S (Susceptible)</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/concept-bidirectional"^^xsd:anyURI ] ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "InterpretatieVlaggenCodelijst-to-observation-interpretation"] ; # 
   fhir:title [ fhir:v "HCIM InterpretatieVlaggenCodelijst to Observation Interpretation Codes"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-09T16:00:20+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Nictiz" ] ;
@@ -37,8 +37,9 @@
   fhir:source [ fhir:v "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000"^^xsd:anyURI] ; # 
   fhir:target [ fhir:v "http://hl7.org/fhir/ValueSet/observation-interpretation"^^xsd:anyURI] ; # 
   fhir:group ( [
-     fhir:source [ fhir:v "http://hl7.org/fhir/v2/0078"^^xsd:anyURI ] ;
-     fhir:sourceVersion [ fhir:v "http://hl7.org/fhir/v2/0078 version 2.8.2" ] ;
+     fhir:source [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://hl7.org/fhir/v2/0078"^^xsd:anyURI ] ;
+     fhir:targetVersion [ fhir:v "http://hl7.org/fhir/v2/0078 version 2.8.2" ] ;
      fhir:element ( [
        fhir:code [ fhir:v "281302008" ] ;
        fhir:display [ fhir:v "Above reference range" ] ;

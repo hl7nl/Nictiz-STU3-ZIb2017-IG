@@ -97,7 +97,11 @@ Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jo
       <valueString value=""Haas""/>
     </extension>
   </family>
-  <given value=""Irma""/>
+  <given value=""Irma"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"">
+      <valueCode value=""CL""/>
+    </extension>
+  </given>
 </valueHumanName>","","",,,,,"",,,,"Person.name",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 nl-core-humanname-1:if you specify a prefix for an own name then an own name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()}nl-core-humanname-2:if you specify a voorvoegsel for a partner name then a partner name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()}","NL-CM:0.1.6","NL-CM:3.1.4","NL-CM:17.1.3","NL-CM:1.1.5","NL-CM:0.1.6","NL-CM:3.1.4","NL-CM:17.1.3","NL-CM:1.1.5","NL-CM:0.1.6","NL-CM:3.1.4","NL-CM:17.1.3","NL-CM:1.1.5","n/a","EN (actually, PN)","XPN"
@@ -147,7 +151,20 @@ If Address.type is ""both"" then this is to be understood as a dual purpose addr
       <valueCode value=""HV""/>
     </extension>
   </use>
-  <line value=""Binnenkant 12A Hoog""/>
+  <line value=""Binnenkant 12A Hoog"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"">
+      <valueString value=""Binnenkant""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"">
+      <valueString value=""12""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"">
+      <valueString value=""A""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"">
+      <valueString value=""Hoog""/>
+    </extension>
+  </line>
   <city value=""Amsterdam""/>
   <state value=""NH""/>
   <postalCode value=""1000AA""/>

@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  442083009 (null)</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  442083009 (Anatomical or acquired body structure (body structure))</li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -25,7 +25,7 @@
   "title" : "StomaAnatomischeLocatieCodelijst",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "contact" : [{
     "name" : "Registratie aan de bron",

@@ -102,7 +102,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15). See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -170,7 +170,7 @@
         
           Active
           
-            as of 2023-10-17
+            as of 2024-04-09
           
         
       </td>
@@ -182,7 +182,7 @@
 
     <tr>
       <td colspan="5">
-        <i>Other Identifiers:</i> id: 2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1 (use: OFFICIAL)
+        <i>Other Identifiers:</i> http://art-decor.org/ns/oids/vs#2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1 (use: official)
       </td>
     </tr>
 
@@ -216,19 +216,234 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html"><code>http://hl7.org/fhir/v3/NullFlavor</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>Other</td><td>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).<br/>
                         
                            Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.<br/>
-                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Anders</td><td>Anders</td></tr></table></li><li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html"><code>http://hl7.org/fhir/v3/RoleCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTF">ADOPTF</a></td><td>Adoptive father</td><td>The player of the role (father) is a male who has taken the scoper (child) into their family through legal means and raises them as his own child.</td><td>Adoptievader</td><td>Adoptievader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTM">ADOPTM</a></td><td>Adoptive mother</td><td>The player of the role (father) is a female who has taken the scoper (child) into their family through legal means and raises them as her own child.</td><td>Adoptiemoeder</td><td>Adoptiemoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-AUNT">AUNT</a></td><td>Aunt</td><td>The player of the role is a sister of the scoping person's mother or father.</td><td>Tante</td><td>Tante</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BRO">BRO</a></td><td>Brother</td><td>The player of the role is a male sharing one or both parents in common with the scoping entity.</td><td>Broer</td><td>Broer</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BROINLAW">BROINLAW</a></td><td>Brother-in-law</td><td>The player of the role is: (1) a brother of the scoping person's spouse, or (2) the husband of the scoping person's sister, or (3) the husband of a sister of the scoping person's spouse.</td><td>Zwager</td><td>Zwager</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-COUSN">COUSN</a></td><td>Cousin</td><td>The player of the role is a relative of the scoping person descended from a common ancestor, such as a 	grandparent, by two or more steps in a diverging line.</td><td>Neef/nicht, zoon/dochter van oom/tante</td><td>Neef/nicht, zoon/dochter van oom/tante</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUC">DAUC</a></td><td>Daughter</td><td>Description: The player of the role is a female child (of any type) of scoping entity (parent)</td><td>Dochter</td><td>Dochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUINLAW">DAUINLAW</a></td><td>Daughter in-law</td><td>The player of the role is the wife of scoping person's son.</td><td>Schoondochter</td><td>Schoondochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DOMPART">DOMPART</a></td><td>Domestic partner</td><td>The player of the role cohabits with the scoping person but is not the scoping person's spouse.</td><td>Partner</td><td>Partner</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTH">FTH</a></td><td>Father</td><td>The player of the role is a male who begets or raises or nurtures the scoping entity (child).</td><td>Vader</td><td>Vader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHINLAW">FTHINLAW</a></td><td>Father-in-law</td><td>The player of the role is the father of the scoping person's husband or wife.</td><td>Schoonvader</td><td>Schoonvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUFOST">DAUFOST</a></td><td>Foster daughter</td><td>The player of the role is a female child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</td><td>Pleegdochter</td><td>Pleegdochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHFOST">FTHFOST</a></td><td>Foster father</td><td>The player of the role (parent) who is a male state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.<br/>
-                        The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.</td><td>Pleegvader</td><td>Pleegvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHFOST">MTHFOST</a></td><td>Foster mother</td><td>The player of the role (parent) who is a female state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.<br/>
-                        The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.</td><td>Pleegmoeder</td><td>Pleegmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONFOST">SONFOST</a></td><td>Foster son</td><td>The player of the role is a male child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</td><td>Pleegzoon</td><td>Pleegzoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDDAU">GRNDDAU</a></td><td>Granddaughter</td><td>The player of the role is a daughter of the scoping person's son or daughter.</td><td>Kleindochter</td><td>Kleindochter</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRFTH">GRFTH</a></td><td>Grandfather</td><td>The player of the role is the father of the scoping person's mother or father.</td><td>Opa</td><td>Opa</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRMTH">GRMTH</a></td><td>Grandmother</td><td>The player of the role is the mother of the scoping person's mother or father.</td><td>Oma</td><td>Oma</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDSON">GRNDSON</a></td><td>Grandson</td><td>The player of the role is a son of the scoping person's son or daughter.</td><td>Kleinzoon</td><td>Kleinzoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRFTH">GGRFTH</a></td><td>Great grandfather</td><td>The player of the role is the father of the scoping person's grandparent.</td><td>Overgrootvader</td><td>Overgrootvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRMTH">GGRMTH</a></td><td>Great grandmother</td><td>The player of the role is the mother of the scoping person's grandparent.</td><td>Overgrootmoeder</td><td>Overgrootmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-HUSB">HUSB</a></td><td>Husband</td><td>The player of the role is a man joined to a woman (scoping person) in marriage.</td><td>Echtgenoot</td><td>Echtgenoot</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTH">MTH</a></td><td>Mother</td><td>The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child).</td><td>Moeder</td><td>Moeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHINLAW">MTHINLAW</a></td><td>Mother-in-law</td><td>The player of the role is the mother of the scoping person's husband or wife.</td><td>Schoonmoeder</td><td>Schoonmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NEPHEW">NEPHEW</a></td><td>Nephew</td><td>The player of the role is a son of the scoping person's brother or sister or of the brother or sister of the 	scoping person's spouse.</td><td>Neef, zoon van broer/zus</td><td>Neef, zoon van broer/zus</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NIECE">NIECE</a></td><td>Niece</td><td>The player of the role is a daughter of the scoping person's brother or sister or of the brother or sister of the 	scoping person's spouse.</td><td>Nicht, dochter van broer/zus</td><td>Nicht, dochter van broer/zus</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SIS">SIS</a></td><td>Sister</td><td>The player of the role is a female sharing one or both parents in common with the scoping entity.</td><td>Zuster</td><td>Zuster</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SISINLAW">SISINLAW</a></td><td>Sister-in-law</td><td>The player of the role is: (1) a sister of the scoping person's spouse, or (2) the wife of the scoping person's brother, or (3) the wife of a brother of the scoping person's spouse.</td><td>Schoonzuster</td><td>Schoonzuster</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONC">SONC</a></td><td>Son</td><td>Description: The player of the role is a male child (of any type) of scoping entity (parent)</td><td>Zoon</td><td>Zoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONINLAW">SONINLAW</a></td><td>Son in-law</td><td>The player of the role is the husband of scoping person's daughter.</td><td>Schoonzoon</td><td>Schoonzoon</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPFTH">STPFTH</a></td><td>Stepfather</td><td>The player of the role is the husband of scoping person's mother and not the scoping person's natural father.</td><td>Stiefvader</td><td>Stiefvader</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPMTH">STPMTH</a></td><td>Stepmother</td><td>The player of the role is the wife of scoping person's father and not the scoping person's natural mother.</td><td>Stiefmoeder</td><td>Stiefmoeder</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-UNCLE">UNCLE</a></td><td>Uncle</td><td>The player of the role is a brother of the scoping person's mother or father.</td><td>Oom</td><td>Oom</td></tr><tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-WIFE">WIFE</a></td><td>Wife</td><td>The player of the role is a woman joined to a man (scoping person) in marriage.</td><td>Echtgenote</td><td>Echtgenote</td></tr></table></li></ul></div>
+                        With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td><td>Anders</td><td>Anders</td></tr></table></li>
+<li>Include these codes as defined in <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html"><code>http://hl7.org/fhir/v3/RoleCode</code></a>
+<table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Synonym</b></td><td><b>Nederlands (Nederland) (Dutch (Netherlands), nl)</b></td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTF">ADOPTF</a></td>
+<td>Adoptive father</td>
+<td>The player of the role (father) is a male who has taken the scoper (child) into their family through legal means and raises them as his own child.</td>
+<td>Adoptievader</td>
+<td>Adoptievader</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTM">ADOPTM</a></td>
+<td>Adoptive mother</td>
+<td>The player of the role (father) is a female who has taken the scoper (child) into their family through legal means and raises them as her own child.</td>
+<td>Adoptiemoeder</td>
+<td>Adoptiemoeder</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-AUNT">AUNT</a></td>
+<td>Aunt</td>
+<td>The player of the role is a sister of the scoping person's mother or father.</td>
+<td>Tante</td>
+<td>Tante</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BRO">BRO</a></td>
+<td>Brother</td>
+<td>The player of the role is a male sharing one or both parents in common with the scoping entity.</td>
+<td>Broer</td>
+<td>Broer</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BROINLAW">BROINLAW</a></td>
+<td>Brother-in-law</td>
+<td>The player of the role is: (1) a brother of the scoping person's spouse, or (2) the husband of the scoping person's sister, or (3) the husband of a sister of the scoping person's spouse.</td>
+<td>Zwager</td>
+<td>Zwager</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-COUSN">COUSN</a></td>
+<td>Cousin</td>
+<td>The player of the role is a relative of the scoping person descended from a common ancestor, such as a 	grandparent, by two or more steps in a diverging line.</td>
+<td>Neef/nicht, zoon/dochter van oom/tante</td>
+<td>Neef/nicht, zoon/dochter van oom/tante</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUC">DAUC</a></td>
+<td>Daughter</td>
+<td>Description: The player of the role is a female child (of any type) of scoping entity (parent)</td>
+<td>Dochter</td>
+<td>Dochter</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUINLAW">DAUINLAW</a></td>
+<td>Daughter in-law</td>
+<td>The player of the role is the wife of scoping person's son.</td>
+<td>Schoondochter</td>
+<td>Schoondochter</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DOMPART">DOMPART</a></td>
+<td>Domestic partner</td>
+<td>The player of the role cohabits with the scoping person but is not the scoping person's spouse.</td>
+<td>Partner</td>
+<td>Partner</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTH">FTH</a></td>
+<td>Father</td>
+<td>The player of the role is a male who begets or raises or nurtures the scoping entity (child).</td>
+<td>Vader</td>
+<td>Vader</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHINLAW">FTHINLAW</a></td>
+<td>Father-in-law</td>
+<td>The player of the role is the father of the scoping person's husband or wife.</td>
+<td>Schoonvader</td>
+<td>Schoonvader</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUFOST">DAUFOST</a></td>
+<td>Foster daughter</td>
+<td>The player of the role is a female child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</td>
+<td>Pleegdochter</td>
+<td>Pleegdochter</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHFOST">FTHFOST</a></td>
+<td>Foster father</td>
+<td>The player of the role (parent) who is a male state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.<br/>
+                        The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.</td>
+<td>Pleegvader</td>
+<td>Pleegvader</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHFOST">MTHFOST</a></td>
+<td>Foster mother</td>
+<td>The player of the role (parent) who is a female state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.<br/>
+                        The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.</td>
+<td>Pleegmoeder</td>
+<td>Pleegmoeder</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONFOST">SONFOST</a></td>
+<td>Foster son</td>
+<td>The player of the role is a male child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</td>
+<td>Pleegzoon</td>
+<td>Pleegzoon</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDDAU">GRNDDAU</a></td>
+<td>Granddaughter</td>
+<td>The player of the role is a daughter of the scoping person's son or daughter.</td>
+<td>Kleindochter</td>
+<td>Kleindochter</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRFTH">GRFTH</a></td>
+<td>Grandfather</td>
+<td>The player of the role is the father of the scoping person's mother or father.</td>
+<td>Opa</td>
+<td>Opa</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRMTH">GRMTH</a></td>
+<td>Grandmother</td>
+<td>The player of the role is the mother of the scoping person's mother or father.</td>
+<td>Oma</td>
+<td>Oma</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDSON">GRNDSON</a></td>
+<td>Grandson</td>
+<td>The player of the role is a son of the scoping person's son or daughter.</td>
+<td>Kleinzoon</td>
+<td>Kleinzoon</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRFTH">GGRFTH</a></td>
+<td>Great grandfather</td>
+<td>The player of the role is the father of the scoping person's grandparent.</td>
+<td>Overgrootvader</td>
+<td>Overgrootvader</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRMTH">GGRMTH</a></td>
+<td>Great grandmother</td>
+<td>The player of the role is the mother of the scoping person's grandparent.</td>
+<td>Overgrootmoeder</td>
+<td>Overgrootmoeder</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-HUSB">HUSB</a></td>
+<td>Husband</td>
+<td>The player of the role is a man joined to a woman (scoping person) in marriage.</td>
+<td>Echtgenoot</td>
+<td>Echtgenoot</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTH">MTH</a></td>
+<td>Mother</td>
+<td>The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child).</td>
+<td>Moeder</td>
+<td>Moeder</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHINLAW">MTHINLAW</a></td>
+<td>Mother-in-law</td>
+<td>The player of the role is the mother of the scoping person's husband or wife.</td>
+<td>Schoonmoeder</td>
+<td>Schoonmoeder</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NEPHEW">NEPHEW</a></td>
+<td>Nephew</td>
+<td>The player of the role is a son of the scoping person's brother or sister or of the brother or sister of the 	scoping person's spouse.</td>
+<td>Neef, zoon van broer/zus</td>
+<td>Neef, zoon van broer/zus</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NIECE">NIECE</a></td>
+<td>Niece</td>
+<td>The player of the role is a daughter of the scoping person's brother or sister or of the brother or sister of the 	scoping person's spouse.</td>
+<td>Nicht, dochter van broer/zus</td>
+<td>Nicht, dochter van broer/zus</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SIS">SIS</a></td>
+<td>Sister</td>
+<td>The player of the role is a female sharing one or both parents in common with the scoping entity.</td>
+<td>Zuster</td>
+<td>Zuster</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SISINLAW">SISINLAW</a></td>
+<td>Sister-in-law</td>
+<td>The player of the role is: (1) a sister of the scoping person's spouse, or (2) the wife of the scoping person's brother, or (3) the wife of a brother of the scoping person's spouse.</td>
+<td>Schoonzuster</td>
+<td>Schoonzuster</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONC">SONC</a></td>
+<td>Son</td>
+<td>Description: The player of the role is a male child (of any type) of scoping entity (parent)</td>
+<td>Zoon</td>
+<td>Zoon</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONINLAW">SONINLAW</a></td>
+<td>Son in-law</td>
+<td>The player of the role is the husband of scoping person's daughter.</td>
+<td>Schoonzoon</td>
+<td>Schoonzoon</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPFTH">STPFTH</a></td>
+<td>Stepfather</td>
+<td>The player of the role is the husband of scoping person's mother and not the scoping person's natural father.</td>
+<td>Stiefvader</td>
+<td>Stiefvader</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPMTH">STPMTH</a></td>
+<td>Stepmother</td>
+<td>The player of the role is the wife of scoping person's father and not the scoping person's natural mother.</td>
+<td>Stiefmoeder</td>
+<td>Stiefmoeder</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-UNCLE">UNCLE</a></td>
+<td>Uncle</td>
+<td>The player of the role is a brother of the scoping person's mother or father.</td>
+<td>Oom</td>
+<td>Oom</td></tr>
+<tr><td><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-WIFE">WIFE</a></td>
+<td>Wife</td>
+<td>The player of the role is a woman joined to a man (scoping person) in marriage.</td>
+<td>Echtgenote</td>
+<td>Echtgenote</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <p><span style="color: maroon; font-weight: bold" title="Publication Tooling Error: [Found unknown Modifier Exceptions on Code in Code System doing expanding]">No Expansion for this valueset (not supported by Publication Tooling<!-- [Found unknown Modifier Exceptions on Code in Code System doing expanding] -->)</span></p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html">codesystem v3 Code System NullFlavor v2016-11-11 (CodeSystem)</a></li><li><a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html">codesystem v3 Code System RoleCode v2016-11-11 (CodeSystem)</a></li></ul></div><p>This value set contains 35 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-NullFlavor-OTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html#v3-NullFlavor-OTH">OTH</a></td><td>http://hl7.org/fhir/v3/NullFlavor</td><td>Other</td><td><div><p>Description:The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).</p>
+<pre><code>                       Usage Notes: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
 
+                    With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition, all local codes and original text are part of the value set if the coding strength is CWE.
+</code></pre>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-ADOPTF"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTF">ADOPTF</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Adoptive father</td><td><div><p>The player of the role (father) is a male who has taken the scoper (child) into their family through legal means and raises them as his own child.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-ADOPTM"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-ADOPTM">ADOPTM</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Adoptive mother</td><td><div><p>The player of the role (father) is a female who has taken the scoper (child) into their family through legal means and raises them as her own child.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-AUNT"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-AUNT">AUNT</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Aunt</td><td><div><p>The player of the role is a sister of the scoping person's mother or father.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-BRO"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BRO">BRO</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Brother</td><td><div><p>The player of the role is a male sharing one or both parents in common with the scoping entity.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-BROINLAW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-BROINLAW">BROINLAW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Brother-in-law</td><td><div><p>The player of the role is: (1) a brother of the scoping person's spouse, or (2) the husband of the scoping person's sister, or (3) the husband of a sister of the scoping person's spouse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-COUSN"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-COUSN">COUSN</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Cousin</td><td><div><p>The player of the role is a relative of the scoping person descended from a common ancestor, such as a  grandparent, by two or more steps in a diverging line.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-DAUC"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUC">DAUC</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Daughter</td><td><div><p>Description: The player of the role is a female child (of any type) of scoping entity (parent)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-DAUINLAW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUINLAW">DAUINLAW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Daughter in-law</td><td><div><p>The player of the role is the wife of scoping person's son.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-DOMPART"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DOMPART">DOMPART</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Domestic partner</td><td><div><p>The player of the role cohabits with the scoping person but is not the scoping person's spouse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-FTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTH">FTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Father</td><td><div><p>The player of the role is a male who begets or raises or nurtures the scoping entity (child).</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-FTHINLAW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHINLAW">FTHINLAW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Father-in-law</td><td><div><p>The player of the role is the father of the scoping person's husband or wife.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-DAUFOST"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-DAUFOST">DAUFOST</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Foster daughter</td><td><div><p>The player of the role is a female child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-FTHFOST"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-FTHFOST">FTHFOST</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Foster father</td><td><div><p>The player of the role (parent) who is a male state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.</p>
+<pre><code>                    The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.
+</code></pre>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-MTHFOST"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHFOST">MTHFOST</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Foster mother</td><td><div><p>The player of the role (parent) who is a female state-certified caregiver responsible for the scoper (child) who has been placed in the parent's care. The placement of the child is usually arranged through the government or a social-service agency, and temporary.</p>
+<pre><code>                    The state, via a jurisdiction recognized child protection agency, stands as in loco parentis to the child, making all legal decisions while the foster parent is responsible for the day-to-day care of the specified child.
+</code></pre>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-SONFOST"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONFOST">SONFOST</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Foster son</td><td><div><p>The player of the role is a male child receiving parental care and nurture from the scoping person (parent) but not related to him or her through legal or blood ties.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-GRNDDAU"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDDAU">GRNDDAU</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Granddaughter</td><td><div><p>The player of the role is a daughter of the scoping person's son or daughter.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-GRFTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRFTH">GRFTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Grandfather</td><td><div><p>The player of the role is the father of the scoping person's mother or father.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-GRMTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRMTH">GRMTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Grandmother</td><td><div><p>The player of the role is the mother of the scoping person's mother or father.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-GRNDSON"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GRNDSON">GRNDSON</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Grandson</td><td><div><p>The player of the role is a son of the scoping person's son or daughter.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-GGRFTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRFTH">GGRFTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Great grandfather</td><td><div><p>The player of the role is the father of the scoping person's grandparent.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-GGRMTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-GGRMTH">GGRMTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Great grandmother</td><td><div><p>The player of the role is the mother of the scoping person's grandparent.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-HUSB"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-HUSB">HUSB</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Husband</td><td><div><p>The player of the role is a man joined to a woman (scoping person) in marriage.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-MTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTH">MTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Mother</td><td><div><p>The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child).</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-MTHINLAW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-MTHINLAW">MTHINLAW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Mother-in-law</td><td><div><p>The player of the role is the mother of the scoping person's husband or wife.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-NEPHEW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NEPHEW">NEPHEW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Nephew</td><td><div><p>The player of the role is a son of the scoping person's brother or sister or of the brother or sister of the    scoping person's spouse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-NIECE"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-NIECE">NIECE</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Niece</td><td><div><p>The player of the role is a daughter of the scoping person's brother or sister or of the brother or sister of the   scoping person's spouse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-SIS"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SIS">SIS</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Sister</td><td><div><p>The player of the role is a female sharing one or both parents in common with the scoping entity.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-SISINLAW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SISINLAW">SISINLAW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Sister-in-law</td><td><div><p>The player of the role is: (1) a sister of the scoping person's spouse, or (2) the wife of the scoping person's brother, or (3) the wife of a brother of the scoping person's spouse.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-SONC"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONC">SONC</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Son</td><td><div><p>Description: The player of the role is a male child (of any type) of scoping entity (parent)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-SONINLAW"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-SONINLAW">SONINLAW</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Son in-law</td><td><div><p>The player of the role is the husband of scoping person's daughter.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-STPFTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPFTH">STPFTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Stepfather</td><td><div><p>The player of the role is the husband of scoping person's mother and not the scoping person's natural father.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-STPMTH"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-STPMTH">STPMTH</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Stepmother</td><td><div><p>The player of the role is the wife of scoping person's father and not the scoping person's natural mother.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-UNCLE"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-UNCLE">UNCLE</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Uncle</td><td><div><p>The player of the role is a brother of the scoping person's mother or father.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-v3-RoleCode-WIFE"> </a>  <a href="http://hl7.org/fhir/STU3/v3/RoleCode/cs.html#v3-RoleCode-WIFE">WIFE</a></td><td>http://hl7.org/fhir/v3/RoleCode</td><td>Wife</td><td><div><p>The player of the role is a woman joined to a man (scoping person) in marriage.</p>
+</div></td></tr></table></div>
 
   <hr/>
   <p>
@@ -293,7 +508,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Oct 17, 2023 13:17+0200">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Apr 9, 2024 16:00+0200">2024-04-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -200,9 +200,6 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
         </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
-        </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
         <valueSetReference>
@@ -1230,38 +1227,6 @@
         <code value="DocumentManifest"/>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.DocumentManifest"/>
       </type>
-      <constraint>
-        <key value="dom-2"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"/>
-        <expression value="contained.contained.empty()"/>
-        <xpath value="not(parent::f:contained and f:contained)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-1"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"/>
-        <expression value="contained.text.empty()"/>
-        <xpath value="not(parent::f:contained and f:text)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-4"/>
-        <severity value="error"/>
-        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
-        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"/>
-        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-3"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"/>
-        <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"/>
-        <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -1941,38 +1906,6 @@
         <code value="DocumentReference"/>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.Provide.Minimal.DocumentReference"/>
       </type>
-      <constraint>
-        <key value="dom-2"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"/>
-        <expression value="contained.contained.empty()"/>
-        <xpath value="not(parent::f:contained and f:contained)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-1"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"/>
-        <expression value="contained.text.empty()"/>
-        <xpath value="not(parent::f:contained and f:text)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-4"/>
-        <severity value="error"/>
-        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
-        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"/>
-        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-3"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"/>
-        <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"/>
-        <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
@@ -2654,54 +2587,6 @@
         <code value="List"/>
         <profile value="http://nictiz.nl/fhir/StructureDefinition/IHE.MHD.List"/>
       </type>
-      <constraint>
-        <key value="dom-2"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL NOT contain nested Resources"/>
-        <expression value="contained.contained.empty()"/>
-        <xpath value="not(parent::f:contained and f:contained)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-1"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL NOT contain any narrative"/>
-        <expression value="contained.text.empty()"/>
-        <xpath value="not(parent::f:contained and f:text)"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-4"/>
-        <severity value="error"/>
-        <human value="If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated"/>
-        <expression value="contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()"/>
-        <xpath value="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="dom-3"/>
-        <severity value="error"/>
-        <human value="If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource"/>
-        <expression value="contained.where(('#'+id in %resource.descendants().reference).not()).empty()"/>
-        <xpath value="not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="lst-2"/>
-        <severity value="error"/>
-        <human value="The deleted flag can only be used if the mode of the list is &quot;changes&quot;"/>
-        <expression value="mode = 'changes' or entry.deleted.empty()"/>
-        <xpath value="(f:mode/@value = 'changes') or not(exists(f:entry/f:deleted))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/List"/>
-      </constraint>
-      <constraint>
-        <key value="lst-1"/>
-        <severity value="error"/>
-        <human value="A list can only have an emptyReason if it is empty"/>
-        <expression value="emptyReason.empty() or entry.empty()"/>
-        <xpath value="not(exists(f:emptyReason) and exists(f:entry))"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/List"/>
-      </constraint>
       <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>

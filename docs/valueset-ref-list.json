@@ -1,0 +1,3466 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.103.11.2--20111012000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "JournaalregelType",
+      "title" : "JournaalregelType",
+      "description" : "Type of the SOAP encoded journal entry",
+      "systems" : ["http://fhir.nl/fhir/NamingSystem/journaalregeltypen"],
+      "uses" : {
+      },
+      "StructureDefinition-gp-JournalEntry.html" : "gp-JournalEntry",
+      "StructureDefinition-gp-EncounterReport.html" : "gp-EncounterReport"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.103.11.3--20110902000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "NHGTable14v7-ContactType",
+      "title" : "NHG tabel 14v7 - ContactType",
+      "description" : "Type of encounter. Note: Historically, these codes have a leading zero, whereas these are omitted in the [NHG Reference Model](https://referentiemodel.nhg.org/tabellen/inkijkexemplaren).",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "https://referentiemodel.nhg.org/tabellen/nhg-tabel-14-contactwijze"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-gp-Encounter.html" : "gp-Encounter"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.19--20160617101300",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "Stoptype",
+      "title" : "Stoptype",
+      "description" : "Stoptype",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.1"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.21--20181218104051",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RedenMedicatieafspraak",
+      "title" : "Reden wijzigen of staken",
+      "description" : "Reden wijzigen of staken",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.27--20160830202453",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GstdTabel902",
+      "title" : "G-Standaard Eenhedentabel",
+      "description" : "G-Standaard Eenhedentabel",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.900.2"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.37--20181218104254",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RedenWijzStakenMedicatiegebruik",
+      "title" : "Reden wijzigen of staken medicatiegebruik",
+      "description" : "Reden wijzigen of staken",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.20.77.11.9--20160407000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AanvullendeGebruiksinstructie",
+      "title" : "Aanvullende gebruiksinstructie",
+      "description" : "WCIAv3 Tabel 25 B-codes subset voor aanvullende gebruiksinstructies",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.0.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GeslachtCodelijst",
+      "title" : "GeslachtCodelijst",
+      "description" : "GeslachtCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://hl7.org/fhir/v3/AdministrativeGender"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-patient.html" : "nl-core-patient",
+      "ConceptMap-GeslachtCodelijst-to-AdministrativeGender.html" : "GeslachtCodelijst-to-AdministrativeGender"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.1.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerzekeringssoortCodelijst",
+      "title" : "VerzekeringssoortCodelijst",
+      "description" : "VerzekeringssoortCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Payer.html" : "HCIM Payer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductTypeCodelijst",
+      "title" : "ProductTypeCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MedicalDeviceRequest.html" : "HCIM MedicalDevice Request",
+      "StructureDefinition-zib-MedicalDeviceProduct.html" : "HCIM MedicalDevice Product"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HulpmiddelAnatomischeLocatieCodelijst",
+      "title" : "HulpmiddelAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MedicalDevice.html" : "HCIM MedicalDevice"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.1.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedischHulpmiddelLateraliteitCodelijst",
+      "title" : "MedischHulpmiddelLateraliteitCodelijst",
+      "description" : "MedischHulpmiddelLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MedicalDevice.html" : "HCIM MedicalDevice"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.2.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "InfuuskatheterTypeCodelijst",
+      "title" : "InfuuskatheterTypeCodelijst",
+      "description" : "InfuuskatheterTypeCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LumenLocatieCodelijst",
+      "title" : "LumenLocatieCodelijst",
+      "description" : "LumenLocatieCodelijst",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.2.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LijnStatusCodelijst",
+      "title" : "LijnStatusCodelijst",
+      "description" : "LijnStatusCodelijst",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.12.1",
+        "http://hl7.org/fhir/v3/NullFlavor"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.10.3.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SondeTypeCodelijst",
+      "title" : "SondeTypeCodelijst",
+      "description" : "SondeTypeCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FeedingTubeSystem-Product.html" : "HCIM FeedingTubeSystem Product"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodePRKCodelijst",
+      "title" : "ProductCodePRKCodelijst",
+      "description" : "G-Standaard Voorschrijfproducten (PRK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.10"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-VaccinationRecommendation.html" : "HCIM VaccinationRecommendation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeHPKCodelijst",
+      "title" : "ProductCodeHPKCodelijst",
+      "description" : "G-Standaard Handels Product Kode (HPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.7"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-VaccinationRecommendation.html" : "HCIM VaccinationRecommendation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeGPKCodelijst",
+      "title" : "ProductCodeGPKCodelijst",
+      "description" : "G-Standaard Generieke Product Kode (GPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-VaccinationRecommendation.html" : "HCIM VaccinationRecommendation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeATCCodelijst",
+      "title" : "ProductCodeATCCodelijst",
+      "description" : "Anatomic Therapeutic Classification (ATC) - Alle waarden",
+      "systems" : ["http://www.whocc.no/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-VaccinationRecommendation.html" : "HCIM VaccinationRecommendation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeGTINCodelijst",
+      "title" : "ProductCodeGTINCodelijst",
+      "description" : "Global Trade Item Number (GTIN) - Alle waarden",
+      "systems" : ["urn:oid:1.3.160"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-VaccinationRecommendation.html" : "HCIM VaccinationRecommendation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.11.1.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeZICodelijst",
+      "title" : "ProductCodeZICodelijst",
+      "description" : "G-Standaard Artikelen (ook KNMP-nummer, ATKODE) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.8"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-VaccinationRecommendation.html" : "HCIM VaccinationRecommendation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "KledingCodelijst",
+      "title" : "KledingCodelijst",
+      "description" : "KledingCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.8.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BodyWeight.html" : "HCIM BodyWeight"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AlertheidCodelijst",
+      "title" : "AlertheidCodelijst",
+      "description" : "AlertheidCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "Kalmte_AgitatieCodelijst",
+      "title" : "Kalmte_AgitatieCodelijst",
+      "description" : "Kalmte_AgitatieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AdemhalingsreactieCodelijst",
+      "title" : "AdemhalingsreactieCodelijst",
+      "description" : "AdemhalingsreactieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LichaamsbewegingCodelijst",
+      "title" : "LichaamsbewegingCodelijst",
+      "description" : "LichaamsbewegingCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.5"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GezichtsspanningCodelijst",
+      "title" : "GezichtsspanningCodelijst",
+      "description" : "GezichtsspanningCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.6"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.12.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpierspanningCodelijst",
+      "title" : "SpierspanningCodelijst",
+      "description" : "SpierspanningCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.20.7"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GezichtCodelijst",
+      "title" : "GezichtCodelijst",
+      "description" : "GezichtCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FLACCPainScale.html" : "HCIM FLACCPainScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BenenCodelijst",
+      "title" : "BenenCodelijst",
+      "description" : "BenenCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FLACCPainScale.html" : "HCIM FLACCPainScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ActiviteitCodelijst",
+      "title" : "ActiviteitCodelijst",
+      "description" : "ActiviteitCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FLACCPainScale.html" : "HCIM FLACCPainScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HuilenCodelijst",
+      "title" : "HuilenCodelijst",
+      "description" : "HuilenCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.4"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ComfortScale.html" : "HCIM ComfortScale",
+      "StructureDefinition-zib-FLACCPainScale.html" : "HCIM FLACCPainScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.13.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TroostbaarCodelijst",
+      "title" : "TroostbaarCodelijst",
+      "description" : "TroostbaarCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.21.5"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FLACCPainScale.html" : "HCIM FLACCPainScale"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.14.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SchedelomvangMeetmethodeCodelijst",
+      "title" : "SchedelomvangMeetmethodeCodelijst",
+      "description" : "SchedelomvangMeetmethodeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-headCircumference.html" : "HCIM HeadCircumference"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AdemhalingScoreCodelijst",
+      "title" : "AdemhalingScoreCodelijst",
+      "description" : "AdemhalingScoreCodelijst",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ApgarScore.html" : "HCIM ApgarScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HartslagScoreCodelijst",
+      "title" : "HartslagScoreCodelijst",
+      "description" : "HartslagScoreCodelijst",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ApgarScore.html" : "HCIM ApgarScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpierspanningScoreCodelijst",
+      "title" : "SpierspanningScoreCodelijst",
+      "description" : "SpierspanningScoreCodelijst",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ApgarScore.html" : "HCIM ApgarScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HuidskleurScoreCodelijst",
+      "title" : "HuidskleurScoreCodelijst",
+      "description" : "HuidskleurScoreCodelijst",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ApgarScore.html" : "HCIM ApgarScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.16.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ReflexenScoreCodelijst",
+      "title" : "ReflexenScoreCodelijst",
+      "description" : "ReflexenScoreCodelijst",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-ApgarScore.html" : "HCIM ApgarScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.3.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HartslagRegelmatigheidCodelijst",
+      "title" : "HartslagRegelmatigheidCodelijst",
+      "description" : "HartslagRegelmatigheidCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-HeartRate.html" : "HCIM HeartRate"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.3.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HartslagMeetMethodeCodelijst",
+      "title" : "HartslagMeetMethodeCodelijst",
+      "description" : "HartslagMeetMethodeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-HeartRate.html" : "HCIM HeartRate"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MeetmethodeCodelijst",
+      "title" : "MeetmethodeCodelijst",
+      "description" : "MeetmethodeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BloodPressure.html" : "HCIM BloodPressure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DiastolischEindpuntCodelijst",
+      "title" : "DiastolischEindpuntCodelijst",
+      "description" : "DiastolischEindpuntCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BloodPressure.html" : "HCIM BloodPressure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ManchetTypeCodelijst",
+      "title" : "ManchetTypeCodelijst",
+      "description" : "ManchetTypeCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BloodPressure.html" : "HCIM BloodPressure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MeetLocatieCodelijst",
+      "title" : "MeetLocatieCodelijst",
+      "description" : "MeetLocatieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BloodPressure.html" : "HCIM BloodPressure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.4.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HoudingCodelijst",
+      "title" : "HoudingCodelijst",
+      "description" : "HoudingCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BloodPressure.html" : "HCIM BloodPressure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RitmeCodelijst",
+      "title" : "RitmeCodelijst",
+      "description" : "RitmeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Respiration.html" : "HCIM Respiration"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DiepteCodelijst",
+      "title" : "DiepteCodelijst",
+      "description" : "DiepteCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Respiration.html" : "HCIM Respiration"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AfwijkendAdemhalingspatroonCodelijst",
+      "title" : "AfwijkendAdemhalingspatroonCodelijst",
+      "description" : "AfwijkendAdemhalingspatroonCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Respiration.html" : "HCIM Respiration"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.5.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ToedieningHulpmiddelCodelijst",
+      "title" : "ToedieningHulpmiddelCodelijst",
+      "description" : "ToedieningHulpmiddelCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Respiration-AdministeredOxygen-AdministrationDeviceProduct.html" : "HCIM Respiration AdministeredOxygen AdministrationDeviceProduct"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.6.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TemperatuurTypeCodelijst",
+      "title" : "TemperatuurTypeCodelijst",
+      "description" : "TemperatuurTypeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BodyTemperature.html" : "HCIM BodyTemperature"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.7.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "PolsRegelmatigheidCodelijst",
+      "title" : "PolsRegelmatigheidCodelijst",
+      "description" : "PolsRegelmatigheidCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PulseRate.html" : "HCIM PulseRate"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.9.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "PijnMeetmethodeCodelijst",
+      "title" : "PijnMeetmethodeCodelijst",
+      "description" : "PijnMeetmethodeCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.9.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PainScore.html" : "HCIM PainScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.9.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "PijnAnatomischeLocatieCodelijst",
+      "title" : "PijnAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PainScore.html" : "HCIM PainScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.12.9.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "PijnLateraliteitCodelijst",
+      "title" : "PijnLateraliteitCodelijst",
+      "description" : "PijnLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PainScore.html" : "HCIM PainScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ResultaatTypeCodelijst",
+      "title" : "ResultaatTypeCodelijst",
+      "description" : "ResultaatTypeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Observation.html" : "HCIM LaboratoryTestResult Observation",
+      "StructureDefinition-zib-LaboratoryTestResult-DiagnosticReport.html" : "HCIM LaboratoryTestResult DiagnosticReport"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.10--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MicroorganismeCodelijst",
+      "title" : "MicroorganismeCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: ^2581000146104 |simpele referentieset voor micro-organismen (foundation metadata concept)|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen-Isolate.html" : "HCIM LaboratoryTestResult Specimen Isolate",
+      "StructureDefinition-zib-LaboratoryTestResult-Substance.html" : "HCIM LaboratoryTestResult Substance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.11--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MonsterAnatomischeLocatieCodelijst",
+      "title" : "MonsterAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen-Isolate.html" : "HCIM LaboratoryTestResult Specimen Isolate",
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen.html" : "HCIM LaboratoryTestResult Specimen"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.12--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LateraliteitCodelijst",
+      "title" : "LateraliteitCodelijst",
+      "description" : "LateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen-Isolate.html" : "HCIM LaboratoryTestResult Specimen Isolate",
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen.html" : "HCIM LaboratoryTestResult Specimen"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.13--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MorfologieCodelijst",
+      "title" : "MorfologieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 49755003 |Morphologically abnormal structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen-Isolate.html" : "HCIM LaboratoryTestResult Specimen Isolate",
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen.html" : "HCIM LaboratoryTestResult Specimen"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AfnameprocedureCodelijst",
+      "title" : "AfnameprocedureCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: <71388002| verrichting (verrichting)|(alle concepten onder procedure)",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen-Isolate.html" : "HCIM LaboratoryTestResult Specimen Isolate",
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen.html" : "HCIM LaboratoryTestResult Specimen"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TestCodeCodelijst",
+      "title" : "TestCodeCodelijst",
+      "description" : "LOINC - Alle waarden",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Observation.html" : "HCIM LaboratoryTestResult Observation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TestmethodeCodelijst",
+      "title" : "TestmethodeCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 272394005 |Technique (qualifier value)|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Observation.html" : "HCIM LaboratoryTestResult Observation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OnderzoekCodelijst",
+      "title" : "OnderzoekCodelijst",
+      "description" : "LOINC - Alle waarden",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Observation.html" : "HCIM LaboratoryTestResult Observation",
+      "StructureDefinition-zib-LaboratoryTestResult-DiagnosticReport.html" : "HCIM LaboratoryTestResult DiagnosticReport"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MonstermateriaalCodelijst",
+      "title" : "MonstermateriaalCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 105590001 |substantie|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen.html" : "HCIM LaboratoryTestResult Specimen"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "InterpretatieVlaggenCodelijst",
+      "title" : "InterpretatieVlaggenCodelijst",
+      "description" : "InterpretatieVlaggenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-InterpretatieVlaggenCodelijst-to-observation-interpretation.html" : "HCIM InterpretatieVlaggenCodelijst to Observation Interpretation Codes",
+      "StructureDefinition-zib-LaboratoryTestResult-Observation.html" : "HCIM LaboratoryTestResult Observation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.8--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ResultaatStatusCodelijst",
+      "title" : "ResultaatStatusCodelijst",
+      "description" : "ResultaatStatusCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Observation.html" : "HCIM LaboratoryTestResult Observation",
+      "StructureDefinition-zib-LaboratoryTestResult-DiagnosticReport.html" : "HCIM LaboratoryTestResult DiagnosticReport"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.1.9--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ContainerTypeCodelijst",
+      "title" : "ContainerTypeCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 434711009 |Specimen container (physical object)|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen-Isolate.html" : "HCIM LaboratoryTestResult Specimen Isolate",
+      "StructureDefinition-zib-LaboratoryTestResult-Specimen.html" : "HCIM LaboratoryTestResult Specimen"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.2.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TekstUitslagTypeCodelijst",
+      "title" : "TekstUitslagTypeCodelijst",
+      "description" : "TekstUitslagTypeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TextResult.html" : "HCIM TextResult"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TekstStatusCodelijst",
+      "title" : "TekstStatusCodelijst",
+      "description" : "TekstStatusCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TextResult.html" : "HCIM TextResult"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.3.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MetingNaamCodelijst",
+      "title" : "MetingNaamCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-GeneralMeasurement.html" : "HCIM General Measurement"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.3.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OnderzoekCodelijst",
+      "title" : "OnderzoekCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-GeneralMeasurement.html" : "HCIM General Measurement"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.13.3.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MeetmethodeCodelijst",
+      "title" : "MeetmethodeCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-GeneralMeasurement.html" : "HCIM General Measurement"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerrichtingAnatomischeLocatieCodelijst",
+      "title" : "VerrichtingAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Procedure.html" : "HCIM Procedure",
+      "StructureDefinition-zib-ProcedureRequest.html" : "HCIM ProcedureRequest"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerrichtingTypeCodelijst",
+      "title" : "VerrichtingTypeCodelijst",
+      "description" : "SNOMED CT - Alle waarden binnen de SNOMED CT referentieset Verrichtingenthesaurus DHD (was: 2.16.840.1.113883.2.4.3.120.5.2)",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Procedure.html" : "HCIM Procedure",
+      "StructureDefinition-zib-ProcedureRequest.html" : "HCIM ProcedureRequest"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerrichtingLateraliteitCodelijst",
+      "title" : "VerrichtingLateraliteitCodelijst",
+      "description" : "VerrichtingLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Procedure.html" : "HCIM Procedure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.1.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerrichtingMethodeCodelijst",
+      "title" : "VerrichtingMethodeCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 129264002 |Action (qualifier value)|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Procedure.html" : "HCIM Procedure"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "InterventieNICCodelijst",
+      "title" : "InterventieNICCodelijst",
+      "description" : "NIC - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.15"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-NursingIntervention.html" : "HCIM NursingIntervention",
+      "StructureDefinition-nl-core-careplan.html" : "nl-core-careplan"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.2.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "InterventieSnomedCodelijst",
+      "title" : "InterventieSnomedCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: <<71388002 | procedure |",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-NursingIntervention.html" : "HCIM NursingIntervention",
+      "StructureDefinition-nl-core-careplan.html" : "nl-core-careplan"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ToestemmingCodelijst",
+      "title" : "ToestemmingCodelijst",
+      "description" : "ToestemmingCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.6.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FreedomRestrictingMeasures.html" : "HCIM FreedomRestrictingMeasures"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "JuridischeStatusCodelijst",
+      "title" : "JuridischeStatusCodelijst",
+      "description" : "JuridischeStatusCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.22.232"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-patient-legalstatus.html" : "Patient LegalSatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SoortInterventieCodelijst",
+      "title" : "SoortInterventieCodelijst",
+      "description" : "SoortInterventieCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FreedomRestrictingMeasures.html" : "HCIM FreedomRestrictingMeasures"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ArgusInterventieCodelijst",
+      "title" : "ArgusInterventieCodelijst",
+      "description" : "ArgusInterventieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.22.217"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FreedomRestrictingMeasures.html" : "HCIM FreedomRestrictingMeasures"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.14.3.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ArgusInstemmingCodelijst",
+      "title" : "ArgusInstemmingCodelijst",
+      "description" : "ArgusInstemmingCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.22.217"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FreedomRestrictingMeasures.html" : "HCIM FreedomRestrictingMeasures"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ContactTypeCodelijst",
+      "title" : "ContactTypeCodelijst",
+      "description" : "ContactTypeCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://hl7.org/fhir/v3/ActCode"
+      ],
+      "uses" : {
+      },
+      "ConceptMap-ContactTypeCodelijst-to-ActEncounterCode.html" : "HCIM ContactTypeCodelijst to ActEncounterCode",
+      "StructureDefinition-zib-Encounter.html" : "HCIM Encounter"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HerkomstCodelijst",
+      "title" : "HerkomstCodelijst",
+      "description" : "HerkomstCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Encounter.html" : "HCIM Encounter"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.15.1.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BestemmingCodelijst",
+      "title" : "BestemmingCodelijst",
+      "description" : "BestemmingCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Encounter.html" : "HCIM Encounter"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.16.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OrderStatusCodelijst",
+      "title" : "OrderStatusCodelijst",
+      "description" : "OrderStatusCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/ActStatus", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MedicalDeviceRequest.html" : "HCIM MedicalDevice Request",
+      "StructureDefinition-zib-ProcedureRequest.html" : "HCIM ProcedureRequest",
+      "StructureDefinition-zib-VaccinationRecommendation-OrderStatus.html" : "HCIM VaccinationRecommendation OrderStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZorgverlenerRolCodelijst",
+      "title" : "ZorgverlenerRolCodelijst",
+      "description" : "ZorgverlenerRolCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://hl7.org/fhir/v3/ParticipationType"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Procedure.html" : "HCIM Procedure",
+      "StructureDefinition-zib-NursingIntervention.html" : "HCIM NursingIntervention",
+      "StructureDefinition-zib-MedicalDeviceRequest.html" : "HCIM MedicalDevice Request",
+      "StructureDefinition-zib-Encounter.html" : "HCIM Encounter",
+      "StructureDefinition-zib-TextResult.html" : "HCIM TextResult",
+      "StructureDefinition-zib-LaboratoryTestResult-DiagnosticReport.html" : "HCIM LaboratoryTestResult DiagnosticReport",
+      "StructureDefinition-zib-Vaccination.html" : "HCIM Vaccination",
+      "StructureDefinition-zib-ProcedureRequest.html" : "HCIM ProcedureRequest",
+      "StructureDefinition-nl-core-careteam.html" : "nl-core-careteam"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecialismeUZICodelijst",
+      "title" : "SpecialismeUZICodelijst",
+      "description" : "RoleCodeNL (Zorgverlenertype (personen)) - Alle waarden",
+      "systems" : ["http://fhir.nl/fhir/NamingSystem/uzi-rolcode"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-practitionerrole.html" : "nl-core-practitionerrole"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecialismeAGBCodelijst",
+      "title" : "SpecialismeAGBCodelijst",
+      "description" : "COD016-VEKT (Vektis AGB-medische specialismen) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.6.7"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-practitionerrole.html" : "nl-core-practitionerrole"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OrganisatieTypeCodelijst",
+      "title" : "OrganisatieTypeCodelijst",
+      "description" : "OrganisatieTypeCodelijst",
+      "systems" : ["http://nictiz.nl/fhir/NamingSystem/organization-type"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-organization.html" : "nl-core-organization"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AfdelingSpecialismeCodelijst",
+      "title" : "AfdelingSpecialismeCodelijst",
+      "description" : "COD016-VEKT (Vektis AGB-medische specialismen) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.6.7"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-organization.html" : "nl-core-organization"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DecubitusCategorieCodelijst",
+      "title" : "DecubitusCategorieCodelijst",
+      "description" : "DecubitusCategorieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PressureUlcer.html" : "HCIM PressureUlcer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DecubitusAnatomischeLocatieCodelijst",
+      "title" : "DecubitusAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PressureUlcer.html" : "HCIM PressureUlcer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.1.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DecubitusWondLateraliteitCodelijst",
+      "title" : "DecubitusWondLateraliteitCodelijst",
+      "description" : "DecubitusWondLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondWeefselWCSCodelijst",
+      "title" : "WondWeefselWCSCodelijst",
+      "description" : "WondWeefselWCSCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.7.2"],
+      "uses" : {
+      },
+      "StructureDefinition-WoundCharacteristics.html" : "Wound characteristics for HCIM Wound/PressureUlcer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondWeefselOncoUlcerCodelijst",
+      "title" : "WondWeefselOncoUlcerCodelijst",
+      "description" : "WondWeefselOncoUlcerCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.7.1"],
+      "uses" : {
+      },
+      "StructureDefinition-WoundCharacteristics.html" : "Wound characteristics for HCIM Wound/PressureUlcer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondVochtigheidCodelijst",
+      "title" : "WondVochtigheidCodelijst",
+      "description" : "WondVochtigheidCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.7.3"],
+      "uses" : {
+      },
+      "StructureDefinition-WoundCharacteristics.html" : "Wound characteristics for HCIM Wound/PressureUlcer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondSoortCodelijst",
+      "title" : "WondSoortCodelijst",
+      "description" : "WondSoortCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Wound.html" : "HCIM Wound"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondRandCodelijst",
+      "title" : "WondRandCodelijst",
+      "description" : "WondRandCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-WoundCharacteristics.html" : "Wound characteristics for HCIM Wound/PressureUlcer"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondAnatomischeLocatieCodelijst",
+      "title" : "WondAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Wound.html" : "HCIM Wound"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondDrainTypeCodelijst",
+      "title" : "WondDrainTypeCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: << 32712000| drain |",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Wound-Drain-Product.html" : "HCIM Wound MedicalDeviceProduct"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.2.8--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WondLateraliteitCodelijst",
+      "title" : "WondLateraliteitCodelijst",
+      "description" : "WondLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Wound.html" : "HCIM Wound"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.3.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SoortAandoeningCodelijst",
+      "title" : "SoortAandoeningCodelijst",
+      "description" : "SoortAandoeningCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SkinDisorder.html" : "HCIM SkinDisorder"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.3.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HuidAnatomischeLocatieCodelijst",
+      "title" : "HuidAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SkinDisorder.html" : "HCIM SkinDisorder"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.3.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HuidLateraliteitCodelijst",
+      "title" : "HuidLateraliteitCodelijst",
+      "description" : "HuidLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SkinDisorder.html" : "HCIM SkinDisorder"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DieptegraadCodelijst",
+      "title" : "DieptegraadCodelijst",
+      "description" : "DieptegraadCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BurnWound.html" : "HCIM BurnWound"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BrandwondAnatomischeLocatieCodelijst",
+      "title" : "BrandwondAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BurnWound.html" : "HCIM BurnWound"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BrandwondSoortCodelijst",
+      "title" : "BrandwondSoortCodelijst",
+      "description" : "BrandwondSoortCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BurnWound-BurnWoundType.html" : "HCIM BurnWound BurnWoundType"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.19.4.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BrandwondLateraliteitCodelijst",
+      "title" : "BrandwondLateraliteitCodelijst",
+      "description" : "BrandwondLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BurnWound.html" : "HCIM BurnWound"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.2.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BehandelingCodelijst",
+      "title" : "BehandelingCodelijst",
+      "description" : "BehandelingCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TreatmentDirective.html" : "HCIM TreatmentDirective"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.2.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BehandelingToegestaanCodelijst",
+      "title" : "BehandelingToegestaanCodelijst",
+      "description" : "BehandelingToegestaanCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TreatmentDirective.html" : "HCIM TreatmentDirective"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.2.1.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GeverifieerdBijCodelijst",
+      "title" : "GeverifieerdBijCodelijst",
+      "description" : "GeverifieerdBijCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TreatmentDirective.html" : "HCIM TreatmentDirective"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "NaamgebruikCodelijst",
+      "title" : "NaamgebruikCodelijst",
+      "description" : "NaamgebruikCodelijst",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.4",
+        "http://hl7.org/fhir/v3/NullFlavor"
+      ],
+      "uses" : {
+      },
+      "ConceptMap-NaamgebruikCodelijst-to-HumanNameAssemblyOrder.html" : "NaamgebruikCodelijst-to-HumanNameAssemblyOrder"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LandGBACodelijst",
+      "title" : "LandGBACodelijst",
+      "description" : "GBA Tabel 34 (Landentabel) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.16.34"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-address.html" : "nl-core-address"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LandISOCodelijst",
+      "title" : "LandISOCodelijst",
+      "description" : "ISO 3166-1 (alpha-2) - Alle waarden",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-address.html" : "nl-core-address"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AdresSoortCodelijst",
+      "title" : "AdresSoortCodelijst",
+      "description" : "AdresSoortCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/AddressUse"],
+      "uses" : {
+      },
+      "ConceptMap-AdresSoortCodelijst-to-AddressUse.html" : "AdresSoortCodelijst-to-AddressUse",
+      "ConceptMap-AdresSoortCodelijst-to-AddressType.html" : "AdresSoortCodelijst-to-AddressType"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TelecomTypeCodelijst",
+      "title" : "TelecomTypeCodelijst",
+      "description" : "TelecomTypeCodelijst",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.22.1",
+        "http://hl7.org/fhir/v3/AddressUse"
+      ],
+      "uses" : {
+      },
+      "ConceptMap-TelecomSoortCodelijst-to-ContactPointSystem.html" : "TelecomSoortCodelijst-to-ContactPointSystem",
+      "ConceptMap-TelecomSoortCodelijst-to-ContactPointUse.html" : "TelecomSoortCodelijst-to-ContactPointUse",
+      "StructureDefinition-nl-core-contactpoint.html" : "nl-core-contactpoint"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "NummerSoortCodelijst",
+      "title" : "NummerSoortCodelijst",
+      "description" : "NummerSoortCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/AddressUse"],
+      "uses" : {
+      },
+      "ConceptMap-NummerSoortCodelijst-to-ContactPointUse.html" : "NummerSoortCodelijst-to-ContactPointUse",
+      "StructureDefinition-nl-core-contactpoint.html" : "nl-core-contactpoint"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "EmailSoortCodelijst",
+      "title" : "EmailSoortCodelijst",
+      "description" : "EmailSoortCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/AddressUse"],
+      "uses" : {
+      },
+      "ConceptMap-EmailSoortCodelijst-to-ContactPointSystem.html" : "EmailSoortCodelijst-to-ContactPointSystem",
+      "ConceptMap-EmailSoortCodelijst-to-ContactPointUse.html" : "EmailSoortCodelijst-to-ContactPointUse",
+      "StructureDefinition-nl-core-contactpoint.html" : "nl-core-contactpoint"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RelatieCodelijst",
+      "title" : "RelatieCodelijst",
+      "description" : "RelatieCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://hl7.org/fhir/v3/RoleCode"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-patient.html" : "nl-core-patient",
+      "StructureDefinition-nl-core-relatedperson.html" : "nl-core-relatedperson"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RolCodelijst",
+      "title" : "RolCodelijst",
+      "description" : "RolCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.22.472"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-patient.html" : "nl-core-patient",
+      "StructureDefinition-nl-core-relatedperson.html" : "nl-core-relatedperson"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.3.2.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SoortHulpCodelijst",
+      "title" : "SoortHulpCodelijst",
+      "description" : "SoortHulpCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-HelpFromOthers.html" : "HCIM HelpFromOthers"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.10.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZichWassenCodelijst",
+      "title" : "ZichWassenCodelijst",
+      "description" : "ZichWassenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToWashOneSelf.html" : "HCIM AbilityToWashOneSelf"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.10.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TeWassenLichaamsdeelCodelijst",
+      "title" : "TeWassenLichaamsdeelCodelijst",
+      "description" : "TeWassenLichaamsdeelCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToWashOneSelf.html" : "HCIM AbilityToWashOneSelf"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.11.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZichKledenCodelijst",
+      "title" : "ZichKledenCodelijst",
+      "description" : "ZichKledenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToDressOneSelf.html" : "HCIM AbilityToDressOneself"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.11.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TeKledenLichaamsdeelCodelijst",
+      "title" : "TeKledenLichaamsdeelCodelijst",
+      "description" : "TeKledenLichaamsdeelCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToDressOneSelf.html" : "HCIM AbilityToDressOneself"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.13.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerzorgenTandenCodelijst",
+      "title" : "VerzorgenTandenCodelijst",
+      "description" : "VerzorgenTandenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToPerformMouthcareActivities.html" : "HCIM AbilityToPerformMouthcareActivities"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.13.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProtheseTypeCodelijst",
+      "title" : "ProtheseTypeCodelijst",
+      "description" : "ProtheseTypeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToPerformMouthcareActivities-MedicalDeviceProduct.html" : "HCIM AbilityToPerformMouthcareActivities MedicalDeviceProduct"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.14.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "UrineContinentieCodelijst",
+      "title" : "UrineContinentieCodelijst",
+      "description" : "UrineContinentieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BladderFunction.html" : "HCIM BladderFunction"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.14.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "UrineKatheterTypeCodelijst",
+      "title" : "UrineKatheterTypeCodelijst",
+      "description" : "UrineKatheterTypeCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BladderFunction-UrineCatheterProduct.html" : "HCIM BladderFunction UrineCatheter Product"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "FecesContinentieCodelijst",
+      "title" : "FecesContinentieCodelijst",
+      "description" : "FecesContinentieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BowelFunction.html" : "HCIM BowelFunction"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DefecatieConsistentieCodelijst",
+      "title" : "DefecatieConsistentieCodelijst",
+      "description" : "DefecatieConsistentieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BowelFunction.html" : "HCIM BowelFunction"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.15.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DefecatieKleurCodelijst",
+      "title" : "DefecatieKleurCodelijst",
+      "description" : "DefecatieKleurCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-BowelFunction.html" : "HCIM BowelFunction"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.16.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VisueleFunctieCodelijst",
+      "title" : "VisueleFunctieCodelijst",
+      "description" : "VisueleFunctieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-VisualFunction.html" : "HCIM VisualFunction"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.16.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZienHulpmiddelTypeCodelijst",
+      "title" : "ZienHulpmiddelTypeCodelijst",
+      "description" : "ZienHulpmiddelTypeCodelijst",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.2.4.3.11.22.218",
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-VisualFunction-VisualAidProduct.html" : "HCIM VisualFunction VisualAid Product"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.17.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HoorFunctieCodelijst",
+      "title" : "HoorFunctieCodelijst",
+      "description" : "HoorFunctieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-HearingFunction.html" : "HCIM HearingFunction"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.17.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HorenHulpmiddelTypeCodelijst",
+      "title" : "HorenHulpmiddelTypeCodelijst",
+      "description" : "HorenHulpmiddelTypeCodelijst",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.2.4.3.11.22.211",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-HearingFunction-HearingAid-Product.html" : "HCIM HearingFunction HearingAid Product"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.17.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LocatieGehoorapparaatCodelijst",
+      "title" : "LocatieGehoorapparaatCodelijst",
+      "description" : "LocatieGehoorapparaatCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-HearingFunction-HearingAid.html" : "HCIM HearingFunction HearingAid"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.22.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZorgBijMenstruatieCodelijst",
+      "title" : "ZorgBijMenstruatieCodelijst",
+      "description" : "ZorgBijMenstruatieCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToUseToilet.html" : "HCIM AbilityToUseToilet"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.22.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ToiletgebruikCodelijst",
+      "title" : "ToiletgebruikCodelijst",
+      "description" : "ToiletgebruikCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToUseToilet.html" : "HCIM AbilityToUseToilet"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusNaamOMAHACodelijst",
+      "title" : "StatusNaamOMAHACodelijst",
+      "description" : "OMAHA - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.98"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusNaamNOCCodelijst",
+      "title" : "StatusNaamNOCCodelijst",
+      "description" : "NOC - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.16"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusNaamICFCodelijst",
+      "title" : "StatusNaamICFCodelijst",
+      "description" : "ICF - Alle waarden",
+      "systems" : ["http://hl7.org/fhir/sid/icf-nl"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusNaamSnomedCodelijst",
+      "title" : "StatusNaamSnomedCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusWaardeOMAHACodelijst",
+      "title" : "StatusWaardeOMAHACodelijst",
+      "description" : "OMAHA - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.98"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusWaardeICFCodelijst",
+      "title" : "StatusWaardeICFCodelijst",
+      "description" : "ICF - Alle waarden",
+      "systems" : ["http://hl7.org/fhir/sid/icf-nl"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusWaardeNOCCodelijst",
+      "title" : "StatusWaardeNOCCodelijst",
+      "description" : "NOC - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.16"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.26.8--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StatusWaardeSnomedCodelijst",
+      "title" : "StatusWaardeSnomedCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FunctionalOrMentalStatus.html" : "HCIM FunctionalOrMentalStatus"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SKGewichtsverliesScoreCodelijst",
+      "title" : "SKGewichtsverliesScoreCodelijst",
+      "description" : "SKGewichtsverliesScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-StrongKidsScore.html" : "HCIM StrongKidsScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SKZiektebeeldScoreCodelijst",
+      "title" : "SKZiektebeeldScoreCodelijst",
+      "description" : "SKZiektebeeldScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-StrongKidsScore.html" : "HCIM StrongKidsScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SKVoedingsScoreCodelijst",
+      "title" : "SKVoedingsScoreCodelijst",
+      "description" : "SKVoedingsScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-StrongKidsScore.html" : "HCIM StrongKidsScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.28.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SKVoedingstoestandCodelijst",
+      "title" : "SKVoedingstoestandCodelijst",
+      "description" : "SKVoedingstoestandCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.17.4"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-StrongKidsScore.html" : "HCIM StrongKidsScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQrcGewichtsverliesScoreCodelijst",
+      "title" : "SNAQrcGewichtsverliesScoreCodelijst",
+      "description" : "SNAQrcGewichtsverliesScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.19.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQrcScore.html" : "HCIM SNAQrcScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQrcEetlustScoreCodelijst",
+      "title" : "SNAQrcEetlustScoreCodelijst",
+      "description" : "SNAQrcEetlustScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.19.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQrcScore.html" : "HCIM SNAQrcScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQrcBMIScoreCodelijst",
+      "title" : "SNAQrcBMIScoreCodelijst",
+      "description" : "SNAQrcBMIScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.19.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQrcScore.html" : "HCIM SNAQrcScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.29.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQrcHulpBijEtenCodelijst",
+      "title" : "SNAQrcHulpBijEtenCodelijst",
+      "description" : "SNAQrcHulpBijEtenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQrcScore.html" : "HCIM SNAQrcScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HoudingVeranderenCodelijst",
+      "title" : "HoudingVeranderenCodelijst",
+      "description" : "HoudingVeranderenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Mobility.html" : "HCIM Mobility"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.12--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TraplopenCodelijst",
+      "title" : "TraplopenCodelijst",
+      "description" : "TraplopenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Mobility.html" : "HCIM Mobility"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "HoudingHandhavenCodelijst",
+      "title" : "HoudingHandhavenCodelijst",
+      "description" : "HoudingHandhavenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Mobility.html" : "HCIM Mobility"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "UitvoerenTransferCodelijst",
+      "title" : "UitvoerenTransferCodelijst",
+      "description" : "UitvoerenTransferCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Mobility.html" : "HCIM Mobility"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.3.9--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LopenCodelijst",
+      "title" : "LopenCodelijst",
+      "description" : "LopenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Mobility.html" : "HCIM Mobility"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQ65_GewichtsverliesScoreCodelijst",
+      "title" : "SNAQ65+GewichtsverliesScoreCodelijst",
+      "description" : "SNAQ65+GewichtsverliesScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQ65plusScore.html" : "HCIM SNAQ65+Score"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQ65_EetlustScoreCodelijst",
+      "title" : "SNAQ65+EetlustScoreCodelijst",
+      "description" : "SNAQ65+EetlustScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQ65plusScore.html" : "HCIM SNAQ65+Score"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQ65_InspanningsScoreCodelijst",
+      "title" : "SNAQ65+InspanningsScoreCodelijst",
+      "description" : "SNAQ65+InspanningsScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQ65plusScore.html" : "HCIM SNAQ65+Score"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.30.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQ65_BovenarmOmtrekScoreCodelijst",
+      "title" : "SNAQ65+BovenarmOmtrekScoreCodelijst",
+      "description" : "SNAQ65+BovenarmOmtrekScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.18.4"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQ65plusScore.html" : "HCIM SNAQ65+Score"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.31.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VoedingSoortCodelijst",
+      "title" : "VoedingSoortCodelijst",
+      "description" : "VoedingSoortCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FeedingPatternInfant.html" : "HCIM FeedingPatternInfant"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.31.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VoedingMethodeCodelijst",
+      "title" : "VoedingMethodeCodelijst",
+      "description" : "VoedingMethodeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FeedingPatternInfant-FeedingMethod.html" : "HCIM FeedingPatternInfant-FeedingMethod"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZindelijkheidUrineCodelijst",
+      "title" : "ZindelijkheidUrineCodelijst",
+      "description" : "ZindelijkheidUrineCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DevelopmentChild.html" : "HCIM DevelopmentChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZindelijkheidFecesCodelijst",
+      "title" : "ZindelijkheidFecesCodelijst",
+      "description" : "ZindelijkheidFecesCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DevelopmentChild.html" : "HCIM DevelopmentChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OntwikkelingMotoriekCodelijst",
+      "title" : "OntwikkelingMotoriekCodelijst",
+      "description" : "OntwikkelingMotoriekCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DevelopmentChild.html" : "HCIM DevelopmentChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OntwikkelingSociaalCodelijst",
+      "title" : "OntwikkelingSociaalCodelijst",
+      "description" : "OntwikkelingSociaalCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DevelopmentChild.html" : "HCIM DevelopmentChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OntwikkelingTaalCodelijst",
+      "title" : "OntwikkelingTaalCodelijst",
+      "description" : "OntwikkelingTaalCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DevelopmentChild.html" : "HCIM DevelopmentChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.32.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "OntwikkelingVerstandelijkCodelijst",
+      "title" : "OntwikkelingVerstandelijkCodelijst",
+      "description" : "OntwikkelingVerstandelijkCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DevelopmentChild.html" : "HCIM DevelopmentChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.33.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "UiterlijkeVerzorgingCodelijst",
+      "title" : "UiterlijkeVerzorgingCodelijst",
+      "description" : "UiterlijkeVerzorgingCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToGroome.html" : "HCIM AbilityToGroome"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.34.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerrichtenVPKHandelingCodelijst",
+      "title" : "VerrichtenVPKHandelingCodelijst",
+      "description" : "VerrichtenVPKHandelingCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToPerformNursingActivities.html" : "HCIM AbilityToPerformNursingActivities"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.35.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZelfstandigMedicatiegebruikCodelijst",
+      "title" : "ZelfstandigMedicatiegebruikCodelijst",
+      "description" : "ZelfstandigMedicatiegebruikCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToManageMedication.html" : "HCIM AbilityToManageMedication"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.5.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BMIScoreCodelijst",
+      "title" : "BMIScoreCodelijst",
+      "description" : "BMIScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.4.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MUSTScore.html" : "HCIM MUSTScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.5.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MUSTGewichtsverliesScoreCodelijst",
+      "title" : "MUSTGewichtsverliesScoreCodelijst",
+      "description" : "MUSTGewichtsverliesScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.4.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MUSTScore.html" : "HCIM MUSTScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.5.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZiekteScoreCodelijst",
+      "title" : "ZiekteScoreCodelijst",
+      "description" : "ZiekteScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.4.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-MUSTScore.html" : "HCIM MUSTScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.6.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SNAQGewichtsverliesScoreCodelijst",
+      "title" : "SNAQGewichtsverliesScoreCodelijst",
+      "description" : "SNAQGewichtsverliesScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.5.1"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQScore.html" : "HCIM SNAQScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.6.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "EetlustScoreCodelijst",
+      "title" : "EetlustScoreCodelijst",
+      "description" : "EetlustScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.5.2"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQScore.html" : "HCIM SNAQScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.6.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VoedingsScoreCodelijst",
+      "title" : "VoedingsScoreCodelijst",
+      "description" : "VoedingsScoreCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.5.3"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-SNAQScore.html" : "HCIM SNAQScore"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.7.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "EtenCodelijst",
+      "title" : "EtenCodelijst",
+      "description" : "EtenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToEat.html" : "HCIM AbilityToEat"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.7.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "EetBeperkingenCodelijst",
+      "title" : "EetBeperkingenCodelijst",
+      "description" : "EetBeperkingenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToEat.html" : "HCIM AbilityToEat"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.8.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DrinkenCodelijst",
+      "title" : "DrinkenCodelijst",
+      "description" : "DrinkenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToDrink.html" : "HCIM AbilityToDrink"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.4.8.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DrinkBeperkingenCodelijst",
+      "title" : "DrinkBeperkingenCodelijst",
+      "description" : "DrinkBeperkingenCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AbilityToDrink.html" : "HCIM AbilityToDrink"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProbleemTypeCodelijst",
+      "title" : "ProbleemTypeCodelijst",
+      "description" : "ProbleemTypeCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Problem.html" : "HCIM Problem"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProbleemStatusCodelijst",
+      "title" : "ProbleemStatusCodelijst",
+      "description" : "ProbleemStatusCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst.html" : "HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes",
+      "ConceptMap-ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes.html" : "HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes",
+      "StructureDefinition-zib-Problem.html" : "HCIM Problem"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProbleemNaamCodelijst",
+      "title" : "ProbleemNaamCodelijst",
+      "description" : "SNOMED CT - Alle waarden binnen de SNOMED CT referentieset Diagnosethesaurus DHD (was: 2.16.840.1.113883.2.4.3.120.5.1)ICD-10 - Alle waardenSNOMED CT - Alle waarden binnen de SNOMED CT referentieset Nationale Kernset Patiëntproblemen V&VN (was: 2.16.840.1.113883.2.4.3.11.26.4)NANDA-I - Alle waardenOmaha Systems - Alle waardenICF - Alle waardenICPC-1 NL - Alle waardenG-Standaard Contra Indicaties (Tabel 40) - Alle waardenDSM-IV - Alle waardenDSM-V - Alle waarden",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.90",
+        "http://hl7.org/fhir/sid/icpc-1-nl",
+        "http://hl7.org/fhir/sid/icf-nl",
+        "urn:oid:2.16.840.1.113883.2.4.4.1.902.40",
+        "urn:oid:2.16.840.1.113883.6.98",
+        "http://hl7.org/fhir/sid/dsm5",
+        "urn:oid:2.16.840.1.113883.6.20",
+        "urn:oid:2.16.840.1.113883.6.126",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-PressureUlcer.html" : "HCIM PressureUlcer",
+      "StructureDefinition-zib-Problem.html" : "HCIM Problem"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VerificatieStatusCodelijst",
+      "title" : "VerificatieStatusCodelijst",
+      "description" : "VerificatieStatusCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-VerificatieStatusCodelijst-to-ConditionVerificationStatus.html" : "HCIM VerificatieStatusCodelijst-to-ConditionVerificationStatus",
+      "StructureDefinition-zib-Problem.html" : "HCIM Problem"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProbleemAnatomischeLocatieCodelijst",
+      "title" : "ProbleemAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Problem.html" : "HCIM Problem"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProbleemLateraliteitCodelijst",
+      "title" : "ProbleemLateraliteitCodelijst",
+      "description" : "ProbleemLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Problem.html" : "HCIM Problem"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StomaTypeCodelijst",
+      "title" : "StomaTypeCodelijst",
+      "description" : "StomaTypeCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Stoma.html" : "HCIM Stoma"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StomaAnatomischeLocatieCodelijst",
+      "title" : "StomaAnatomischeLocatieCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: < 442083009 |Anatomical or acquired body structure|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Stoma.html" : "HCIM Stoma"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.2.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "StomaLateraliteitCodelijst",
+      "title" : "StomaLateraliteitCodelijst",
+      "description" : "StomaLateraliteitCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Stoma.html" : "HCIM Stoma"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.13.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GezinssamenstellingCodelijst",
+      "title" : "GezinssamenstellingCodelijst",
+      "description" : "GezinssamenstellingCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FamilySituation.html" : "HCIM FamilySituation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.15.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WilsverklaringTypeCodelijst",
+      "title" : "WilsverklaringTypeCodelijst",
+      "description" : "WilsverklaringTypeCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.14.1"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AdvanceDirective.html" : "HCIM AdvanceDirective"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.16.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GezinssamenstellingKindCodelijst",
+      "title" : "GezinssamenstellingKindCodelijst",
+      "description" : "GezinssamenstellingKindCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-FamilySituationChild.html" : "HCIM FamilySituationChild"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "TabakGebruikStatusCodelijst",
+      "title" : "TabakGebruikStatusCodelijst",
+      "description" : "TabakGebruikStatusCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TobaccoUse.html" : "HCIM TobaccoUse"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.2.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SoortTabakGebruikCodelijst",
+      "title" : "SoortTabakGebruikCodelijst",
+      "description" : "SoortTabakGebruikCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-TobaccoUse.html" : "HCIM TobaccoUse"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.3.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AlcoholGebruikStatusCodelijst",
+      "title" : "AlcoholGebruikStatusCodelijst",
+      "description" : "AlcoholGebruikStatusCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AlcoholUse.html" : "HCIM AlcoholUse"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.4.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DrugsOfGeneesmiddelSoortCodelijst",
+      "title" : "DrugsOfGeneesmiddelSoortCodelijst",
+      "description" : "DrugsOfGeneesmiddelSoortCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DrugUse.html" : "HCIM DrugUse"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.4.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DrugsGebruikStatusCodelijst",
+      "title" : "DrugsGebruikStatusCodelijst",
+      "description" : "DrugsGebruikStatusCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DrugUse.html" : "HCIM DrugUse"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.4.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ToedieningswegCodelijst",
+      "title" : "ToedieningswegCodelijst",
+      "description" : "ToedieningswegCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "urn:oid:2.16.840.1.113883.2.4.4.9"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-DrugUse.html" : "HCIM DrugUse"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.5.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "LevensovertuigingCodelijst",
+      "title" : "LevensovertuigingCodelijst",
+      "description" : "LevensovertuigingCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://snomed.info/sct",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LifeStance.html" : "HCIM LifeStance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.6.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "NationaliteitCodelijst",
+      "title" : "NationaliteitCodelijst",
+      "description" : "GBA Tabel 32 (Nationaliteitentabel) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.16.32"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-patient.html" : "nl-core-patient"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.8.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WoningTypeCodelijst",
+      "title" : "WoningTypeCodelijst",
+      "description" : "WoningTypeCodelijst",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1",
+        "http://hl7.org/fhir/v3/NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-zib-LivingSituation.html" : "HCIM LivingSituation"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.7.9.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "BurgerlijkeStaatCodelijst",
+      "title" : "BurgerlijkeStaatCodelijst",
+      "description" : "BurgerlijkeStaatCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/MaritalStatus"],
+      "uses" : {
+      },
+      "StructureDefinition-nl-core-patient.html" : "nl-core-patient"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.10--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecifiekeStofSNKCodelijst",
+      "title" : "SpecifiekeStofSNKCodelijst",
+      "description" : "G-standaard Stofnaamcode (SNK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.750"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.11--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecifiekeStofThesaurus122Codelijst",
+      "title" : "SpecifiekeStofThesaurus122Codelijst",
+      "description" : "G-standaard Ongewenste medicatiegroepen - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.902.122"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.12--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WijzeVanBlootstellingCodelijst",
+      "title" : "WijzeVanBlootstellingCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: <284009009 | route of administration value|",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.13--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VeroorzakendeStofSSKCodelijst",
+      "title" : "VeroorzakendeStofSSKCodelijst",
+      "description" : "G-standaard Stofnaamcode i.c.m. toedieningsweg (SSK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.725"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.14--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VeroorzakendeStofSNKCodelijst",
+      "title" : "VeroorzakendeStofSNKCodelijst",
+      "description" : "G-standaard Stofnaamcode (SNK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.750"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.15--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VeroorzakendeStofThesaurus122Codelijst",
+      "title" : "VeroorzakendeStofThesaurus122Codelijst",
+      "description" : "G-standaard Ongewenste medicatiegroepen - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.902.122"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.16--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecifiekeStofAllergeneStoffenCodelijst",
+      "title" : "SpecifiekeStofAllergeneStoffenCodelijst",
+      "description" : "SNOMED CT - SNOMED CT: ^42931000146101| Dutch non-drug allergen simple reference set (foundation metadata concept)",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.17--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VeroorzakendeStofAllergeneStoffenCodelijst",
+      "title" : "VeroorzakendeStofAllergeneStoffenCodelijst",
+      "description" : "SNOMED CT - Alle waarden",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.18--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecifiekeStofHPKCodelijst",
+      "title" : "SpecifiekeStofHPKCodelijst",
+      "description" : "G-Standaard Handels Product Kode (HPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.7"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.19--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "VeroorzakendeStofHPKCodelijst",
+      "title" : "VeroorzakendeStofHPKCodelijst",
+      "description" : "G-Standaard Handels Product Kode (HPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.7"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AllergieCategorieCodelijst",
+      "title" : "AllergieCategorieCodelijst",
+      "description" : "AllergieCategorieCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance",
+      "ConceptMap-AllergieCategorieCodelijst-to-allergy-intolerance-category.html" : "HCIM AllergieCategorieCodelijst to allergy intolerance category"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AllergieStatusCodelijst",
+      "title" : "AllergieStatusCodelijst",
+      "description" : "AllergieStatusCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/ActStatus"],
+      "uses" : {
+      },
+      "ConceptMap-AllergieStatusCodelijst-to-allergy-status.html" : "HCIM AllergieStatusCodelijst to allergy status",
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MateVanKritiekZijnCodelijst",
+      "title" : "MateVanKritiekZijnCodelijst",
+      "description" : "MateVanKritiekZijnCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality.html" : "HCIM MateVanKritiekZijnCodelijst to allergy-intolerance-criticality",
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SymptoomCodelijst",
+      "title" : "SymptoomCodelijst",
+      "description" : "SymptoomCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ErnstCodelijst",
+      "title" : "ErnstCodelijst",
+      "description" : "ErnstCodelijst",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance",
+      "ConceptMap-ErnstCodelijst-to-AllergyIntoleranceSeverity.html" : "HCIM ErnstCodelijst to AllergyIntoleranceSeverity"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.9--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "SpecifiekeStofSSKCodelijst",
+      "title" : "SpecifiekeStofSSKCodelijst",
+      "description" : "G-standaard Stofnaamcode i.c.m. toedieningsweg (SSK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.725"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-AllergyIntolerance.html" : "HCIM AllergyIntolerance"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AlertTypeCodelijst",
+      "title" : "AlertTypeCodelijst",
+      "description" : "AlertTypeCodelijst",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Alert.html" : "HCIM Alert"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.3.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AlertNaamCodelijst",
+      "title" : "AlertNaamCodelijst",
+      "description" : "AlertNaamCodelijst",
+      "systems" : ["http://hl7.org/fhir/v3/NullFlavor", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Alert.html" : "HCIM Alert"
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.10.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "AanvullendeWensenCodelijst",
+      "title" : "AanvullendeWensenCodelijst",
+      "description" : "AanvullendeWensenCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2051"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.11.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatiegebruikStopTypeCodelijst",
+      "title" : "MedicatiegebruikStopTypeCodelijst",
+      "description" : "MedicatiegebruikStopTypeCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.1"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.11.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RedenWijzigenOfStoppenGebruikCodelijst",
+      "title" : "RedenWijzigenOfStoppenGebruikCodelijst",
+      "description" : "RedenWijzigenOfStoppenGebruikCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatieToedieningswegCodelijst",
+      "title" : "MedicatieToedieningswegCodelijst",
+      "description" : "G-Standaard Toedieningswegen - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.9"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "WeekdagCodelijst",
+      "title" : "WeekdagCodelijst",
+      "description" : "WeekdagCodelijst",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "DagdeelCodelijst",
+      "title" : "DagdeelCodelijst",
+      "description" : "DagdeelCodelijst",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.12.4--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZonodigCriteriumCodelijst",
+      "title" : "ZonodigCriteriumCodelijst",
+      "description" : "ZonodigCriteriumCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "https://referentiemodel.nhg.org/tabellen/nhg-tabel-25-gebruiksvoorschrift#aanvullend-numeriek"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatieToedieningToedieningswegCodelijst",
+      "title" : "MedicatieToedieningToedieningswegCodelijst",
+      "description" : "G-Standaard Toedieningswegen - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.9"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.13.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatieToedieningRedenVanAfwijkenCodelijst",
+      "title" : "MedicatieToedieningRedenVanAfwijkenCodelijst",
+      "description" : "MedicatieToedieningRedenVanAfwijkenCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://hl7.org/fhir/v3/ActReason",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.6.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "RedenMedicatieafspraakCodelijst",
+      "title" : "RedenMedicatieafspraakCodelijst",
+      "description" : "RedenMedicatieafspraakCodelijst",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.2",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.6.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatieafspraakAanvullendeInformatieCodelijst",
+      "title" : "MedicatieafspraakAanvullendeInformatieCodelijst",
+      "description" : "MedicatieafspraakAanvullendeInformatieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2050"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeZICodelijst",
+      "title" : "ProductCodeZICodelijst",
+      "description" : "G-Standaard Artikelen (ook KNMP-nummer, ATKODE) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.8"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.10--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeHPKCodelijst",
+      "title" : "IngredientCodeHPKCodelijst",
+      "description" : "G-Standaard Handels Product Kode (HPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.7"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.11--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodePRKCodelijst",
+      "title" : "IngredientCodePRKCodelijst",
+      "description" : "G-Standaard Voorschrijfproducten (PRK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.10"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.12--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeZICodelijst",
+      "title" : "IngredientCodeZICodelijst",
+      "description" : "G-Standaard Artikelen (ook KNMP-nummer, ATKODE) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.8"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.13--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeATCCodelijst",
+      "title" : "IngredientCodeATCCodelijst",
+      "description" : "Anatomic Therapeutic Classification (ATC) - Alle waarden",
+      "systems" : ["http://www.whocc.no/atc"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.14--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeSNKCodelijst",
+      "title" : "IngredientCodeSNKCodelijst",
+      "description" : "G-standaard Stofnaamcode (SNK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.750"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.15--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeSSKCodelijst",
+      "title" : "IngredientCodeSSKCodelijst",
+      "description" : "G-standaard Stofnaamcode i.c.m. toedieningsweg (SSK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1.725"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.16--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeGTINCodelijst",
+      "title" : "IngredientCodeGTINCodelijst",
+      "description" : "Global Trade Item Number (GTIN) - Alle waarden",
+      "systems" : ["urn:oid:1.3.160"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeGTINCodelijst",
+      "title" : "ProductCodeGTINCodelijst",
+      "description" : "Global Trade Item Number (GTIN) - Alle waarden",
+      "systems" : ["urn:oid:1.3.160"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.3--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodePRKCodelijst",
+      "title" : "ProductCodePRKCodelijst",
+      "description" : "G-Standaard Voorschrijfproducten (PRK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.10"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.5--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeHPKCodelijst",
+      "title" : "ProductCodeHPKCodelijst",
+      "description" : "G-Standaard Handels Product Kode (HPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.7"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.6--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeGPKCodelijst",
+      "title" : "ProductCodeGPKCodelijst",
+      "description" : "G-Standaard Generieke Product Kode (GPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.7--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ProductCodeATCCodelijst",
+      "title" : "ProductCodeATCCodelijst",
+      "description" : "Anatomic Therapeutic Classification (ATC) - Alle waarden",
+      "systems" : ["http://www.whocc.no/atc"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.8--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "FarmaceutischeVormCodelijst",
+      "title" : "FarmaceutischeVormCodelijst",
+      "description" : "G-Standaard Farmaceutische vormen - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.11"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.7.9--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IngredientCodeGPKCodelijst",
+      "title" : "IngredientCodeGPKCodelijst",
+      "description" : "G-Standaard Generieke Product Kode (GPK) - Alle waarden",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.4.1"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.8.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ToedieningsafspraakAanvullendeInformatieCodelijst",
+      "title" : "ToedieningsafspraakAanvullendeInformatieCodelijst",
+      "description" : "ToedieningsafspraakAanvullendeInformatieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.999"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.9.1--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatieverstrekkingDistributievormCodelijst",
+      "title" : "MedicatieverstrekkingDistributievormCodelijst",
+      "description" : "MedicatieverstrekkingDistributievormCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.3.8"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.9.9.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "MedicatieverstrekkingAanvullendeInformatieCodelijst",
+      "title" : "MedicatieverstrekkingAanvullendeInformatieCodelijst",
+      "description" : "MedicatieverstrekkingAanvullendeInformatieCodelijst",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2052"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.53.11.1--20190813000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GlucoseMeetmomentenLOINCCodelijst",
+      "title" : "GlucoseMeetmomentenLOINCCodelijst",
+      "description" : "GlucoseMeetmomentenLOINCCodelijst",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.53.11.2--20190813000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "GlucoseMeetmomentenNhgtable45Codelijst",
+      "title" : "GlucoseMeetmomentenNhgtable45Codelijst",
+      "description" : "GlucoseMeetmomentenNhgtable45Codelijst",
+      "systems" : [
+        "https://referentiemodel.nhg.org/tabellen/nhg-tabel-45-diagnostische-bepalingen"
+      ]
+    },
+    {
+      "url" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.7.11.2--20171231000000",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "ZwangerschapsduurEenheidCodelijst",
+      "title" : "ZwangerschapsduurEenheidCodelijst",
+      "description" : "The pregnancy duration can be entered in days (d) or weeks (wk).",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-Pregnancy-PregnancyDuration.html" : "HCIM Pregnancy PregnancyDuration"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "AddressType",
+      "title" : null,
+      "description" : "The type of an address (physical / postal)",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.62"],
+      "sources" : ["2.16.840.1.113883.4.642.3.62"],
+      "uses" : {
+      },
+      "ConceptMap-AdresSoortCodelijst-to-AddressType.html" : "AdresSoortCodelijst-to-AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "AddressUse",
+      "title" : null,
+      "description" : "The use of an address",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.60"],
+      "sources" : ["2.16.840.1.113883.4.642.3.60"],
+      "uses" : {
+      },
+      "ConceptMap-AdresSoortCodelijst-to-AddressUse.html" : "AdresSoortCodelijst-to-AddressUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "AdministrativeGender",
+      "title" : null,
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "ConceptMap-GeslachtCodelijst-to-AdministrativeGender.html" : "GeslachtCodelijst-to-AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : null,
+      "description" : "Category of an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.123"],
+      "sources" : ["2.16.840.1.113883.4.642.3.123"],
+      "uses" : {
+      },
+      "ConceptMap-AllergieCategorieCodelijst-to-allergy-intolerance-category.html" : "HCIM AllergieCategorieCodelijst to allergy intolerance category"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : null,
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.119"],
+      "sources" : ["2.16.840.1.113883.4.642.3.119"],
+      "uses" : {
+      },
+      "ConceptMap-MateVanKritiekZijnCodelijst-to-allergy-intolerance-criticality.html" : "HCIM MateVanKritiekZijnCodelijst to allergy-intolerance-criticality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "Condition Clinical Status Codes",
+      "title" : null,
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://hl7.org/fhir/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.155"],
+      "sources" : ["2.16.840.1.113883.4.642.3.155"],
+      "uses" : {
+      },
+      "ConceptMap-Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst.html" : "HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes",
+      "ConceptMap-ProbleemStatusCodelijst-to-Condition-Clinical-Status-Codes.html" : "HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : null,
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://hl7.org/fhir/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.157"],
+      "sources" : ["2.16.840.1.113883.4.642.3.157"],
+      "uses" : {
+      },
+      "ConceptMap-VerificatieStatusCodelijst-to-ConditionVerificationStatus.html" : "HCIM VerificatieStatusCodelijst-to-ConditionVerificationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "ContactPointSystem",
+      "title" : null,
+      "description" : "Telecommunications form for contact point",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.64"],
+      "sources" : ["2.16.840.1.113883.4.642.3.64"],
+      "uses" : {
+      },
+      "ConceptMap-EmailSoortCodelijst-to-ContactPointSystem.html" : "EmailSoortCodelijst-to-ContactPointSystem",
+      "ConceptMap-TelecomSoortCodelijst-to-ContactPointSystem.html" : "TelecomSoortCodelijst-to-ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "ContactPointUse",
+      "title" : null,
+      "description" : "Use of contact point",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.66"],
+      "sources" : ["2.16.840.1.113883.4.642.3.66"],
+      "uses" : {
+      },
+      "ConceptMap-NummerSoortCodelijst-to-ContactPointUse.html" : "NummerSoortCodelijst-to-ContactPointUse",
+      "ConceptMap-EmailSoortCodelijst-to-ContactPointUse.html" : "EmailSoortCodelijst-to-ContactPointUse",
+      "ConceptMap-TelecomSoortCodelijst-to-ContactPointUse.html" : "TelecomSoortCodelijst-to-ContactPointUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-assembly-order",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "HumanNameAssemblyOrder",
+      "title" : null,
+      "description" : "A code that represents the preferred display order of the components of a human name",
+      "systems" : [
+        "http://hl7.org/fhir/v3/NullFlavor",
+        "http://hl7.org/fhir/name-assembly-order",
+        "http://hl7.org/fhir/v2/0444"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.832"],
+      "sources" : ["2.16.840.1.113883.4.642.3.832"],
+      "uses" : {
+      },
+      "ConceptMap-NaamgebruikCodelijst-to-HumanNameAssemblyOrder.html" : "NaamgebruikCodelijst-to-HumanNameAssemblyOrder"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "Observation Interpretation Codes",
+      "title" : null,
+      "description" : "This value set defines the set of codes that can be used to indicate the meaning/use of a reference range.",
+      "systems" : ["http://hl7.org/fhir/v2/0078"],
+      "oids" : ["2.16.840.1.113883.4.642.3.386"],
+      "sources" : ["2.16.840.1.113883.4.642.3.386"],
+      "uses" : {
+      },
+      "ConceptMap-InterpretatieVlaggenCodelijst-to-observation-interpretation.html" : "HCIM InterpretatieVlaggenCodelijst to Observation Interpretation Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
+      "version" : "3.0.2",
+      "status" : "active",
+      "name" : "Vital Signs",
+      "title" : null,
+      "description" : "This value set indicates the allowed vital sign result types.   The concept Vitals signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-VitalSigns.html" : "VitalSigns Profile NL"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : null,
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.125"],
+      "sources" : ["2.16.840.1.113883.4.642.3.125"],
+      "uses" : {
+      },
+      "ConceptMap-ErnstCodelijst-to-AllergyIntoleranceSeverity.html" : "HCIM ErnstCodelijst to AllergyIntoleranceSeverity"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodylength",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "Body Length Units",
+      "title" : null,
+      "description" : "UCUM units for recording Body Length measures such as height and head circumference",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.873"],
+      "sources" : ["2.16.840.1.113883.4.642.3.873"],
+      "uses" : {
+      },
+      "StructureDefinition-vitalsigns-headcircum.html" : "VitalSigns HeadCircum",
+      "StructureDefinition-bodyheight.html" : "VitalSigns BodyHeight"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodytemp",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "Body Temperature Units",
+      "title" : null,
+      "description" : "UCUM units for recording Body Temperature",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.872"],
+      "sources" : ["2.16.840.1.113883.4.642.3.872"],
+      "uses" : {
+      },
+      "StructureDefinition-bodytemp.html" : "VitalSigns BodyTemp"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "Body Weight Units",
+      "title" : null,
+      "description" : "UCUM units for recording Body Weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.871"],
+      "sources" : ["2.16.840.1.113883.4.642.3.871"],
+      "uses" : {
+      },
+      "StructureDefinition-bodyweight.html" : "VitalSigns BodyWeight"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
+      "version" : "3.0.2",
+      "status" : "draft",
+      "name" : "Vital Signs Units",
+      "title" : null,
+      "description" : "Common UCUM units for recording Vital Signs",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.870"],
+      "sources" : ["2.16.840.1.113883.4.642.3.870"],
+      "uses" : {
+      },
+      "StructureDefinition-zib-VitalSigns.html" : "VitalSigns Profile NL"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/v2-0136",
+      "version" : "2.8.2",
+      "status" : "active",
+      "name" : "v2 Yes/no Indicator",
+      "title" : null,
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0136 ( Yes/no Indicator)",
+      "systems" : ["http://hl7.org/fhir/v2/0136"],
+      "uses" : {
+      },
+      "StructureDefinition-WoundCharacteristics.html" : "Wound characteristics for HCIM Wound/PressureUlcer",
+      "StructureDefinition-zib-OxygenSaturation.html" : "HCIM OxygenSaturation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode",
+      "version" : "2014-03-26",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : null,
+      "description" : " Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://hl7.org/fhir/v3/ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "ConceptMap-ContactTypeCodelijst-to-ActEncounterCode.html" : "HCIM ContactTypeCodelijst to ActEncounterCode",
+      "ConceptMap-NHGTable14-to-ActEncounterCode.html" : "NHG NHGTable14 to ActEncounterCode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/v3-LanguageAbilityMode",
+      "version" : "2016-11-11",
+      "status" : "active",
+      "name" : "v3 Code System LanguageAbilityMode",
+      "title" : null,
+      "description" : " A value representing the method of expression of the language.  Example:\r\nExpressed spoken, expressed written, expressed signed, received spoken, received written, received signed.  OpenIssue:\r\nDescription copied from Concept Domain of same name.  Must be verified.",
+      "systems" : ["http://hl7.org/fhir/v3/LanguageAbilityMode"],
+      "oids" : ["2.16.840.1.113883.1.11.12249"],
+      "sources" : ["2.16.840.1.113883.1.11.12249"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-proficiency.html" : "proficiency"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/v3-LanguageAbilityProficiency",
+      "version" : "2016-11-11",
+      "status" : "active",
+      "name" : "v3 Code System LanguageAbilityProficiency",
+      "title" : null,
+      "description" : " A value representing the level of proficiency in a language.  Example:\r\nExcellent, good, fair, poor.  OpenIssue:\r\nDescription copied from Concept Domain of same name.  Must be verified.",
+      "systems" : ["http://hl7.org/fhir/v3/LanguageAbilityProficiency"],
+      "oids" : ["2.16.840.1.113883.1.11.12199"],
+      "sources" : ["2.16.840.1.113883.1.11.12199"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-proficiency.html" : "proficiency"
+    },
+    {
+      "url" : "http://ihe.net/fhir/ValueSet/IHE.formatcode.vs",
+      "version" : "1.3.15",
+      "status" : "active",
+      "name" : "IHE.FormatCode.vs",
+      "title" : "IHE ValueSet of Format Codes for use with Document Sharing",
+      "description" : "Important: this valueset has been copied from IHE. It is published by Nictiz through the IHE domain as to guarantee continuity and availability of this profile. The IHE FormatCode Value set is defined to be the set of FormatCode(s) defined by IHE http://wiki.ihe.net/index.php?title=IHE_Format_Codes. This Value set additionally includes format codes defined by the HL7 CDA http://wiki.hl7.org/index.php?title=CDA_Format_Codes_for_IHE_XDS. The set was listed in HITSP C80 Table 2-153 Format Code Value Set Definition. The use of the FormatCode specifies the technical format of the document. The FormatCode is a further specialization more detailed than the mime-type. The FormatCode provides sufficient information to allow any potential document consumer to know if it can process and/or display by identifying a document encoding, structure and template. The actual list of codes is intended to be extensible. ",
+      "systems" : ["urn:oid:1.3.6.1.4.1.19376.1.2.3"],
+      "oids" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "uses" : {
+      },
+      "StructureDefinition-IHE.MHD.Provide.Minimal.DocumentReference.html" : "Nictiz IHE MHD Profile on DocumentReference (DocumentEntry) when used in the Provide Transaction with Minimal Metadata, see Table 3:4.3.1-3."
+    }
+  ]
+}

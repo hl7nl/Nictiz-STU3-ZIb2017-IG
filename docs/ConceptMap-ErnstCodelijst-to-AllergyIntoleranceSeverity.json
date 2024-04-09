@@ -3,7 +3,7 @@
   "id" : "ErnstCodelijst-to-AllergyIntoleranceSeverity",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.8.2.6--20171231000000.html\">ErnstCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-reaction-event-severity.html\">AllergyIntoleranceSeverity</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM AllgergyIntolerance release 2017 terminology for the concept Severity to the FHIR STU3 terminology associated with AllergyIntolerance.reaction.severity</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>http://hl7.org/fhir/reaction-event-severity|http://hl7.org/fhir/reaction-event-severity version 3.0.1</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>255604002 (Mild)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>mild</td></tr><tr><td>6736007 (Moderate)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>moderate</td></tr><tr><td>24484000 (Severe)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>severe</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.8.2.6--20171231000000.html\">ErnstCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-reaction-event-severity.html\">AllergyIntoleranceSeverity</a></p><p>ACTIVE. Published on 2024-04-09 16:00:20+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM AllgergyIntolerance release 2017 terminology for the concept Severity to the FHIR STU3 terminology associated with AllergyIntolerance.reaction.severity</p>\n</div><br/><p><b>Group 1</b> Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-snomedct.html\">SNOMED CT (all versions)</a> to <code>http://hl7.org/fhir/reaction-event-severity|http://hl7.org/fhir/reaction-event-severity version 3.0.1</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>255604002 (Mild)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>mild</td></tr><tr><td>6736007 (Moderate)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>moderate</td></tr><tr><td>24484000 (Severe)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>severe</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
@@ -14,7 +14,7 @@
   "name" : "ErnstCodelijst-to-AllergyIntoleranceSeverity",
   "title" : "HCIM ErnstCodelijst to AllergyIntoleranceSeverity",
   "status" : "active",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "contact" : [{
     "name" : "Nictiz",
@@ -30,8 +30,9 @@
   "sourceUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.8.2.6--20171231000000",
   "targetUri" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
   "group" : [{
-    "source" : "http://hl7.org/fhir/reaction-event-severity",
-    "sourceVersion" : "http://hl7.org/fhir/reaction-event-severity version 3.0.1",
+    "source" : "http://snomed.info/sct",
+    "target" : "http://hl7.org/fhir/reaction-event-severity",
+    "targetVersion" : "http://hl7.org/fhir/reaction-event-severity version 3.0.1",
     "element" : [{
       "code" : "255604002",
       "display" : "Mild",

@@ -3,7 +3,7 @@
   "id" : "ContactTypeCodelijst-to-ActEncounterCode",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.15.1.1--20171231000000.html\">ContactTypeCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/v3/ActEncounterCode/vs.html\">ActEncounterCode</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM Contact release 2017 terminology for ContactType to the FHIR STU3 terminology associated with Encounter.class</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>http://hl7.org/fhir/v3/ActCode|http://hl7.org/fhir/v3/ActCode version 2016-11-11</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>AMB (Ambulatory)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>AMB (ambulatory)</td></tr><tr><td>EMER (Emergency)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>EMER (emergency)</td></tr><tr><td>FLD (Field)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>FLD (field)</td></tr><tr><td>HH (Home)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>HH (home)</td></tr><tr><td>IMP (Inpatient)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>IMP (inpatient)</td></tr><tr><td>SS (Short Stay)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>SS (short stay)</td></tr><tr><td>VR (Virtual)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>VR (virtual)</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>OTH (Other)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>OTH (Other)</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.15.1.1--20171231000000.html\">ContactTypeCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/v3/ActEncounterCode/vs.html\">ActEncounterCode</a></p><p>ACTIVE. Published on 2024-04-09 16:00:20+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). CC0</p><div><p>Maps the HCIM Contact release 2017 terminology for ContactType to the FHIR STU3 terminology associated with Encounter.class</p>\n</div><br/><p><b>Group 1</b> Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/ActCode/cs.html\">v3 Code System ActCode</a> to <code>http://hl7.org/fhir/v3/ActCode|http://hl7.org/fhir/v3/ActCode version 2016-11-11</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>AMB (Ambulatory)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>AMB (ambulatory)</td></tr><tr><td>EMER (Emergency)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>EMER (emergency)</td></tr><tr><td>FLD (Field)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>FLD (field)</td></tr><tr><td>HH (Home)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>HH (home)</td></tr><tr><td>IMP (Inpatient)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>IMP (inpatient)</td></tr><tr><td>SS (Short Stay)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>SS (short stay)</td></tr><tr><td>VR (Virtual)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>VR (virtual)</td></tr></table><hr/><p><b>Group 2</b> Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a> to <a href=\"http://hl7.org/fhir/STU3/v3/NullFlavor/cs.html\">v3 Code System NullFlavor</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>OTH (Other)</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>OTH (Other)</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
@@ -14,7 +14,7 @@
   "name" : "ContactTypeCodelijst-to-ActEncounterCode",
   "title" : "HCIM ContactTypeCodelijst to ActEncounterCode",
   "status" : "active",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "contact" : [{
     "name" : "Nictiz",
@@ -31,7 +31,8 @@
   "targetUri" : "http://hl7.org/fhir/ValueSet/v3-ActEncounterCode",
   "group" : [{
     "source" : "http://hl7.org/fhir/v3/ActCode",
-    "sourceVersion" : "http://hl7.org/fhir/v3/ActCode version 2016-11-11",
+    "target" : "http://hl7.org/fhir/v3/ActCode",
+    "targetVersion" : "http://hl7.org/fhir/v3/ActCode version 2016-11-11",
     "element" : [{
       "code" : "AMB",
       "display" : "Ambulatory",
@@ -126,6 +127,7 @@
   },
   {
     "source" : "http://hl7.org/fhir/v3/NullFlavor",
+    "target" : "http://hl7.org/fhir/v3/NullFlavor",
     "element" : [{
       "code" : "OTH",
       "display" : "Other",

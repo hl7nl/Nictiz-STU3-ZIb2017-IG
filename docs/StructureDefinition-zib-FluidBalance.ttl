@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "Zib FluidBalance"] ; # 
   fhir:title [ fhir:v "HCIM FluidBalance"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T13:17:30+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-09T16:00:20+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Netherlands"] ; # 
   fhir:description [ fhir:v "An Observation type resource as defined by the Dutch Health Care Information Model FluidBalance 1.0 - 2017EN"] ; # 
   fhir:purpose [ fhir:v "#Purpose\r\nInformation about the water balance provides insight in the care plan for drinking and possibly administering extra fluids, when the balance is disrupted such as dehydration or overfilling.\r\n\r\n#Rationale\r\nHCIM FluidBalance fits in Observation.  No known arguments for other resources"] ; # 
@@ -221,9 +221,6 @@
          ] [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "Language" ]
-         ] [
-           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "true"^^xsd:boolean ]
          ] ) ;
          fhir:strength [ fhir:v "extensible" ] ;
          fhir:description [ fhir:v "A human language." ] ;

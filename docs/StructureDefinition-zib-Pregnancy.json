@@ -10,7 +10,7 @@
   "name" : "Zib Pregnancy",
   "title" : "HCIM Pregnancy",
   "status" : "draft",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "contact" : [{
     "name" : "Nictiz",
@@ -275,10 +275,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "A human language.",

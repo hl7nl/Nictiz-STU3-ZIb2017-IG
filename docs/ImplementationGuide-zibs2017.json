@@ -10,7 +10,7 @@
   "name" : "zibs2017",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "description" : "Nictiz NL package of FHIR STU3 conformance resources for HCIM Release 2017. Includes MedMij and HL7 NL.\\r\\n\\r\\nHCIMs: https://zibs.nl/wiki/HCIM_Release_2017(EN)",
   "fhirVersion" : "3.0.2",

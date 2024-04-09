@@ -10,7 +10,7 @@
   "name" : "nl-core-person",
   "title" : "nl-core-person",
   "status" : "active",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "contact" : [{
     "name" : "Nictiz",
@@ -262,10 +262,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "A human language.",
@@ -582,10 +578,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "IdentifierType"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
@@ -778,7 +770,13 @@
               "valueString" : "Haas"
             }]
           },
-          "given" : ["Irma"]
+          "given" : ["Irma"],
+          "_given" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode" : "CL"
+            }]
+          }]
         }
       },
       {
@@ -1490,10 +1488,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "AdministrativeGender"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "required",
         "description" : "The gender of a person used for administrative purposes.",
@@ -1603,6 +1597,24 @@
             }]
           },
           "line" : ["Binnenkant 12A Hoog"],
+          "_line" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString" : "Binnenkant"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString" : "12"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+              "valueString" : "A"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+              "valueString" : "Hoog"
+            }]
+          }],
           "city" : "Amsterdam",
           "state" : "NH",
           "postalCode" : "1000AA",
@@ -1618,6 +1630,20 @@
           }],
           "use" : "home",
           "line" : ["Binnenkant to 10"],
+          "_line" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString" : "Binnenkant"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+              "valueString" : "to"
+            },
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString" : "10"
+            }]
+          }],
           "city" : "Amsterdam",
           "state" : "NH",
           "postalCode" : "1001AA",

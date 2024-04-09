@@ -10,7 +10,7 @@
   "name" : "Zib Wound MedicalDevice",
   "title" : "HCIM Wound MedicalDevice",
   "status" : "draft",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "description" : "A Device as defined by the Dutch HCIM Zorginformatiebouwsteen Wond v3.1(2017EN). A drain is a medical aid placed to drain blood and exudate from the wound area.\r\n\r\n",
   "purpose" : "Profiles purpose is to define the usage of a wounddrain.",
@@ -219,10 +219,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "A human language.",

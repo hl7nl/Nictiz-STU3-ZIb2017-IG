@@ -104,7 +104,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15). See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -159,7 +159,7 @@
         
           Active
           
-            as of 2023-10-17
+            as of 2024-04-09
           
         
       </td>
@@ -175,13 +175,13 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap">resourceType</a>" : "ConceptMap",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.id">id</a>" : "AdresSoortCodelijst-to-AddressUse",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.text">text</a>" : {
     "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Mapping from &lt;a href=\&quot;ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000.html\&quot;&gt;AdresSoortCodelijst&lt;/a&gt; to &lt;a href=\&quot;http://hl7.org/fhir/STU3/valueset-address-use.html\&quot;&gt;AddressUse&lt;/a&gt;&lt;/p&gt;&lt;p&gt;ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: &lt;a href=\&quot;mailto:info@nictiz.nl\&quot;&gt;info@nictiz.nl&lt;/a&gt;). &lt;/p&gt;&lt;div&gt;&lt;p&gt;Maps AddressType codes as found in HCIM AddressInformation (release 2017) to Address.use codes as found in FHIR STU3&lt;/p&gt;\n&lt;/div&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1&lt;/b&gt;Mapping from &lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-address-use.html\&quot;&gt;AddressUse&lt;/a&gt; to &lt;code&gt;unspecified code system&lt;/code&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PST&lt;/td&gt;&lt;td colspan=\&quot;3\&quot; style=\&quot;background-color: #efefef\&quot;&gt;(not mapped)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HP&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;HP: Primary home/officieel adres. home: Home address. Use in conjunction with Address.type = physical (optional), Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HP and Address.extension http://fhir.nl/fhir/StructureDefinition/nl-core-address-official = true to mark as primary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PHYS&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;PHYS: Visit Address/Woon-/verblijfadres. home: A communication address at a home. Use in conjunction with Address.type = physical, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = PHYS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TMP&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;temp&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;WP&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;work&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HV&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\&quot;/&gt;&lt;/td&gt;&lt;td&gt;temp&lt;/td&gt;&lt;td&gt;HV: Vacation Home. temp: Any temporary address. Use in conjunction with Address.type = physical (optional), Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HV&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Mapping from &lt;a href=\&quot;ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20171231000000.html\&quot;&gt;AdresSoortCodelijst&lt;/a&gt; to &lt;a href=\&quot;http://hl7.org/fhir/STU3/valueset-address-use.html\&quot;&gt;AddressUse&lt;/a&gt;&lt;/p&gt;&lt;p&gt;ACTIVE. Published on 2024-04-09 16:00:20+0200 by HL7 Netherlands (Nictiz: &lt;a href=\&quot;mailto:info@nictiz.nl\&quot;&gt;info@nictiz.nl&lt;/a&gt;). &lt;/p&gt;&lt;div&gt;&lt;p&gt;Maps AddressType codes as found in HCIM AddressInformation (release 2017) to Address.use codes as found in FHIR STU3&lt;/p&gt;\n&lt;/div&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1&lt;/b&gt; Mapping from &lt;a href=\&quot;http://hl7.org/fhir/STU3/v3/AddressUse/cs.html\&quot;&gt;v3 Code System AddressUse&lt;/a&gt; to &lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-address-use.html\&quot;&gt;AddressUse&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PST (postal address)&lt;/td&gt;&lt;td colspan=\&quot;3\&quot; style=\&quot;background-color: #efefef\&quot;&gt;(not mapped)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HP (primary home)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#specializes\&quot; title=\&quot;specializes\&quot;&gt;has specialization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;HP: Primary home/officieel adres. home: Home address. Use in conjunction with Address.type = physical (optional), Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HP and Address.extension http://fhir.nl/fhir/StructureDefinition/nl-core-address-official = true to mark as primary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;PHYS (physical visit address)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;home&lt;/td&gt;&lt;td&gt;PHYS: Visit Address/Woon-/verblijfadres. home: A communication address at a home. Use in conjunction with Address.type = physical, Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = PHYS&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;TMP (temporary address)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\&quot; title=\&quot;equal\&quot;&gt;is equal to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;temp (Temporary)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;WP (work place)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\&quot; title=\&quot;equal\&quot;&gt;is equal to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;work&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HV (vacation home)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#narrower\&quot; title=\&quot;narrower\&quot;&gt;narrower&lt;/a&gt;&lt;/td&gt;&lt;td&gt;temp (Temporary)&lt;/td&gt;&lt;td&gt;HV: Vacation Home. temp: Any temporary address. Use in conjunction with Address.type = physical (optional), Address.use.extension http://hl7.org/fhir/StructureDefinition/iso21090-AD-use = HV&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.extension">extension</a>" : [
     {
@@ -193,7 +193,7 @@
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.version">version</a>" : "1.3.15",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.name">name</a>" : "AdresSoortCodelijst-to-AddressUse",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.date">date</a>" : "2023-10-17T13:17:30+02:00",
+  "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.date">date</a>" : "2024-04-09T16:00:20+02:00",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.publisher">publisher</a>" : "HL7 Netherlands",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.contact">contact</a>" : [
     {
@@ -212,7 +212,8 @@
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.target[x]">targetUri</a>" : "http://hl7.org/fhir/ValueSet/address-use",
   "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group">group</a>" : [
     {
-      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.source">source</a>" : "http://hl7.org/fhir/address-use",
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.source">source</a>" : "http://hl7.org/fhir/v3/AddressUse",
+      "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.target">target</a>" : "http://hl7.org/fhir/address-use",
       "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element">element</a>" : [
         {
           "<a href="http://hl7.org/fhir/STU3/conceptmap.html#ConceptMap.group.element.code">code</a>" : "PST",
@@ -333,7 +334,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Oct 17, 2023 13:17+0200">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Apr 9, 2024 16:00+0200">2024-04-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

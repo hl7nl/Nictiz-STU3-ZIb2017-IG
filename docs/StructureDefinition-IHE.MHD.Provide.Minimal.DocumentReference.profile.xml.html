@@ -110,7 +110,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15). See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -201,7 +201,7 @@
 
 
 
-  <pre class="xml" style="white-space: pre; overflow: hidden"><code>
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 
 &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;IHE.MHD.Provide.Minimal.DocumentReference&quot;/&gt;
@@ -412,7 +412,7 @@ This element is labelled as a modifier because the implicit rules may provide ad
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;<a href="http://hl7.org/fhir/R5/valueset-all-languages.html" style="color: Maroon">&#x1F517;</a> 
             &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/all-languages&quot;/&gt;
           &lt;/valueReference&gt;
         &lt;/extension&gt;
@@ -420,13 +420,9 @@ This element is labelled as a modifier because the implicit rules may provide ad
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Language&quot;/&gt;
         &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-        &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;A human language.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-languages.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/languages&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -631,13 +627,9 @@ deprecated -&amp;gt; status=superseded&quot;/&gt;
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DocumentReferenceStatus&quot;/&gt;
         &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-        &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;The status of the document reference.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-document-reference-status.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/document-reference-status&quot;/&gt;
         &lt;/valueSetReference&gt;
@@ -686,7 +678,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Status of the underlying document.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-composition-status.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/composition-status&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -729,7 +721,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;preferred&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Precise type of clinical document.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-c80-doc-typecodes.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/c80-doc-typecodes&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -780,7 +772,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;High-level kind of a clinical document at a macro level.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-c80-doc-classcodes.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/c80-doc-classcodes&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -1149,7 +1141,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;The type of relationship between documents.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-document-relationship-type.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/document-relationship-type&quot;/&gt;
         &lt;/valueSetReference&gt;
@@ -1251,14 +1243,10 @@ should be robust to these elements holding values&quot;/&gt;
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;SecurityLabels&quot;/&gt;
         &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-        &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Security Labels from the Healthcare Privacy and Security Classification System.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-security-labels.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/security-labels&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -1490,10 +1478,6 @@ should be robust to these elements holding values&quot;/&gt;
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;MimeType&quot;/&gt;
         &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-        &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;The mime type of an attachment. Any valid mime type is allowed.&quot;/&gt;
@@ -1535,7 +1519,7 @@ should be robust to these elements holding values&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding">binding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;<a href="http://hl7.org/fhir/R5/valueset-all-languages.html" style="color: Maroon">&#x1F517;</a> 
             &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/all-languages&quot;/&gt;
           &lt;/valueReference&gt;
         &lt;/extension&gt;
@@ -1543,13 +1527,9 @@ should be robust to these elements holding values&quot;/&gt;
                    <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Language&quot;/&gt;
         &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">extension</a>
-                   <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-        &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;extensible&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;A human language.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-languages.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/languages&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -1752,7 +1732,7 @@ should be robust to these elements holding values&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DocumentFormat&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;preferred&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="ValueSet-IHE.formatcode.vs.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://ihe.net/fhir/ValueSet/IHE.formatcode.vs&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -1929,7 +1909,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;This list of codes represents the main clinical acts being documented.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/v3/ActCode/vs.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/v3-ActCode&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -1992,7 +1972,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;XDS Facility Type.&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-c80-facilitycodes.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/c80-facilitycodes&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -2036,7 +2016,7 @@ should be robust to these elements holding values&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;example&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>
                      <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Additional details about where the content was created (e.g. clinical specialty).&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="http://hl7.org/fhir/STU3/valueset-c80-practice-codes.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://hl7.org/fhir/ValueSet/c80-practice-codes&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -2419,7 +2399,7 @@ should be robust to these elements holding values&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;DocumentFormat&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;preferred&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>&gt;<a href="ValueSet-IHE.formatcode.vs.html" style="color: Maroon">&#x1F517;</a> 
           &lt;<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;http://ihe.net/fhir/ValueSet/IHE.formatcode.vs&quot;/&gt;
         &lt;/valueSetReference&gt;
       &lt;/binding&gt;
@@ -2533,7 +2513,7 @@ Indicates that the data within the XDS document entry be represented as a contai
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Oct 17, 2023 13:17+0200">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Apr 9, 2024 16:00+0200">2024-04-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

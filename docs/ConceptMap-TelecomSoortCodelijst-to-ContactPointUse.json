@@ -3,7 +3,7 @@
   "id" : "TelecomSoortCodelijst-to-ContactPointUse",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000.html\">TelecomTypeCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-contact-point-use.html\">ContactPointUse</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). </p><div><p>Maps TelecomType codes as found in HCIM ContactInformation (release 2017) to ContactPoint.use codes as found in FHIR STU3</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"http://hl7.org/fhir/STU3/codesystem-contact-point-system.html\">ContactPointSystem</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MC</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null\"/></td><td>mobile</td><td>MC: mobile contact/mobiel telefoonnummer. Although the ContactPoint.system offers mobile as one of its values, it would mean that it's not possible to mark it as business or private too. If it is not necessary to mark the number as work/private, you may use ContactPoint.use = mobile, otherwise it is better to mark it as work/private and leave the determination of the number being a mobile number or not up to the ContactPoint.value. Dutch mobile numbers always start with 06 so in that sense the information 'mobile' here would be redundant.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000.html\">TelecomTypeCodelijst</a> to <a href=\"http://hl7.org/fhir/STU3/valueset-contact-point-use.html\">ContactPointUse</a></p><p>ACTIVE. Published on 2024-04-09 16:00:20+0200 by HL7 Netherlands (Nictiz: <a href=\"mailto:info@nictiz.nl\">info@nictiz.nl</a>). </p><div><p>Maps TelecomType codes as found in HCIM ContactInformation (release 2017) to ContactPoint.use codes as found in FHIR STU3</p>\n</div><br/><p><b>Group 1</b> Mapping from <a href=\"http://hl7.org/fhir/STU3/v3/AddressUse/cs.html\">v3 Code System AddressUse</a> to <a href=\"http://hl7.org/fhir/STU3/codesystem-contact-point-system.html\">ContactPointSystem</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MC (mobile contact))</td><td><a href=\"http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>mobile</td><td>MC: mobile contact/mobiel telefoonnummer. Although the ContactPoint.system offers mobile as one of its values, it would mean that it's not possible to mark it as business or private too. If it is not necessary to mark the number as work/private, you may use ContactPoint.use = mobile, otherwise it is better to mark it as work/private and leave the determination of the number being a mobile number or not up to the ContactPoint.value. Dutch mobile numbers always start with 06 so in that sense the information 'mobile' here would be redundant.</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/concept-bidirectional",
@@ -13,7 +13,7 @@
   "version" : "1.3.15",
   "name" : "TelecomSoortCodelijst-to-ContactPointUse",
   "status" : "active",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "contact" : [{
     "name" : "Nictiz",
@@ -27,7 +27,8 @@
   "sourceUri" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20171231000000",
   "targetUri" : "http://hl7.org/fhir/ValueSet/contact-point-use",
   "group" : [{
-    "source" : "http://hl7.org/fhir/contact-point-system",
+    "source" : "http://hl7.org/fhir/v3/AddressUse",
+    "target" : "http://hl7.org/fhir/contact-point-system",
     "element" : [{
       "code" : "MC",
       "target" : [{

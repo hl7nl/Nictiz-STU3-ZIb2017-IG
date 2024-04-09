@@ -110,7 +110,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15). See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -201,7 +201,7 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition">resourceType</a>" : "StructureDefinition",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">id</a>" : "IHE.MHD.DocumentManifest",
@@ -405,22 +405,18 @@
             {
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
-                "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
+                <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
               }
             },
             {
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Language"
-            },
-            {
-              "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
             }
           ],
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A human language.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/languages"
+            <a href="http://hl7.org/fhir/STU3/valueset-languages.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/languages"
           }
         }
       },
@@ -646,16 +642,12 @@
             {
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "DocumentReferenceStatus"
-            },
-            {
-              "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
             }
           ],
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The status of the document reference.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/document-reference-status"
+            <a href="http://hl7.org/fhir/STU3/valueset-document-reference-status.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/document-reference-status"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -701,7 +693,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "preferred",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Precise type of clinical document.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes"
+            <a href="http://hl7.org/fhir/STU3/valueset-c80-doc-typecodes.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1470,7 +1462,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Oct 17, 2023 13:17+0200">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Apr 9, 2024 16:00+0200">2024-04-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

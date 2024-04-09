@@ -875,9 +875,6 @@
       "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -947,14 +944,18 @@
       "StructureDefinition.snapshot.element.example.valueAddress.use"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
-      "Address.line"
+      "Address.line",
+      "StructureDefinition.differential.element.example.valueAddress.line",
+      "StructureDefinition.snapshot.element.example.valueAddress.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix": [
       "Address.line",
       "Patient.address.line",
       "Person.address.line",
       "Practitioner.address.line",
-      "RelatedPerson.address.line"
+      "RelatedPerson.address.line",
+      "StructureDefinition.differential.element.example.valueAddress.line",
+      "StructureDefinition.snapshot.element.example.valueAddress.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
       "Address.line",
@@ -963,7 +964,9 @@
       "Patient.contact.address.line",
       "Person.address.line",
       "Practitioner.address.line",
-      "RelatedPerson.address.line"
+      "RelatedPerson.address.line",
+      "StructureDefinition.differential.element.example.valueAddress.line",
+      "StructureDefinition.snapshot.element.example.valueAddress.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
       "Address.line",
@@ -972,10 +975,14 @@
       "Patient.contact.address.line",
       "Person.address.line",
       "Practitioner.address.line",
-      "RelatedPerson.address.line"
+      "RelatedPerson.address.line",
+      "StructureDefinition.differential.element.example.valueAddress.line",
+      "StructureDefinition.snapshot.element.example.valueAddress.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID": [
-      "Address.line"
+      "Address.line",
+      "StructureDefinition.differential.element.example.valueAddress.line",
+      "StructureDefinition.snapshot.element.example.valueAddress.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
       "Bundle.entry.resource.name.given",
@@ -983,7 +990,9 @@
       "Patient.contact.name.given",
       "Patient.name.given",
       "Practitioner.name.given",
-      "RelatedPerson.name.given"
+      "RelatedPerson.name.given",
+      "StructureDefinition.differential.element.example.valueHumanName.given",
+      "StructureDefinition.snapshot.element.example.valueHumanName.given"
     ],
     "http://hl7.org/fhir/StructureDefinition/observation-eventTiming": [
       "Observation"

@@ -19,6 +19,20 @@ Questions:
     - For now use "zibs2017" as id/name/packageId
 
 ---
+
+# Build
+
 ```
-> cp -r output docs
+> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o publisher.jar
+> java -jar publisher.jar -ig ig.ini
+```
+
+# Publish
+
+```
+> rm -r docs/*
+> cp -r output/* docs
+> git add docs
+> git commit -a
+> git push
 ```

@@ -110,7 +110,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15). See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Nictiz FHIR NL STU3 Zib2017 - Local Development build (v1.3.15) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://nictiz.nl/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -193,7 +193,7 @@
         
           Draft
           
-            as of 2023-10-17
+            as of 2024-04-09
           
         
       </td>
@@ -211,7 +211,7 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition">resourceType</a>" : "StructureDefinition",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">id</a>" : "zib-Pregnancy",
@@ -224,7 +224,7 @@
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a>" : "Zib Pregnancy",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">title</a>" : "HCIM Pregnancy",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a>" : "2023-10-17T13:17:30+02:00",
+  "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a>" : "2024-04-09T16:00:20+02:00",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">publisher</a>" : "HL7 Netherlands",
   "<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">contact</a>" : [
     {
@@ -505,22 +505,18 @@
             {
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
-                "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
+                <a href="http://hl7.org/fhir/R5/valueset-all-languages.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/all-languages"
               }
             },
             {
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
               "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Language"
-            },
-            {
-              "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-              "<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
             }
           ],
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A human language.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/languages"
+            <a href="http://hl7.org/fhir/STU3/valueset-languages.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/languages"
           }
         }
       },
@@ -719,7 +715,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The clinical status of the condition or diagnosis.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-clinical"
+            <a href="http://hl7.org/fhir/STU3/valueset-condition-clinical.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-clinical"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1000,7 +996,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "ProbleemStatusCodelijst",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000"
+            <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1104,7 +1100,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "required",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-ver-status"
+            <a href="http://hl7.org/fhir/STU3/valueset-condition-ver-status.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-ver-status"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1386,7 +1382,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "VerificatieStatusCodelijst",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000"
+            <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.4--20171231000000"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1463,7 +1459,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The type of problem.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20171231000000"
+            <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20171231000000.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.1--20171231000000"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1528,7 +1524,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "preferred",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "A subjective assessment of the severity of the condition as evaluated by the clinician.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-severity"
+            <a href="http://hl7.org/fhir/STU3/valueset-condition-severity.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-severity"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -1581,7 +1577,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "The problem name defines the problem.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20171231000000"
+            <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20171231000000.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.3--20171231000000"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -2087,7 +2083,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "ProbleemAnatomischeLocatieCodelijst",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.5--20171231000000"
+            <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.5--20171231000000.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.5--20171231000000"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -2339,7 +2335,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "extensible",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "ProblemLateralityCodelist",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.6--20171231000000"
+            <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.6--20171231000000.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.6--20171231000000"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -3218,7 +3214,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Codes describing condition stages (e.g. Cancer stages).",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-stage"
+            <a href="http://hl7.org/fhir/STU3/valueset-condition-stage.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/condition-stage"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -3434,7 +3430,7 @@
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">strength</a>" : "example",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.description">description</a>" : "Codes that describe the manifestation or symptoms of a condition.",
           "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet[x]">valueSetReference</a>" : {
-            "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom"
+            <a href="http://hl7.org/fhir/STU3/valueset-manifestation-or-symptom.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/STU3/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom"
           }
         },
         "<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>" : [
@@ -3663,7 +3659,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Oct 17, 2023 13:17+0200">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="">HL7 Netherlands</a>.  Package zibs2017#1.3.15 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Tue, Apr 9, 2024 16:00+0200">2024-04-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

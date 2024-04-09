@@ -16,7 +16,7 @@
   <name value="nl-core-location"/>
   <title value="nl-core-location"/>
   <status value="active"/>
-  <date value="2023-10-17T13:17:30+02:00"/>
+  <date value="2024-04-09T16:00:20+02:00"/>
   <publisher value="HL7 Netherlands"/>
   <contact>
     <name value="Nictiz"/>
@@ -207,9 +207,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>
@@ -1034,7 +1031,20 @@
               <valueCode value="HV"/>
             </extension>
           </use>
-          <line value="Binnenkant 12A Hoog"/>
+          <line value="Binnenkant 12A Hoog">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Binnenkant"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="12"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
+              <valueString value="A"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+              <valueString value="Hoog"/>
+            </extension>
+          </line>
           <city value="Amsterdam"/>
           <state value="NH"/>
           <postalCode value="1000AA"/>
@@ -1048,7 +1058,17 @@
             <valueBoolean value="true"/>
           </extension>
           <use value="home"/>
-          <line value="Binnenkant to 10"/>
+          <line value="Binnenkant to 10">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Binnenkant"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+              <valueString value="to"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="10"/>
+            </extension>
+          </line>
           <city value="Amsterdam"/>
           <state value="NH"/>
           <postalCode value="1001AA"/>

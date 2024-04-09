@@ -10,7 +10,7 @@
   "name" : "Zib FluidBalance",
   "title" : "HCIM FluidBalance",
   "status" : "draft",
-  "date" : "2023-10-17T13:17:30+02:00",
+  "date" : "2024-04-09T16:00:20+02:00",
   "publisher" : "HL7 Netherlands",
   "description" : "An Observation type resource as defined by the Dutch Health Care Information Model FluidBalance 1.0 - 2017EN",
   "purpose" : "#Purpose\r\nInformation about the water balance provides insight in the care plan for drinking and possibly administering extra fluids, when the balance is disrupted such as dehydration or overfilling.\r\n\r\n#Rationale\r\nHCIM FluidBalance fits in Observation.  No known arguments for other resources",
@@ -238,10 +238,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "extensible",
         "description" : "A human language.",

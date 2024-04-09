@@ -34,7 +34,7 @@
   <name value="Zib FluidBalance"/>
   <title value="HCIM FluidBalance"/>
   <status value="draft"/>
-  <date value="2023-10-17T13:17:30+02:00"/>
+  <date value="2024-04-09T16:00:20+02:00"/>
   <publisher value="HL7 Netherlands"/>
   <description value="An Observation type resource as defined by the Dutch Health Care Information Model FluidBalance 1.0 - 2017EN"/>
   <purpose value="#Purpose&#xD;&#xA;Information about the water balance provides insight in the care plan for drinking and possibly administering extra fluids, when the balance is disrupted such as dehydration or overfilling.&#xD;&#xA;&#xD;&#xA;#Rationale&#xD;&#xA;HCIM FluidBalance fits in Observation.  No known arguments for other resources"/>
@@ -255,9 +255,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>

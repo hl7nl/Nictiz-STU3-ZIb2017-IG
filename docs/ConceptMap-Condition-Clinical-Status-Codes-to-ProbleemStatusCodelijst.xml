@@ -3,8 +3,8 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
   <id value="Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="http://hl7.org/fhir/STU3/valueset-condition-clinical.html">Condition Clinical Status Codes</a> to <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000.html">ProbleemStatusCodelijst</a></p><p>ACTIVE. Published on 2023-10-17 13:17:30+0200 by HL7 Netherlands (Nictiz: <a href="mailto:info@nictiz.nl">info@nictiz.nl</a>). CC0</p><div><p>Maps the FHIR STU3 terminology associated with Condition.clinicalStatus to the HCIM Probleem release 2017 terminology for ProblemStatus</p>
-</div><br/><p><b>Group 1</b>Mapping from <a href="http://hl7.org/fhir/STU3/codesystem-snomedct.html">SNOMED CT (all versions)</a> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>active</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>55561003 (Active)</td></tr><tr><td>recurrence</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>55561003 (Active)</td></tr><tr><td>inactive</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>73425007 (Inactive)</td></tr><tr><td>remission</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>73425007 (Inactive)</td></tr><tr><td>resolved</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#null"/></td><td>73425007 (Inactive)</td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="http://hl7.org/fhir/STU3/valueset-condition-clinical.html">Condition Clinical Status Codes</a> to <a href="ValueSet-2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000.html">ProbleemStatusCodelijst</a></p><p>ACTIVE. Published on 2024-04-09 16:00:20+0200 by HL7 Netherlands (Nictiz: <a href="mailto:info@nictiz.nl">info@nictiz.nl</a>). CC0</p><div><p>Maps the FHIR STU3 terminology associated with Condition.clinicalStatus to the HCIM Probleem release 2017 terminology for ProblemStatus</p>
+</div><br/><p><b>Group 1</b> Mapping from <code>http://hl7.org/fhir/condition-clinical|http://hl7.org/fhir/condition-clinical version 3.0.1</code> to <a href="http://hl7.org/fhir/STU3/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>active</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal" title="equal">is equal to</a></td><td>55561003 (Active)</td></tr><tr><td>recurrence</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#subsumes" title="subsumes">is subsumed by</a></td><td>55561003 (Active)</td></tr><tr><td>inactive</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#equal" title="equal">is equal to</a></td><td>73425007 (Inactive)</td></tr><tr><td>remission</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#subsumes" title="subsumes">is subsumed by</a></td><td>73425007 (Inactive)</td></tr><tr><td>resolved</td><td><a href="http://hl7.org/fhir/STU3/codesystem-concept-map-equivalence.html#subsumes" title="subsumes">is subsumed by</a></td><td>73425007 (Inactive)</td></tr></table></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/concept-bidirectional">
     <valueBoolean value="false"/>
@@ -14,7 +14,7 @@
   <name value="Condition-Clinical-Status-Codes-to-ProbleemStatusCodelijst"/>
   <title value="HCIM ProbleemStatusCodelijst to Condition Clinical Status Codes"/>
   <status value="active"/>
-  <date value="2023-10-17T13:17:30+02:00"/>
+  <date value="2024-04-09T16:00:20+02:00"/>
   <publisher value="HL7 Netherlands"/>
   <contact>
     <name value="Nictiz"/>
@@ -30,7 +30,9 @@
   <sourceUri value="http://hl7.org/fhir/ValueSet/condition-clinical"/>
   <targetUri value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.5.1.2--20171231000000"/>
   <group>
-    <source value="http://snomed.info/sct"/>
+    <source value="http://hl7.org/fhir/condition-clinical"/>
+    <sourceVersion value="http://hl7.org/fhir/condition-clinical version 3.0.1"/>
+    <target value="http://snomed.info/sct"/>
     <element>
       <code value="active"/>
       <display value="Active"/>

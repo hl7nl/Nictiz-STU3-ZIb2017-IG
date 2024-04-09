@@ -6,7 +6,7 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  129264002 (null)</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  129264002 (Action)</li></ul></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
     <valuePeriod>
@@ -24,7 +24,7 @@
   <title value="VerrichtingMethodeCodelijst"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-10-17T13:17:30+02:00"/>
+  <date value="2024-04-09T16:00:20+02:00"/>
   <publisher value="HL7 Netherlands"/>
   <contact>
     <name value="Registratie aan de bron"/>

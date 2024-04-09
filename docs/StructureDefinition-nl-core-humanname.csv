@@ -42,7 +42,11 @@ Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jo
       <valueString value=""Haas""/>
     </extension>
   </family>
-  <given value=""Irma""/>
+  <given value=""Irma"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"">
+      <valueCode value=""CL""/>
+    </extension>
+  </given>
 </valueHumanName>","","",,,,,"",,,,"HumanName",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 nl-core-humanname-1:if you specify a prefix for an own name then an own name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()}nl-core-humanname-2:if you specify a voorvoegsel for a partner name then a partner name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()}","NL-CM:0.1.6","NL-CM:0.1.6","NL-CM:20.4.1","02","XPN","n/a","EN (actually, PN)","ProviderName"

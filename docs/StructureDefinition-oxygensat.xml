@@ -18,7 +18,7 @@
   <name value="Vital Signs Oxygensat"/>
   <title value="VitalSigns Oxygensat"/>
   <status value="active"/>
-  <date value="2023-10-17T13:17:30+02:00"/>
+  <date value="2024-04-09T16:00:20+02:00"/>
   <publisher value="HL7 Netherlands"/>
   <contact>
     <name value="Nictiz"/>
@@ -245,9 +245,6 @@
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language"/>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true"/>
         </extension>
         <strength value="extensible"/>
         <description value="A human language."/>

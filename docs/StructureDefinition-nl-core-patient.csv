@@ -71,8 +71,7 @@ boolean {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}
 ","legalStatus","The legal situation that applies to the patient during the intervention. The code of the legal status is based on the Vektis/AZR code list COD232-VEKT Legal Status.","The concept LegalStatus of the HCIM FreedomRestrictingMeasures plays an importand role in the context of mental healthcare (GGZ). This concept will become an independent HCIM with the next release of HCIM (2018 release).  
 
 The LegalStatus concept and associated valueset will be split in two: legalstatus and guardianship. These concept are currently captured in one valueset. It is possible to have a legalstatus AND a representative. Therefore, we allow this extension to have a cardinality of 0..2.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","NL-CM:14.3.2"
+","","NL-CM:14.3.2"
 "Patient.extension:legalStatus.id","Patient.extension.id","","","",0,1,"","","","string {[]} {[]}
 ","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Patient.extension:legalStatus.extension","Patient.extension.extension","","extensions
@@ -192,7 +191,11 @@ Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jo
       <valueString value=""Haas""/>
     </extension>
   </family>
-  <given value=""Irma""/>
+  <given value=""Irma"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"">
+      <valueCode value=""CL""/>
+    </extension>
+  </given>
 </valueHumanName>","","",,,,,"",,,,"Patient.name",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 nl-core-humanname-1:if you specify a prefix for an own name then an own name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()}nl-core-humanname-2:if you specify a voorvoegsel for a partner name then a partner name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()}","NL-CM:0.1.6","NL-CM:1.1.5","NL-CM:0.1.6","NL-CM:1.1.5","NL-CM:0.1.6","NL-CM:1.1.5","n/a","EN (actually, PN)","XPN"
@@ -395,7 +398,20 @@ If Address.type is ""both"" then this is to be understood as a dual purpose addr
       <valueCode value=""HV""/>
     </extension>
   </use>
-  <line value=""Binnenkant 12A Hoog""/>
+  <line value=""Binnenkant 12A Hoog"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"">
+      <valueString value=""Binnenkant""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"">
+      <valueString value=""12""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"">
+      <valueString value=""A""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"">
+      <valueString value=""Hoog""/>
+    </extension>
+  </line>
   <city value=""Amsterdam""/>
   <state value=""NH""/>
   <postalCode value=""1000AA""/>
@@ -478,7 +494,11 @@ Example: miss Irma Jongeneel marries mister de Haas and assumes the name Irma Jo
       <valueString value=""Haas""/>
     </extension>
   </family>
-  <given value=""Irma""/>
+  <given value=""Irma"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"">
+      <valueCode value=""CL""/>
+    </extension>
+  </given>
 </valueHumanName>","","",,,,,"",,,,"Patient.contact.name",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 nl-core-humanname-1:if you specify a prefix for an own name then an own name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-name').empty().not()}nl-core-humanname-2:if you specify a voorvoegsel for a partner name then a partner name is also expected {name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-prefix').empty().not() implies name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-partner-name').empty().not()}","NL-CM:3.1.4","NL-CM:3.1.4","NL-CM:3.1.4","n/a","EN (actually, PN)","XPN"
@@ -645,7 +665,20 @@ If Address.type is ""both"" then this is to be understood as a dual purpose addr
       <valueCode value=""HV""/>
     </extension>
   </use>
-  <line value=""Binnenkant 12A Hoog""/>
+  <line value=""Binnenkant 12A Hoog"">
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"">
+      <valueString value=""Binnenkant""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"">
+      <valueString value=""12""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"">
+      <valueString value=""A""/>
+    </extension>
+    <extension url=""http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"">
+      <valueString value=""Hoog""/>
+    </extension>
+  </line>
   <city value=""Amsterdam""/>
   <state value=""NH""/>
   <postalCode value=""1000AA""/>

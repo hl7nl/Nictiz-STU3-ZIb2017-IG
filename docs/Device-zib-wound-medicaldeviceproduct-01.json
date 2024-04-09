@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"zib-wound-medicaldeviceproduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;zib-wound-medicaldeviceproduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Wound-Drain-Product.html\">HCIM Wound MedicalDeviceProduct</a></p></div><p><b>type</b>: Wonddrain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258646005)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"zib-wound-medicaldeviceproduct-01\"> </a><a name=\"hczib-wound-medicaldeviceproduct-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;zib-wound-medicaldeviceproduct-01&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-zib-Wound-Drain-Product.html\">HCIM Wound MedicalDeviceProduct</a></p></div><p><b>type</b>: Wonddrain <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258646005)</span></p></div>"
   },
   "type" : {
     "coding" : [{
