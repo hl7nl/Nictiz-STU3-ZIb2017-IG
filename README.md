@@ -1,6 +1,11 @@
-Used https://github.com/Nictiz/Nictiz-STU3-Zib2017 as a basis.
-
 Output is here: https://hl7nl.github.io/Nictiz-STU3-ZIb2017-IG
+
+Steps:
+1. git clone --depth 1 https://github.com/Nictiz/Nictiz-STU3-Zib2017
+1. Copied "Profiles - ZIB 2017" > input/profiles
+1. Copied "Profiles - ZIB 2017/ValueSets" -> input/resources
+1. Copied Capabilitystatements > input/capabilitystatements
+1. Copied Examples -> input/examples
 
 Issues:
 1. Duplicate ID, so removed for now:
@@ -10,9 +15,6 @@ Issues:
     - folder zib-Medication
     - folder eAfspraak
     - zib-Infusion-* references medication?
-1. Copied ValueSets -> input/resources
-1. Copied Extensions.. -> input/profiles
-1. Copied Examples.. -> input/examples
 
 Questions:
 1. What to use for packageId = nictiz.fhir.nl.stu3.zib2017
@@ -23,8 +25,9 @@ Questions:
 # Build
 
 ```
-> curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o publisher.jar
-> java -jar publisher.jar -ig ig.ini
+> docker run --rm -it -v $(pwd):/home/publisher/ig hl7fhir/ig-publisher-base:latest
+@> _updatePublisher.sh
+@> _genonce.sh
 ```
 
 # Publish

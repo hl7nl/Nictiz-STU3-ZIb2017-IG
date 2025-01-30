@@ -21,6 +21,11 @@
         <title value="Home Page"/>
         <generation value="markdown"/>
       </page>
+      <page>
+        <nameUrl value="eviews.html"/>
+        <title value="EViews"/>
+        <generation value="markdown"/>
+      </page>
     </page>
     <parameter>
       <code value="copyrightyear"/>
